@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p-header_CRATION DE COMPTE</name>
+   <tag></tag>
+   <elementGuidId>ce1d9c83-79b4-4a7e-bfaa-510b764f64e6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='ui-dialog-4-label']/p-header</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>p-header</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p-header</value>
+      <webElementGuid>458b6939-1c95-4564-b56c-b7f3803de0ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> CRÉATION DE COMPTE </value>
+      <webElementGuid>1085a166-59e1-4404-aa62-06ff9bad6eec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-dialog-4-label&quot;)/p-header[1]</value>
+      <webElementGuid>5a6ab405-37c4-4bcd-8f7f-8da0e3d88a0a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='ui-dialog-4-label']/p-header</value>
+      <webElementGuid>4ba3314c-2d87-4b0d-a0eb-08e11c74583c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'ui-dialog-4-label', '&quot;', ')/p-header[1]')])[1]/following::p-header[1]</value>
+      <webElementGuid>18c693dc-05cf-4d0f-bc7d-388aea28f53f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='- Actif'])[5]/following::p-header[1]</value>
+      <webElementGuid>7cb92488-4d28-4ca5-87bf-f22a1a8a5a12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Retour à l', &quot;'&quot;, 'accueil')])[1]/preceding::p-header[1]</value>
+      <webElementGuid>0d10af21-3434-4f71-b111-b9b120cf0acf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='CRÉATION DE COMPTE']/parent::*</value>
+      <webElementGuid>c16018c5-3f32-49ae-a216-89da16d3dca9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p-header</value>
+      <webElementGuid>76aa1bac-c0f1-42b4-8626-3de8dd0e1ae1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p-header[(text() = ' CRÉATION DE COMPTE ' or . = ' CRÉATION DE COMPTE ')]</value>
+      <webElementGuid>32b00853-9c53-40bd-be38-f66530dafaa2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

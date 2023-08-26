@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Mois Janvier  Fvrier  Mars  Avril  M_d1607b</name>
+   <tag></tag>
+   <elementGuidId>c409c6d4-1501-4f66-8550-b3acc0489b85</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@name='month']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>select[name=&quot;month&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>6dc3c932-9edb-459f-9870-4623ae5dacab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>month</value>
+      <webElementGuid>4a13a6b2-feef-4ada-8eee-b4d95df1dc89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-reflect-name</name>
+      <type>Main</type>
+      <value>month</value>
+      <webElementGuid>f70bcb0f-a60d-453d-8f05-54d0cdd64881</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-untouched ng-pristine ng-valid</value>
+      <webElementGuid>5f7e6356-0cd8-4490-95d9-7e83b4b5dd9f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Mois Janvier  Février  Mars  Avril  Mai  Juin  Juillet  Août  Septembre  Octobre  Novembre  Décembre </value>
+      <webElementGuid>d2399df4-c40a-45a9-99ec-1856f3d83a43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;container-fluid&quot;]/app-root[1]/div[@class=&quot;app-root&quot;]/app-root[@class=&quot;ng-star-inserted&quot;]/main[1]/app-registration[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;card-connection-registration keycloakparents&quot;]/div[@class=&quot;registration&quot;]/app-identification[1]/form[@class=&quot;row ng-untouched ng-pristine ng-valid&quot;]/div[@class=&quot;ng-star-inserted&quot;]/app-date[1]/fieldset[@class=&quot;date-component&quot;]/div[@class=&quot;date&quot;]/div[@class=&quot;month&quot;]/select[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]</value>
+      <webElementGuid>2c8b159c-f737-44be-b8dc-19007cef37b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@name='month']</value>
+      <webElementGuid>091f7dbe-1553-4146-9b60-22338394579d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mois'])[1]/following::select[1]</value>
+      <webElementGuid>f1139ee2-8cc4-4a2b-974a-e2e847badfea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jour'])[1]/following::select[1]</value>
+      <webElementGuid>12dcd6d4-0376-4818-99f5-7d47e1cba482</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Année'])[1]/preceding::select[1]</value>
+      <webElementGuid>6ff5aef6-1e88-4eb7-8e14-27ea69b0841f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date de fin de validité :'])[1]/preceding::select[1]</value>
+      <webElementGuid>fef6fb6f-f31b-4e05-935f-3d3226fead3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>6bba8e47-70c0-4d43-ab63-710e28606bee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'month' and (text() = ' Mois Janvier  Février  Mars  Avril  Mai  Juin  Juillet  Août  Septembre  Octobre  Novembre  Décembre ' or . = ' Mois Janvier  Février  Mars  Avril  Mai  Juin  Juillet  Août  Septembre  Octobre  Novembre  Décembre ')]</value>
+      <webElementGuid>8d32b116-1a52-495c-bbd1-019017b69cb4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

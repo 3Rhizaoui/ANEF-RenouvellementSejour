@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Valider</name>
+   <tag></tag>
+   <elementGuidId>eab6016c-4607-4d18-a52c-feb14c141e99</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only > span.ui-button-text.ui-clickable</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a2d48f35-2507-4c48-b104-63feda9a9d54</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-button-text ui-clickable</value>
+      <webElementGuid>7e3df121-d79b-4554-883b-9e571975b45e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Valider</value>
+      <webElementGuid>f7965a0b-7066-4642-a81f-9b24f664a8b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;container-fluid&quot;]/app-root[1]/div[@class=&quot;app-root&quot;]/app-root[@class=&quot;ng-star-inserted&quot;]/main[1]/app-confirmation-email[@class=&quot;ng-star-inserted&quot;]/form[@class=&quot;center-text ng-untouched ng-pristine ng-valid&quot;]/div[@class=&quot;card-connection&quot;]/p-card[1]/div[@class=&quot;ui-card ui-widget ui-widget-content ui-corner-all&quot;]/div[@class=&quot;ui-card-body&quot;]/div[@class=&quot;ui-card-content&quot;]/div[@class=&quot;p-lg-offset-2 p-lg-8 p-md-offset-3 p-md-6 p-sm-12&quot;]/p-button[@class=&quot;fullWidthButton&quot;]/button[@class=&quot;ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only&quot;]/span[@class=&quot;ui-button-text ui-clickable&quot;]</value>
+      <webElementGuid>e80040f8-e7e4-4090-8e28-e5fa69c8aca9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::span[2]</value>
+      <webElementGuid>60bc2ffe-36d5-4fa5-bdeb-280dee64366c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='- Actif'])[1]/preceding::span[1]</value>
+      <webElementGuid>8db7813b-be3c-4fb1-9a7e-57e8101de0af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Valider']/parent::*</value>
+      <webElementGuid>ca4d9eb4-7c34-438d-8bea-1e197a1895f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p-button/button/span</value>
+      <webElementGuid>15924369-2710-425c-bd77-1bbfd0013127</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Valider' or . = 'Valider')]</value>
+      <webElementGuid>ef5f7e87-2c32-4052-a97f-dc3fd3e428c3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
