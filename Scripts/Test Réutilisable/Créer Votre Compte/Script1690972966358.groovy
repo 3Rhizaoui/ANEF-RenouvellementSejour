@@ -46,14 +46,6 @@ WebUI.setText(findTestObject('Object Repository/Connexion/Date Fin Validité/Inp
 // Validation de la page pour la création du compte :
 WebUI.click(findTestObject('Object Repository/Connexion/Btn_Créer Un Compte'))
 
-/*Ecouter les évennement NetWork et page 
- * concatination URL création PW
- * */
-CustomKeywords.'tools.EventsNetWorkChromeConsole.RegisterListender'(true, true)
-CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
-CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
-CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
-
 // Création de Email utilisateur
 def MonEmail = GlobalVariable.NumEtrangerVisa + '@yopmail.com'
 println('MonEmail = ' + MonEmail)
@@ -64,7 +56,13 @@ WebUI.click(findTestObject('Object Repository/Connexion/span_btn_ValiderEmail'))
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/Connexion/btn_span_RetourAccueil'))
 WebUI.delay(5)
-
+/*Ecouter les évennement NetWork et page
+ * concatination URL création PW
+ * */
+CustomKeywords.'tools.EventsNetWorkChromeConsole.RegisterListender'(true, true)
+CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
+CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
+CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
 //Navigation à URL Création MDP
 String URL_CreationMDP = GlobalVariable.URLpw + GlobalVariable.Token
 println('URL_CreationMDP = ' + URL_CreationMDP)

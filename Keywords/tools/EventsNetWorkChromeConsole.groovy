@@ -147,17 +147,18 @@ public class EventsNetWorkChromeConsole {
 		 *  get the collected Cookies data and split Token as string
 		 *  Save Token in GlobalVariable
 		 */
-		def ck = new Cookie("name", "value");
-		myNetwork.enable()
-		page.enable()
-		WebDriver driver = DriverFactory.getWebDriver()
-		driver.manage().getCookies()
-		String CookiesBody =driver.manage().getCookies().toString()
-		String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
-		println "new Cookie >>>>  " + CookiesBody
-		println "Mon Token substringBetween >>>>  " + Token
-		driver.manage().addCookie(ck)
-		GlobalVariable.Token = Token
+			def ck = new Cookie("name", "value");
+			myNetwork.enable()
+			page.enable()
+			WebDriver driver = DriverFactory.getWebDriver()
+			//driver.manage().getCookies()
+			driver.manage().getCookieNamed("Authorization")
+			String CookiesBody =driver.manage().getCookies().toString()
+			String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
+			println "new Cookie >>>>  " + CookiesBody
+			println "Mon Token substringBetween >>>>  " + Token
+			driver.manage().addCookie(ck)
+			GlobalVariable.Token = Token
 	}
 
 	/***
@@ -168,7 +169,7 @@ public class EventsNetWorkChromeConsole {
 	@Keyword
 	def ResetDataCollection() {
 		RequestMap = [:]
-		
+
 	}
 
 	/***
@@ -276,25 +277,25 @@ public class EventsNetWorkChromeConsole {
 	 * @param data string data that should be written to the file
 	 * @return null
 	 * */
-	 @Keyword
-	 def DumpToFile(String dumpFileName, String data)
-	 {
-		 def dumpDir = RunConfiguration.getProjectDir() + "/Dump"
-		 	FileOutputStream fileOutputStream = null
-			String fileName = dumpDir + "/" + dumpFileName
+	@Keyword
+	def DumpToFile(String dumpFileName, String data)
+	{
+		def dumpDir = RunConfiguration.getProjectDir() + "/Dump"
+		FileOutputStream fileOutputStream = null
+		String fileName = dumpDir + "/" + dumpFileName
 		try
-			{
-				File file = new File(fileName)
-				fileOutputStream = new FileOutputStream(file)
-				fileOutputStream.write(Base64.getDecoder().decode(data))
-			}
+		{
+			File file = new File(fileName)
+			fileOutputStream = new FileOutputStream(file)
+			fileOutputStream.write(Base64.getDecoder().decode(data))
+		}
 		catch (IOException e)
-			{
-				e.printStackTrace()
-			}
+		{
+			e.printStackTrace()
+		}
 		finally
-			{
-				if (fileOutputStream != null)
+		{
+			if (fileOutputStream != null)
 			{
 				try
 				{
@@ -306,24 +307,24 @@ public class EventsNetWorkChromeConsole {
 					e.printStackTrace()
 				}
 			}
-			}
-	 }
-	 /***
+		}
+	}
+	/***
 	 * Take a screenshot of the page as it is
 	 * @param outputFilename dump file location
 	 * @return NULL
 	 * */
-	 @Keyword
-	 def TakePageScreenshot(String outputFilename)
-	 {
-	 if(isInitialized == false)
-	 {
-	 InitializeConsole()
-	 }
-	 page.enable()
-	 DumpToFile(outputFilename, page.captureScreenshot())
-	 }
-	 /***
+	@Keyword
+	def TakePageScreenshot(String outputFilename)
+	{
+		if(isInitialized == false)
+		{
+			InitializeConsole()
+		}
+		page.enable()
+		DumpToFile(outputFilename, page.captureScreenshot())
+	}
+	/***
 	 * Set the page of the browser to the full size of the content
 	 * Remove the scroll bar of the given page
 	 * Take a picture of it 
@@ -332,26 +333,26 @@ public class EventsNetWorkChromeConsole {
 	 * @param outputFilename
 	 * @return NULL
 	 */
-	 @Keyword
-	 def TakeFullPageScreenshot(String outputFilename)
-	 {
-	 if(isInitialized == false)
-	 {
-	 InitializeConsole()
-	 }
-	 WebDriver driver = DriverFactory.getWebDriver()
-	 def widthOriginal = driver.manage().window().getSize().getWidth()
-	 def heightOriginal = driver.manage().window().getSize().getHeight()
-	 //May be good to Limit that? 1024 ?
-	 double width = WebUI.executeJavaScript('return document.body.scrollWidth', null)
-	 double height = WebUI.executeJavaScript('return document.body.scrollHeight', null)
-	 Emulation emulation = cdts.getEmulation()
-	 //emulation.setDeviceMetricsOverride(Double.valueOf(widthOriginal).intValue(), Double.valueOf(height).intValue(), 1.0, Boolean.FALSE)
-	 emulation.setScrollbarsHidden(Boolean.TRUE)
-	 String image = page.captureScreenshot(CaptureScreenshotFormat.PNG, null, null,false)
-	 DumpToFile(outputFilename, image)
-	 emulation.setScrollbarsHidden(Boolean.FALSE)
-	 //emulation.setDeviceMetricsOverride(Double.valueOf(widthOriginal).intValue(), Double.valueOf(heightOriginal).intValue(), 1.0, Boolean.FALSE)
-	 //emulation.clearDeviceMetricsOverride()
-	 }
+	@Keyword
+	def TakeFullPageScreenshot(String outputFilename)
+	{
+		if(isInitialized == false)
+		{
+			InitializeConsole()
+		}
+		WebDriver driver = DriverFactory.getWebDriver()
+		def widthOriginal = driver.manage().window().getSize().getWidth()
+		def heightOriginal = driver.manage().window().getSize().getHeight()
+		//May be good to Limit that? 1024 ?
+		double width = WebUI.executeJavaScript('return document.body.scrollWidth', null)
+		double height = WebUI.executeJavaScript('return document.body.scrollHeight', null)
+		Emulation emulation = cdts.getEmulation()
+		//emulation.setDeviceMetricsOverride(Double.valueOf(widthOriginal).intValue(), Double.valueOf(height).intValue(), 1.0, Boolean.FALSE)
+		emulation.setScrollbarsHidden(Boolean.TRUE)
+		String image = page.captureScreenshot(CaptureScreenshotFormat.PNG, null, null,false)
+		DumpToFile(outputFilename, image)
+		emulation.setScrollbarsHidden(Boolean.FALSE)
+		//emulation.setDeviceMetricsOverride(Double.valueOf(widthOriginal).intValue(), Double.valueOf(heightOriginal).intValue(), 1.0, Boolean.FALSE)
+		//emulation.clearDeviceMetricsOverride()
+	}
 }
