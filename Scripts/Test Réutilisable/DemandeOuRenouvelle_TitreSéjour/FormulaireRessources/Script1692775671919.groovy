@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//L'ensemble de vos ressources doit être au moins égal à 615€ / mois.
+
+//Sélectionner Origine des ressources
+WebUI.click(findTestObject('Object Repository/Page_Ressources_Usager/span_DropDown_OrigineDesRessources'))
+WebUI.click(findTestObject('Object Repository/Page_Ressources_Usager/List_OrigineDesRessources'))
+
+//Renseigner Le Montant Par Mois
+WebUI.setText(findTestObject('Object Repository/Page_Ressources_Usager/Input_MontantParMois'), '1500')
+
+//Hébergement à titre gratuit 
+WebUI.check(findTestObject('Object Repository/Page_Ressources_Usager/Check_HébergéTitreGratuit'))
+
+//Validation
+WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))

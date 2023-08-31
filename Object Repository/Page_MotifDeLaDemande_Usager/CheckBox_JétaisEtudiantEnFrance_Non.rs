@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CheckBox_JétaisEtudiantEnFrance_Non</name>
+   <tag></tag>
+   <elementGuidId>c11453bc-925c-4839-962b-e5a222935078</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/app-root/div/app-portal/main/app-theme-v2/div/app-demande/div/div[3]/app-motif-scolaire/div[2]/div/p-accordion/div/form/p-accordiontab[1]/div[2]/div/div/div/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

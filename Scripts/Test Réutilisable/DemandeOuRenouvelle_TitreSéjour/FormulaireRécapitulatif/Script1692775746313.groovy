@@ -17,3 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//Je vérifie les informations que j'ai saisies en validant les 4 parties afin d'envoyer ma demande. Une fois la demande envoyée, je ne peux plus la modifier.
+
+//INFORMATIONS PERSONNELLES (1/4)
+WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
+
+//MOTIF DE LA DEMANDE (2/4)
+WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
+
+//RESSOURCES (3/4)
+WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
+
+//JUSTIFICATIFS (4/4)
+WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_4sur4'))
+
+//Validation
+WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))

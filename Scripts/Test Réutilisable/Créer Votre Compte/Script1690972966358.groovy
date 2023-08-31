@@ -18,43 +18,43 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Cliquer sur le lien Se Connecter :
-WebUI.click(findTestObject('Object Repository/Connexion/Link_Se Connecter'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
 // Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
 WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Première visite? Créez votre compte :
-WebUI.click(findTestObject('Object Repository/Connexion/Link_Créer Votre Compte'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Créer Votre Compte'))
 
 //Fournir Le Numéro de votre visa ou votre numéro étranger :
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Numéro étranger_Visa'), GlobalVariable.NumEtrangerVisa)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Numéro étranger_Visa'), GlobalVariable.NumEtrangerVisa)
 
 // Fournir La Date de début de validité :
 def DateDébut = CustomKeywords.'tools.MyStringTools.ParsedDateDébut'()
 ParsedDateDébut = CustomKeywords.'tools.MyStringTools.ParsedDateDébut'()
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Début Validité/Input_Jour'), ParsedDateDébut[0])
-WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion/Date Début Validité/Select_Mois'), ParsedDateDébut[1])
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Début Validité/Input_Année'), ParsedDateDébut[2])
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Début Validité/Input_Jour'), ParsedDateDébut[0])
+WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion Usager/Date Début Validité/Select_Mois'), ParsedDateDébut[1])
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Début Validité/Input_Année'), ParsedDateDébut[2])
 
 // Fournir La Date de fin de validité :
 def DateFin = CustomKeywords.'tools.MyStringTools.ParsedDateFin'()
 ParsedDateFin = CustomKeywords.'tools.MyStringTools.ParsedDateFin'()
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Fin Validité/Input_Jour'), ParsedDateFin[0])
-WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion/Date Fin Validité/Select_Mois'), ParsedDateFin[1])
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Fin Validité/Input_Année'), ParsedDateFin[2])
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Fin Validité/Input_Jour'), ParsedDateFin[0])
+WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion Usager/Date Fin Validité/Select_Mois'), ParsedDateFin[1])
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Fin Validité/Input_Année'), ParsedDateFin[2])
 
 // Validation de la page pour la création du compte :
-WebUI.click(findTestObject('Object Repository/Connexion/Btn_Créer Un Compte'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Créer Un Compte'))
 
 // Création de Email utilisateur
 def MonEmail = GlobalVariable.NumEtrangerVisa + '@yopmail.com'
 println('MonEmail = ' + MonEmail)
 WebUI.delay(5)
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Email'), MonEmail)
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmeEmail'), MonEmail)
-WebUI.click(findTestObject('Object Repository/Connexion/span_btn_ValiderEmail'))
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Email'), MonEmail)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmeEmail'), MonEmail)
+WebUI.click(findTestObject('Object Repository/Connexion Usager/span_btn_ValiderEmail'))
 WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Connexion/btn_span_RetourAccueil'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_span_RetourAccueil'))
 WebUI.delay(5)
 /*Ecouter les évennement NetWork et page
  * concatination URL création PW
@@ -72,8 +72,8 @@ WebUI.navigateToUrl(URL_CreationMDP)
 WebUI.callTestCase(findTestCase('Test Réutilisable/Vérif_FormatNewPW'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Renseigner PDM Valide
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), GlobalVariable.Password)
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), GlobalVariable.Password)
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.click(findTestObject('Object Repository/Connexion/btn_span_RetourAccueil'))
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), GlobalVariable.Password)
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_span_RetourAccueil'))
   

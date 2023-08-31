@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Btn_ChoisirFichier_EtatCivil</name>
+   <tag></tag>
+   <elementGuidId>bcfc785a-5ddd-443b-86d6-725de68e6032</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;ui-accordiontab-7-content&quot;]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;ui-accordiontab-7-content&quot;]/div/div[1]/div/app-pieces-jointes[1]/div/button/span</value>
+      <webElementGuid>cfff22dd-9634-4ea1-ac82-bf5d0243405c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

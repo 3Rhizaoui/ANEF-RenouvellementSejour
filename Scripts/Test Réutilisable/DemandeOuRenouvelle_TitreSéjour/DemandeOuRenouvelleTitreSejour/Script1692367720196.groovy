@@ -19,15 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 
 
-WebUI.click(findTestObject('Object Repository/Page_Accueil/btn_DemandeOuRenouvelleTitreSejour'))
-WebUI.check(findTestObject('Object Repository/Page_Accueil/CheckBox_Moi-même'))
-WebUI.click(findTestObject('Object Repository/Page_Accueil/btn_JeContinue'))
-
-/*Vous êtes titulaire d'un titre de séjour en tant que <&&&&&>
- * Je sollicite le renouvellement de ce titre
- */
-WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteRenouvellementDeCeTitre'))
-// Valider mon choix
-WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
-// 2 éme Validation de mon choix
-WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence1'))
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Usager/btn_DemandeOuRenouvelleTitreSejour'))
+WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_Moi-même'))
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Usager/btn_JeContinue'))

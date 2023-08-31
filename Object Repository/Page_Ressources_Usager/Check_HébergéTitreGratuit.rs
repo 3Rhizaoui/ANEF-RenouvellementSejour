@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Check_HébergéTitreGratuit</name>
+   <tag></tag>
+   <elementGuidId>c4347d8b-0cde-42db-8671-ef949ba1b493</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/app-root/div/app-portal/main/app-theme-v2/div/app-demande/div/div[3]/app-ressources/div[2]/div/p-accordion/div/p-accordiontab/div[2]/div/form/div[1]/div/div/anef-input-check/div/div/p-checkbox/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

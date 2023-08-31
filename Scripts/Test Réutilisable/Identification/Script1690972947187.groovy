@@ -17,16 +17,31 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//Identification : Portail Usager
+if (Portail == 'Usager') {
 // Cliquer sur le lien Se Connecter :
-WebUI.click(findTestObject('Object Repository/Connexion/Link_Se Connecter'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
 // Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
 WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Renseigner l'Identifiant et le mot de passe :
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Identifiant'), GlobalVariable.NumEtrangerVisa)
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_MDP'), GlobalVariable.Password)
-WebUI.click(findTestObject('Object Repository/Connexion/btn_Sidentifier'))
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Identifiant'), GlobalVariable.NumEtrangerVisa)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_MDP'), GlobalVariable.Password)
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_Sidentifier'))
 
 // Vérification position sur la page d'accueil'
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Accueil/Span_MesNotifications'), 2, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Accueil_Usager/Span_MesNotifications'), 2, FailureHandling.STOP_ON_FAILURE)}
+
+//Identification : Portail Agent
+if (Portail == 'Agent') {
+
+WebUI.setText(findTestObject('Object Repository/Connexion Agent/Input_UserNameAgent'),GlobalVariable.IdentifiantAgentQualif )
+WebUI.setText(findTestObject('Object Repository/Connexion Agent/Input_PasswordAgent'),GlobalVariable.PwAgentQualif )
+WebUI.click(findTestObject('Object Repository/Connexion Agent/btn_Valider_Conx_Agent'))}
+
+
+//Identification : Si la variable Portail incorrecte ou vide : Message d'erreur 
+else {
+	println "Vérifier le Portail de votre connexion Usager ou Agent"
+}

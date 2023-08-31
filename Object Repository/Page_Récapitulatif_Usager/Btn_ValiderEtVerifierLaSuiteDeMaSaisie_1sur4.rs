@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4</name>
+   <tag></tag>
+   <elementGuidId>09e6ecf8-c4d8-439a-83c5-fc4f7c48c6ac</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;ui-accordiontab-10-content&quot;]/div/app-actions-bar/div/div[2]/button/span</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element_is_shadow_root</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>a7f0d2f3-e896-4374-93a5-46c451a561fa</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

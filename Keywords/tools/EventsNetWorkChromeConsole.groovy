@@ -117,6 +117,7 @@ public class EventsNetWorkChromeConsole {
 
 					RequestMap.put(event.requestId, requestEnty)
 					WebUI.comment("REQ:" + RequestMap.size().toString())
+					println "requestEnty:==========" + requestEnty
 				}
 			}
 		})
@@ -147,18 +148,18 @@ public class EventsNetWorkChromeConsole {
 		 *  get the collected Cookies data and split Token as string
 		 *  Save Token in GlobalVariable
 		 */
-			def ck = new Cookie("name", "value");
-			myNetwork.enable()
-			page.enable()
-			WebDriver driver = DriverFactory.getWebDriver()
-			//driver.manage().getCookies()
-			driver.manage().getCookieNamed("Authorization")
-			String CookiesBody =driver.manage().getCookies().toString()
-			String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
-			println "new Cookie >>>>  " + CookiesBody
-			println "Mon Token substringBetween >>>>  " + Token
-			driver.manage().addCookie(ck)
-			GlobalVariable.Token = Token
+		def ck = new Cookie("name", "value");
+		myNetwork.enable()
+		page.enable()
+		WebDriver driver = DriverFactory.getWebDriver()
+		//driver.manage().getCookies()
+		driver.manage().getCookieNamed("Authorization")
+		String CookiesBody =driver.manage().getCookies().toString()
+		String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
+		println "new Cookie >>>>  " + CookiesBody
+		println "Mon Token substringBetween >>>>  " + Token
+		driver.manage().addCookie(ck)
+		GlobalVariable.Token = Token
 	}
 
 	/***

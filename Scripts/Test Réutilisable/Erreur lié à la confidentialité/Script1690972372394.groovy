@@ -30,7 +30,7 @@ String DriverProp = RunBrowserConfiguration.get("drivers").get("system").get("We
 if (DriverProp =='CHROME_DRIVER'){
 // contournement du message d'erreur lié à la confidentialité :
 	
-if(WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/Btn_Paramètres Avancés'),2,FailureHandling.OPTIONAL)){
-	WebUI.click(findTestObject('Object Repository/Connexion/Btn_Paramètres Avancés'))
-	WebUI.click(findTestObject('Object Repository/Connexion/Link_Proceed-Link'))}
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Btn_Paramètres Avancés'),2,FailureHandling.OPTIONAL)){
+	WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Paramètres Avancés'))
+	WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Proceed-Link'))}
 }

@@ -19,38 +19,38 @@ import org.openqa.selenium.Keys as Keys
 
 
 //Créer un mot de passe sans majuscule"
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), "hhizaoui001!")
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), "hhizaoui001!")
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/div_MSG_FormatNonRespecté'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), "hhizaoui001!")
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), "hhizaoui001!")
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/div_MSG_FormatNonRespecté'), 1)
 
 //Créer un mot de passe sans minuscule
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), "HHIZAOUI001!")
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), "HHIZAOUI001!")
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/div_MSG_FormatNonRespecté'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), "HHIZAOUI001!")
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), "HHIZAOUI001!")
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/div_MSG_FormatNonRespecté'), 1)
 
 //Créer un mot de passe sans caractère spécial
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), "HHizaoui0010")
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), "HHizaoui0010")
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/div_MSG_FormatNonRespecté'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), "HHizaoui0010")
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), "HHizaoui0010")
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/div_MSG_FormatNonRespecté'), 1)
 
 //Créer un mot de passe sans chiffre
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), "HHizaouihiza!")
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), "HHizaouihiza!")
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/div_MSG_FormatNonRespecté'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), "HHizaouihiza!")
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), "HHizaouihiza!")
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/div_MSG_FormatNonRespecté'), 1)
 
 //Saisir 2 mots de passe différents
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), "HHizaoui001!")
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), "HHizaoui001!def")
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/div_ MSG_ChampsDoiventEtreIdentiques'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), "HHizaoui001!")
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), "HHizaoui001!def")
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/div_ MSG_ChampsDoiventEtreIdentiques'), 1)
 
 //Créer un mot de passe moins de 12 caractères
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Password'), "HHiza001!")
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_ConfirmePassword'), "HHiza001!")
-WebUI.click(findTestObject('Object Repository/Connexion/btn_CréerMDP'))
-WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion/div_MSG_FormatNonRespecté'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Password'), "HHiza001!")
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), "HHiza001!")
+WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/div_MSG_FormatNonRespecté'), 1)
 

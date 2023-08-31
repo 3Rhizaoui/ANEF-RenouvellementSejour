@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'7703039411'</initValue>
+      <initValue>'7703039377'</initValue>
       <name>NumEtrangerVisa</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -37,7 +37,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://qualification.siaef.dgef.interieur.gouv.fr/sejour/#/accueil'</initValue>
-      <name>PortailAgentQualif</name>
+      <name>URLPortailAgentQualif</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -58,5 +58,15 @@
       <description></description>
       <initValue>'1PMTYE991215114515JY05'</initValue>
       <name>NumEphoto</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'RenouvellementDeTitreSéjour'</initValue>
+      <name>TypeTitreDeSejour</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0911223344'</initValue>
+      <name>NumeroTelephoneUsager</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

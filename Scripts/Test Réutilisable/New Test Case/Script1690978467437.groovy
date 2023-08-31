@@ -100,43 +100,43 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Vérification de l'étape :
-WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 
 
 /*********************************************************/
 
 // Cliquer sur le lien Se Connecter :
-WebUI.click(findTestObject('Object Repository/Connexion/Link_Se Connecter'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
 // Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
 WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Renseigner l'Identifiant et le mot de passe :
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Identifiant'), '765736576513765732')
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_MDP'), 'password')
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Identifiant'), '765736576513765732')
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_MDP'), 'password')
 
 
 /*********************************************************/
 
 
 //Première visite? Créez votre compte :
-WebUI.click(findTestObject('Object Repository/Connexion/Link_Créer Votre Compte'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Créer Votre Compte'))
 
 //Fournir Le Numéro de votre visa ou votre numéro étranger :
-WebUI.setText(findTestObject('Object Repository/Connexion/Input_Numéro étranger_Visa'), GlobalVariable.NumEtrangerVisa)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Numéro étranger_Visa'), GlobalVariable.NumEtrangerVisa)
 
 // Fournir La Date de début de validité :
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Début Validité/Input_Jour'), '01')
-WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion/Date Début Validité/Select_Mois'), 1)
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Début Validité/Input_Année'), '2022')
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Début Validité/Input_Jour'), '01')
+WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion Usager/Date Début Validité/Select_Mois'), 1)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Début Validité/Input_Année'), '2022')
 
 // Fournir La Date de fin de validité :
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Fin Validité/Input_Jour'), '31')
-WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion/Date Fin Validité/Select_Mois'), 12)
-WebUI.setText(findTestObject('Object Repository/Connexion/Date Fin Validité/Input_Année'), '2022')
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Fin Validité/Input_Jour'), '31')
+WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion Usager/Date Fin Validité/Select_Mois'), 12)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Fin Validité/Input_Année'), '2022')
 
 // Validation de la page pour la création du compte :
-WebUI.click(findTestObject('Object Repository/Connexion/Btn_Créer Un Compte'))
+WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Créer Un Compte'))
 /*********************************************************/
 
 /*listen to Network and listen to the page trigger 

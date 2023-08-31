@@ -55,8 +55,9 @@ import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 
-//Lancer un navigateur avec l'URL de l'application ANEF :
+//Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
 
+if (Portail == 'Usager') {
 WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 WebUI.maximizeWindow()
 
@@ -64,5 +65,21 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Vérification de l'étape :
-WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)}
 
+
+//Lancer un navigateur avec l'URL de l'application ANEF pour Portail Agent:
+if (Portail == 'Agent') {
+	WebUI.openBrowser(GlobalVariable.URLPortailAgentQualif)
+	WebUI.maximizeWindow()
+	
+	// Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
+	//WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	//Vérification de l'étape :
+	//WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
+	}
+	
+else {
+	println "Vérifier le Portail de votre connexion Usager ou Agent"
+}

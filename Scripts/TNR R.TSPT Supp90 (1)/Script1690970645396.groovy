@@ -17,10 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Réutilisable/Lancer URL ANEF'), [:], FailureHandling.STOP_ON_FAILURE)
-
+WebUI.callTestCase(findTestCase('Test Réutilisable/Lancer URL ANEF'), ['Portail':'Usager'], FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('Test Réutilisable/Créer Votre Compte'), [:], FailureHandling.STOP_ON_FAILURE)
-WebUI.callTestCase(findTestCase('Test Réutilisable/Identification'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Réutilisable/Identification'), ['Portail':'Usager'], FailureHandling.STOP_ON_FAILURE)
+
+
 
 WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/DemandeOuRenouvelleTitreSejour'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireTypeDeTitreDeSéjour'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireInformationsPersonnelles'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireMotifDeLaDemande'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireRessources'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireJustificatifs'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireRécapitulatif'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireConfirmation'), [:], FailureHandling.STOP_ON_FAILURE)
 

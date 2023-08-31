@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>807220bb-9443-4028-b50e-6311859952ff</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>414baa6c-6951-465a-bfbd-72e4ee870f31</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>414baa6c-6951-465a-bfbd-72e4ee870f31</id>
+      <masked>false</masked>
+      <name>Portail</name>
+   </variable>
 </TestCaseEntity>
