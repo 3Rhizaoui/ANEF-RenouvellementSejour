@@ -58,6 +58,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 //Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
 
 if (Portail == 'Usager') {
+
+//CustomKeywords.'tools.SetWebDriverChromeOptions.setChromeOptions'(GlobalVariable.downloadPath)
 WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 WebUI.maximizeWindow()
 

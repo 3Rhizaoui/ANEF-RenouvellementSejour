@@ -30,13 +30,12 @@ import internal.GlobalVariable as GlobalVariable
 //WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Confirmation_Usager/p_MessageDeConfirmationDemandeEnregistree'), 5)
 //WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Confirmation_Usager/p_MessageDeConfirmationDemandeEnregistree'), 20)
 
-//WebUI.click(findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDépôtDeDemande(PDF)'))
+WebUI.click(findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDépôtDeDemande(PDF)'))
 
 /*Ecouter les évennement NetWork et page
  * concatination URL création PW
- * 
+ */ 
 CustomKeywords.'tools.EventsNetWorkChromeConsole.RegisterListender'(true, true)
 CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
 CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
 CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
-*/

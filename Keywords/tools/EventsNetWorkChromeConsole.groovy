@@ -140,6 +140,7 @@ public class EventsNetWorkChromeConsole {
 					valueList.ResponseStatusCode = event.response.status.toString()
 					RequestMap.put(event.requestId, valueList)
 					WebUI.comment("RESP:" + RequestMap.size().toString())
+					println "valueList:==========" + valueList
 				}
 			}
 		})

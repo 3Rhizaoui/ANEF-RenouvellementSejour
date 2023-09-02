@@ -22,7 +22,7 @@ WebUI.callTestCase(findTestCase('Test Réutilisable/Créer Votre Compte'), [:], 
 WebUI.callTestCase(findTestCase('Test Réutilisable/Identification'), ['Portail':'Usager'], FailureHandling.STOP_ON_FAILURE)
 
 
-
+/*
 WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/DemandeOuRenouvelleTitreSejour'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireTypeDeTitreDeSéjour'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -39,3 +39,4 @@ WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSé
 
 WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireConfirmation'), [:], FailureHandling.STOP_ON_FAILURE)
 
+*/

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "7C1C4DA789E17E6120D5B485434BECDA",
+  "keywordClasses": [
+    {
+      "name": "tools.CustomChromeDriver",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
