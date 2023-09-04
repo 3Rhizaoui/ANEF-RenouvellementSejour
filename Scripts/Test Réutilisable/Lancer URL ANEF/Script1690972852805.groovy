@@ -59,9 +59,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 if (Portail == 'Usager') {
 
-//CustomKeywords.'tools.SetWebDriverChromeOptions.setChromeOptions'(GlobalVariable.downloadPath)
 WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
-WebUI.maximizeWindow()
 
 // Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
 WebUI.callTestCase(findTestCase('Test Réutilisable/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)

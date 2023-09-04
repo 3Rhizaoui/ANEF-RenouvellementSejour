@@ -24,49 +24,49 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Joindre un  justificatif ÉTAT CIVIL
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_EtatCivil'), "${RunConfiguration.getProjectDir()}/Data Files/EtatCivil.pdf")
-
+WebUI.delay(02)
 // Joindre un  justificatif Passeport
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), "${RunConfiguration.getProjectDir()}/Data Files/Passeport.pdf")
-
+WebUI.delay(02)
 // Joindre un  justificatif Photographie d'identité récente
 WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
 WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
-
+WebUI.delay(02)
 // Joindre un  justificatif DOMICILIATION
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), "${RunConfiguration.getProjectDir()}/Data Files/Domiciliation.pdf")
-
+WebUI.delay(02)
 
 //**** Joindre un  justificatif MOTIF DE SÉJOUR
 //Certificat d'inscription ou justificatif de préinscription auprès de votre établissement d'enseignement supérieur
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_CertificatDInscription'), "${RunConfiguration.getProjectDir()}/Data Files/CertificatDInscription.pdf")
-
+WebUI.delay(02)
 //Relevé de notes
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ReleveDeNotes'), "${RunConfiguration.getProjectDir()}/Data Files/Relevé de notes.pdf")
-
+WebUI.delay(02)
 //Diplôme obtenu en France
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DiplomeObtenuEnFrance'), "${RunConfiguration.getProjectDir()}/Data Files/Diplôme obtenu en France.pdf")
-
+WebUI.delay(02)
 //Attestation de réussite
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDeReussite'), "${RunConfiguration.getProjectDir()}/Data Files/Attestation de réussite.pdf")
-
+WebUI.delay(02)
 //****RESSOURCES*****
 //En cas de ressources multiples, veuillez joindre le justificatif de chacune des ressources.
 //pris en charge par un tiers
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_PrisEnChargeParUnTiers'), "${RunConfiguration.getProjectDir()}/Data Files/pris en charge par un tiers.pdf")
-
+WebUI.delay(02)
 //Vous êtes boursier
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_boursier'), "${RunConfiguration.getProjectDir()}/Data Files/boursier.pdf")
-
+WebUI.delay(02)
 //Vous êtes salarié
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_salarie'), "${RunConfiguration.getProjectDir()}/Data Files/salarié.pdf")
-
+WebUI.delay(02)
 //Vous disposez de ressources suffisantes
 WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_RessourcesSuffisantes'), "${RunConfiguration.getProjectDir()}/Data Files/ressources suffisantes.pdf")
-
+WebUI.delay(02)
 //Validation
 WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 

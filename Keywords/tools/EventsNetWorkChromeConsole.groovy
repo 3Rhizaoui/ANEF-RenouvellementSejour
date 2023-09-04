@@ -117,7 +117,7 @@ public class EventsNetWorkChromeConsole {
 
 					RequestMap.put(event.requestId, requestEnty)
 					WebUI.comment("REQ:" + RequestMap.size().toString())
-					println "requestEnty:==========" + requestEnty
+
 				}
 			}
 		})
@@ -140,7 +140,6 @@ public class EventsNetWorkChromeConsole {
 					valueList.ResponseStatusCode = event.response.status.toString()
 					RequestMap.put(event.requestId, valueList)
 					WebUI.comment("RESP:" + RequestMap.size().toString())
-					println "valueList:==========" + valueList
 				}
 			}
 		})
@@ -153,12 +152,9 @@ public class EventsNetWorkChromeConsole {
 		myNetwork.enable()
 		page.enable()
 		WebDriver driver = DriverFactory.getWebDriver()
-		//driver.manage().getCookies()
 		driver.manage().getCookieNamed("Authorization")
 		String CookiesBody =driver.manage().getCookies().toString()
 		String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
-		println "new Cookie >>>>  " + CookiesBody
-		println "Mon Token substringBetween >>>>  " + Token
 		driver.manage().addCookie(ck)
 		GlobalVariable.Token = Token
 	}

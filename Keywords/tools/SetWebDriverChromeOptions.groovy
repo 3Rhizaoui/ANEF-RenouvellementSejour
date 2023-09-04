@@ -29,16 +29,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebDriver
 import internal.GlobalVariable as GlobalVariable
 import internal.GlobalVariable
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions
+import com.kms.katalon.core.webui.driver.DriverFactory
 
-public class SetWebDriverChromeOptions {
-	public WebDriver setChromeOptions(File folder){
-		
+
+public class SetWebDriverChromeOptions  {
+	public WebDriver setChromeOptions(){
+
 		ChromeOptions options = new ChromeOptions();
 		String downloadPath = RunConfiguration.getProjectDir() + "/Data Files/Downloads"
 		//String downloadPath = folder.getAbsolutePath()
 		//String downloadsPath = System.getProperty("user.home") + "/Downloads";
 		println ("downloadpath "+downloadPath)
-		
+
 		Map<String, Object> chromePrefs = new HashMap<String, Object>()
 		chromePrefs.put("profile.default_content_settings.popups", 0);
 		chromePrefs.put("download.default_directory", downloadPath)
@@ -57,9 +62,12 @@ public class SetWebDriverChromeOptions {
 		DesiredCapabilities cap = DesiredCapabilities.chrome()
 		cap.setCapability(ChromeOptions.CAPABILITY, options)
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		
+
 		System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 		WebDriver driver = new ChromeDriver(cap);
+		driver.navigate(GlobalVariable.URL_ANEFQualif)
+		//WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
 		return driver
+
 	}
 }

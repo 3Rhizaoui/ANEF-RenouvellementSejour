@@ -22,20 +22,96 @@ import org.testng.Assert as Assert
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.configuration.RunConfiguration
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import tools.pdfReader2 as pdfReader2
+import org.apache.pdfbox.pdfparser.PDFParser
+import org.apache.pdfbox.pdmodel.PDDocument
+import org.apache.pdfbox.text.PDFTextStripper
+import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.util.KeywordUtil
+import internal.GlobalVariable
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import org.apache.pdfbox.pdfparser.PDFParser
+import org.apache.pdfbox.pdmodel.PDDocument
+import org.apache.pdfbox.text.PDFTextStripper
+import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testcase.TestCase
+import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.apache.pdfbox.text.PDFTextStripperByArea;
+import internal.GlobalVariable as GlobalVariable
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.text.PDFTextStripperByArea;
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.util.KeywordUtil
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.io.File;
+import java.io.IOException;
+import internal.GlobalVariable
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.configuration.RunConfiguration
+
 
 /**** Vérification de la présence de Message de Confirmation :
  * Votre demande a bien été enregistrée et vous allez recevoir un accusé de réception. 
  */
 
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Confirmation_Usager/p_MessageDeConfirmationDemandeEnregistree'), 5)
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Confirmation_Usager/p_MessageDeConfirmationDemandeEnregistree'), 20)
-
+CustomKeywords.'tools.deleteFileDirectory.cleanDirectory'()
+WebUI.delay(02)
 WebUI.click(findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDépôtDeDemande(PDF)'))
-
-/*Ecouter les évennement NetWork et page
- * concatination URL création PW
+WebUI.delay(02)
+/*J'ouvre ma confirmation de dépôt de demande (PDF)
  */ 
-CustomKeywords.'tools.EventsNetWorkChromeConsole.RegisterListender'(true, true)
-CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
-CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
-CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
+/*Ecouter les évennement NetWork et page
+ * Comparer les deux NumEtrangerVisa du Pdf Généré et de la création de la demande de renouvellemnt du Titre de séjour 
+ * */
+def FileName = CustomKeywords.'tools.deleteFileDirectory.FilesgetName'()
+CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)
+WebUI.comment(null)
+
+if (CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)) {
+	KeywordUtil.markPassed("Le Numéro Etrangr est :"+ GlobalVariable.NumEtrangerVisa + "=" + GlobalVariable.NumEtrangerVisaInPDF )
+}  else {
+	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ GlobalVariable.NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
+}
+

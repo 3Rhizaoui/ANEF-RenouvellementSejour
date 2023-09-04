@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'7703039384'</initValue>
+      <initValue>'7703039395'</initValue>
       <name>NumEtrangerVisa</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -78,5 +78,10 @@
       <description></description>
       <initValue>'12 Rue des 3 Moulins 77000 Melun'</initValue>
       <name>AdresseUsager</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>NumEtrangerVisaInPDF</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
