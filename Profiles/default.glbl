@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'7703039395'</initValue>
+      <initValue>'7703039404'</initValue>
       <name>NumEtrangerVisa</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -71,12 +71,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Users\\hhizaoui\\.git\\NewProject\\ANEF-AutomatizationProject\\Data Files\\Downloads'</initValue>
+      <initValue>''</initValue>
       <name>downloadPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'12 Rue des 3 Moulins 77000 Melun'</initValue>
+      <initValue>'1 Rue Saint-Louis 77300 Fontaineblea'</initValue>
       <name>AdresseUsager</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

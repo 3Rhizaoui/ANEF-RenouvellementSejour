@@ -62,14 +62,14 @@ public class pdfReader2 {
 		// Now create matcher object.
 		for(String line:lines){
 			Matcher m = r.matcher(line);
-			 
+
 			if (line.contains(searchString)) {
 				MATCH= true
 				System.out.println("MATCH OKKKK");
 				System.out.println("Found value: " + line );
 				MATCH = true
 				String[] NumEtrangerVisaInPDF=line.split (":")
-				GlobalVariable.NumEtrangerVisaInPDF = NumEtrangerVisaInPDF[1] 
+				GlobalVariable.NumEtrangerVisaInPDF = NumEtrangerVisaInPDF[1]
 
 			}else {
 				System.out.println("NO MATCH");

@@ -47,7 +47,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
@@ -58,6 +57,9 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 //Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
 
 if (Portail == 'Usager') {
+
+
+CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 
 WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 

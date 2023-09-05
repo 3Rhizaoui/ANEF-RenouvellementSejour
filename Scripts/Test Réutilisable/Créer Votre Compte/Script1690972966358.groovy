@@ -48,14 +48,13 @@ WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Créer Un Com
 
 // Création de Email utilisateur
 def MonEmail = GlobalVariable.NumEtrangerVisa + '@yopmail.com'
-println('MonEmail = ' + MonEmail)
-WebUI.delay(5)
+WebUI.delay(2)
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Email'), MonEmail)
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmeEmail'), MonEmail)
 WebUI.click(findTestObject('Object Repository/Connexion Usager/span_btn_ValiderEmail'))
-WebUI.delay(5)
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_span_RetourAccueil'))
-WebUI.delay(5)
+WebUI.delay(2)
 /*Ecouter les évennement NetWork et page
  * concatination URL création PW
  * */
@@ -65,7 +64,6 @@ CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
 CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
 //Navigation à URL Création MDP
 String URL_CreationMDP = GlobalVariable.URLpw + GlobalVariable.Token
-println('URL_CreationMDP = ' + URL_CreationMDP)
 WebUI.navigateToUrl(URL_CreationMDP)
 
 // Vérification de la conformité du nouveau MDP
