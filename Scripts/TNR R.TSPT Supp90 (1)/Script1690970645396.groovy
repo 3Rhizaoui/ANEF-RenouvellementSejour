@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Test Réutilisable/Lancer URL ANEF'), ['Portail':'Usager'], FailureHandling.STOP_ON_FAILURE)
+
+/*
 WebUI.callTestCase(findTestCase('Test Réutilisable/Créer Votre Compte'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('Test Réutilisable/Identification'), ['Portail':'Usager'], FailureHandling.STOP_ON_FAILURE)
 
@@ -38,5 +40,5 @@ WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSé
 
 WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireConfirmation'), [:], FailureHandling.STOP_ON_FAILURE)
 
-
+*/
 

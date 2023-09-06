@@ -48,12 +48,8 @@ public class CapabilitiesSpecificDownloadDirectory {
 		KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
 		prefs.put("download.default_directory", customizedDownloadDirectory)
 		prefs.put("download_dir", customizedDownloadDirectory)
-		prefs.put("download.directory_upgrade", true)
 		prefs.put("download.prompt_for_download", false)
-		prefs.put("plugins.always_open_pdf_externally", true)
 		prefs.put("profile.default_content_settings.popups", "0")
-		prefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", "1")
-		prefs.put("plugins.plugins_disabled", "Chrome PDF Viewer")
 
 		RunConfiguration.setWebDriverPreferencesProperty("prefs", prefs)
 		RunConfiguration.setWebDriverPreferencesProperty("args", [
