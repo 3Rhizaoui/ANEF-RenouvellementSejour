@@ -92,26 +92,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.configuration.RunConfiguration
 
 
+/** modify WebUI.* keywords which take TestObject as arg0
+* so that they call Highlight.on() automatically
+*/
+CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
+
 /**** Vérification de la présence de Message de Confirmation :
  * Votre demande a bien été enregistrée et vous allez recevoir un accusé de réception. 
  */
 
 CustomKeywords.'tools.deleteFileDirectory.cleanDirectory'()
 WebUI.delay(02)
-WebUI.click(findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDépôtDeDemande(PDF)'))
+'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
+TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDépôtDeDemande(PDF)')
+CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
 WebUI.delay(02)
-/*J'ouvre ma confirmation de dépôt de demande (PDF)
+CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
+WebUI.delay(2)
+/**J'ouvre ma confirmation de dépôt de demande (PDF)
  */ 
-/*Ecouter les évennement NetWork et page
+/**Ecouter les évennement NetWork et page
  * Comparer les deux NumEtrangerVisa du Pdf Généré et de la création de la demande de renouvellemnt du Titre de séjour 
  * */
+/*
 def FileName = CustomKeywords.'tools.deleteFileDirectory.FilesgetName'()
 CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)
 WebUI.comment(null)
 
 if (CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)) {
-	KeywordUtil.markPassed("Le Numéro Etrangr est :"+ GlobalVariable.NumEtrangerVisa + "=" + GlobalVariable.NumEtrangerVisaInPDF )
+	KeywordUtil.markPassed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "=" + GlobalVariable.NumEtrangerVisaInPDF )
 }  else {
-	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ GlobalVariable.NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
+	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
 }
-
+*/

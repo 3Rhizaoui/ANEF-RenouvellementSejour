@@ -6,12 +6,11 @@
    <elementGuidId>b4d6baed-1732-4a58-9bea-aa114926e4f3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;connexion_link&quot;]|/html/body/app-root/div/app-portal/app-nav-new/nav/div[3]/div/div/ul/li/a/span[2]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;connexion_link&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,21 +6,13 @@
    <elementGuidId>09e6ecf8-c4d8-439a-83c5-fc4f7c48c6ac</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;ui-accordiontab-10-content&quot;]/div/app-actions-bar/div/div[2]/button/span</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/app-actions-bar/div/div[2]/button/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element_is_shadow_root</name>
-      <type>Main</type>
-      <value>true</value>
-      <webElementGuid>a7f0d2f3-e896-4374-93a5-46c451a561fa</webElementGuid>
-   </webElementProperties>
 </WebElementEntity>

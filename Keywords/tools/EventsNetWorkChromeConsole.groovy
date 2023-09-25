@@ -37,15 +37,10 @@ import internal.GlobalVariable as GlobalVariable
 import java.awt.Color
 import java.awt.Rectangle
 import groovy.json.JsonOutput as JsonOutput
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.Cookie
-import org.openqa.selenium.WebDriver
 import org.apache.commons.lang3.StringUtils
 
 

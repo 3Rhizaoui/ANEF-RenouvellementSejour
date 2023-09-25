@@ -6,12 +6,11 @@
    <elementGuidId>9dc94b59-1138-44d8-81c9-17acba07066e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/app-root/div/app-portal/main/app-theme-v2/div/app-demande/div/div[3]/app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/div/div[1]/anef-input-text/div/div/div[1]/div/input</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@ng-reflect-name=&quot;PHOTO_NUMBER&quot;]|//*[@ng-reflect-name=&quot;PHOTO_IDENTITE&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

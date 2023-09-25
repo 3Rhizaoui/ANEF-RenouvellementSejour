@@ -29,6 +29,16 @@ import internal.GlobalVariable
 public class CapabilitiesSpecificDownloadDirectory {
 	/**
 	 * Executes before every test case starts.
+	 * --remote-allow-origins=*
+	 *  * "--no-sandbox",
+	 "--start-maximized",
+	 "--incognito",
+	 "--disable-popup-blocking",
+	 "--disable-extensions",
+	 "--disable-gpu",
+	 "--remote-allow-origins=*",
+	 "--test-type",
+	 "--disable-dev-shm-usage"
 	 */
 	@Keyword
 	def SetSpecificDownloadDirectoryIfNeeded() {
@@ -49,21 +59,11 @@ public class CapabilitiesSpecificDownloadDirectory {
 		prefs.put("download.default_directory", customizedDownloadDirectory)
 		prefs.put("download_dir", customizedDownloadDirectory)
 		prefs.put("download.prompt_for_download", false)
-		prefs.put("profile.default_content_settings.popups", "0")
+		//prefs.put("profile.default_content_settings.popups", "0")
 
 		RunConfiguration.setWebDriverPreferencesProperty("prefs", prefs)
-		RunConfiguration.setWebDriverPreferencesProperty("args", [
-			"--no-sandbox",
-			"--start-maximized",
-			"--incognito",
-			"--disable-popup-blocking",
-			"--disable-extensions",
-			"--disable-gpu",
-			"--remote-allow-origins=*",
-			"--test-type",
-			"--disable-dev-shm-usage"
-		])
-		RunConfiguration.setWebDriverPreferencesProperty("useAutomationExtension", "false")
+		RunConfiguration.setWebDriverPreferencesProperty("args", ["--start-maximized", "--incognito", "--remote-allow-origins=*", "--start-maximized"])
+		RunConfiguration.setWebDriverPreferencesProperty("useAutomationExtension", "true")
 	}
 }
 

@@ -6,12 +6,11 @@
    <elementGuidId>5e978119-9ad9-44df-b307-e4f3f174e6a1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*/div/div/anef-tile[1]/a/span/span[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//app-portal//app-portal-root/app-default-root-content/div/div/anef-tile[1]/a/span/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

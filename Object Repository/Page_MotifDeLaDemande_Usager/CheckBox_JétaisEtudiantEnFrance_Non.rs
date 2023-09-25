@@ -6,12 +6,11 @@
    <elementGuidId>c11453bc-925c-4839-962b-e5a222935078</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/app-root/div/app-portal/main/app-theme-v2/div/app-demande/div/div[3]/app-motif-scolaire/div[2]/div/p-accordion/div/form/p-accordiontab[1]/div[2]/div/div/div/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;ui-accordiontab-4-content&quot;]/div/div/div[1]/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

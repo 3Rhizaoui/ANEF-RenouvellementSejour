@@ -18,7 +18,38 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+/** modify WebUI.* keywords which take TestObject as arg0
+ * 
+ * @author hhizaoui
+ *so that they call Highlight.on() automatically
+ */
+CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
+WebUI.delay(3)
+'Choisir le branchement demandé par mes JDD réutilisables  '
+WebUI.doubleClick(findTestObject('Object Repository/Page_Accueil_Usager/btn_DemandeOuRenouvelleTitreSejour'))
 
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Usager/btn_DemandeOuRenouvelleTitreSejour'))
-WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_Moi-même'))
+/** Je sollicite le renouvellement de ce titre- dans l'un des cades suivant 
+ * 1-Moi-même (à partir de 16 ans) [$Moi-même]
+ * 2- soit Pour:Un mineur bénéficiaire de la protection internationale de plus de 16 ans
+ *   a)En qualité de parent / représentant légal à titre individuel  [$Représentant Légal Personne Morale]
+ *   b)En qualité de représentant légal en tant que personne morale mandatée  [$Parent Représentant Légal Individuel]
+ */
+WebUI.delay(3)
+switch (GlobalVariable.PourQui) {
+
+	case 'Moi-même':
+		WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_Moi-même'))
+	break
+	case 'Représentant Légal Personne Morale' :
+		WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_MineurBénéficiaire'))
+		WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_ReprésentantLégalPersonneMorale'))
+	break
+	case 'Parent Représentant Légal Individuel' :
+		WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_MineurBénéficiaire'))
+		WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/Check_ParentReprésentantLégalIndividuel'))
+	default :
+	break
+	}
+
+'Je valide Mon choix'
 WebUI.click(findTestObject('Object Repository/Page_Accueil_Usager/btn_JeContinue'))

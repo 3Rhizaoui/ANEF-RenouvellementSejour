@@ -38,29 +38,18 @@ import internal.GlobalVariable as GlobalVariable
 import java.awt.Color
 import java.awt.Rectangle
 import groovy.json.JsonOutput as JsonOutput
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.github.kklisura.cdt.launch.ChromeLauncher;
-import com.github.kklisura.cdt.protocol.commands.Network;
-import com.github.kklisura.cdt.protocol.commands.Page;
-import com.github.kklisura.cdt.protocol.types.network.RequestPattern;
-import com.github.kklisura.cdt.services.ChromeDevToolsService;
 import com.github.kklisura.cdt.services.ChromeService;
 import com.github.kklisura.cdt.services.types.ChromeTab;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List
 import java.util.Map
-import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.support.events.EventFiringWebDriver as EventFiringWebDriver
-import groovy.json.JsonOutput;
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 

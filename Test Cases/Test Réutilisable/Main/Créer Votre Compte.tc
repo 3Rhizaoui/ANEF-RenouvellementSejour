@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Créer Votre Compte</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e382e07c-948d-4a2b-923d-57ac327be55a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cb9093f3-ea64-450c-bee2-81aeb478ac8f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7136d6cf-b028-4f81-8b85-0415e3d958cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b7f73567-ac36-4c38-b789-d59e0ae9c578</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>cb9093f3-ea64-450c-bee2-81aeb478ac8f</id>
+      <masked>false</masked>
+      <name>NumEtrangerVisa</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>7136d6cf-b028-4f81-8b85-0415e3d958cb</id>
+      <masked>false</masked>
+      <name>DateDebut</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>b7f73567-ac36-4c38-b789-d59e0ae9c578</id>
+      <masked>false</masked>
+      <name>DateFin</name>
+   </variable>
+</TestCaseEntity>

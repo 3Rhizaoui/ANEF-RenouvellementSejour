@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//*[@id=&quot;content&quot;]/app-demandes-sejour/div/div[2]/div[1]/input</value>
-      <webElementGuid>dfdf33fb-e237-437f-8acc-a17064d978bc</webElementGuid>
+      <webElementGuid>533c4b7e-0fb7-4cbe-be80-a52fe9d0eeba</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

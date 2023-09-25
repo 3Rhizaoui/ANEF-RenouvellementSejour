@@ -17,22 +17,15 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import org.openqa.selenium.UnexpectedAlertBehaviour as UnexpectedAlertBehaviour
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import org.openqa.selenium.remote.CapabilityType as CapabilityType
 import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebDriver
 import internal.GlobalVariable as GlobalVariable
-import internal.GlobalVariable
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
-import com.kms.katalon.core.webui.driver.DriverFactory
+
 
 
 public class SetWebDriverChromeOptions  {

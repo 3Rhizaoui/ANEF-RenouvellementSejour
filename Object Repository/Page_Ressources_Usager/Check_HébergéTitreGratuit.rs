@@ -6,12 +6,11 @@
    <elementGuidId>c4347d8b-0cde-42db-8671-ef949ba1b493</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/app-root/div/app-portal/main/app-theme-v2/div/app-demande/div/div[3]/app-ressources/div[2]/div/p-accordion/div/p-accordiontab/div[2]/div/form/div[1]/div/div/anef-input-check/div/div/p-checkbox/div/div[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//app-demande//app-ressources//anef-input-check/div/div/p-checkbox/div/div[2]|//app-demande-visiteur//app-ressources-visiteur//anef-input-check//p-checkbox/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

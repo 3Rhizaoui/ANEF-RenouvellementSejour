@@ -6,11 +6,11 @@
    <elementGuidId>330090cd-da2b-4456-9541-626435ec2c7a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*/div[2]/p-radiobutton/div/div[2]/span</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;ui-accordiontab-1-content&quot;]/div/div/div[1]/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

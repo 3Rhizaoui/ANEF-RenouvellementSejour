@@ -17,20 +17,57 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Je vérifie les informations que j'ai saisies en validant les 4 parties afin d'envoyer ma demande. Une fois la demande envoyée, je ne peux plus la modifier.
+/** modify WebUI.* keywords which take TestObject as arg0
+ * @author hhizaoui
+ *so that they call Highlight.on() automatically
+ */
+CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
-//INFORMATIONS PERSONNELLES (1/4)
-WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
-WebUI.delay(02)
-//MOTIF DE LA DEMANDE (2/4)
-WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
-WebUI.delay(02)
-//RESSOURCES (3/4)
-WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
-WebUI.delay(02)
-//JUSTIFICATIFS (4/4)
-WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_4sur4'))
-WebUI.delay(02)
-//Validation
-WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-WebUI.delay(02)
+/**Je vérifie les informations que j'ai saisies en validant les 4 parties afin d'envoyer ma demande. Une fois la demande envoyée, je ne peux plus la modifier.
+ *INFORMATIONS PERSONNELLES (1/4)
+ *MOTIF DE LA DEMANDE (2/4)
+ *RESSOURCES (3/4)
+ *JUSTIFICATIFS (4/4)
+ */
+if(((TypeTitreDeSejour)== "RenouvellementDeTitreSéjour") || ((TypeTitreDeSejour)== "Visiteur")) {
+	//INFORMATIONS PERSONNELLES (1/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
+	WebUI.delay(02)
+
+	//MOTIF DE LA DEMANDE (2/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
+	WebUI.delay(02)
+
+	//RESSOURCES (3/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
+	WebUI.delay(02)
+
+	//JUSTIFICATIFS (4/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_4sur4'))
+	WebUI.delay(02)
+
+	/**Validation
+	*/
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	WebUI.delay(02)
+}
+
+if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
+
+	//INFORMATIONS PERSONNELLES (1/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
+	WebUI.delay(02)
+	
+	//MOTIF DE LA DEMANDE (2/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
+	WebUI.delay(02)
+	
+	//RESSOURCES (3/4)
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
+	WebUI.delay(02)
+
+	/**Validation
+	 */
+	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	WebUI.delay(02)
+}

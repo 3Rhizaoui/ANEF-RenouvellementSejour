@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9d3dbe9f-4df8-495f-9ac3-aea1a3c81c0d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>056d0c8e-4085-4e03-a57b-3fdc677586ea</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>056d0c8e-4085-4e03-a57b-3fdc677586ea</id>
+      <masked>false</masked>
+      <name>TypeTitreDeSejour</name>
+   </variable>
 </TestCaseEntity>

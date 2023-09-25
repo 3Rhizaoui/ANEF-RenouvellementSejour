@@ -17,8 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.check(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_1_Non'))
-WebUI.check(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_2_Non'))
-WebUI.setText(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/Input_AdresseUsager'), GlobalVariable.AdresseUsager)
-WebUI.setText(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/Input_NumeroDeTelephone'), GlobalVariable.NumeroTelephoneUsager)
+
+/** modify WebUI.* keywords which take TestObject as arg0
+ * 
+ * @author hhizaoui
+ *so that they call Highlight.on() automatically
+ */
+CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
+
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_1_Non'), 1, FailureHandling.OPTIONAL)) {
+	WebUI.check(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_1_Non'), FailureHandling.OPTIONAL)}
+	WebUI.delay(2)
+
+
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_2_Non'), 1, FailureHandling.OPTIONAL)) {
+	WebUI.check(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_2_Non'), FailureHandling.OPTIONAL)}
+	WebUI.delay(2)
+
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_DesEnfantsACharge_Non'), 1, FailureHandling.OPTIONAL)) {
+	WebUI.check(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/CheckBox_DesEnfantsACharge_Non'), FailureHandling.OPTIONAL)}
+	WebUI.delay(2)
+
+WebUI.setText(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/Input_AdresseUsager'), AdresseUsager)
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/select_AdresseUsager'))
+WebUI.setText(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/Input_NumeroDeTelephone'), NumeroTelephoneUsager)
 WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))

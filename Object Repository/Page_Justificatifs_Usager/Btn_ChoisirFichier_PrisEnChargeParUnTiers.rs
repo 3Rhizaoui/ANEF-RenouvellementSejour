@@ -6,12 +6,11 @@
    <elementGuidId>09e1b808-526e-46c6-9548-791dd504e5ec</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;ui-accordiontab-9-content&quot;]/div/div[2]/app-pieces-jointes[1]/div/span[1]/input</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[3]/div[2]/div/div[2]/app-pieces-jointes[1]/div/span[1]/input|//app-demande-visiteur//app-justificatifs-visiteur//p-accordiontab[3]/div[2]/div/div[2]/div/app-pieces-jointes/div/span[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

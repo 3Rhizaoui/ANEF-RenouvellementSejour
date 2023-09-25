@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*/div[2]/app-radio-tree-button/div/p-radiobutton/div/div[2]/span</value>
+         <value>//div[1]/fieldset/div[2]/app-radio-tree-button/div/p-radiobutton/div/div[2]/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

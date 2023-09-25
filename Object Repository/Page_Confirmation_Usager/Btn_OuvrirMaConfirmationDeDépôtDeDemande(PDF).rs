@@ -6,12 +6,11 @@
    <elementGuidId>2f201ffc-9d6a-45e6-b3ae-29d2635e0f89</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/app-root/div/app-portal/main/app-theme-v2/div/app-demande/div/div[3]/app-confirmation/app-confirmation-step/div/div[1]/button</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//app-demande/div/div[3]/app-confirmation/app-confirmation-step/div/div[1]/button|//app-demande-ptsq/div/div[3]/app-confirmation-step/div/div[1]/button|//app-demande-visiteur/div/div[3]/app-confirmation-step/div/div[1]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

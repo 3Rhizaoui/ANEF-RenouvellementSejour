@@ -1,9 +1,15 @@
 {
-  "keywordFileContentHash": "DD347634832CBB11C5325F7EAD6F23BB",
+  "keywordFileContentHash": "5396A66646873AA00129BA5A71F78CE8",
   "keywordClasses": [
     {
       "name": "tools.CustomWebDriverFactory",
-      "keywordMethods": []
+      "keywordMethods": [
+        {
+          "name": "createWebDriver",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
     }
   ],
   "javadocParsed": true

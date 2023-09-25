@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>4b4d3713-4629-45d9-b9a3-6cf8c1f4f100</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dba79cf0-2db8-4f54-952d-ba250ecd29b8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'TypeTitreDeSejour'</defaultValue>
+      <description></description>
+      <id>dba79cf0-2db8-4f54-952d-ba250ecd29b8</id>
+      <masked>false</masked>
+      <name>TypeTitreDeSejour</name>
+   </variable>
 </TestCaseEntity>
