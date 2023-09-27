@@ -124,7 +124,7 @@ switch (TypeTitreDeSejour) {
 //'Cas d'un Passeport Talent'
 	case 'ChercheurEtChercheurEnMobilité' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_ChercheurEtChercheurEnMobilité'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_ChercheurEtChercheurEnMobilite'))
 	break
 	case 'InvestisseurOuPorteurProjetEconomique' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
