@@ -199,7 +199,7 @@ TestObject Btn_SuspendreInstruction =findTestObject('Object Repository/Page_Veri
 WebUI.verifyElementPresent(Btn_SuspendreInstruction, 1)
 WebUI.verifyElementClickable(Btn_SuspendreInstruction)
 
-TestObject Btn_ClôturerLaDemande =findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_ClôturerLaDemande')
+TestObject Btn_ClôturerLaDemande =findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_CloturerLaDemande')
 WebUI.verifyElementPresent(Btn_ClôturerLaDemande, 1)
 WebUI.verifyElementClickable(Btn_ClôturerLaDemande)
 

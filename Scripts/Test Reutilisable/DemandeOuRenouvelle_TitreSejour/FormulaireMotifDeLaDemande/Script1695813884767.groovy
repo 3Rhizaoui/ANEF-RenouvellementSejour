@@ -130,7 +130,7 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
 	'INFORMATIONS RELATIVES À LA QUALIFICATION '
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_IntituleDuDiplome'),"Intitulé du diplôme ")
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_DateDeDelivrance_JJ'),'10')
-	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_DateDeDélivrance_MM'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_DateDeDelivrance_MM'))
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/click-select_DateDeDelivrance_MM'))
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_DateDeDelivrance_AAAA'), '2010')
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_EtablissementDeDélivrance'), "Établissement De Délivrance")
