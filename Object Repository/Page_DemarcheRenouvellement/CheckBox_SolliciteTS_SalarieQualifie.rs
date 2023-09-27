@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CheckBox_SolliciteRenouvellementDeTitreSéjour</name>
+   <name>CheckBox_SolliciteTS_SalarieQualifie</name>
    <tag></tag>
-   <elementGuidId>852e5f33-4558-4785-8abc-e6c5ba897218</elementGuidId>
+   <elementGuidId>26bb9412-2ccf-45f4-bf4d-fbb510985746</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*/div[1]/div/p-radiobutton/div/div[2]/span</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div/form/div[1]/div[2]/fieldset/div[3]/app-radio-tree-button/div/div/div[1]/app-radio-tree-button/div/p-radiobutton/div/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

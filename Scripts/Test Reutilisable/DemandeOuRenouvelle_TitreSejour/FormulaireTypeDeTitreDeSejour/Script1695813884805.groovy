@@ -50,7 +50,7 @@ WebUI.delay(10)
 switch (TypeTitreDeSejour) {
 
 	case 'RenouvellementDeTitreSéjour':
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteRenouvellementDeTitreSéjour'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteRenouvellementDeTitreSejour'))
 		'Valider mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.delay(3)
@@ -78,7 +78,7 @@ switch (TypeTitreDeSejour) {
 /**********************************************/
 	case 'TS-PT-SalariéQualifié' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifie'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalarieQualifie'))
 		'Valider mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieQualifie'))
@@ -89,7 +89,7 @@ switch (TypeTitreDeSejour) {
 	break
 	case 'TS-PT-SalariéEntrepriseInnovante ' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifie'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalarieQualifie'))
 		'Valider mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieEntrepriseInnovante'))
@@ -100,7 +100,7 @@ switch (TypeTitreDeSejour) {
 	break
 	case 'TS-PT-CarteBleueEuropéenne' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifie'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalarieQualifie'))
 		'Valider mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropeenne'))
@@ -111,7 +111,7 @@ switch (TypeTitreDeSejour) {
 	break
 	case 'TS-PT-SalariéEnMission' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifie'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalarieQualifie'))
 		'Valider mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieEnMission'))
@@ -140,7 +140,7 @@ switch (TypeTitreDeSejour) {
 	break
 	case 'PersonneDeRenomméeInternationale' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PersonneDeRenomméeInternationale'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PersonneDeRenommeeInternationale'))
 	break
 
 	
@@ -148,16 +148,16 @@ switch (TypeTitreDeSejour) {
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_ProtectionInternationale'))
 	break
 	case 'SolliciteTS_salarie-HorsPasseportTalent-HorsCitoyenUE' :
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_salarie-HorsPasseportTalent-HorsCitoyenUE'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_salarieHorsPasseportTalentHorsCitoyenUE'))
 	break
 	case 'MembreDeFamille' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamille'))
 	break
 	case 'SituationDeVulnérabilité' :
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SituationDeVulnérabilite'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SituationDeVulnerabilite'))
 	break
 	case 'SolliciteTS_CitoyenDeUnionEuropéenne' :
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_CitoyenDeUnionEuropéenne'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_CitoyenDeUnionEuropeenne'))
 	break
 	case 'SolliciteTS_RessortissantEtrangerNeEnFrance' :
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_RessortissantEtrangerNeEnFrance'))
@@ -166,7 +166,7 @@ switch (TypeTitreDeSejour) {
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MotifHumanitaire'))
 	break
 	case 'SolliciteTS_JeuneAuPair-AncienCombattant-RetraiteAyantTravailleEnFrance' :
-		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_JeuneAuPair-AncienCombattant-RetraiteAyantTravailleEnFrance'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_JeuneAuPairAncienCombattantRetraiteAyantTravailleEnFrance'))
 	default :
 	break
 }

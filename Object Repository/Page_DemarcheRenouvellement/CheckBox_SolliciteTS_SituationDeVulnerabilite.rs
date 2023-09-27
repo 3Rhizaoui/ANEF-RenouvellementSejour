@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CheckBox_SolliciteTS_CitoyenDeUnionEuropéenne</name>
+   <name>CheckBox_SolliciteTS_SituationDeVulnerabilite</name>
    <tag></tag>
-   <elementGuidId>c6c535a8-5939-4921-8bef-adbd45e43388</elementGuidId>
+   <elementGuidId>ffd4230f-2ca0-40b9-9fbf-0622e0674c90</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*/div[8]/app-radio-tree-button/div/p-radiobutton/div/div[2]/span</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*/div[7]/app-radio-tree-button/div/p-radiobutton/div/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
