@@ -66,7 +66,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confiden
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Creer Votre Compte'))
 println ("NumEtrangerVisa = "+ NumEtrangerVisa)
 "Fournir Le Numéro de votre visa ou votre numéro étranger :"
-WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Numero étranger_Visa'), NumEtrangerVisa)
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Numero etranger_Visa'), NumEtrangerVisa)
 
 " Fournir La Date de début de validité :"
 GlobalVariable.DateDebut=  DateDebut
