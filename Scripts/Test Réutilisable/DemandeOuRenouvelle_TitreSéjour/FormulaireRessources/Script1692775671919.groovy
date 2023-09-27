@@ -41,4 +41,4 @@ WebUI.check(findTestObject('Object Repository/Page_Ressources_Usager/Check_Hébe
 
 /**Validation
  */
-WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))

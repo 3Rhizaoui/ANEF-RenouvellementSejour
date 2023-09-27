@@ -76,7 +76,7 @@ if(TypeTitreDeSejour == "RenouvellementDeTitreSéjour")  {
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_RessourcesSuffisantes'), SpecificDownloadDirectory +'RessourcesSuffisantes.pdf')
 	WebUI.delay(02)
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 }
 
 'Documents Justificatifs Correspondant à votre situation : Visiteur'
@@ -114,7 +114,7 @@ if(TypeTitreDeSejour == "Visiteur") {
 	WebUI.delay(02)
 	
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 }
 
 
@@ -142,6 +142,6 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DiplomeObtenuEnFrance'), SpecificDownloadDirectory +'DiplomeObtenuEnFrance.pdf')
 	WebUI.delay(02)
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	}
 	

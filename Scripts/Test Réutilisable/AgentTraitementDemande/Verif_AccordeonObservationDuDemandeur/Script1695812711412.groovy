@@ -28,7 +28,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 /**Vérification De l'Accordéon OBSERVATIONS DU DEMANDEUR
  */
-TestObject AccordeonObservatuionDuDemandeur=findTestObject('Object Repository/Page_Vérif_AccordeonObservatuionDuDemandeur_Agent/span_AccordeonObservatuionDuDemandeur')
+TestObject AccordeonObservatuionDuDemandeur=findTestObject('Object Repository/Page_Verif_AccordeonObservatuionDuDemandeur_Agent/span_AccordeonObservatuionDuDemandeur')
 WebUI.verifyElementPresent(AccordeonObservatuionDuDemandeur, 1)
 
 String TitreAccordeonObservatuionDuDemandeur = WebUI.getText(AccordeonObservatuionDuDemandeur)

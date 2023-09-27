@@ -31,43 +31,43 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
  */
 if(((TypeTitreDeSejour)== "RenouvellementDeTitreSéjour") || ((TypeTitreDeSejour)== "Visiteur")) {
 	//INFORMATIONS PERSONNELLES (1/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
 	WebUI.delay(02)
 
 	//MOTIF DE LA DEMANDE (2/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
 	WebUI.delay(02)
 
 	//RESSOURCES (3/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
 	WebUI.delay(02)
 
 	//JUSTIFICATIFS (4/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_4sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_4sur4'))
 	WebUI.delay(02)
 
 	/**Validation
 	*/
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
 	WebUI.delay(02)
 }
 
 if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
 
 	//INFORMATIONS PERSONNELLES (1/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
 	WebUI.delay(02)
 	
 	//MOTIF DE LA DEMANDE (2/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4'))
 	WebUI.delay(02)
 	
 	//RESSOURCES (3/4)
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4'))
 	WebUI.delay(02)
 
 	/**Validation
 	 */
-	WebUI.click(findTestObject('Object Repository/Page_Récapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
 	WebUI.delay(02)
 }

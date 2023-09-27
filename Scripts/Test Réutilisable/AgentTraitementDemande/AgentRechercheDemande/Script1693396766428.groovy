@@ -54,18 +54,18 @@ WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/div_Tab_tr1NumD
 WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_AffecterLaDemande'))
 WebUI.delay(3)
 'Vérification de la Popup Reaffecter La Demande'
-TestObject PopUpReaffecter =findTestObject('Object Repository/Page_Vérif_AccordéonInformationsGénéralesDemande_Agent/PopUp_ReaffecterLaDemande')
+TestObject PopUpReaffecter =findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUp_ReaffecterLaDemande')
 WebUI.verifyElementPresent(PopUpReaffecter, 1)
 String TitrePopUpReaffecter = WebUI.getText(PopUpReaffecter)
 if(!TitrePopUpReaffecter.contains('RÉAFFECTER LA DEMANDE')) {
 	KeywordUtil.markFailed("Vérifier le titre de PopUp RÉAFFECTER LA DEMANDE.")}
 else {KeywordUtil.markPassed("Le Titre de PopUp est bien Affiché : RÉAFFECTER LA DEMANDE.")}
 
-TestObject ReaffecterA =findTestObject('Object Repository/Page_Vérif_AccordéonInformationsGénéralesDemande_Agent/List_ReaffecterA')
+TestObject ReaffecterA =findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/List_ReaffecterA')
 WebUI.verifyElementPresent(ReaffecterA, 1)
 WebUI.click(ReaffecterA)
-WebUI.click(findTestObject('Object Repository/Page_Vérif_AccordéonInformationsGénéralesDemande_Agent/select_ElementList_ReaffecterA'))
-TestObject PopUpReaffecterBtnConfirmer =findTestObject('Object Repository/Page_Vérif_AccordéonInformationsGénéralesDemande_Agent/btn_PopUpReaffecterConfirmer')
+WebUI.click(findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/select_ElementList_ReaffecterA'))
+TestObject PopUpReaffecterBtnConfirmer =findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpReaffecterConfirmer')
 WebUI.verifyElementPresent(PopUpReaffecterBtnConfirmer, 1)
 WebUI.click(PopUpReaffecterBtnConfirmer)
 'retrouver la demande'

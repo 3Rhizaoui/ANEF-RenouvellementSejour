@@ -50,123 +50,123 @@ WebUI.delay(10)
 switch (TypeTitreDeSejour) {
 
 	case 'RenouvellementDeTitreSéjour':
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteRenouvellementDeTitreSéjour'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteRenouvellementDeTitreSéjour'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.delay(3)
 		'2 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 	break
 	case 'étudiant' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteEtudiant'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteEtudiant'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		'2 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 	break
 	case 'Visiteur' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_Visiteur'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_Visiteur'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		WebUI.delay(3)
 		'2 éme Validation de mon choix'
-		WebUI.doubleClick(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.doubleClick(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 
 	break
 
 //'Cas d'un Passeport Talent Salarié Qualifié'
 /**********************************************/
 	case 'TS-PT-SalariéQualifié' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéQualifié'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéQualifié'))
 		'2 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		'3 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 	break
 	case 'TS-PT-SalariéEntrepriseInnovante ' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéEntrepriseInnovante'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéEntrepriseInnovante'))
 		'2 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		'3 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 	break
 	case 'TS-PT-CarteBleueEuropéenne' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropéenne'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropéenne'))
 		'2 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		'3 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 	break
 	case 'TS-PT-SalariéEnMission' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SalariéQualifié'))
 		'Valider mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéEnMission'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéEnMission'))
 		'2 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_JeCommence'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 		'3 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/Btn_JeContinue'))
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 	break
 /***************************************************/
 //'Cas d'un Passeport Talent'
 	case 'ChercheurEtChercheurEnMobilité' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_ChercheurEtChercheurEnMobilité'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_ChercheurEtChercheurEnMobilité'))
 	break
 	case 'InvestisseurOuPorteurProjetEconomique' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_InvestisseurOuPorteurProjetEconomique'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_InvestisseurOuPorteurProjetEconomique'))
 	break
 	case 'Artiste' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_Artiste'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_Artiste'))
 	break
 	case 'MembreDeFamillePasseportTalent' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamillePasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamillePasseportTalent'))
 	break
 	case 'PersonneDeRenomméeInternationale' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_PersonneDeRenomméeInternationale'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PersonneDeRenomméeInternationale'))
 	break
 
 	
 	case 'bénéficiaireProtectionInternationale' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_ProtectionInternationale'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_ProtectionInternationale'))
 	break
 	case 'SolliciteTS_salarie-HorsPasseportTalent-HorsCitoyenUE' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_salarie-HorsPasseportTalent-HorsCitoyenUE'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_salarie-HorsPasseportTalent-HorsCitoyenUE'))
 	break
 	case 'MembreDeFamille' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamille'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamille'))
 	break
 	case 'SituationDeVulnérabilité' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_SituationDeVulnérabilite'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_SituationDeVulnérabilite'))
 	break
 	case 'SolliciteTS_CitoyenDeUnionEuropéenne' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_CitoyenDeUnionEuropéenne'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_CitoyenDeUnionEuropéenne'))
 	break
 	case 'SolliciteTS_RessortissantEtrangerNeEnFrance' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_RessortissantEtrangerNeEnFrance'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_RessortissantEtrangerNeEnFrance'))
 	break
 	case 'SolliciteTS_MotifHumanitaire' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_MotifHumanitaire'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MotifHumanitaire'))
 	break
 	case 'SolliciteTS_JeuneAuPair-AncienCombattant-RetraiteAyantTravailleEnFrance' :
-		WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_JeuneAuPair-AncienCombattant-RetraiteAyantTravailleEnFrance'))
+		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_JeuneAuPair-AncienCombattant-RetraiteAyantTravailleEnFrance'))
 	default :
 	break
 }

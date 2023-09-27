@@ -101,7 +101,7 @@ if(TypeTitreDeSejour == "RenouvellementDeTitreSéjour") {
 	WebUI.check(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_ValidationDAnnee'))
 	
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
 }
 
@@ -119,7 +119,7 @@ if(TypeTitreDeSejour == "Visiteur") {
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_AvoirSouscritAUneAssuranceMaladie'))
 
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
 }
 
@@ -159,9 +159,9 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_NumSiretEmployeur'),"44449577400531")
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_ConfirmerNuméroDeSiret'))
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
 }
 
@@ -196,7 +196,7 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéEntrepriseInnovante") {
 	
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_ConfirmerNuméroDeSiret'))
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
 }
 
@@ -206,7 +206,7 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéEntrepriseInnovante") {
 /********************************************************************/
 if ((TypeTitreDeSejour)== "TS-PT-CarteBleueEuropéenne") {
 		
-	WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropéenne'))
+	WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropéenne'))
 	"INFORMATIONS RELATIVES À LA QUALIFICATION :"
 	WebUI.check(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_DiplomeSanctionnantAuMoins3AnneesEtudesSupérieures_NON'))
 	
@@ -231,7 +231,7 @@ if ((TypeTitreDeSejour)== "TS-PT-CarteBleueEuropéenne") {
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_NumSiretEmployeur'),"44449577400531")
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_ConfirmerNuméroDeSiret'))
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
 }
 
@@ -242,7 +242,7 @@ if ((TypeTitreDeSejour)== "TS-PT-CarteBleueEuropéenne") {
 if ((TypeTitreDeSejour)== "TS-PT-SalariéEnMission") {
 	"INFORMATIONS RELATIVES À L'ACTIVITÉ PROFESSIONNELLE :"
 	
-	WebUI.check(findTestObject('Object Repository/Page_DémarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéEnMission'))
+	WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalariéEnMission'))
 	'INFORMATIONS RELATIVES AU GROUPE :'
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_NomDuGroupe'), 'INFORMATIONS RELATIVES AU GROUPE ')
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_SiteInternetEmployeur'), "https://www.capgemini.com/fr-fr/")
@@ -273,6 +273,6 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéEnMission") {
 	'Vous devez disposer d’un salaire brut minimal de 41 022,72  euros annuel.'
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_SalaireAnnuelBrut'),'42000')
 	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DémarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	WebUI.delay(2)
 }
