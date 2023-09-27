@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Input_EtablissementDeDélivrance</name>
+   <tag></tag>
+   <elementGuidId>b831b607-b4ab-435f-aae7-1f3451e5d19a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@ng-reflect-name=&quot;ETABLISSEMENT_DELIVRANCE&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

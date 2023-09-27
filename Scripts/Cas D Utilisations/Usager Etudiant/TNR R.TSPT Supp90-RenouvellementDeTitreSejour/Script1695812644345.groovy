@@ -24,51 +24,51 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 
 'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent' 
-WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Lancer URL ANEF'), [Profiles:'Usager'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [Profiles:'Usager'], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Créer un Compte Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Creer Votre Compte'), [NumEtrangerVisa:NumEtrangerVisa, DateDebut:DateDebut, DateFin:DateFin], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [NumEtrangerVisa:NumEtrangerVisa, DateDebut:DateDebut, DateFin:DateFin], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Identification Usager ou Agent'
-WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Identification'), [Profiles:'Usager', NumEtrangerVisa:NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [Profiles:'Usager', NumEtrangerVisa:NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour une Demande Ou Renouvelle Titre De Sejour Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/DemandeOuRenouvelleTitreSejour'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/DemandeOuRenouvelleTitreSejour'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Type De Titre De Séjour Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireTypeDeTitreDeSejour'), [TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireTypeDeTitreDeSejour'), [TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Informations Personnelles Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireInformationsPersonnelles'), [AdresseUsager:AdresseUsager, NumeroTelephoneUsager:NumeroTelephoneUsager], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireInformationsPersonnelles'), [AdresseUsager:AdresseUsager, NumeroTelephoneUsager:NumeroTelephoneUsager], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Motif De La Demande Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireMotifDeLaDemande'), [TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireMotifDeLaDemande'), [TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
 
  if((TypeTitreDeSejour == "RenouvellementDeTitreSéjour") || (TypeTitreDeSejour == "Visiteur")) {
 'Appel Brique Réutilisable pour Remplir Le Formulaire Ressources Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireRessources'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRessources'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Justificatifs Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireJustificatifs'), [TypeTitreDeSejour:TypeTitreDeSejour, NumEphoto:NumEphoto], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireJustificatifs'), [TypeTitreDeSejour:TypeTitreDeSejour, NumEphoto:NumEphoto], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireRecapitulatif'), [TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif'), [TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
-WebUI.callTestCase(findTestCase('Test Réutilisable/DemandeOuRenouvelle_TitreSéjour/FormulaireConfirmation'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [:], FailureHandling.STOP_ON_FAILURE)
 /*
 'Appel Brique Réutilisable Agent Traitement et Recherche de Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Réutilisable/AgentTraitementDemande/AgentRechercheDemande'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Informations Générales de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Réutilisable/AgentTraitéementDemande/Vérif_AccordéonInformationsGénéralesDemande'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitéementDemande/Vérif_AccordéonInformationsGénéralesDemande'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Observation Du Demandeur de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Réutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Etat Civil Du Demandeur de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Réutilisable/AgentTraitementDemande/Verif_AccordéonEtatCivilDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordéonEtatCivilDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
 */
 
 
