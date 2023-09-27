@@ -65,11 +65,11 @@ public class MyStringTools {
 	 *
 	 * @return String[] 
 	 */
-	def String[]  ParsedDateDébut(){
+	def String[]  ParsedDateDebut(){
 		// Fournir La Date de début de validité :
-		def DateDébut= GlobalVariable.DateDebut
-		String[] ParsedDateDébut = DateDébut.split ("/")
-		return ParsedDateDébut
+		def DateDebut= GlobalVariable.DateDebut
+		String[] ParsedDateDebut = DateDebut.split ("/")
+		return ParsedDateDebut
 	}
 
 	/***

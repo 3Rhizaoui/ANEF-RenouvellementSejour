@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'7703039851'</initValue>
       <name>NumEtrangerVisa</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,12 +26,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'01/12/2022'</initValue>
       <name>DateDebut</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'30/11/2023'</initValue>
       <name>DateFin</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -61,12 +61,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'RenouvellementDeTitreSéjour'</initValue>
       <name>TypeTitreDeSejour</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'1PMTYE991215114515JY05'</initValue>
       <name>NumeroTelephoneUsager</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -76,7 +76,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'2 rue des 3 moulins 77000 melun'</initValue>
       <name>AdresseUsager</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

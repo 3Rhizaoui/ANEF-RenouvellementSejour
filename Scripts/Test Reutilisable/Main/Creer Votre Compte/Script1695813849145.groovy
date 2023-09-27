@@ -70,11 +70,11 @@ WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Numero et
 
 " Fournir La Date de début de validité :"
 GlobalVariable.DateDebut=  DateDebut
-def DateDébut = CustomKeywords.'tools.MyStringTools.ParsedDateDébut'()
-ParsedDateDébut = CustomKeywords.'tools.MyStringTools.ParsedDateDébut'()
-WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Debut Validite/Input_Jour'), ParsedDateDébut[0])
-WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion Usager/Date Debut Validite/Select_Mois'), ParsedDateDébut[1])
-WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Debut Validite/Input_Annee'), ParsedDateDébut[2])
+def DateDebut = CustomKeywords.'tools.MyStringTools.ParsedDateDebut'()
+ParsedDateDebut = CustomKeywords.'tools.MyStringTools.ParsedDateDebut'()
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Debut Validite/Input_Jour'), ParsedDateDebut[0])
+WebUI.selectOptionByIndex(findTestObject('Object Repository/Connexion Usager/Date Debut Validite/Select_Mois'), ParsedDateDebut[1])
+WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Debut Validite/Input_Annee'), ParsedDateDebut[2])
 
 " Fournir La Date de fin de validité :"
 GlobalVariable.DateFin=  DateFin
