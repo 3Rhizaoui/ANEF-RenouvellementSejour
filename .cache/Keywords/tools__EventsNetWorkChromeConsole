@@ -1,9 +1,13 @@
 {
-  "keywordFileContentHash": "A46F6515FB9511263C4CE0572A6A0ACE",
+  "keywordFileContentHash": "639D12A28681ED113836FB4246669C90",
   "keywordClasses": [
     {
       "name": "tools.EventsNetWorkChromeConsole",
       "keywordMethods": [
+        {
+          "name": "InitializeWebDriveDeleteAllCookies",
+          "parameters": []
+        },
         {
           "name": "RegisterListender",
           "parameters": [
@@ -33,23 +37,19 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/***\n\t * Enable listen to Network and listen to the page trigger\n\t * This sets the possibilities later for the Chrome listener\n\t * \n\t * @param listenPage true if the listener for Page should be turned on\n\t * @param listenNetwork if the listener for network should be turned on\n\t * @return null\n\t */"
+          ]
         },
         {
           "name": "ResetDataCollection",
-          "parameters": [],
-          "javadoc": "/***\n\t * Reset the currently collected data\n\t * \n\t * @return null\n\t */"
+          "parameters": []
         },
         {
           "name": "WaitForRequestData",
-          "parameters": [],
-          "javadoc": "/***\n\t * wait for the collection of the request data\n\t * \t\n\t * @return null\n\t */"
+          "parameters": []
         },
         {
           "name": "GetResponse",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "GetRequestString",
@@ -67,8 +67,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/***\n\t * get the collected request data as string\n\t * @param dumpToFile true if the dumping to file should be turned on\n\t * @return returns the request Json string as original not encoded since groovy can not handle them when parsing\n\t */"
+          ]
         },
         {
           "name": "DumpToFile",
@@ -99,8 +98,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/***\n\t * Dump a string to a file\n\t *  \n\t * @param dumpFileName Name of the file\n\t * @param data string data that should be written to the file\n\t * @return null\n\t * */"
+          ]
         },
         {
           "name": "TakePageScreenshot",
@@ -118,8 +116,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/***\n\t * Take a screenshot of the page as it is\n\t * @param outputFilename dump file location\n\t * @return NULL\n\t * */"
+          ]
         },
         {
           "name": "TakeFullPageScreenshot",
@@ -137,11 +134,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/***\n\t * Set the page of the browser to the full size of the content\n\t * Remove the scroll bar of the given page\n\t * Take a picture of it \n\t * \t\n\t * @param devToolsService\n\t * @param outputFilename\n\t * @return NULL\n\t */"
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

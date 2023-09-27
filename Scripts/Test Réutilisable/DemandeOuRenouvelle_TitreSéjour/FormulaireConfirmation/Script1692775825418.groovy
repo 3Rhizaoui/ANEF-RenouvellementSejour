@@ -125,3 +125,9 @@ if (CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)) {
 	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
 }
 */
+/***
+ * Initialize the Services with the current page and current Network & clear Browser Cookies & clear Browser Cache
+ * @return null
+ */
+WebUI.delay(20)
+

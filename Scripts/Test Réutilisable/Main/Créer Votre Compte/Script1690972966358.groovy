@@ -44,6 +44,11 @@ import com.kms.katalon.core.exception.StepErrorException;
 import com.kms.katalon.core.exception.StepFailedException;
 import com.kms.katalon.core.logging.ErrorCollector;
 import com.kms.katalon.core.logging.KeywordLogger;
+import java.net.URI;
+import java.util.concurrent.TimeUnit;
+import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
+import org.eclipse.jetty.websocket.client.WebSocketClient;
+
 
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
@@ -113,10 +118,12 @@ WebUI.delay(2)
 /**Ecouter les évennement NetWork et page
  * concatination URL création PW
  * */
+'Delete all cookies after browser is opened'
+// wait for socket connection to close
 CustomKeywords.'tools.EventsNetWorkChromeConsole.RegisterListender'(true, true)
 CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
 CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
-CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
+
 
 'Navigation à URL Création MDP'
 String URL_CreationMDP = GlobalVariable.URLpw + GlobalVariable.Token
@@ -130,4 +137,5 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_
 WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CréerMDP'))
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_span_RetourAccueil'))
-
+//WebUI.deleteAllCookies()
+CustomKeywords.'tools.EventsNetWorkChromeConsole.InitializeWebDriveDeleteAllCookies'()

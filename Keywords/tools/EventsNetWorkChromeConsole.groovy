@@ -42,9 +42,35 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.Cookie
 import org.apache.commons.lang3.StringUtils
-
-
-
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.net.URI;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import javax.net.ssl.SSLContext;
+import org.eclipse.jetty.client.HttpClient;
+import org.eclipse.jetty.util.component.LifeCycle;
+import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketConnect;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketError;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage;
+import org.eclipse.jetty.websocket.api.annotations.WebSocket;
+import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
+import org.eclipse.jetty.websocket.client.WebSocketClient;
+import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.remote.DesiredCapabilities
+import java.time.format.DateTimeFormatter
+import com.github.kklisura.cdt.protocol.commands.Runtime
+import com.github.kklisura.cdt.protocol.events.runtime.ConsoleAPICalled
+import com.github.kklisura.cdt.protocol.events.runtime.ConsoleAPICalledType
+import com.github.kklisura.cdt.protocol.types.runtime.RemoteObject
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import com.kms.katalon.core.util.KeywordUtil
 
 
 public class EventsNetWorkChromeConsole {
@@ -55,6 +81,7 @@ public class EventsNetWorkChromeConsole {
 	static Map RequestMap = [:]
 	static ChromeDevToolsService cdts
 	static boolean isInitialized
+	static Runtime runtime
 
 	/***
 	 * Initialize the console with the current page
@@ -65,10 +92,31 @@ public class EventsNetWorkChromeConsole {
 	 */
 	def InitializeConsole(){
 		cdts= CdpUtils.getService()
+		runtime = cdts.getRuntime()
+		runtime.enable()
 		ResetDataCollection()
 		page = cdts.getPage()
 		myNetwork = cdts.getNetwork()
 		isInitialized = true;
+	}
+	/***
+	 * Initialize the Services with the current page and current Network & clear Browser Cookies & clear Browser Cache
+	 * This can be done after the opening of the page and Network
+	 *
+	 * @return null
+	 */
+	@Keyword
+	def InitializeWebDriveDeleteAllCookies(){
+
+		/** Wait for on load event */
+		cdts.close()
+		/** Navigate to the Application Under Test */
+		cdts.waitUntilClosed()
+		WebUI.delay(3)
+		'Delete all cookies after browser is opened'
+		//myNetwork.clearBrowserCache()
+		//myNetwork.clearBrowserCookies()
+		//WebUI.deleteAllCookies()
 	}
 
 	/***
@@ -135,6 +183,7 @@ public class EventsNetWorkChromeConsole {
 					valueList.ResponseStatusCode = event.response.status.toString()
 					RequestMap.put(event.requestId, valueList)
 					WebUI.comment("RESP:" + RequestMap.size().toString())
+					println ("Ma liste est ======" + valueList)
 				}
 			}
 		})
@@ -152,6 +201,7 @@ public class EventsNetWorkChromeConsole {
 		String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
 		driver.manage().addCookie(ck)
 		GlobalVariable.Token = Token
+		println ("mon Token ======== " + Token)
 	}
 
 	/***
