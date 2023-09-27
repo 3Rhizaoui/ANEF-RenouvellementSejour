@@ -32,7 +32,7 @@ WebUI.delay(2)
  WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
 "Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
-WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 
 "Renseigner l'Identifiant et le mot de passe :"
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Identifiant'), NumEtrangerVisa)

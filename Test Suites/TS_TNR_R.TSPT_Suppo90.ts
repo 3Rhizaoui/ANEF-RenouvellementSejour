@@ -22,7 +22,7 @@
          <masked>false</masked>
          <name>NumEtrangerVisa</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-RenouvellementDeTitreSéjour</testCaseId>
+      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-RenouvellementDeTitreSejour</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</id>
@@ -93,7 +93,7 @@
          <masked>false</masked>
          <name>NumEtrangerVisa</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-TS-PT-SalariéQualifié</testCaseId>
+      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-TS-PT-SalarieQualifie</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>062c7d13-f3d5-4cae-a77d-477cb5aab7ef</id>

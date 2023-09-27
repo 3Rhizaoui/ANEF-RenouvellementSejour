@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Créer Votre Compte</name>
+   <name>Creer Votre Compte</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e382e07c-948d-4a2b-923d-57ac327be55a</testCaseGuid>

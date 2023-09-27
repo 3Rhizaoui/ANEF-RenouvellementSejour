@@ -60,7 +60,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
  WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
 " Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
-WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Erreur lié à la confidentialité'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 
 "Première visite? Créez votre compte :"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Créer Votre Compte'))
@@ -130,7 +130,7 @@ String URL_CreationMDP = GlobalVariable.URLpw + GlobalVariable.Token
 WebUI.navigateToUrl(URL_CreationMDP)
 
 'Vérification de la conformité du nouveau MDP'
-WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Vérif_FormatNewPW'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Réutilisable/Main/Verif_FormatNewPW'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Renseigner PDM Valide'
 WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_Password'), GlobalVariable.Password)

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>FormulaireTypeDeTitreDeSéjour</name>
+   <name>FormulaireRecapitulatif</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4b4d3713-4629-45d9-b9a3-6cf8c1f4f100</testCaseGuid>
+   <testCaseGuid>39e9eb75-4626-4f60-aa10-a4d533decfc1</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>dba79cf0-2db8-4f54-952d-ba250ecd29b8</variableId>
+      <variableId>6477198d-7b72-4b75-ad10-1a889c05b4b8</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'TypeTitreDeSejour'</defaultValue>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
       <description></description>
-      <id>dba79cf0-2db8-4f54-952d-ba250ecd29b8</id>
+      <id>6477198d-7b72-4b75-ad10-1a889c05b4b8</id>
       <masked>false</masked>
       <name>TypeTitreDeSejour</name>
    </variable>
