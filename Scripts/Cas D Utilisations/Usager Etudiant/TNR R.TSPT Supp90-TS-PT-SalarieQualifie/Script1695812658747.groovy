@@ -68,7 +68,7 @@ WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDem
 WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Etat Civil Du Demandeur de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordéonEtatCivilDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonEtatCivilDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
 */
 
 
