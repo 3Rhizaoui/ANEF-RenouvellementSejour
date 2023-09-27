@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DéclarationChangemantDeSituation</name>
+   <name>DeclarationChangemantDeSituation</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>99058125-57b4-426d-8863-3f241a7fa3d7</testCaseGuid>
