@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_EtablissementDeDélivrance</name>
+   <name>Input_EtablissementDeDelivrance</name>
    <tag></tag>
    <elementGuidId>b831b607-b4ab-435f-aae7-1f3451e5d19a</elementGuidId>
    <selectorCollection>

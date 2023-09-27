@@ -133,7 +133,7 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_DateDeDelivrance_MM'))
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/click-select_DateDeDelivrance_MM'))
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_DateDeDelivrance_AAAA'), '2010')
-	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_EtablissementDeDélivrance'), "Établissement De Délivrance")
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_EtablissementDeDelivrance'), "Établissement De Délivrance")
 	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_NatureDeVotreEmploi'), "Veuillez préciser la nature de votre emploi")
 	
 	'ÉLÉMENTS DU CONTRAT DE TRAVAIL :'
