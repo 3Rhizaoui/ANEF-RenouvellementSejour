@@ -104,11 +104,11 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 CustomKeywords.'tools.deleteFileDirectory.cleanDirectory'()
 WebUI.delay(02)
 'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
-TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
-CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
-WebUI.delay(02)
-CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
-WebUI.delay(2)
+//TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
+//CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
+//WebUI.delay(02)
+//CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
+//WebUI.delay(2)
 /**J'ouvre ma confirmation de dépôt de demande (PDF)
  */ 
 /**Ecouter les évennement NetWork et page

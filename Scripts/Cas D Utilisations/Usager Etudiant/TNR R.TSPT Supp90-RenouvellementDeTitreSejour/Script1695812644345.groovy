@@ -22,7 +22,6 @@ import org.openqa.selenium.Keys as Keys
  */
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
-
 'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent' 
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [Profiles:'Usager'], FailureHandling.STOP_ON_FAILURE)
 
