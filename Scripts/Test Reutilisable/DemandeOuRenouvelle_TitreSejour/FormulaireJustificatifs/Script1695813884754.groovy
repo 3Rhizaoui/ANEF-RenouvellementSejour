@@ -79,6 +79,7 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 }
 
+
 'Documents Justificatifs Correspondant à votre situation : Visiteur'
 /********************************************************************************************************/
 
