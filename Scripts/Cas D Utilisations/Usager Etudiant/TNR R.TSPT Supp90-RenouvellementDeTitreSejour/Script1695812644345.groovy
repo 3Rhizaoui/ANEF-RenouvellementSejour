@@ -54,6 +54,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejo
 'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
 WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif'), [Titre:Titre, TypeTitreDeSejour:TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
 
+
 'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
 WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [:], FailureHandling.STOP_ON_FAILURE)
 /*
