@@ -48,7 +48,7 @@ if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour
 
 	/**Validation
 	*/
-	//WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
 	WebUI.delay(02)
 }
 
@@ -68,6 +68,6 @@ if (((TypeTitreDeSejour)== "TS-PT-SalariéQualifie") && ((Titre == 'Visiteur') |
 
 	/**Validation
 	 */
-	//WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
 	WebUI.delay(02)
 }
