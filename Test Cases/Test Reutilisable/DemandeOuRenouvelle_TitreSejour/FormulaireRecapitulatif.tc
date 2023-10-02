@@ -11,11 +11,24 @@
       <value></value>
       <variableId>6477198d-7b72-4b75-ad10-1a889c05b4b8</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9a9d9b21-6978-4bb5-ad9d-60d4873e93df</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
       <description></description>
       <id>6477198d-7b72-4b75-ad10-1a889c05b4b8</id>
       <masked>false</masked>
       <name>TypeTitreDeSejour</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>9a9d9b21-6978-4bb5-ad9d-60d4873e93df</id>
+      <masked>false</masked>
+      <name>Titre</name>
    </variable>
 </TestCaseEntity>

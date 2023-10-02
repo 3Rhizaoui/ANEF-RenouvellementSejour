@@ -89,4 +89,9 @@
       <initValue>'Moi-même'</initValue>
       <name>PourQui</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Visiteur'</initValue>
+      <name>Titre</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

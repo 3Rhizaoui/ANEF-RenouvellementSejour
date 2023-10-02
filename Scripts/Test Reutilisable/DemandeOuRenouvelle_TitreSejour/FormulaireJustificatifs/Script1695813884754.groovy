@@ -33,7 +33,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 'Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour'
 /********************************************************************************************************/
 
-if(TypeTitreDeSejour == "RenouvellementDeTitreSéjour")  {
+if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
 	WebUI.delay(02)
 	'Joindre un  justificatif Passeport'
@@ -82,7 +82,7 @@ if(TypeTitreDeSejour == "RenouvellementDeTitreSéjour")  {
 'Documents Justificatifs Correspondant à votre situation : Visiteur'
 /********************************************************************************************************/
 
-if(TypeTitreDeSejour == "Visiteur") {
+if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur')) || ((TypeTitreDeSejour == 'Visiteur') && (Titre == 'Etudiant'))) {
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
 	WebUI.delay(02)
 	'Joindre un  justificatif Passeport'

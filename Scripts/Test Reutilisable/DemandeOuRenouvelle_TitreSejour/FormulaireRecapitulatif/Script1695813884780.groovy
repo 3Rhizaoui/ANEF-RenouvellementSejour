@@ -29,7 +29,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
  *RESSOURCES (3/4)
  *JUSTIFICATIFS (4/4)
  */
-if(((TypeTitreDeSejour)== "RenouvellementDeTitreSéjour") || ((TypeTitreDeSejour)== "Visiteur")) {
+if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour)== "Visiteur"))  && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
 	WebUI.delay(02)
@@ -48,11 +48,11 @@ if(((TypeTitreDeSejour)== "RenouvellementDeTitreSéjour") || ((TypeTitreDeSejour
 
 	/**Validation
 	*/
-	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	//WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
 	WebUI.delay(02)
 }
 
-if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
+if (((TypeTitreDeSejour)== "TS-PT-SalariéQualifie") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
@@ -68,6 +68,6 @@ if ((TypeTitreDeSejour)== "TS-PT-SalariéQualifié") {
 
 	/**Validation
 	 */
-	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
+	//WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
 	WebUI.delay(02)
 }

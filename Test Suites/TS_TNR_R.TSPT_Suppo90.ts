@@ -28,7 +28,7 @@
          <id>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <value>1-2</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
@@ -80,6 +80,12 @@
          <type>DATA_COLUMN</type>
          <value>NumEphoto</value>
          <variableId>bb5b94fc-e0b3-4503-9869-caa02c8bdacf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Titre</value>
+         <variableId>008d7d85-8a40-45ee-add1-6b7823e45d41</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
