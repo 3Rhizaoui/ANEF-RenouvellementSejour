@@ -10,7 +10,8 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//app-justificatifs-visiteur//app-justificatif-titre-sejour//app-pieces-jointes//span[1]/input|//app-justificatifs-ptsq//app-justificatif-titre-sejour//app-pieces-jointes//span[1]/input|//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input</value>
+         <value>//app-justificatifs-visiteur//app-justificatif-titre-sejour//app-pieces-jointes//span[1]/input|//app-justificatifs-ptsq//app-justificatif-titre-sejour//app-pieces-jointes//span[1]/input|//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//*[@id=&quot;ui-accordiontab-7-content&quot;]/div/div[1]/div/app-pieces-jointes[1]/div/button/span</value>
-      <webElementGuid>41c7a8b4-cfde-455f-b4e2-978661e19df6</webElementGuid>
+      <webElementGuid>9a9e0cc0-485f-4fa9-9e98-3f0c9faf7f9f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

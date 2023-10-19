@@ -24,25 +24,23 @@ import internal.GlobalVariable
 
 public class deleteFileDirectory {
 
-	
-	
+
+
 	@Keyword
 	def cleanDirectory() {
 		File directory = new File(RunConfiguration.getProjectDir() + "/Data Files/Downloads");
 		FileUtils.cleanDirectory(directory);
 	}
-	
+
 	@Keyword
 	def FilesgetName (){
-	File repertoire = new File(RunConfiguration.getProjectDir() + "/Data Files/Downloads")
-	def FileName =""
-	for (File file : repertoire.listFiles())
-	{
-		System.out.println(file.getName());
-		FileName = file.getName()
+		File repertoire = new File(RunConfiguration.getProjectDir() + "/Data Files/Downloads")
+		def FileName =""
+		for (File file : repertoire.listFiles()) {
+			System.out.println(file.getName());
+			FileName = file.getName()
+		}
+		return FileName
 	}
-	return FileName
-	}
-	
 }
 

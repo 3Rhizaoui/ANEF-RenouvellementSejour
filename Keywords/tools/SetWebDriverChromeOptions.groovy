@@ -25,42 +25,76 @@ import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By.ByCssSelector
+import com.github.kklisura.cdt.protocol.commands.Emulation as Emulation
+import com.github.kklisura.cdt.protocol.commands.Page as Page
+import com.github.kklisura.cdt.protocol.commands.Network as Network
+import com.github.kklisura.cdt.protocol.commands.Log as Log
+import com.github.kklisura.cdt.protocol.commands.Overlay as Overlay
+import com.github.kklisura.cdt.protocol.commands.DOM as DOM
+import com.github.kklisura.cdt.protocol.types.dom.PerformSearch
+import com.github.kklisura.cdt.protocol.types.dom.RGBA
+import com.github.kklisura.cdt.protocol.types.network.ErrorReason as ErrorReason
+import com.github.kklisura.cdt.protocol.types.network.RequestPattern as RequestPattern
+import com.github.kklisura.cdt.protocol.types.overlay.HighlightConfig
+import com.github.kklisura.cdt.protocol.types.page.CaptureScreenshotFormat as CaptureScreenshotFormat
+import com.github.kklisura.cdt.services.ChromeDevToolsService as ChromeDevToolsService
+import com.github.kklisura.cdt.protocol.events.network.DataReceived as DataReceived
+import com.katalon.cdp.CdpUtils as CdpUtils
+import java.awt.Color
+import java.awt.Rectangle
+import groovy.json.JsonOutput as JsonOutput
+import org.openqa.selenium.Cookie
+import org.apache.commons.lang3.StringUtils
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.net.URI;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import javax.net.ssl.SSLContext;
+import org.eclipse.jetty.client.HttpClient;
+import org.eclipse.jetty.util.component.LifeCycle;
+import org.eclipse.jetty.util.ssl.SslContextFactory;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketConnect;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketError;
+import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage;
+import org.eclipse.jetty.websocket.api.annotations.WebSocket;
+import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
+import org.eclipse.jetty.websocket.client.WebSocketClient;
+import java.time.format.DateTimeFormatter
+import com.github.kklisura.cdt.protocol.commands.Runtime
+import com.github.kklisura.cdt.protocol.events.runtime.ConsoleAPICalled
+import com.github.kklisura.cdt.protocol.events.runtime.ConsoleAPICalledType
+import com.github.kklisura.cdt.protocol.types.runtime.RemoteObject
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import org.testng.IExecutionListener;
+import com.kms.katalon.core.util.KeywordUtil
 
 
+public class GetWebCookieByNamedCollected  {
+	public WebDriver GetWebCookie(){
 
-public class SetWebDriverChromeOptions  {
-	public WebDriver setChromeOptions(){
-
-		ChromeOptions options = new ChromeOptions();
-		String downloadPath = RunConfiguration.getProjectDir() + "/Data Files/Downloads"
-		//String downloadPath = folder.getAbsolutePath()
-		//String downloadsPath = System.getProperty("user.home") + "/Downloads";
-		println ("downloadpath "+downloadPath)
-
-		Map<String, Object> chromePrefs = new HashMap<String, Object>()
-		chromePrefs.put("profile.default_content_settings.popups", 0);
-		chromePrefs.put("download.default_directory", downloadPath)
-		chromePrefs.put("download.prompt_for_download", false)
-		chromePrefs.put("plugins.plugins_disabled", "Chrome PDF Viewer");
-		options.addArguments("--headless")
-		options.addArguments("--window-size=1920,1080")
-		options.addArguments("--test-type")
-		options.addArguments("--disable-gpu")
-		options.addArguments("--no-sandbox")
-		options.addArguments("--disable-dev-shm-usage")
-		options.addArguments("--disable-software-rasterizer")
-		options.addArguments("--disable-popup-blocking")
-		options.addArguments("--disable-extensions")
-		options.setExperimentalOption("prefs", chromePrefs)
-		DesiredCapabilities cap = DesiredCapabilities.chrome()
-		cap.setCapability(ChromeOptions.CAPABILITY, options)
-		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-
-		System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-		WebDriver driver = new ChromeDriver(cap);
-		driver.navigate(GlobalVariable.URL_ANEFQualif)
-		//WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
-		return driver
+		/***
+		 *  get the collected Cookies data and split Token as string
+		 *  Save Token in GlobalVariable
+		 */
+		def ck = new Cookie("name", "value");
+		//myNetwork.enable()
+		//page.enable()
+		WebDriver driver = DriverFactory.getWebDriver()
+		driver.manage().getCookieNamed("Authorization")
+		String CookiesBody =driver.manage().getCookies().toString()
+		String Token = StringUtils.substringBetween(CookiesBody,"[Authorization=","; path=")
+		driver.manage().addCookie(ck)
+		GlobalVariable.Token = Token
+		println ("mon Token ======== " + Token)
 
 	}
 }

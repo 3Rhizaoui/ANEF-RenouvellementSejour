@@ -70,8 +70,9 @@ switch (TypeTitreDeSejour) {
 	case 'Visiteur' :
 		if (Titre== "Visiteur") {
 			
-			alertTextVisiteur = "Un Profile  'Visiteur' ne peut pas demander un type Visiteur mais il peut plutôt renouvler son Titre de séjour"
- 			KeywordUtil.markFailedAndStop(alertText)}
+			alertTextVisiteur = "Un Profile  'Visiteur' ne peut pas demander un type Titre de séjour 'Visiteur' mais il peut plutôt renouvler son Titre de séjour"
+ 			KeywordUtil.markWarning(alertTextVisiteur)}
+	
 			else {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_Visiteur'))
 			'Valider mon choix'

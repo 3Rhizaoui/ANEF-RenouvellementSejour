@@ -31,14 +31,25 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import org.apache.commons.lang3.StringUtils
 
 public class pdfReader2 {
+	//'RunConfiguration for get Execution Properties Driver'
+	Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
+	String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+	String pdfFilePath = ""
 	@Keyword
 	def  ReadPDF(String FileName){
 		def boolean MATCH = false
 		KeywordUtil logger = new KeywordUtil()
-		String pdfFilePath = RunConfiguration.getProjectDir() + "/Data Files/Downloads/" + FileName
+
+		if (DriverName =='FIREFOX_DRIVER' || 'FIREFOX_HEADLESS_DRIVER') {
+			pdfFilePath = (RunConfiguration.getProjectDir() + "/Data Files/Downloads/" + FileName).replace(/\//, '\\')
+		}
+		else {
+			pdfFilePath = RunConfiguration.getProjectDir() + "/Data Files/Downloads/" + FileName
+		}
 		System.out.println("pdfFilePath:" + pdfFilePath);
 		File MyFile = new File(pdfFilePath)
-		WebUI.openBrowser(pdfFilePath, FailureHandling.OPTIONAL)
+		WebUI.navigateToUrl(pdfFilePath, FailureHandling.OPTIONAL)
+
 		String text = ""
 		PDDocument document = PDDocument.load(MyFile)
 		if (!document.isEncrypted()) {

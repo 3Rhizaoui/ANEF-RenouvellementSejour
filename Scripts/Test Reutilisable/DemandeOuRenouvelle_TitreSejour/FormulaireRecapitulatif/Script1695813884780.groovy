@@ -52,7 +52,7 @@ if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour
 	WebUI.delay(02)
 }
 
-if (((TypeTitreDeSejour)== "TS-PT-SalariéQualifie") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))

@@ -27,15 +27,21 @@ import org.openqa.selenium.remote.RemoteWebDriver;
  * @author hhizaoui
  *so that they call Highlight.on() automatically
  */
+'Call Highlight.on() automatically'
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
-Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
-String DriverProp = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+'RunConfiguration: getExecutionProperties Driver '
+def DriverName = CustomKeywords.'tools.GetExecutionProperties.PropertieNameDriver'()
 
-if (DriverProp =='CHROME_DRIVER'){
-/** contournement du message d'erreur lié à la confidentialité :
- */
-if(WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Btn_Parametres Avances'),2,FailureHandling.OPTIONAL)){
-	WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Parametres Avances'))
-	WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Proceed-Link'))}
-}
+"contournement du message d'erreur lié à la confidentialité :"
+if ((DriverName =='CHROME_DRIVER') || ('EDGE_CHROMIUM_DRIVER') || 'HEADLESS_DRIVER'){
+	if(WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Btn_Parametres Avances'),2,FailureHandling.OPTIONAL)){
+		WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Parametres Avances'),FailureHandling.OPTIONAL)
+		WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Proceed-Link'),FailureHandling.OPTIONAL)}}
+
+"contournement du message d'erreur lié à la confidentialité :"
+if ((DriverName =='IE_DRIVER')){
+	if(WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Btn_Parametres Avances'),2,FailureHandling.OPTIONAL)){
+		WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Parametres Avances'),FailureHandling.OPTIONAL)
+		WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Proceed-Link'),FailureHandling.OPTIONAL)}}
+WebUI.delay(3)

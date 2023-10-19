@@ -70,6 +70,7 @@ import com.github.kklisura.cdt.protocol.events.runtime.ConsoleAPICalledType
 import com.github.kklisura.cdt.protocol.types.runtime.RemoteObject
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import org.testng.IExecutionListener;
 import com.kms.katalon.core.util.KeywordUtil
 
 
@@ -106,17 +107,19 @@ public class EventsNetWorkChromeConsole {
 	 * @return null
 	 */
 	@Keyword
-	def InitializeWebDriveDeleteAllCookies(){
-
-		/** Wait for on load event */
-		cdts.close()
-		/** Navigate to the Application Under Test */
-		cdts.waitUntilClosed()
-		WebUI.delay(3)
-		'Delete all cookies after browser is opened'
-		//myNetwork.clearBrowserCache()
-		//myNetwork.clearBrowserCookies()
-		//WebUI.deleteAllCookies()
+	def InitializeWebDriveDeleteAllNodeExe(){
+		println("[LOG] ==> Vérifier si node.exe est en cours d'exécution…")
+		String namePC = System.getProperty('os.name')
+		if (namePC.contains("Windows")){
+			boolean node_exist = Utility.checkTaskList()
+			if(node_exist == true){
+				println("node.exe existe toujours depuis la dernière session ! Je vais l'arrêter...")
+				try{
+					Runtime. getRuntime().exec("cmd.exe /c start taskkill /IM node.exe /F")
+					sleep(5000)//dormir un peu pour finir de tuer le processus avant de passer à une autre étape
+				}catch(Exception ex){
+					ex.printStackTrace()} }
+		}
 	}
 
 	/***
@@ -152,18 +155,18 @@ public class EventsNetWorkChromeConsole {
 	 */
 	def registerOnRequestSend()
 	{
-		myNetwork.onRequestWillBeSent({ def event ->
-			if (event.type.toString() == 'XHR') {
-				if (!(RequestMap.containsKey(event.requestId))) {
-					def requestEnty = [('RequestID') : event.requestId, ('RespondeID') : '', ('ResponseStatusCode') : '', ('RequestBody') : ''
-						, ('RequestUrl') : event.getRequest().getUrl(), ('RequestMethod') : event.getRequest().method]
-
-					RequestMap.put(event.requestId, requestEnty)
-					WebUI.comment("REQ:" + RequestMap.size().toString())
-
-				}
-			}
-		})
+		//		myNetwork.onRequestWillBeSent({ def event ->
+		//			if (event.type.toString() == 'XHR') {
+		//				if (!(RequestMap.containsKey(event.requestId))) {
+		//					def requestEnty = [('RequestID') : event.requestId, ('RespondeID') : '', ('ResponseStatusCode') : '', ('RequestBody') : ''
+		//						, ('RequestUrl') : event.getRequest().getUrl(), ('RequestMethod') : event.getRequest().method]
+		//
+		//					RequestMap.put(event.requestId, requestEnty)
+		//					WebUI.comment("REQ:" + RequestMap.size().toString())
+		//
+		//				}
+		//			}
+		//		})
 
 	}
 
@@ -174,27 +177,27 @@ public class EventsNetWorkChromeConsole {
 	 */
 	def registerOnResponseReceived()
 	{
-		myNetwork.onResponseReceived({ def event ->
-			if (event.type.toString() == 'XHR') {
-
-				if (RequestMap.containsKey(event.requestId)) {
-					def valueList = RequestMap.get(event.requestId)
-					valueList.RespondeID = event.requestId
-					valueList.ResponseStatusCode = event.response.status.toString()
-					RequestMap.put(event.requestId, valueList)
-					WebUI.comment("RESP:" + RequestMap.size().toString())
-					println ("Ma liste est ======" + valueList)
-				}
-			}
-		})
-
+		//		myNetwork.onResponseReceived({ def event ->
+		//			if (event.type.toString() == 'XHR') {
+		//
+		//				if (RequestMap.containsKey(event.requestId)) {
+		//					def valueList = RequestMap.get(event.requestId)
+		//					valueList.RespondeID = event.requestId
+		//					valueList.ResponseStatusCode = event.response.status.toString()
+		//					RequestMap.put(event.requestId, valueList)
+		//					WebUI.comment("RESP:" + RequestMap.size().toString())
+		//					println ("Ma liste est ======" + valueList)
+		//				}
+		//			}
+		//		})
+		//
 		/***
 		 *  get the collected Cookies data and split Token as string
 		 *  Save Token in GlobalVariable
 		 */
 		def ck = new Cookie("name", "value");
-		myNetwork.enable()
-		page.enable()
+		//myNetwork.enable()
+		//page.enable()
 		WebDriver driver = DriverFactory.getWebDriver()
 		driver.manage().getCookieNamed("Authorization")
 		String CookiesBody =driver.manage().getCookies().toString()

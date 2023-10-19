@@ -101,34 +101,26 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
  * Votre demande a bien été enregistrée et vous allez recevoir un accusé de réception. 
  */
 
-
 CustomKeywords.'tools.deleteFileDirectory.cleanDirectory'()
-WebUI.delay(02)
+WebUI.delay(3)
 'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
-//TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
-//CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
-//WebUI.delay(02)
-//CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
-//WebUI.delay(2)
+TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
+CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
+WebUI.delay(10)
+CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
+WebUI.delay(2)
 /**J'ouvre ma confirmation de dépôt de demande (PDF)
- */ 
-/**Ecouter les évennement NetWork et page
  * Comparer les deux NumEtrangerVisa du Pdf Généré et de la création de la demande de renouvellemnt du Titre de séjour 
  * */
-/*
+
 def FileName = CustomKeywords.'tools.deleteFileDirectory.FilesgetName'()
-CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)
-WebUI.comment(null)
+
 
 if (CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)) {
 	KeywordUtil.markPassed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "=" + GlobalVariable.NumEtrangerVisaInPDF )
 }  else {
 	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
 }
-*/
-/***
- * Initialize the Services with the current page and current Network & clear Browser Cookies & clear Browser Cache
- * @return null
- */
-WebUI.delay(20)
+WebUI.delay(5)
 
+//CustomKeywords.'tools.OpenPopupInTab.killProcess'()

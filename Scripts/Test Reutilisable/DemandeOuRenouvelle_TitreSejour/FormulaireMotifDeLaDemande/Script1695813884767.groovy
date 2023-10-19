@@ -106,7 +106,7 @@ if (((TypeTitreDeSejour == 'Visiteur') && (Titre == 'Etudiant')) || ((TypeTitreD
 
 /********************************************************************/
 'Option Correspondant à votre situation :Salarié Qualifié'
-if ((TypeTitreDeSejour == 'TS-PT-SalariéQualifie') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if ((TypeTitreDeSejour == 'TS-PT-SalarieQualifie') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
     'INFORMATIONS RELATIVES À LA QUALIFICATION '
     WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_IntituleDuDiplome'), 'Intitulé du diplôme ')
 

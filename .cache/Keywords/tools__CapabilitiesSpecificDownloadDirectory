@@ -1,16 +1,15 @@
 {
-  "keywordFileContentHash": "1EE6CE1BFB5D0932B1816AC52B26F18D",
+  "keywordFileContentHash": "7536C1A71ECD6E5E6D3B4E649C3CF35C",
   "keywordClasses": [
     {
       "name": "tools.CapabilitiesSpecificDownloadDirectory",
       "keywordMethods": [
         {
           "name": "SetSpecificDownloadDirectoryIfNeeded",
-          "parameters": [],
-          "javadoc": "/**\r\n\t * Executes before every test case starts.\r\n\t * --remote-allow-origins\u003d*\r\n\t *  * \"--no-sandbox\",\r\n\t \"--start-maximized\",\r\n\t \"--incognito\",\r\n\t \"--disable-popup-blocking\",\r\n\t \"--disable-extensions\",\r\n\t \"--disable-gpu\",\r\n\t \"--remote-allow-origins\u003d*\",\r\n\t \"--test-type\",\r\n\t \"--disable-dev-shm-usage\"\r\n\t */"
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

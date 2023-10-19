@@ -36,6 +36,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confiden
 
 "Renseigner l'Identifiant et le mot de passe :"
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Identifiant'), NumEtrangerVisa)
+GlobalVariable.NumEtrangerVisa = NumEtrangerVisa
 WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_MDP'), GlobalVariable.Password)
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_Sidentifier'))
 

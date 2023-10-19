@@ -18,17 +18,17 @@
       <iterationNameVariable>
          <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
          <description></description>
-         <id>5ec3bce4-0bf8-4ea8-b314-0965807b183e</id>
+         <id>86e8a7b7-8d1f-47a6-abaa-73ddcc2d6d2b</id>
          <masked>false</masked>
-         <name>NumEtrangerVisa</name>
+         <name>TypeTitreDeSejour</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-RenouvellementDeTitreSejour</testCaseId>
+      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Etudiant</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <value>1-3</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
@@ -86,6 +86,83 @@
          <type>DATA_COLUMN</type>
          <value>Titre</value>
          <variableId>008d7d85-8a40-45ee-add1-6b7823e45d41</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>371cd486-26e3-4b3f-9d0c-38565979b8ff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+         <description></description>
+         <id>ceb66e2b-8dfe-4e39-b171-01687fa35636</id>
+         <masked>false</masked>
+         <name>TypeTitreDeSejour</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ae4b4909-d70f-498a-8023-db4a47a29b29</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>4-4</value>
+         </iterationEntity>
+         <testDataId>Data Files/DataFor3TestCase</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Profiles</value>
+         <variableId>4bb27d6f-571c-4d9b-b42c-86d754318a3c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>TypeTitreDeSejour</value>
+         <variableId>ceb66e2b-8dfe-4e39-b171-01687fa35636</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumEtrangerVisa</value>
+         <variableId>217e9a3a-c5bf-4c1a-8dea-75865efa5663</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DateDebut</value>
+         <variableId>3cd234e7-86ec-4436-a027-7b7c3feaec16</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DateFin</value>
+         <variableId>e32f6047-154b-4afd-b8ad-be1f7697a068</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>AdresseUsager</value>
+         <variableId>270c2593-8cde-45e0-b844-a6ea9d8f3e86</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumeroTelephoneUsager</value>
+         <variableId>82cab487-17e3-468b-abc1-cd57fba1ed88</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumEphoto</value>
+         <variableId>f944e30a-f55e-4b91-8f68-3dc5adccad95</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ae4b4909-d70f-498a-8023-db4a47a29b29</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Titre</value>
+         <variableId>405da32d-6b67-4464-bd9d-e230aa156e51</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

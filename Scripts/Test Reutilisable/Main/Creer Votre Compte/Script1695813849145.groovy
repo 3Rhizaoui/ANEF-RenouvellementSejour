@@ -54,15 +54,16 @@ import org.eclipse.jetty.websocket.client.WebSocketClient;
  * @author hhizaoui
  *so that they call Highlight.on() automatically
  */
+'Call Highlight.on() automatically'
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
-' Cliquer sur le lien Se Connecter :'
+'Cliquer sur le lien Se Connecter :'
  WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
-" Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
+"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 
-"Première visite? Créez votre compte :"
+"Première visiteq? Créez votre compte :"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Creer Votre Compte'))
 println ("NumEtrangerVisa = "+ NumEtrangerVisa)
 "Fournir Le Numéro de votre visa ou votre numéro étranger :"
@@ -93,19 +94,12 @@ WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Creer Un Comp
 
 MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'), 1, FailureHandling.OPTIONAL)
 if(MsgAlertPresent){
-	
 	alertText = WebUI.getText(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'),FailureHandling.OPTIONAL)
-	//KeywordUtil.markFailed(alertText)
-	KeywordUtil.markFailedAndStop(alertText)
-	}
+	KeywordUtil.markFailedAndStop(alertText)}
 else {
-	KeywordUtil.markPassed("Vos informations ne sont pas associées à un compte ==>> Création d'un nouveau Compte avec ces Informations.")
-}
-
-/*************************************************************************************/
-
+	KeywordUtil.markPassed("Vos informations ne sont pas associées à un compte ==>> Création d'un nouveau Compte avec ces Informations.")}
 	
-" Création de Email utilisateur"
+' Création de Email utilisateur'
 def MonEmail = NumEtrangerVisa + '@yopmail.com'
 WebUI.delay(2)
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Email'), MonEmail)
@@ -118,12 +112,8 @@ WebUI.delay(2)
 /**Ecouter les évennement NetWork et page
  * concatination URL création PW
  * */
-'Delete all cookies after browser is opened'
-// wait for socket connection to close
-CustomKeywords.'tools.EventsNetWorkChromeConsole.RegisterListender'(true, true)
-CustomKeywords.'tools.EventsNetWorkChromeConsole.ResetDataCollection'()
-CustomKeywords.'tools.EventsNetWorkChromeConsole.GetRequestString'(true)
-
+'Get all cookies after Event NetWork in Page'
+CustomKeywords.'tools.GetWebCookieByNamedCollected.GetWebCookie'()
 
 'Navigation à URL Création MDP'
 String URL_CreationMDP = GlobalVariable.URLpw + GlobalVariable.Token
@@ -136,6 +126,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Verif_FormatNewPW'), [:]
 WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_Password'), GlobalVariable.Password)
 WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_ConfirmePassword'), GlobalVariable.Password)
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CreerMDP'))
+
+"Retour à l'accueil"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_span_RetourAccueil'))
-//WebUI.deleteAllCookies()
-CustomKeywords.'tools.EventsNetWorkChromeConsole.InitializeWebDriveDeleteAllCookies'()
+

@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "53E0573A34BCF6EED3EF0A3C1C746824",
+  "keywordFileContentHash": "B1C46A3A467CDC6564D60CEB1BCC3C5A",
   "keywordClasses": [
     {
-      "name": "tools.SetWebDriverChromeOptions",
+      "name": "tools.GetWebCookieByNamedCollected",
       "keywordMethods": []
     }
   ],

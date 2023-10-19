@@ -1,11 +1,11 @@
 {
-  "keywordFileContentHash": "639D12A28681ED113836FB4246669C90",
+  "keywordFileContentHash": "F5AF56EA77E57AFCAE5E8470017046D7",
   "keywordClasses": [
     {
       "name": "tools.EventsNetWorkChromeConsole",
       "keywordMethods": [
         {
-          "name": "InitializeWebDriveDeleteAllCookies",
+          "name": "InitializeWebDriveDeleteAllNodeExe",
           "parameters": [],
           "javadoc": "/***\n\t * Initialize the Services with the current page and current Network \u0026 clear Browser Cookies \u0026 clear Browser Cache\n\t * This can be done after the opening of the page and Network\n\t *\n\t * @return null\n\t */"
         },
