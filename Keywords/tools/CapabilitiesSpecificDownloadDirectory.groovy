@@ -196,16 +196,16 @@ public class CapabilitiesSpecificDownloadDirectory {
 				List  args = ["--start-maximized", "--incognito", "--remote-allow-origins=*"]
 				if (prefs == null) {
 					prefs = [:]	}
-				//KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
-				//KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
+				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
+				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
 				prefs.put("download.default_directory", customizedDownloadDirectory)
 				prefs.put("download_dir", customizedDownloadDirectory)
 				prefs.put("download.prompt_for_download", false)
 				'Set the incoming buffer to 24MB For hromeDevtools client'
-				//System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 100));
+				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 100));
 				" Utilisation de l'adresse IP à la place de localhost"
-				//java.net.InetAddress i = java.net.InetAddress.getLocalHost();
-				//System.out.println(i.getHostAddress());
+				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
+				System.out.println(i.getHostAddress());
 				ChromeOptions options = new ChromeOptions()
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
