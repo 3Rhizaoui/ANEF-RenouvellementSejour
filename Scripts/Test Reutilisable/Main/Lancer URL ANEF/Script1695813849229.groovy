@@ -292,6 +292,7 @@ if (Profiles == 'Usager') {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 			break;
 			
+			
 		case 'HEADLESS_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
@@ -317,6 +318,7 @@ if (Profiles == 'Usager') {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 			break;
 
+			
 		case 'FIREFOX_HEADLESS_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
