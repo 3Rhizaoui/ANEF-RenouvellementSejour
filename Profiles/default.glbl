@@ -94,4 +94,9 @@
       <initValue>'Visiteur'</initValue>
       <name>Titre</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>false</initValue>
+      <name>StopTestCase</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

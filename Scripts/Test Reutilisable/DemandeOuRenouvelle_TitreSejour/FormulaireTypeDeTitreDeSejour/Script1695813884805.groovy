@@ -24,7 +24,6 @@ import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
  *so that they call Highlight.on() automatically

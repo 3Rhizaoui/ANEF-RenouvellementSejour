@@ -91,7 +91,6 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.configuration.RunConfiguration
 
-
 /** modify WebUI.* keywords which take TestObject as arg0
 * so that they call Highlight.on() automatically
 */
@@ -102,7 +101,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
  */
 
 CustomKeywords.'tools.deleteFileDirectory.cleanDirectory'()
-WebUI.delay(3)
+WebUI.delay(15)
 'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
 TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
 CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)

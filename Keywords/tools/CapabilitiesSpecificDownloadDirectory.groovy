@@ -183,17 +183,18 @@ public class CapabilitiesSpecificDownloadDirectory {
 	def SetSpecificDownloadDirectoryIfNeeded() {
 		switch (DriverName) {
 			case 'CHROME_DRIVER':
+
 				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
 				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
 				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
-				String projectDir = RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+				String projectDir = (RunConfiguration.getProjectDir()+ "/Data Files/Downloads/").replace(/\//, '\\\\')
 				Path projectPath = Paths.get(projectDir)
 				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
 				def customizedDownloadDirectory = downloadPath.toString()
-				
-				
+
 				Map prefs = desiredCapabilities.get("prefs")
-				List  args = ["--start-maximized", "--incognito", "--remote-allow-origins=*"]
+				List  args = ["--incognito"]
+			//"--start-maximized",
 				if (prefs == null) {
 					prefs = [:]	}
 				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
@@ -202,15 +203,16 @@ public class CapabilitiesSpecificDownloadDirectory {
 				prefs.put("download_dir", customizedDownloadDirectory)
 				prefs.put("download.prompt_for_download", false)
 				'Set the incoming buffer to 24MB For hromeDevtools client'
-				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 100));
+				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 900));
 				" Utilisation de l'adresse IP à la place de localhost"
 				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
 				System.out.println(i.getHostAddress());
 				ChromeOptions options = new ChromeOptions()
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
-				
-			//options.addArguments(args)
+
+			// options.addArguments(args)
+
 				options.setExperimentalOption("prefs", prefs)
 				WebDriver driver = new ChromeDriver(options)
 				DriverFactory.changeWebDriver(driver)
@@ -222,13 +224,14 @@ public class CapabilitiesSpecificDownloadDirectory {
 				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
 				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
 				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
-				String projectDir = RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+				String projectDir = (RunConfiguration.getProjectDir()+ "/Data Files/Downloads/").replace(/\//, '\\\\')
 				Path projectPath = Paths.get(projectDir)
 				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
 				def customizedDownloadDirectory = downloadPath.toString()
 
 				Map prefs = desiredCapabilities.get("prefs")
-				List  args = ["--start-maximized", "--incognito", "--remote-allow-origins=*", "--allow-nacl-socket-api=localhost"]
+				List  args = ["--incognito"]
+			//"--start-maximized",
 				if (prefs == null) {
 					prefs = [:]	}
 				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
@@ -237,17 +240,49 @@ public class CapabilitiesSpecificDownloadDirectory {
 				prefs.put("download_dir", customizedDownloadDirectory)
 				prefs.put("download.prompt_for_download", false)
 				'Set the incoming buffer to 24MB For hromeDevtools client'
-				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 100));
+				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 900));
 				" Utilisation de l'adresse IP à la place de localhost"
 				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
 				System.out.println(i.getHostAddress());
-
 				ChromeOptions options = new ChromeOptions()
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+
+			//options.addArguments(args)
+
 				options.setExperimentalOption("prefs", prefs)
 				WebDriver driver = new ChromeDriver(options)
 				DriverFactory.changeWebDriver(driver)
+
+			//				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
+			//				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+			//				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
+			//				String projectDir = RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+			//				Path projectPath = Paths.get(projectDir)
+			//				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
+			//				def customizedDownloadDirectory = downloadPath.toString()
+			//
+			//				Map prefs = desiredCapabilities.get("prefs")
+			//				List  args = ["--incognito"]
+			//				if (prefs == null) {
+			//					prefs = [:]	}
+			//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
+			//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
+			//				prefs.put("download.default_directory", customizedDownloadDirectory)
+			//				prefs.put("download_dir", customizedDownloadDirectory)
+			//				prefs.put("download.prompt_for_download", false)
+			//				'Set the incoming buffer to 24MB For hromeDevtools client'
+			//				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 100));
+			//				" Utilisation de l'adresse IP à la place de localhost"
+			//				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
+			//				System.out.println(i.getHostAddress());
+			//
+			//				ChromeOptions options = new ChromeOptions()
+			//				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			//				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			//				options.setExperimentalOption("prefs", prefs)
+			//				WebDriver driver = new ChromeDriver(options)
+			//				DriverFactory.changeWebDriver(driver)
 
 				break;
 
@@ -268,8 +303,8 @@ public class CapabilitiesSpecificDownloadDirectory {
 				firefoxOptions.addPreference("browser.download.folderList", 2); //Last downloaded folder
 				firefoxOptions.addPreference("browser.download.defaultFolder", customizedDownloadDirectory); // Set your default download directory's path
 				firefoxOptions.addPreference("browser.download.dir", customizedDownloadDirectory); // Set your default download directory's path
-				firefoxOptions.addArguments("-private");//for incognito
-				firefoxOptions.addArguments("-allow-origins", "http://127.0.0.1:45411/");//listenNetwork if the listener for network should be turned
+				firefoxOptions.addArguments("\t-inprivate");//for incognito
+				firefoxOptions.addArguments("\t-remote-allow-origins=*", "http://127.0.0.1:45411/");//listenNetwork if the listener for network should be turned
 				firefoxOptions.setCapability("moz:firefoxOptions",firefoxOptions); //Load all options to desired capabilities
 				'Load all options to desired capabilities'
 				firefoxDesiredCapabilities.setCapability("moz:firefoxOptions",firefoxOptions);
@@ -284,7 +319,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				DriverFactory.changeWebDriver(driver)
 				break;
 
-				
+
 			case 'FIREFOX_HEADLESS_DRIVER':
 				'Init standard WebDrive FireFox session Capabilities Specific for Download Directory customizedDownloadDirectory'
 				GlobalVariable.downloadPath =(RunConfiguration.getProjectDir()+ "/Data Files/Downloads/").replace(/\//, '\\')
@@ -320,30 +355,30 @@ public class CapabilitiesSpecificDownloadDirectory {
 
 			case  'EDGE_DRIVER':
 				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
-				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
-				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
-				String projectDir = RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
-				Path projectPath = Paths.get(projectDir)
-				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
-				def customizedDownloadDirectory = downloadPath.toString()
-
-				WebUI.comment("executedBrowser:${DriverFactory.getExecutedBrowser().getName()}")
-				WebUI.comment("chromeDriverPath:${DriverFactory.getChromeDriverPath()}")
-				WebUI.comment("edgeDriverPath:${DriverFactory.getEdgeDriverPath()}")
-				WebUI.comment("geckoDriverPath:${DriverFactory.getGeckoDriverPath()}")
-				WebUI.comment("ieDriverPath:${DriverFactory.getIEDriverPath()}")
-
-				System.setProperty("webdriver.ie.driver", DriverFactory.getIEDriverPath());
-				println "webdriver.ie.driver" + DriverFactory.getIEDriverPath()
-				InternetExplorerOptions edgeIe11Options = new InternetExplorerOptions();
-				Map<String, Object> ops = (Map<String, Object>) edgeIe11Options.getCapability("se:ieOptions");
-				ops.put("ie.edgechromium", true);
-			//ops.put("ie.edgepath", "C:\\Program Files\\Internet Explorer\\iexplore.exe");
-				ops.put("ie.edgepath", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-				edgeIe11Options.setCapability("ignoreProtectedModeSettings", true);
-				edgeIe11Options.setCapability("ignoreZoomSetting", true);
-				WebDriver driver = new InternetExplorerDriver(edgeIe11Options);
-				DriverFactory.changeWebDriver(driver)
+			//				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+			//				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
+			//				String projectDir = RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+			//				Path projectPath = Paths.get(projectDir)
+			//				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
+			//				def customizedDownloadDirectory = downloadPath.toString()
+			//
+			//				WebUI.comment("executedBrowser:${DriverFactory.getExecutedBrowser().getName()}")
+			//				WebUI.comment("chromeDriverPath:${DriverFactory.getChromeDriverPath()}")
+			//				WebUI.comment("edgeDriverPath:${DriverFactory.getEdgeDriverPath()}")
+			//				WebUI.comment("geckoDriverPath:${DriverFactory.getGeckoDriverPath()}")
+			//				WebUI.comment("ieDriverPath:${DriverFactory.getIEDriverPath()}")
+			//
+			//				System.setProperty("webdriver.ie.driver", DriverFactory.getIEDriverPath());
+			//				println "webdriver.ie.driver" + DriverFactory.getIEDriverPath()
+			//				InternetExplorerOptions edgeIe11Options = new InternetExplorerOptions();
+			//				Map<String, Object> ops = (Map<String, Object>) edgeIe11Options.getCapability("se:ieOptions");
+			//				ops.put("ie.edgechromium", true);
+			//			//ops.put("ie.edgepath", "C:\\Program Files\\Internet Explorer\\iexplore.exe");
+			//				ops.put("ie.edgepath", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+			//				edgeIe11Options.setCapability("ignoreProtectedModeSettings", true);
+			//				edgeIe11Options.setCapability("ignoreZoomSetting", true);
+			//				WebDriver driver = new InternetExplorerDriver(edgeIe11Options);
+			//				DriverFactory.changeWebDriver(driver)
 				break;
 
 			case  'IE_DRIVER':

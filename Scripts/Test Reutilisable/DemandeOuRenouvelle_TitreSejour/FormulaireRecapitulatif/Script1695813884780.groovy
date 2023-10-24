@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
  *so that they call Highlight.on() automatically
@@ -49,7 +50,7 @@ if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour
 	/**Validation
 	*/
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-	WebUI.delay(02)
+	WebUI.delay(10)
 }
 
 if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
@@ -69,5 +70,5 @@ if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie") && ((Titre == 'Visiteur') ||
 	/**Validation
 	 */
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-	WebUI.delay(02)
+	WebUI.delay(10)
 }

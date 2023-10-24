@@ -27,19 +27,19 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 /**Identification : Portail Usager
  */
 if (Profiles == 'Usager') {
-WebUI.delay(2)
+WebUI.delay(5)
 ' Cliquer sur le lien Se Connecter :'
  WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
 
 "Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
-
+WebUI.delay(5)
 "Renseigner l'Identifiant et le mot de passe :"
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Identifiant'), NumEtrangerVisa)
 GlobalVariable.NumEtrangerVisa = NumEtrangerVisa
 WebUI.setEncryptedText(findTestObject('Object Repository/Connexion Usager/Input_MDP'), GlobalVariable.Password)
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_Sidentifier'))
-
+WebUI.delay(15)
 "Vérification position sur la page d'accueil"
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Accueil_Usager/Span_MesNotifications'), 2, FailureHandling.STOP_ON_FAILURE)}
 

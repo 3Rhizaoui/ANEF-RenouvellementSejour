@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;connexion_link&quot;]|/html/body/app-root/div/app-portal/app-nav-new/nav/div[3]/div/div/ul/li/a/span[2]/a</value>
+         <value>//*[@id=&quot;connexion_link&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

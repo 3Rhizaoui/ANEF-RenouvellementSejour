@@ -80,6 +80,7 @@ public class pdfReader2 {
 			}
 		}
 		return MATCH
+		WebUI.closeBrowser()
 	}
 
 }

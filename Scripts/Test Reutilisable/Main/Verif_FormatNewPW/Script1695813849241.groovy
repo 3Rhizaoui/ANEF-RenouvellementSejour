@@ -17,6 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+'waiting for the number of elements in the DOM to stop changing'
+//CustomKeywords.'tools.WaitForLoaded.waitForElementRendering'()
+
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
  *so that they call Highlight.on() automatically

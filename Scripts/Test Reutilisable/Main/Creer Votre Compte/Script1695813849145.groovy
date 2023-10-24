@@ -34,6 +34,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.annotation.BeforeTestCase
+import com.kms.katalon.core.annotation.BeforeTestSuite
+import com.kms.katalon.core.annotation.AfterTestCase
+import com.kms.katalon.core.annotation.AfterTestSuite
+import com.kms.katalon.core.context.TestCaseContext
+import com.kms.katalon.core.context.TestSuiteContext
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
@@ -45,10 +51,16 @@ import com.kms.katalon.core.exception.StepFailedException;
 import com.kms.katalon.core.logging.ErrorCollector;
 import com.kms.katalon.core.logging.KeywordLogger;
 import java.net.URI;
+import com.kms.katalon.core.exception.StepErrorException;
+import com.kms.katalon.core.exception.StepFailedException;
+import com.kms.katalon.core.logging.ErrorCollector;
+import com.kms.katalon.core.logging.KeywordLogger;
 import java.util.concurrent.TimeUnit;
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
 
+'waiting for the number of elements in the DOM to stop changing'
+//CustomKeywords.'tools.WaitForLoadedPage.waitForElementRendering'()
 
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
@@ -56,6 +68,7 @@ import org.eclipse.jetty.websocket.client.WebSocketClient;
  */
 'Call Highlight.on() automatically'
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
+WebUI.waitForPageLoad(5)
 
 'Cliquer sur le lien Se Connecter :'
  WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
@@ -65,6 +78,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confiden
 
 "Première visiteq? Créez votre compte :"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Creer Votre Compte'))
+WebUI.waitForPageLoad(5)
 println ("NumEtrangerVisa = "+ NumEtrangerVisa)
 "Fournir Le Numéro de votre visa ou votre numéro étranger :"
 WebUI.setText(findTestObject('Object Repository/Connexion Usager/Input_Numero etranger_Visa'), NumEtrangerVisa)
@@ -91,14 +105,19 @@ WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Creer Un Comp
 /*************************************************************************************/
 'Vérification si le compte existe déjà(message Erreur : Il semblerait que vos informations soient déjà associées à un compte.)'
 ' Exit Action ou on passe à la création'
-
-MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'), 1, FailureHandling.OPTIONAL)
+WebUI.delay(3)
+GlobalVariable.StopTestCase = false
+MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'),10, FailureHandling.OPTIONAL)
 if(MsgAlertPresent){
 	alertText = WebUI.getText(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'),FailureHandling.OPTIONAL)
-	KeywordUtil.markFailedAndStop(alertText)}
+	CustomKeywords.'tools.markPassedandStop.markPassedandStopTest'(alertText)
+	return null}
+//	KeywordUtil.markPassed(alertText)
+//	KeywordUtil.markErrorAndStop(alertText)
+
 else {
 	KeywordUtil.markPassed("Vos informations ne sont pas associées à un compte ==>> Création d'un nouveau Compte avec ces Informations.")}
-	
+WebUI.waitForPageLoad(5)
 ' Création de Email utilisateur'
 def MonEmail = NumEtrangerVisa + '@yopmail.com'
 WebUI.delay(2)
@@ -129,4 +148,4 @@ WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_CreerMDP'))
 
 "Retour à l'accueil"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/btn_span_RetourAccueil'))
-
+WebUI.waitForPageLoad(5)

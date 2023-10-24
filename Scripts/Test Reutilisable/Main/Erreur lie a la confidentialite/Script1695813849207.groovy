@@ -23,6 +23,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+
+'waiting for the number of elements in the DOM to stop changing'
+CustomKeywords.'tools.WaitForLoadedPage.waitForElementRendering'()
+
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
  *so that they call Highlight.on() automatically
