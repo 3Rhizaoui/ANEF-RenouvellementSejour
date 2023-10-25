@@ -281,7 +281,7 @@ if (Profiles == 'Usager') {
 //			println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 		
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 			//System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			//System.setProperty("webdriver.chrome.verboseLogging", "true");

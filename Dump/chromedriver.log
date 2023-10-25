@@ -1,6 +1,6 @@
-[1698133292.071][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 20615
-[1698133292.071][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1698133292.348][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND InitSession {
+[1698241849.171][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 32358
+[1698241849.171][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1698241849.539][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -28,7 +28,7 @@
       }
    }
 }
-[1698133292.357][INFO]: Populating Preferences file: {
+[1698241849.548][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -86,7 +86,7 @@
       "enabled": false
    }
 }
-[1698133292.359][INFO]: Populating Local State file: {
+[1698241849.550][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -96,20 +96,20 @@
       }
    }
 }
-[1698133292.366][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir43392_322555985" data:,
-[1698133293.312][INFO]: resolved localhost to ["127.0.0.1","::1"]
-[1698133293.768][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE InitSession {
+[1698241849.555][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir12248_350535458" data:,
+[1698241850.428][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1698241850.740][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
       "browserVersion": "118.0.5993.89",
       "chrome": {
          "chromedriverVersion": "118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})",
-         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir43392_322555985"
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir12248_350535458"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:60532"
+         "debuggerAddress": "localhost:56718"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -130,259 +130,50 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "30538d17d50cf0533e3125ffdc95f00b"
+   "sessionId": "81a7b4cc0aafd0e2a57fb70932a25953"
 }
-[1698133293.782][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND SetTimeouts {
+[1698241850.748][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND SetTimeouts {
    "implicit": 0
 }
-[1698133293.783][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE SetTimeouts
-[1698133293.798][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND SetTimeouts {
+[1698241850.748][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE SetTimeouts
+[1698241850.763][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND SetTimeouts {
    "pageLoad": 30000
 }
-[1698133293.798][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE SetTimeouts
-[1698133293.813][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteScript {
+[1698241850.763][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE SetTimeouts
+[1698241850.779][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND ExecuteScript {
    "args": [  ],
    "script": "return navigator.sayswho= (function() { var ua= navigator.userAgent, tem, M= ua.match(/(opera|chrome|safari|firefox|msie|trident)\\/?\\s*(\\.?\\d+(\\.\\d+)*)/i) || []; if (/trident/i.test(M[1])) {     tem=  /\\brv[ :]+(\\d+)/g.exec(ua) || [];     return 'IE '+(tem[1] || ''); } if(M[1]=== 'Chrome') {     tem= ua.match(/\\b(OPR|Edge|Edg)\\/(\\d+)/);     if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera').replace('Edg', 'Edge Chromium'); } M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?']; if((tem= ua.match(/version\\/(\\d+)/i))!= null) M.splice(1, 1, tem[1]); return M.join(' ').replace('MSIE', 'IE');})();"
 }
-[1698133293.813][INFO]: Waiting for pending navigations...
-[1698133293.814][INFO]: Done waiting for pending navigations. Status: ok
-[1698133293.840][INFO]: Waiting for pending navigations...
-[1698133293.840][INFO]: Done waiting for pending navigations. Status: ok
-[1698133293.840][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteScript "Chrome 118.0.0.0"
-[1698133293.859][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND SetTimeouts {
+[1698241850.779][INFO]: Waiting for pending navigations...
+[1698241850.780][INFO]: Done waiting for pending navigations. Status: ok
+[1698241850.784][INFO]: Waiting for pending navigations...
+[1698241850.785][INFO]: Done waiting for pending navigations. Status: ok
+[1698241850.785][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE ExecuteScript "Chrome 118.0.0.0"
+[1698241850.794][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND SetTimeouts {
    "implicit": 0
 }
-[1698133293.859][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE SetTimeouts
-[1698133293.877][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND SetTimeouts {
+[1698241850.794][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE SetTimeouts
+[1698241850.811][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND SetTimeouts {
    "pageLoad": 30000
 }
-[1698133293.878][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE SetTimeouts
-[1698133293.907][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND Navigate {
+[1698241850.811][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE SetTimeouts
+[1698241850.839][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND Navigate {
    "url": "https://qualif.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/"
 }
-[1698133293.907][INFO]: Waiting for pending navigations...
-[1698133293.910][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.157][INFO]: Waiting for pending navigations...
-[1698133294.280][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.280][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE Navigate
-[1698133294.308][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND MaximizeWindow {
+[1698241850.839][INFO]: Waiting for pending navigations...
+[1698241850.840][INFO]: Done waiting for pending navigations. Status: ok
+[1698241851.024][INFO]: Waiting for pending navigations...
+[1698241851.172][INFO]: Done waiting for pending navigations. Status: ok
+[1698241851.172][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE Navigate
+[1698241851.193][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] COMMAND MaximizeWindow {
 }
-[1698133294.308][INFO]: Waiting for pending navigations...
-[1698133294.310][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.432][INFO]: Waiting for pending navigations...
-[1698133294.433][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.433][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE MaximizeWindow {
+[1698241851.193][INFO]: Waiting for pending navigations...
+[1698241851.198][INFO]: Done waiting for pending navigations. Status: ok
+[1698241851.340][INFO]: Waiting for pending navigations...
+[1698241851.341][INFO]: Done waiting for pending navigations. Status: ok
+[1698241851.341][INFO]: [81a7b4cc0aafd0e2a57fb70932a25953] RESPONSE MaximizeWindow {
    "height": 1096,
    "width": 1936,
    "x": -8,
    "y": -8
 }
-[1698133294.665][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteAsyncScript {
-   "args": [  ],
-   "script": "\tvar callback = arguments[arguments.length - 1].bind(this);\r\n\twindow.katalonWaiter.katalon_smart_waiter_do_ajax_wait(callback);"
-}
-[1698133294.665][INFO]: Waiting for pending navigations...
-[1698133294.666][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.675][INFO]: Waiting for pending navigations...
-[1698133294.676][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.676][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteAsyncScript ERROR javascript error: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-JavaScript stack:
-TypeError: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:23)
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:70)
-    at executeAsyncScript (<anonymous>:445:47)
-    at <anonymous>:460:29
-    at callFunction (<anonymous>:339:22)
-    at <anonymous>:353:23
-    at <anonymous>:354:3
-  (Session info: chrome=118.0.5993.89)
-[1698133294.680][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND FindElements {
-   "using": "xpath",
-   "value": "//*[@id=\"details-button\"]"
-}
-[1698133294.680][INFO]: Waiting for pending navigations...
-[1698133294.681][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.691][INFO]: Waiting for pending navigations...
-[1698133294.691][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.691][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE FindElements [ {
-   "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_8"
-} ]
-[1698133294.788][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteAsyncScript {
-   "args": [  ],
-   "script": "\tvar callback = arguments[arguments.length - 1].bind(this);\r\n\twindow.katalonWaiter.katalon_smart_waiter_do_ajax_wait(callback);"
-}
-[1698133294.788][INFO]: Waiting for pending navigations...
-[1698133294.789][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.794][INFO]: Waiting for pending navigations...
-[1698133294.794][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.794][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteAsyncScript ERROR javascript error: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-JavaScript stack:
-TypeError: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:23)
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:70)
-    at executeAsyncScript (<anonymous>:445:47)
-    at <anonymous>:460:29
-    at callFunction (<anonymous>:339:22)
-    at <anonymous>:353:23
-    at <anonymous>:354:3
-  (Session info: chrome=118.0.5993.89)
-[1698133294.803][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND FindElements {
-   "using": "xpath",
-   "value": "//*[@id=\"details-button\"]"
-}
-[1698133294.804][INFO]: Waiting for pending navigations...
-[1698133294.805][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.809][INFO]: Waiting for pending navigations...
-[1698133294.810][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.810][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE FindElements [ {
-   "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_8"
-} ]
-[1698133294.818][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteScript {
-   "args": [ {
-      "ELEMENT": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_8",
-      "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_8"
-   } ],
-   "script": "arguments[0].setAttribute('style','outline: dashed red;');"
-}
-[1698133294.818][INFO]: Waiting for pending navigations...
-[1698133294.819][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.823][INFO]: Waiting for pending navigations...
-[1698133294.823][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.824][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteScript null
-[1698133294.850][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteAsyncScript {
-   "args": [  ],
-   "script": "\tvar callback = arguments[arguments.length - 1].bind(this);\r\n\twindow.katalonWaiter.katalon_smart_waiter_do_ajax_wait(callback);"
-}
-[1698133294.850][INFO]: Waiting for pending navigations...
-[1698133294.851][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.861][INFO]: Waiting for pending navigations...
-[1698133294.861][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.861][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteAsyncScript ERROR javascript error: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-JavaScript stack:
-TypeError: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:23)
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:70)
-    at executeAsyncScript (<anonymous>:445:47)
-    at <anonymous>:460:29
-    at callFunction (<anonymous>:339:22)
-    at <anonymous>:353:23
-    at <anonymous>:354:3
-  (Session info: chrome=118.0.5993.89)
-[1698133294.865][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND FindElements {
-   "using": "xpath",
-   "value": "//*[@id=\"details-button\"]"
-}
-[1698133294.865][INFO]: Waiting for pending navigations...
-[1698133294.867][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.873][INFO]: Waiting for pending navigations...
-[1698133294.873][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.873][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE FindElements [ {
-   "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_8"
-} ]
-[1698133294.880][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ClickElement {
-   "id": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_8"
-}
-[1698133294.881][INFO]: Waiting for pending navigations...
-[1698133294.881][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.914][INFO]: Waiting for pending navigations...
-[1698133294.916][INFO]: Done waiting for pending navigations. Status: ok
-[1698133294.916][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ClickElement
-[1698133295.018][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteAsyncScript {
-   "args": [  ],
-   "script": "\tvar callback = arguments[arguments.length - 1].bind(this);\r\n\twindow.katalonWaiter.katalon_smart_waiter_do_ajax_wait(callback);"
-}
-[1698133295.018][INFO]: Waiting for pending navigations...
-[1698133295.021][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.028][INFO]: Waiting for pending navigations...
-[1698133295.029][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.029][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteAsyncScript ERROR javascript error: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-JavaScript stack:
-TypeError: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:23)
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:70)
-    at executeAsyncScript (<anonymous>:445:47)
-    at <anonymous>:460:29
-    at callFunction (<anonymous>:339:22)
-    at <anonymous>:353:23
-    at <anonymous>:354:3
-  (Session info: chrome=118.0.5993.89)
-[1698133295.034][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND FindElements {
-   "using": "xpath",
-   "value": "//*[@id=\"proceed-link\"]"
-}
-[1698133295.034][INFO]: Waiting for pending navigations...
-[1698133295.034][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.046][INFO]: Waiting for pending navigations...
-[1698133295.046][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.047][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE FindElements [ {
-   "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_12"
-} ]
-[1698133295.066][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteScript {
-   "args": [ {
-      "ELEMENT": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_12",
-      "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_12"
-   } ],
-   "script": "arguments[0].setAttribute('style','outline: dashed red;');"
-}
-[1698133295.067][INFO]: Waiting for pending navigations...
-[1698133295.068][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.075][INFO]: Waiting for pending navigations...
-[1698133295.077][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.077][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteScript null
-[1698133295.097][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteAsyncScript {
-   "args": [  ],
-   "script": "\tvar callback = arguments[arguments.length - 1].bind(this);\r\n\twindow.katalonWaiter.katalon_smart_waiter_do_ajax_wait(callback);"
-}
-[1698133295.097][INFO]: Waiting for pending navigations...
-[1698133295.098][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.103][INFO]: Waiting for pending navigations...
-[1698133295.103][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.103][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteAsyncScript ERROR javascript error: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-JavaScript stack:
-TypeError: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:23)
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:70)
-    at executeAsyncScript (<anonymous>:445:47)
-    at <anonymous>:460:29
-    at callFunction (<anonymous>:339:22)
-    at <anonymous>:353:23
-    at <anonymous>:354:3
-  (Session info: chrome=118.0.5993.89)
-[1698133295.113][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND FindElements {
-   "using": "xpath",
-   "value": "//*[@id=\"proceed-link\"]"
-}
-[1698133295.113][INFO]: Waiting for pending navigations...
-[1698133295.114][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.118][INFO]: Waiting for pending navigations...
-[1698133295.119][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.119][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE FindElements [ {
-   "element-6066-11e4-a52e-4f735466cecf": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_12"
-} ]
-[1698133295.128][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ClickElement {
-   "id": "3DE9FC2F7501B41B5A98EBC96CE78A57_element_12"
-}
-[1698133295.128][INFO]: Waiting for pending navigations...
-[1698133295.128][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.170][INFO]: Waiting for pending navigations...
-[1698133295.454][INFO]: Done waiting for pending navigations. Status: ok
-[1698133295.454][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ClickElement
-[1698133303.607][INFO]: [30538d17d50cf0533e3125ffdc95f00b] COMMAND ExecuteAsyncScript {
-   "args": [  ],
-   "script": "\tvar callback = arguments[arguments.length - 1].bind(this);\r\n\twindow.katalonWaiter.katalon_smart_waiter_do_ajax_wait(callback);"
-}
-[1698133303.607][INFO]: Waiting for pending navigations...
-[1698133317.682][INFO]: Done waiting for pending navigations. Status: ok
-[1698133317.692][INFO]: Waiting for pending navigations...
-[1698133317.692][INFO]: Done waiting for pending navigations. Status: ok
-[1698133317.692][INFO]: [30538d17d50cf0533e3125ffdc95f00b] RESPONSE ExecuteAsyncScript ERROR javascript error: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-JavaScript stack:
-TypeError: Cannot read properties of undefined (reading 'katalon_smart_waiter_do_ajax_wait')
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:23)
-    at eval (eval at executeAsyncScript (:445:26), <anonymous>:4:70)
-    at executeAsyncScript (<anonymous>:445:47)
-    at <anonymous>:460:29
-    at callFunction (<anonymous>:339:22)
-    at <anonymous>:353:23
-    at <anonymous>:354:3
-  (Session info: chrome=118.0.5993.89)

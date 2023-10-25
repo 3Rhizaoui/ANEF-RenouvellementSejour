@@ -103,21 +103,24 @@ WebUI.setText(findTestObject('Object Repository/Connexion Usager/Date Fin Validi
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Creer Un Compte'))
 
 /*************************************************************************************/
-'Vérification si le compte existe déjà(message Erreur : Il semblerait que vos informations soient déjà associées à un compte.)'
-' Exit Action ou on passe à la création'
-WebUI.delay(3)
-GlobalVariable.StopTestCase = false
-MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'),10, FailureHandling.OPTIONAL)
-if(MsgAlertPresent){
-	alertText = WebUI.getText(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'),FailureHandling.OPTIONAL)
-	CustomKeywords.'tools.markPassedandStop.markPassedandStopTest'(alertText)
-	return null}
-//	KeywordUtil.markPassed(alertText)
-//	KeywordUtil.markErrorAndStop(alertText)
+'Vérification si Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie. pb serveur AGERDF'
+'Appel Brique Réutilisable VerificationCertainesInformationsSontIncorrectes' 
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes'), [:], FailureHandling.OPTIONAL)
 
-else {
-	KeywordUtil.markPassed("Vos informations ne sont pas associées à un compte ==>> Création d'un nouveau Compte avec ces Informations.")}
-WebUI.waitForPageLoad(5)
+'Exit TestCase'
+if (GlobalVariable.StopTestCase == true) {
+	return null
+}
+/*************************************************************************************/
+'Vérification si le compte existe déjà(message Erreur : Il semblerait que vos informations soient déjà associées à un compte.)'
+'Appel Brique Réutilisable VerificationSiCompteExisteDeja'
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/Main/VerificationSiCompteExisteDeja'), [:], FailureHandling.OPTIONAL)
+
+'Exit TestCase'
+if (GlobalVariable.StopTestCase == true) {
+	return null
+}
+
 ' Création de Email utilisateur'
 def MonEmail = NumEtrangerVisa + '@yopmail.com'
 WebUI.delay(2)
