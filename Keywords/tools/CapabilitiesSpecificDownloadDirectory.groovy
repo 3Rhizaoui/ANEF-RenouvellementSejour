@@ -215,7 +215,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 
 				options.setExperimentalOption("prefs", prefs)
 				WebDriver driver = new ChromeDriver(options)
-				//DriverFactory.changeWebDriver(driver)
+				DriverFactory.changeWebDriver(driver)
 
 				break;
 
