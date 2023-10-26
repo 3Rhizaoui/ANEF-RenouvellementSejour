@@ -183,39 +183,39 @@ public class CapabilitiesSpecificDownloadDirectory {
 	def SetSpecificDownloadDirectoryIfNeeded() {
 		switch (DriverName) {
 			case 'CHROME_DRIVER':
+//
+//				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
+//				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
+//				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
+//				String projectDir = (RunConfiguration.getProjectDir()+ "/Data Files/Downloads/").replace(/\//, '\\\\')
+//				Path projectPath = Paths.get(projectDir)
+//				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
+//				def customizedDownloadDirectory = downloadPath.toString()
+//
+//				Map prefs = desiredCapabilities.get("prefs")
+//				List  args = ["--incognito"]
+//			//"--start-maximized",
+//				if (prefs == null) {
+//					prefs = [:]	}
+//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
+//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
+//				prefs.put("download.default_directory", customizedDownloadDirectory)
+//				prefs.put("download_dir", customizedDownloadDirectory)
+//				prefs.put("download.prompt_for_download", false)
+//				'Set the incoming buffer to 24MB For hromeDevtools client'
+//				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 900));
+//				" Utilisation de l'adresse IP à la place de localhost"
+//				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
+//				System.out.println(i.getHostAddress());
+//				ChromeOptions options = new ChromeOptions()
+//				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+//				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 
-				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
-				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
-				Map desiredCapabilities = RunConfiguration.getDriverPreferencesProperties("WebUI")
-				String projectDir = (RunConfiguration.getProjectDir()+ "/Data Files/Downloads/").replace(/\//, '\\\\')
-				Path projectPath = Paths.get(projectDir)
-				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
-				def customizedDownloadDirectory = downloadPath.toString()
-
-				Map prefs = desiredCapabilities.get("prefs")
-				List  args = ["--incognito"]
-			//"--start-maximized",
-				if (prefs == null) {
-					prefs = [:]	}
-				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
-				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
-				prefs.put("download.default_directory", customizedDownloadDirectory)
-				prefs.put("download_dir", customizedDownloadDirectory)
-				prefs.put("download.prompt_for_download", false)
-				'Set the incoming buffer to 24MB For hromeDevtools client'
-				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 900));
-				" Utilisation de l'adresse IP à la place de localhost"
-				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
-				System.out.println(i.getHostAddress());
-				ChromeOptions options = new ChromeOptions()
-				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
-
-			// options.addArguments(args)
-
-				options.setExperimentalOption("prefs", prefs)
-				WebDriver driver = new ChromeDriver(options)
-				//DriverFactory.changeWebDriver(driver)
+//			// options.addArguments(args)
+//
+//				options.setExperimentalOption("prefs", prefs)
+//				WebDriver driver = new ChromeDriver(options)
+//				//DriverFactory.changeWebDriver(driver)
 
 				break;
 
