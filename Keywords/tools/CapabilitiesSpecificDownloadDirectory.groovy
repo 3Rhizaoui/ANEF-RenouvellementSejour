@@ -215,7 +215,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 
 				options.setExperimentalOption("prefs", prefs)
 				WebDriver driver = new ChromeDriver(options)
-				DriverFactory.changeWebDriver(driver)
+				//DriverFactory.changeWebDriver(driver)
 
 				break;
 
@@ -252,7 +252,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 
 				options.setExperimentalOption("prefs", prefs)
 				WebDriver driver = new ChromeDriver(options)
-				DriverFactory.changeWebDriver(driver)
+				//DriverFactory.changeWebDriver(driver)
 
 			//				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
 			//				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
@@ -316,7 +316,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				RunConfiguration.setWebDriverPreferencesProperty('moz:firefoxOptions', firefoxDesiredCapabilities)
 				WebDriver driver = new FirefoxDriver(firefoxOptions)
 				assert driver != null
-				DriverFactory.changeWebDriver(driver)
+				//DriverFactory.changeWebDriver(driver)
 				break;
 
 
@@ -349,7 +349,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				RunConfiguration.setWebDriverPreferencesProperty('moz:firefoxOptions', firefoxDesiredCapabilities)
 				WebDriver driver = new FirefoxDriver(firefoxOptions)
 				assert driver != null
-				DriverFactory.changeWebDriver(driver)
+				//DriverFactory.changeWebDriver(driver)
 				break;
 
 
@@ -430,7 +430,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				map.put("prefs", prefs);
 				options.setCapability("ms:edgeOptions", map);
 				WebDriver driver = new EdgeDriver(options);
-				DriverFactory.changeWebDriver(driver)
+				//DriverFactory.changeWebDriver(driver)
 
 				break;
 		}

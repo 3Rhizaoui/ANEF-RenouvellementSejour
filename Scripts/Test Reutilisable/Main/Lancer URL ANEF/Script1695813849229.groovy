@@ -281,7 +281,7 @@ if (Profiles == 'Usager') {
 //			println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 		
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 			//System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			//System.setProperty("webdriver.chrome.verboseLogging", "true");
@@ -295,7 +295,7 @@ if (Profiles == 'Usager') {
 			
 		case 'HEADLESS_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 //			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 //			System.setProperty("webdriver.chrome.verboseLogging", "true");
@@ -308,7 +308,7 @@ if (Profiles == 'Usager') {
 			
 		case 'FIREFOX_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			//WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
@@ -321,7 +321,7 @@ if (Profiles == 'Usager') {
 			
 		case 'FIREFOX_HEADLESS_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			//WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
@@ -333,7 +333,7 @@ if (Profiles == 'Usager') {
 						
 		case 'EDGE_CHROMIUM_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 //			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 //			System.setProperty("webdriver.chrome.verboseLogging", "true");
@@ -346,7 +346,7 @@ if (Profiles == 'Usager') {
 			
 		case  'EDGE_DRIVER':
 			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl(GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			System.setProperty("webdriver.chrome.verboseLogging", "true");
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
