@@ -99,4 +99,9 @@
       <initValue>false</initValue>
       <name>StopTestCase</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>MsgStopTestCase</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

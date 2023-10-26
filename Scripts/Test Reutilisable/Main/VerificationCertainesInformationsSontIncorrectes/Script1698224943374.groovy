@@ -86,10 +86,9 @@ MsgAlertPresent = WebUI.verifyElementVisible(findTestObject('Object Repository/C
 
 if(MsgAlertPresent){
 	TextAlert = WebUI.getText(findTestObject('Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes'),FailureHandling.OPTIONAL)
-	println ' TextAlert : ' + TextAlert
-	GlobalVariable.StopTestCase == true
-	CustomKeywords.'tools.markPassedandStop.markPassedandStopTest'(TextAlert)
+	CustomKeywords.'tools.markWarningAndStop.markWarningAndStopTest'(TextAlert)
+	GlobalVariable.MsgStopTestCase = TextAlert
 	return null}
 else {
 	KeywordUtil.markPassed("Vos informations ne sont pas associées à un compte ==>> Création d\'un nouveau Compte avec ces Informations.")}
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(2)

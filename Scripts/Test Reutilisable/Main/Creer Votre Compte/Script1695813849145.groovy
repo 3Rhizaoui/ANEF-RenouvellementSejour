@@ -106,7 +106,6 @@ WebUI.click(findTestObject('Object Repository/Connexion Usager/Btn_Creer Un Comp
 'Vérification si Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie. pb serveur AGERDF'
 'Appel Brique Réutilisable VerificationCertainesInformationsSontIncorrectes' 
 WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes'), [:], FailureHandling.OPTIONAL)
-
 'Exit TestCase'
 if (GlobalVariable.StopTestCase == true) {
 	return null

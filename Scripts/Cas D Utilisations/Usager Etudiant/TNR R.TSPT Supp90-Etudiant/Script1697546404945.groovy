@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 /**
  * @author hhizaoui
@@ -59,6 +60,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejo
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
 WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [NumEtrangerVisa:NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)}
+
 /*
 'Appel Brique Réutilisable Agent Traitement et Recherche de Demande'
 WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande'), [:], FailureHandling.STOP_ON_FAILURE)

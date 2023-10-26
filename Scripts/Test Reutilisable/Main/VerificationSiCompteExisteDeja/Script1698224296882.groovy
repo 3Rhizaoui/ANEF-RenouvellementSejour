@@ -66,14 +66,13 @@ WebUI.delay(3)
 
 GlobalVariable.StopTestCase = false
 
-MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'), 10, FailureHandling.OPTIONAL)
+MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'), 2, FailureHandling.OPTIONAL)
 
 if (MsgAlertPresent) {
     alertText = WebUI.getText(findTestObject('Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja'), FailureHandling.OPTIONAL)
-    GlobalVariable.StopTestCase == true
-    CustomKeywords.'tools.markPassedandStop.markPassedandStopTest'(alertText)
+    CustomKeywords.'tools.markErreurAndStop.markErreurAndStopTest'(alertText)
     return null } 
 else {
     KeywordUtil.markPassed('Vos informations ne sont pas associées à un compte ==>> Création d\'un nouveau Compte avec ces Informations.')
 }
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(2)
