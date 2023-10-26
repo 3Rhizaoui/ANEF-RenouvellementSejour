@@ -193,7 +193,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				def customizedDownloadDirectory = downloadPath.toString()
 
 				Map prefs = desiredCapabilities.get("prefs")
-				List  args = ["--incognito"]
+				List  args = ["--incognito",]
 			//"--start-maximized",
 				if (prefs == null) {
 					prefs = [:]	}
@@ -208,6 +208,8 @@ public class CapabilitiesSpecificDownloadDirectory {
 				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
 				System.out.println(i.getHostAddress());
 				ChromeOptions options = new ChromeOptions()
+				options.addArguments("--disable-dev-shm-usage")
+				options.addArguments("--incognito")
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 
