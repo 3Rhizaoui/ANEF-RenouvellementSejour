@@ -44,7 +44,7 @@ public class pdfReader2 {
 			pdfFilePath = (RunConfiguration.getProjectDir() + "/Data Files/Downloads/" + FileName).replace(/\//, '\\')
 		}
 		else {
-			pdfFilePath = RunConfiguration.getProjectDir() + "/Data Files/Downloads/" + FileName
+			pdfFilePath = GlobalVariable.downloadPath 
 		}
 		System.out.println("pdfFilePath:" + pdfFilePath);
 		File MyFile = new File(pdfFilePath)

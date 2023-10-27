@@ -78,6 +78,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confiden
 
 "Première visiteq? Créez votre compte :"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Creer Votre Compte'))
+
 WebUI.waitForPageLoad(5)
 println ("NumEtrangerVisa = "+ NumEtrangerVisa)
 "Fournir Le Numéro de votre visa ou votre numéro étranger :"

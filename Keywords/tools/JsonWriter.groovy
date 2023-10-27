@@ -57,7 +57,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 
 
-public class JsonReader {
+public class JsonWriter {
 
 
 	@Keyword

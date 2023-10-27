@@ -71,7 +71,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'C:\\Users\\hhizaoui\\.git\\NewProject29092023\\Nouveau dossier1\\ANEF-AutomatizationProject\\Data Files\\Downloads\''</initValue>
       <name>downloadPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

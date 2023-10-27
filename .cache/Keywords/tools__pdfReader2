@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "A2D68ED4B10329534D1857A4D0666C54",
+  "keywordFileContentHash": "4A558113EDE15F2803EDB364BB2CF964",
   "keywordClasses": [
     {
       "name": "tools.pdfReader2",
@@ -20,11 +20,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
