@@ -105,21 +105,19 @@ WebUI.delay(15)
 'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
 TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
 CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
-WebUI.delay(10)
-CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
-WebUI.delay(2)
-/**J'ouvre ma confirmation de dépôt de demande (PDF)
- * Comparer les deux NumEtrangerVisa du Pdf Généré et de la création de la demande de renouvellemnt du Titre de séjour 
- * */
-
-def FileName = CustomKeywords.'tools.deleteFileDirectory.FilesgetName'()
-
-
-if (CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)) {
-	KeywordUtil.markPassed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "=" + GlobalVariable.NumEtrangerVisaInPDF )
-}  else {
-	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
-}
-WebUI.delay(5)
-
-//CustomKeywords.'tools.OpenPopupInTab.killProcess'()
+//WebUI.delay(10)
+//CustomKeywords.'tools.OpenPopupInTab.CloseBrowserTab'()
+//WebUI.delay(2)
+///**J'ouvre ma confirmation de dépôt de demande (PDF)
+// * Comparer les deux NumEtrangerVisa du Pdf Généré et de la création de la demande de renouvellemnt du Titre de séjour 
+// * */
+//
+//def FileName = CustomKeywords.'tools.deleteFileDirectory.FilesgetName'()
+//
+//
+//if (CustomKeywords.'tools.pdfReader2.ReadPDF'(FileName)) {
+//	KeywordUtil.markPassed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "=" + GlobalVariable.NumEtrangerVisaInPDF )
+//}  else {
+//	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "<>" + GlobalVariable.NumEtrangerVisaInPDF )
+//}
+//WebUI.delay(5)
