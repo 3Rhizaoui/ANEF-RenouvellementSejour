@@ -268,7 +268,8 @@ String projDir = RunConfiguration.getProjectDir()
 'RunConfiguration: getExecutionProperties Driver '
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
-String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+//String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+String DriverName = RunBrowserConfiguration.get("general").get("drivers").get("system").get("Remote").get("preferences").get("Remote").get("browserName")
 println "DriverName :" + DriverName
 println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
@@ -278,7 +279,7 @@ WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
 
 if (Profiles == 'Usager') {
 	switch (DriverName) {
-		case 'CHROME_DRIVER':
+		case ('CHROME_DRIVER'||'Chrome'):
 			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
