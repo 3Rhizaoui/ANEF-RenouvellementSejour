@@ -213,17 +213,17 @@ def tearDown() {
 /**
  * Run before each test case starts.
  */
-@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
+@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def setupTestCase() {
-		'Init standard WebDrive FireFox session Capabilities Specific for Download Directory customizedDownloadDirectory'
-	GlobalVariable.downloadPath = (RunConfiguration.getProjectDir() + '/Data Files/Downloads/').replace(/\//, '\\')
-	String projectDir = (RunConfiguration.getProjectDir() + '/Data Files/Downloads/').replace(/\//, '\\')
-	Path projectPath = Paths.get(projectDir)
-	Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
-	def customizedDownloadDirectory = downloadPath.toString().replace(/\//, '\\')
-	def fileName = "com.kms.katalon.core.webui.chrome.properties"
-	def TextJson ='{'+'"CHROME_DRIVER"'+':{'+'"prefs"'+':{'+'"download.default_directory"'+':"'+ customizedDownloadDirectory +'",'+ '"download_dir"'+':"'+ customizedDownloadDirectory +'",' + '"download.prompt_for_download"' + ':false}}}'
-	CustomKeywords.'tools.JsonWriter.WriterFile'(TextJson,fileName)
+//		'Init standard WebDrive FireFox session Capabilities Specific for Download Directory customizedDownloadDirectory'
+//	GlobalVariable.downloadPath = (RunConfiguration.getProjectDir() + '/Data Files/Downloads/').replace(/\//, '\\')
+//	String projectDir = (RunConfiguration.getProjectDir() + '/Data Files/Downloads/').replace(/\//, '\\')
+//	Path projectPath = Paths.get(projectDir)
+//	Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
+//	def customizedDownloadDirectory = downloadPath.toString().replace(/\//, '\\')
+//	def fileName = "com.kms.katalon.core.webui.chrome.properties"
+//	def TextJson ='{'+'"CHROME_DRIVER"'+':{'+'"prefs"'+':{'+'"download.default_directory"'+':"'+ customizedDownloadDirectory +'",'+ '"download_dir"'+':"'+ customizedDownloadDirectory +'",' + '"download.prompt_for_download"' + ':false}}}'
+//	CustomKeywords.'tools.JsonWriter.WriterFile'(TextJson,fileName)
 }
 
 /**

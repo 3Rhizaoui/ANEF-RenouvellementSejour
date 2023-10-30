@@ -59,7 +59,7 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejo
 
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
-WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [NumEtrangerVisa:NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)}
+WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [NumEtrangerVisa:NumEtrangerVisa, TypeTitreDeSejour: TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)}
 
 /*
 'Appel Brique Réutilisable Agent Traitement et Recherche de Demande'

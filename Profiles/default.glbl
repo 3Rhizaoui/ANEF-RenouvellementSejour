@@ -104,4 +104,9 @@
       <initValue>''</initValue>
       <name>MsgStopTestCase</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>3</initValue>
+      <name>medium_wait</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

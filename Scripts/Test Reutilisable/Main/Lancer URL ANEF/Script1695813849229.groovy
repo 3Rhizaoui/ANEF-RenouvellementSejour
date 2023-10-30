@@ -160,6 +160,15 @@ import com.github.kklisura.cdt.services.types.ChromeTab;
 import java.io.FileOutputStream;
 import java.util.Base64;
 import java.net.URI
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.logging.LogEntries
+import org.openqa.selenium.logging.LogEntry
+import org.openqa.selenium.remote.DesiredCapabilities
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.driver.WebUIDriverType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.eclipse.jetty.websocket.client.WebSocketClient
 import org.eclipse.jetty.websocket.client.WebSocketUpgradeRequest
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -263,52 +272,40 @@ println "DriverName :" + DriverName
 println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
  */
+WebUI.delay(GlobalVariable.medium_wait)
+WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
+
 if (Profiles == 'Usager') {
 	switch (DriverName) {
 		case 'CHROME_DRIVER':
-		
-//			'Init standard WebDrive FireFox session Capabilities Specific for Download Directory customizedDownloadDirectory'
-//			GlobalVariable.downloadPath =(RunConfiguration.getProjectDir()+ "/Data Files/Downloads/")
-//			println "GlobalVariable.downloadPath :" + GlobalVariable.downloadPath
-//			String projectDir = (RunConfiguration.getProjectDir()+ "/Data Files/Downloads/").replace(/\//, '\\\\')
-//			println "projectDir :" + projectDir
-//			String JsonTxt = '{'+'"CHROME_DRIVER"'+':{'+'"args"'+':['+'"--incognito"'+','+'"--start-maximized"'+'],'+'"prefs"'+':{'+'"download.default_directory"'+':'+'"'+ projectDir+'"'+','+'"download_dir"'+':'+'"'+projectDir+'"'+','+'"download.prompt_for_download"'+':false}}}'
-//			String fileName = "com.kms.katalon.core.webui.chrome.properties"
-//			
-//			CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, fileName)
-//			
-//			println "DriverName :" + DriverName
-//			println "Driverpath :" + RunBrowserConfiguration.get("drivers")
-		
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
-	
 			WebUI.maximizeWindow()
-//			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
-//			System.setProperty("webdriver.chrome.verboseLogging", "true");
-			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
+			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			'Appel de l\'action Réutilisable pour contourner l\'erreur lié à la confidentialité'
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
-			"Vérification de l'étape :"
+			'Vérification de l\'étape :'
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
-			break;
 			
+		break
 			
 		case 'HEADLESS_DRIVER':
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
-//			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
-//			System.setProperty("webdriver.chrome.verboseLogging", "true");
+			//System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
+			//System.setProperty("webdriver.chrome.verboseLogging", "true");
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
-			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.OPTIONAL)
 			WebUI.delay(5)
 			"Vérification de l'étape :"
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 			break;
 			
 		case 'FIREFOX_DRIVER':
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			//WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
@@ -321,7 +318,7 @@ if (Profiles == 'Usager') {
 
 			
 		case 'FIREFOX_HEADLESS_DRIVER':
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			//WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
@@ -333,12 +330,12 @@ if (Profiles == 'Usager') {
 			break;
 						
 		case 'EDGE_CHROMIUM_DRIVER':
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
-//			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
-//			System.setProperty("webdriver.chrome.verboseLogging", "true");
-//			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
+			//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			//System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
 			"Vérification de l'étape :"

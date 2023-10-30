@@ -191,32 +191,32 @@ public class CapabilitiesSpecificDownloadDirectory {
 				Path projectPath = Paths.get(projectDir)
 				Path downloadPath = projectPath.resolve(GlobalVariable.downloadPath)
 				def customizedDownloadDirectory = downloadPath.toString()
-//
+			//
 				Map prefs = desiredCapabilities.get("prefs")
-//				List  args = ["--incognito", "--disable-dev-shm-usage", "--start-maximized"]
-//			
-//				if (prefs == null) {
-//					prefs = [:]	}
-//				//capabilities capabilities = DesiredCapabilities.chrome() = DesiredCapabilities.chrome()
-//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
-//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
-//				prefs.put("download.default_directory", customizedDownloadDirectory)
-//				prefs.put("download_dir", customizedDownloadDirectory)
-//				prefs.put("download.prompt_for_download", false)
-////				'Set the incoming buffer to 24MB For hromeDevtools client'
-////				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 900));
-////				" Utilisation de l'adresse IP à la place de localhost"
-////				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
-//				System.out.println(i.getHostAddress());
-//				ChromeOptions options = new ChromeOptions()
-//
-//				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-//				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
-//				RunConfiguration.setDriverPreferencesProperty("webdriver.chrome.driver","prefs",prefs)
-////				options.setExperimentalOption("prefs", prefs)
-//				//options.addArguments(args)
-//				WebDriver driver = new ChromeDriver(options)
-//				DriverFactory.changeWebDriver(driver)
+			//				List  args = ["--incognito", "--disable-dev-shm-usage", "--start-maximized"]
+			//
+			//				if (prefs == null) {
+			//					prefs = [:]	}
+			//				//capabilities capabilities = DesiredCapabilities.chrome() = DesiredCapabilities.chrome()
+			//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: We detected test name contains \"download\" so we get current desiredCapabilities prefs =" + prefs.toString())
+			//				KeywordUtil.logInfo("BeforeTc3SetSpecificDownloadDirectoryIfNeeded: ...and set desiredCapabilities to work with a customized download directory = RunConfiguration.getProjectDir() + / + GlobalVariable.downloadPath = : $customizedDownloadDirectory")
+			//				prefs.put("download.default_directory", customizedDownloadDirectory)
+			//				prefs.put("download_dir", customizedDownloadDirectory)
+			//				prefs.put("download.prompt_for_download", false)
+			////				'Set the incoming buffer to 24MB For hromeDevtools client'
+			////				System.setProperty(DefaultWebSocketContainerFactory.WEBSOCKET_INCOMING_BUFFER_PROPERTY,Long.toString((long) DefaultWebSocketContainerFactory.MB * 900));
+			////				" Utilisation de l'adresse IP à la place de localhost"
+			////				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
+			//				System.out.println(i.getHostAddress());
+			//				ChromeOptions options = new ChromeOptions()
+			//
+			//				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			//				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			//				RunConfiguration.setDriverPreferencesProperty("webdriver.chrome.driver","prefs",prefs)
+			////				options.setExperimentalOption("prefs", prefs)
+			//				//options.addArguments(args)
+			//				WebDriver driver = new ChromeDriver(options)
+			//				DriverFactory.changeWebDriver(driver)
 
 				break;
 
@@ -246,14 +246,14 @@ public class CapabilitiesSpecificDownloadDirectory {
 				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
 				System.out.println(i.getHostAddress());
 				ChromeOptions options = new ChromeOptions()
-				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+					System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+					System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 
 			//options.addArguments(args)
 
 				options.setExperimentalOption("prefs", prefs)
 				WebDriver driver = new ChromeDriver(options)
-				//DriverFactory.changeWebDriver(driver)
+			//DriverFactory.changeWebDriver(driver)
 
 			//				'Init standard WebDrive Chrome session Capabilities Specific for Download Directory'
 			//				GlobalVariable.downloadPath =RunConfiguration.getProjectDir()+ "/Data Files/Downloads/"
@@ -317,7 +317,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				RunConfiguration.setWebDriverPreferencesProperty('moz:firefoxOptions', firefoxDesiredCapabilities)
 				WebDriver driver = new FirefoxDriver(firefoxOptions)
 				assert driver != null
-				//DriverFactory.changeWebDriver(driver)
+			//DriverFactory.changeWebDriver(driver)
 				break;
 
 
@@ -350,7 +350,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				RunConfiguration.setWebDriverPreferencesProperty('moz:firefoxOptions', firefoxDesiredCapabilities)
 				WebDriver driver = new FirefoxDriver(firefoxOptions)
 				assert driver != null
-				//DriverFactory.changeWebDriver(driver)
+			//DriverFactory.changeWebDriver(driver)
 				break;
 
 
@@ -431,7 +431,7 @@ public class CapabilitiesSpecificDownloadDirectory {
 				map.put("prefs", prefs);
 				options.setCapability("ms:edgeOptions", map);
 				WebDriver driver = new EdgeDriver(options);
-				//DriverFactory.changeWebDriver(driver)
+			//DriverFactory.changeWebDriver(driver)
 
 				break;
 		}
