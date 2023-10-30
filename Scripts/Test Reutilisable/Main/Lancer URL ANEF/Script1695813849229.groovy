@@ -267,13 +267,8 @@ import java.util.concurrent.TimeUnit;
 String projDir = RunConfiguration.getProjectDir()
 'RunConfiguration: getExecutionProperties Driver '
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
-String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
-String SystemeName = RunBrowserConfiguration.get("drivers").get("system")
-String SystemedriversName = RunBrowserConfiguration.get("drivers")
-
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
-println "SystemedriversName :" + SystemedriversName
-println "SystemeName :" + SystemeName
+String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 println "DriverName :" + DriverName
 println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
