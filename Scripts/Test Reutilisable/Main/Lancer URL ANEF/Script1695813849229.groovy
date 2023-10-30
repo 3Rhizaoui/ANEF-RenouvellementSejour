@@ -273,8 +273,9 @@ println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 println "DriverNamedrivers :" + RunBrowserConfiguration.get("drivers")
 println "DriverNamepreferences :" + RunBrowserConfiguration.get("drivers").get("preferences")
 println "DriverNameRemote :" + RunBrowserConfiguration.get("drivers").get("preferences").get("Remote")
+println "DriverNamebrowserName :" + RunBrowserConfiguration.get("drivers").get("preferences").get("Remote").get("browserName")
 
-String DriverName = RunBrowserConfiguration.get("general").get("drivers").get("system").get("preferences").get("Remote").get("katalon").get("option").get("browserName")
+String DriverName = RunBrowserConfiguration.get("drivers").get("preferences").get("Remote").get("browserName")
 
 println "DriverName :" + DriverName
 println "Driverpath :" + RunBrowserConfiguration.get("drivers")
