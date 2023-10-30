@@ -255,7 +255,8 @@ String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("We
 //WebUI.delay(15)
 'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
 TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
-CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
+WebUI.click(OuvrirMaConfirmationDeDépôtDeDemandePDF)
+//CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
 String NumEtrangerVisa = NumEtrangerVisa.toString()
 if ((DriverName =='FIREFOX_DRIVER')){
 'Switch to  window Index 1'
