@@ -343,7 +343,7 @@ if (Profiles == 'Usager') {
 			break;
 			
 		case  'EDGE_DRIVER':
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			System.setProperty("webdriver.chrome.verboseLogging", "true");
@@ -354,7 +354,7 @@ if (Profiles == 'Usager') {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 			break;
 		case  'IE_DRIVER':
-			CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
+			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			System.setProperty("webdriver.chrome.verboseLogging", "true");
