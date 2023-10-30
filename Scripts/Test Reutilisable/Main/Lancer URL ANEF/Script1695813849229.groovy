@@ -270,9 +270,9 @@ Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 //String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 
-println "DriverNamegeneral :" + RunBrowserConfiguration.get("general")
-println "DriverNamedrivers :" + RunBrowserConfiguration.get("general").get("drivers")
-println "DriverNamesystem :" + RunBrowserConfiguration.get("general").get("drivers").get("system")
+println "DriverNamedrivers :" + RunBrowserConfiguration.get("drivers")
+println "DriverNamedrivers :" + RunBrowserConfiguration.get("drivers").get("system")
+println "DriverNamesystem :" + RunBrowserConfiguration.get("drivers").get("system").get("preferences")
 
 String DriverName = RunBrowserConfiguration.get("general").get("drivers").get("system").get("preferences").get("Remote").get("katalon").get("option").get("browserName")
 
