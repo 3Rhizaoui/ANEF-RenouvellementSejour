@@ -142,7 +142,6 @@ if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur'
 
 println "TypeTitreDeSejour :" + TypeTitreDeSejour
 
-
 "'Option Correspondant à votre situation :'Carte Bleue Européenne', 'Salarié En Mission'"
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour =="TS-PT-SalarieEnMission")) {

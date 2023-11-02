@@ -28,7 +28,7 @@
          <id>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-3</value>
+            <value>1-13</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
@@ -105,7 +105,7 @@
          <id>ae4b4909-d70f-498a-8023-db4a47a29b29</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>4-4</value>
+            <value>14-14</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>

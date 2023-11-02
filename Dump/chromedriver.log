@@ -176,3 +176,8 @@
    "pageLoad": 30000
 }
 [1698938671.101][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
+[1698945142.341][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND GetTitle {
+}
+[1698945142.342][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE GetTitle ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
