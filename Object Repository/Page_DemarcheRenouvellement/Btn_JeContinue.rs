@@ -6,11 +6,11 @@
    <elementGuidId>1cb0ba30-fb16-478f-9aaa-a91de909db16</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@type=&quot;submit&quot; and contains(., 'Je continue')]|//span[@class=&quot;ui-button-text ui-clickable&quot; and contains(., 'Je continue')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//app-informations-declaration//app-actions-bar//button/span[contains(.,'Je continue')]|//app-informations-demande-ptsq//app-actions-bar//button/span[contains(.,'Je continue')]|//*/div[2]/button/span|//app-portal//app-informations-declaration//app-actions-bar//div/button/span</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

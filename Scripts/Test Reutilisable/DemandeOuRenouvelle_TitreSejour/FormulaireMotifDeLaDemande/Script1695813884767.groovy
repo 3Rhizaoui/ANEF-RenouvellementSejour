@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
@@ -207,9 +208,9 @@ if ((TypeTitreDeSejour == 'TS-PT-SalarieEntrepriseInnovante') && ((Titre == 'Vis
 
 /********************************************************************/
 'Option Correspondant à votre situation :Carte Bleue Européenne'
-if ((TypeTitreDeSejour == 'TS-PT-CarteBleueEuropéenne') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if ((TypeTitreDeSejour == 'TS-PT-CarteBleueEuropeenne') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
     WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropeenne'))
-
+	WebUI.delay(2)
     'INFORMATIONS RELATIVES À LA QUALIFICATION :'
     WebUI.check(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_DiplomeSanctionnantAuMoins3AnneesEtudesSuperieures_NON'))
 
@@ -232,9 +233,16 @@ if ((TypeTitreDeSejour == 'TS-PT-CarteBleueEuropéenne') && ((Titre == 'Visiteur
 
     WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_DateDebutContrat_AAAA'), '2010')
 
-    'Vous devez disposer d’un salaire brut minimal de 41 022,72  euros annuel.'
-    WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_SalaireAnnuelBrut'), '42000')
 
+	if ((TypeTitreDeSejour == 'TS-PT-CarteBleueEuropeenne')) {
+		'Vous devez disposer d’un salaire brut minimal de 53836.50  euros annuel.'
+		WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_SalaireAnnuelBrut'), '53836.50')}
+	else {
+		'Vous devez disposer d’un salaire brut minimal de 41 022,72  euros annuel.'
+		WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_SalaireAnnuelBrut'), '42000')}
+	
+	
+	
     'INFORMATIONS RELATIVES À L\'EMPLOYEUR :'
     WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_NumSiretEmployeur'), '44449577400531')
 
@@ -248,7 +256,7 @@ if ((TypeTitreDeSejour == 'TS-PT-CarteBleueEuropéenne') && ((Titre == 'Visiteur
 
 /********************************************************************/
 'Option Correspondant à votre situation :Salarié En Mission'
-if ((TypeTitreDeSejour == 'TS-PT-SalariéEnMission') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if ((TypeTitreDeSejour == 'TS-PT-SalarieEnMission') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
     'INFORMATIONS RELATIVES À L\'ACTIVITÉ PROFESSIONNELLE :'
     WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieEnMission'))
 
@@ -301,4 +309,225 @@ if ((TypeTitreDeSejour == 'TS-PT-SalariéEnMission') && ((Titre == 'Visiteur') |
 
     WebUI.delay(2)
 }
+/********************************************************************/
+'Option Correspondant à votre situation :ChercheurEtChercheurEnMobilite'
+if ((TypeTitreDeSejour == 'ChercheurEtChercheurEnMobilite') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 
+	  'INFORMATIONS RELATIVES À LA QUALIFICATION '
+    WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_IntituleDuDiplome'), 'Intitulé du diplôme ')
+
+    WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_DateDeDelivrance_JJ'), '10')
+
+    WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_DateDeDelivrance_MM'))
+
+    WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/click-select_DateDeDelivrance_MM'))
+
+    WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_DateDeDelivrance_AAAA'), '2010')
+
+    WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Input_EtablissementDeDelivrance'), 'Établissement De Délivrance')
+
+	'INFORMATIONS RELATIVES À L’ACTIVITÉ DE RECHERCHE :'
+
+    "Organisme d'accueil"
+     WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_OrganismeDAccueil'), 'Organisme Accueil')
+	 
+	 "Programme de mobilité dans l'Union Européenne"
+     WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_ProgrammeDeMobiliteDansUnionEuropeenne_Non'))
+	
+	 "Nature du lien avec l'organisme d'accueil"
+	 WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Click_Select_NatureDuLienOrganismeAccueil'))
+	 WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Click_Select_Value_NatureDuLienOrganismeAccueil'))
+	 
+	 'Validation'
+	 WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	 
+     WebUI.delay(2)
+}
+	/********************************************************************/
+	'Option Correspondant à votre situation :Investisseur (French tech Visa for Investors)'
+if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+		
+	'INFORMATION EN LIEN AVEC LE PROJET D’INVESTISSEMENT'
+	 WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_InvestissementPersonnel'))
+	 "Montant investi en France "
+	 WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_MontantInvestiEnFrance'), '400000')
+	 'Validation'
+	 WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+	}
+
+/********************************************************************/
+'Option Correspondant à votre situation :Investisseur (French tech Visa for Investors)'
+if (((TypeTitreDeSejour == 'CreateurDEntreprise') && (Titre == 'Visiteur')) || ((TypeTitreDeSejour == 'CreateurDEntreprise') && (Titre == 'Etudiant'))) {
+	
+	'INFORMATIONS RELATIVES À LA QUALIFICATION'
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_DiplomeDeNiveauMaster_Non'))
+	
+	"INFORMATIONS RELATIVES À L'EXPÉRIENCE PROFESSIONNELLE"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NombreEntreprisesGerees'), '0')
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_ConfirmerNombreEntreprises'))
+	
+	"ÉLÉMENTS RELATIFS À L'ENTREPRISE CRÉÉE"
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EntrepriseANumeroSiret'))
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NumeroSiret'), '47976684200724')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_ConfirmerNumeroSiret'))
+
+	"Nature des activités"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_NatureDesActivites'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_NatureDesActivites'))
+	"activités sont-elles soumises à autorisation d'exercice"
+
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_ActivitesSoumisesAutorisationExercice_Non'))
+	"Fonction exercée au sein de cette société"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_FonctionExerceeDansLaSociete'), 'FonctionExerceeDansLaSociete')
+	"Étes-vous mandaté par une société ayant son siège social à l'étranger"
+
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_MandateParSocieteAEtranger_Non'))
+	"MOYENS FINANCIERS À DESTINATION DE L'ENTREPRISE CRÉÉE"
+	"Nombre de comptes"
+
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NombreDeComptes'), '1')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_confirmerNombreDeComptes'))
+	"Informations sur le compte"
+	"Nature du dépôt"
+
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_NatureDuDepot'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_NatureDuDepot'))
+
+	"Montant "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_Montant'), '300000')
+	"Dénomination de l'organisme tenant le compte"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DenominationDeOrganismetenantCompte'), 'DenominationDeOrganismetenantCompte')
+	"Adresse de l'organisme tenant le compte"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_AdresseOrganismeTenantCompte'), 'AdresseOrganismeTenantCompte')
+	"Numéro du compte "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NumeroDuCompte'), 'NumeroDuCompte')
+
+	"RESSOURCES"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_RESSOURCES'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_RESSOURCES'))
+
+	"Montant €/mois "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_MontantParMois'), '2500')
+	
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+}
+
+/********************************************************************/
+'Option Correspondant à votre situation :Investisseur (French Tech Visa For Founders)'
+
+if (((TypeTitreDeSejour == 'FrenchTechVisaForFounders') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'FrenchTechVisaForFounders') && (Titre == 'Visiteur'))) {
+	
+	'INFORMATION EN LIEN AVEC LE PROJET INNOVANT'
+	"Veuillez préciser la nature de votre projet"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_PeciserLaNatureDeProjet'), 'Veuillez préciser la nature de votre projet')
+	
+	"RESSOURCES"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_RESSOURCES'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_RESSOURCES'))
+	
+	"Montant €/mois "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_MontantParMois'), '2500')
+	
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+}
+
+/********************************************************************/
+'Option Correspondant à votre situation :Investisseur (MandataireSocial)'
+
+if (((TypeTitreDeSejour == 'MandataireSocial') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'MandataireSocial') && (Titre == 'Visiteur'))) {
+	
+	'INFORMATIONS RELATIVES AU GROUPE '
+	"Nom du groupe, N° Siret, NSiret, Site Internet, Durée de l’ancienneté en tant que salarié ou de mandataire au sein du groupe "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NomGroupe'), 'Nom du groupe')
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NSiretGROUPE'), '47976684200724')
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_SiteInternet'), 'Site Internet')
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DureeAnciennete'), '17')
+	
+	"INFORMATIONS RELATIVES À LA SOCIÉTÉ ÉTABLIE EN FRANCE AU SEIN DE LAQUELLE VOUS ALLEZ EXERCER LES FONCTIONS DE MANDATAIRE SOCIAL"
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/imput_NSiretMandataire'),'47976684200724')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_confirmerNSiretMandataire'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_ContratMandataire_Salarie'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_TypeContratMandataireCDI_Salarie'))
+	
+	"Montant €/mois "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_RemunerationBruteAnnuelle'), '61534.08')
+	
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}
+
+/********************************************************************/
+'Option Correspondant à votre situation :Passeport Talent  (Visiteur)'
+
+if (((TypeTitreDeSejour == 'Artiste') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'Artiste') && (Titre == 'Visiteur'))) {
+	
+	"Veuillez sélectionner l'option correspondant à votre situation: Artiste non salarié"
+	"Artiste non salarié"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_Artiste_NonSalarie'))
+		
+	"INFORMATIONS RELATIVES À L'ACTIVITÉ ARTISTIQUE"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_Domaine'), 'Domaine')
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_InformationsComplementaires'), 'Informations complémentaires')
+	
+	"RESSOURCES"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_RESSOURCES'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_RESSOURCES'))
+	
+	"Montant €/mois "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_MontantParMois'), '1196.50')
+	
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}
+
+/********************************************************************/
+'Option Correspondant à votre situation :Passeport Talent  (MembreDeFamillePasseportTalent_Conjoint)'
+
+if (((TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') && (Titre == 'Visiteur'))) {
+	
+	"Veuillez sélectionner l'option correspondant à votre situation: MembreDeFamillePasseportTalent_Conjoint"
+	"Conjoint"
+
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NomConjoint'), 'Conjoint')
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_PrenomConjoint'), 'Prenom')
+	
+	
+	"Date de naissance"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DateDeNaissanceConjoint_JJ'), '21')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DateDeNaissanceConjoint_MM'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_ValueDateDeNaissanceConjoint_MM'))
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DateDeNaissanceConjoint_AAAA'), '2000')
+	
+	"N° Étranger "
+//	def  NEtrangerConjoint = GlobalVariable.NumEtrangerVisa
+//	NEtrangerConjoint = (NEtrangerConjoint - 1)
+
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_NEtrangerConjoint'), '7703040689')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/btn_ConfirmerNEtrangerConjoint'))
+	
+	"MA SITUATION FAMILIALE"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_SituationFamiliale'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_SituationFamiliale'))
+	
+	
+	"Date de début de l'union"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DateDeNaissanceConjoint_JJ'), '21')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DateDeNaissanceConjoint_MM'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_ValueDateDeNaissanceConjoint_MM'))
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_DateDeNaissanceConjoint_AAAA'), '2011')
+	
+	"Pays de l'union"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_PaysUnion'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_PaysUnion'))
+	
+	"ENFANTS"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAVotreCharge'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAChargeDeVotreConjoint'))
+	
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}

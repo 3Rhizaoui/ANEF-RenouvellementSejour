@@ -53,7 +53,7 @@ if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour
 	WebUI.delay(10)
 }
 
-if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie"||"TS-PT-SalarieEntrepriseInnovante" ||"TS-PT-CarteBleueEuropeenne" || "TS-PT-SalarieEnMission") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
