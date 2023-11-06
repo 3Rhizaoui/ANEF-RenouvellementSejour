@@ -56,6 +56,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.delay(3)
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
+			
 			}
 	break
 	case 'etudiant' :

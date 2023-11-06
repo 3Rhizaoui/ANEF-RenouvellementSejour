@@ -1,6 +1,6 @@
-[1698938669.021][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 45779
-[1698938669.021][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1698938669.268][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND InitSession {
+[1699023981.357][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 15232
+[1699023981.357][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1699023981.497][INFO]: [b57176ae7dc835f3e9a7c4c624886016] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -31,7 +31,7 @@
       "version": ""
    }
 }
-[1698938669.275][INFO]: Populating Preferences file: {
+[1699023981.508][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -89,7 +89,7 @@
       "enabled": false
    }
 }
-[1698938669.276][INFO]: Populating Local State file: {
+[1699023981.509][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -99,20 +99,20 @@
       }
    }
 }
-[1698938669.282][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --load-extension="C:\Users\hhizaoui\.katalon\packages\Katalon_Studio_Windows_64-8.6.6\Katalon_Studio_Windows_64-8.6.6\configuration\resources\extensions\Chrome\Smart Wait" --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir101328_1070916254" data:,
-[1698938670.313][INFO]: resolved localhost to ["127.0.0.1","::1"]
-[1698938670.961][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE InitSession {
+[1699023981.517][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --load-extension="C:\Users\hhizaoui\.katalon\packages\Katalon_Studio_Windows_64-8.6.6\Katalon_Studio_Windows_64-8.6.6\configuration\resources\extensions\Chrome\Smart Wait" --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir141912_174505398" data:,
+[1699023983.188][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1699023985.310][INFO]: [b57176ae7dc835f3e9a7c4c624886016] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
       "browserVersion": "118.0.5993.89",
       "chrome": {
          "chromedriverVersion": "118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})",
-         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir101328_1070916254"
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir141912_174505398"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:59877"
+         "debuggerAddress": "localhost:54785"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -133,51 +133,5 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "66f12e009a78ce2fa044a55d44f76e64"
+   "sessionId": "b57176ae7dc835f3e9a7c4c624886016"
 }
-[1698938670.986][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "implicit": 0
-}
-[1698938670.986][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938670.999][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "pageLoad": 30000
-}
-[1698938670.999][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938671.014][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "implicit": 0
-}
-[1698938671.014][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938671.030][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "pageLoad": 30000
-}
-[1698938671.030][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938671.039][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND ExecuteScript {
-   "args": [  ],
-   "script": "return navigator.sayswho= (function() { var ua= navigator.userAgent, tem, M= ua.match(/(opera|chrome|safari|firefox|msie|trident)\\/?\\s*(\\.?\\d+(\\.\\d+)*)/i) || []; if (/trident/i.test(M[1])) {     tem=  /\\brv[ :]+(\\d+)/g.exec(ua) || [];     return 'IE '+(tem[1] || ''); } if(M[1]=== 'Chrome') {     tem= ua.match(/\\b(OPR|Edge|Edg)\\/(\\d+)/);     if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera').replace('Edg', 'Edge Chromium'); } M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?']; if((tem= ua.match(/version\\/(\\d+)/i))!= null) M.splice(1, 1, tem[1]); return M.join(' ').replace('MSIE', 'IE');})();"
-}
-[1698938671.039][INFO]: Waiting for pending navigations...
-[1698938671.040][INFO]: Done waiting for pending navigations. Status: ok
-[1698938671.044][INFO]: Waiting for pending navigations...
-[1698938671.044][INFO]: Done waiting for pending navigations. Status: ok
-[1698938671.044][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE ExecuteScript "Chrome 118.0.0.0"
-[1698938671.056][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "implicit": 0
-}
-[1698938671.056][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938671.070][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "pageLoad": 30000
-}
-[1698938671.070][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938671.087][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "implicit": 0
-}
-[1698938671.088][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698938671.101][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND SetTimeouts {
-   "pageLoad": 30000
-}
-[1698938671.101][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE SetTimeouts
-[1698945142.341][INFO]: [66f12e009a78ce2fa044a55d44f76e64] COMMAND GetTitle {
-}
-[1698945142.342][INFO]: [66f12e009a78ce2fa044a55d44f76e64] RESPONSE GetTitle ERROR no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.89)

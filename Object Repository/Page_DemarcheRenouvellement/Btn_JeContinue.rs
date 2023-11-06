@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type=&quot;submit&quot; and contains(., 'Je continue')]|//span[@class=&quot;ui-button-text ui-clickable&quot; and contains(., 'Je continue')]</value>
+         <value>//button[@type=&quot;submit&quot; and contains(., 'Je commence')]|//span[@class=&quot;ui-button-text ui-clickable&quot; and contains(., 'Je continue')]|//app-informations-declaration//app-actions-bar//button/span[contains(.,'Je continue')]|//app-informations-demande-ptsq//app-actions-bar//button/span[contains(.,'Je continue')]|//*/div[2]/button/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
