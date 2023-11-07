@@ -270,26 +270,26 @@ Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
 
- //if (RunBrowserConfiguration.get("drivers").get("system").get("preferences") ==! "") {
+ if (RunBrowserConfiguration.get("drivers").get("system").get("Remote") ==! "") {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 	println "DriverName :" + DriverName
-	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
-	//}
-//else {
-//	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
-//	println "DriverName :" + DriverName
-//	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
-// 
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+else {
+	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+	println "DriverName :" + DriverName
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+ 
  
  
  /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
  */
 WebUI.delay(GlobalVariable.medium_wait)
-WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
+//WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
 
 if (Profiles == 'Usager') {
 	switch (DriverName) {
-		case ('CHROME_DRIVER'||'REMOTE_WEB_DRIVER'):
+		//case ('CHROME_DRIVER'||'REMOTE_WEB_DRIVER'):
+		case 'REMOTE_WEB_DRIVER':
 			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
