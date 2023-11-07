@@ -27,12 +27,11 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [Profiles:'Usager'], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Créer un Compte Usager'
-//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [NumEtrangerVisa:NumEtrangerVisa, DateDebut:DateDebut, DateFin:DateFin], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [NumEtrangerVisa:NumEtrangerVisa, DateDebut:DateDebut, DateFin:DateFin], FailureHandling.STOP_ON_FAILURE)
 
 if (GlobalVariable.StopTestCase == false) {
 'Appel Brique Réutilisable pour Identification Usager ou Agent'
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [Profiles:'Usager', NumEtrangerVisa:NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)
-
 
 'Appel Brique Réutilisable pour une Demande Ou Renouvelle Titre De Sejour Usager'
 WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/DemandeOuRenouvelleTitreSejour'), [:], FailureHandling.STOP_ON_FAILURE)
