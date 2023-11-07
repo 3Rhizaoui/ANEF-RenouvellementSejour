@@ -293,8 +293,8 @@ if (Profiles == 'Usager') {
 			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
-			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-			System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			//System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 			'Appel de l\'action Réutilisable pour contourner l\'erreur lié à la confidentialité'
 			//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
