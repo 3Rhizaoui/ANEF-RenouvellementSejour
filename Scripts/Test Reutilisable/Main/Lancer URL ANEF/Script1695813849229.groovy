@@ -268,10 +268,20 @@ String projDir = RunConfiguration.getProjectDir()
 'RunConfiguration: getExecutionProperties Driver '
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
-String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
-println "DriverName :" + DriverName
-println "Driverpath :" + RunBrowserConfiguration.get("drivers")
-/**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
+String DriverName = ""
+
+ if (RunBrowserConfiguration.get("drivers").get("system").get("preferences") ==! "") {
+	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("preferences").get("browserType")
+	println "DriverName :" + DriverName
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+else {
+	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+	println "DriverName :" + DriverName
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+ 
+ 
+ 
+ /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
  */
 WebUI.delay(GlobalVariable.medium_wait)
 WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
