@@ -1,6 +1,6 @@
-[1699023981.357][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 15232
-[1699023981.357][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1699023981.497][INFO]: [b57176ae7dc835f3e9a7c4c624886016] COMMAND InitSession {
+[1699331459.779][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 9255
+[1699331459.779][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1699331459.956][INFO]: [44e8d87fde2434905c98ff1be75e404f] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -31,7 +31,7 @@
       "version": ""
    }
 }
-[1699023981.508][INFO]: Populating Preferences file: {
+[1699331459.967][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -89,7 +89,7 @@
       "enabled": false
    }
 }
-[1699023981.509][INFO]: Populating Local State file: {
+[1699331459.969][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -99,20 +99,20 @@
       }
    }
 }
-[1699023981.517][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --load-extension="C:\Users\hhizaoui\.katalon\packages\Katalon_Studio_Windows_64-8.6.6\Katalon_Studio_Windows_64-8.6.6\configuration\resources\extensions\Chrome\Smart Wait" --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir141912_174505398" data:,
-[1699023983.188][INFO]: resolved localhost to ["127.0.0.1","::1"]
-[1699023985.310][INFO]: [b57176ae7dc835f3e9a7c4c624886016] RESPONSE InitSession {
+[1699331459.980][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --load-extension="C:\Users\hhizaoui\.katalon\packages\Katalon_Studio_Windows_64-8.6.6\Katalon_Studio_Windows_64-8.6.6\configuration\resources\extensions\Chrome\Smart Wait" --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir47972_511354284" data:,
+[1699331461.187][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1699331462.052][INFO]: [44e8d87fde2434905c98ff1be75e404f] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
       "browserVersion": "118.0.5993.89",
       "chrome": {
          "chromedriverVersion": "118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})",
-         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir141912_174505398"
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir47972_511354284"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:54785"
+         "debuggerAddress": "localhost:50170"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -133,5 +133,5 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "b57176ae7dc835f3e9a7c4c624886016"
+   "sessionId": "44e8d87fde2434905c98ff1be75e404f"
 }

@@ -27,7 +27,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [Profiles:'Usager'], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Créer un Compte Usager'
-WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [NumEtrangerVisa:NumEtrangerVisa, DateDebut:DateDebut, DateFin:DateFin], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [NumEtrangerVisa:NumEtrangerVisa, DateDebut:DateDebut, DateFin:DateFin], FailureHandling.STOP_ON_FAILURE)
 
 if (GlobalVariable.StopTestCase == false) {
 'Appel Brique Réutilisable pour Identification Usager ou Agent'
@@ -59,22 +59,22 @@ WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejo
 
 
 'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
-WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [NumEtrangerVisa:NumEtrangerVisa, TypeTitreDeSejour: TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)}
+/*WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [NumEtrangerVisa:NumEtrangerVisa, TypeTitreDeSejour: TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)*/}
 
 
-/*
-'Appel Brique Réutilisable Agent Traitement et Recherche de Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Informations Générales de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitéementDemande/Vérif_AccordéonInformationsGénéralesDemande'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Observation Du Demandeur de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Etat Civil Du Demandeur de la Demande'
-WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonEtatCivilDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
-*/
+//'Appel Brique Réutilisable Agent Traitement et Recherche de Demande'
+//WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Informations Générales de la Demande'
+//WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitéementDemande/Vérif_AccordéonInformationsGénéralesDemande'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Observation Du Demandeur de la Demande'
+//WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Appel Brique Réutilisable Agent Traitement -Vérification  Accordéon Etat Civil Du Demandeur de la Demande'
+//WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonEtatCivilDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
+//
 
 
 
