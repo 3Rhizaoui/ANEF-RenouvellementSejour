@@ -270,7 +270,7 @@ Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
 
- if (RunBrowserConfiguration.get("drivers").get("system").get("Remote") ==! "") {
+ if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
