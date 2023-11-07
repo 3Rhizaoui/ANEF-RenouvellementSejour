@@ -32,7 +32,7 @@ CustomKeywords.'tools.WaitForLoadedPage.waitForElementRendering'()
  *so that they call Highlight.on() automatically
  */
 'Call Highlight.on() automatically'
-CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
+//CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 'RunConfiguration: getExecutionProperties Driver '
 def DriverName = CustomKeywords.'tools.GetExecutionProperties.PropertieNameDriver'()

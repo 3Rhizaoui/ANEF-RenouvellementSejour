@@ -296,7 +296,7 @@ if (Profiles == 'Usager') {
 			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 			System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 			'Appel de l\'action Réutilisable pour contourner l\'erreur lié à la confidentialité'
-			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
+			//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
 			'Vérification de l\'étape :'
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)

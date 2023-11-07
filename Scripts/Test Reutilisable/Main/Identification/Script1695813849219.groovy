@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
  * @author hhizaoui
  *so that they call Highlight.on() automatically
  */
-CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
+//CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 /**Identification : Portail Usager
  */
