@@ -270,15 +270,16 @@ Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
 
- if (RunBrowserConfiguration.get("drivers").get("system").get("preferences") ==! "") {
-	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("preferences").get("browserName")
+ //if (RunBrowserConfiguration.get("drivers").get("system").get("preferences") ==! "") {
+	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("browserType")
 	println "DriverName :" + DriverName
-	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
-else {
-	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
-	println "DriverName :" + DriverName
-	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
- 
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
+	//}
+//else {
+//	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+//	println "DriverName :" + DriverName
+//	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+// 
  
  
  /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
