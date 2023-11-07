@@ -271,7 +271,7 @@ println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
 
  //if (RunBrowserConfiguration.get("drivers").get("system").get("preferences") ==! "") {
-	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("browserType")
+	DriverName = RunBrowserConfiguration.get("drivers")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 	//}
