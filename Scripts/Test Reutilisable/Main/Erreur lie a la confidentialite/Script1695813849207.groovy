@@ -35,7 +35,8 @@ CustomKeywords.'tools.WaitForLoadedPage.waitForElementRendering'()
 //CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 'RunConfiguration: getExecutionProperties Driver '
-def DriverName = CustomKeywords.'tools.GetExecutionProperties.PropertieNameDriver'()
+def DriverName = GlobalVariable.DriverName
+//CustomKeywords.'tools.GetExecutionProperties.PropertieNameDriver'()
 
 "contournement du message d'erreur lié à la confidentialité :"
 if ((DriverName =='CHROME_DRIVER') || ('EDGE_CHROMIUM_DRIVER') || 'HEADLESS_DRIVER'){

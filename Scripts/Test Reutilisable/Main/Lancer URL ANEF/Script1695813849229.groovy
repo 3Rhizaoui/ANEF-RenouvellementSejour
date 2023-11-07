@@ -278,7 +278,7 @@ else {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
- 
+GlobalVariable.DriverName = DriverName
  
  
  /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:

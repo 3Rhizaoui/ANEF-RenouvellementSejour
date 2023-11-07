@@ -109,4 +109,9 @@
       <initValue>3</initValue>
       <name>medium_wait</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>DriverName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
