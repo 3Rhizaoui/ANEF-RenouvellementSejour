@@ -289,7 +289,7 @@ WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
 
 if (Profiles == 'Usager') {
 	switch (DriverName) {
-		case ('CHROME_DRIVER'||'Chrome'):
+		case ('CHROME_DRIVER'||'REMOTE_WEB_DRIVER'):
 			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
