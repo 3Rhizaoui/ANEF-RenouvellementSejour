@@ -29,7 +29,8 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 'RunConfiguration for get Execution Properties Driver'
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
-String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+String DriverName = GlobalVariable.DriverName
+//RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 String  SpecificDownloadDirectory =""
 'Upload file attachment'
 if (DriverName =='FIREFOX_DRIVER') {
