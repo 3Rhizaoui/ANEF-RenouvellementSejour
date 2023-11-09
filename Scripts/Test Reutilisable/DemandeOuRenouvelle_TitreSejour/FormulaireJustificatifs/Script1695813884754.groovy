@@ -43,7 +43,7 @@ if (DriverName =='FIREFOX_DRIVER') {
 	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
 	}
 else {
-	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
+	 SpecificDownloadDirectory = RunConfiguration.getProjectDir()
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 
@@ -65,7 +65,8 @@ println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 /********************************************************************************************************/
 
 if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
+	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
+	WebUI.sendKeys(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
 	WebUI.delay(02)
 
 	'Joindre un  justificatif Passeport'
