@@ -37,7 +37,7 @@ if (DriverName =='FIREFOX_DRIVER') {
 	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
 	}
 else {
-	 SpecificDownloadDirectory = RunConfiguration.getProjectDir() + "/Data Files/"
+	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 'Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour'
