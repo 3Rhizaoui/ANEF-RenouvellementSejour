@@ -20,6 +20,12 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.remote.LocalFileDetector as LocalFileDetector
+import org.openqa.selenium.remote.RemoteWebDriver
+import org.openqa.selenium.support.events.EventFiringWebDriver
 
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
@@ -40,6 +46,20 @@ else {
 	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
+
+filePath = System.getProperty("user.dir") + File.separator + "myfile.txt" // finds the directory that katalon is running in and grabs myfile.txt
+println "filePath : " + filePath
+EventFiringWebDriver driver = DriverFactory.getWebDriver()  // get the event driver (aka the katalon smartwait driver)
+
+RemoteWebDriver wrappedDriver = driver.getWrappedDriver() // get the driver inside the smart wait driver (remote,chrome, firefox,etc)
+
+wrappedDriver.setFileDetector(new LocalFileDetector()) //points your remote,chrome,firefox,etc driver to the local files in the run.
+
+WebElement fileInput  = findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
+//WebElement fileInput = wrappedDriver. Upload // specify your selector (I'm using CSS) and create fileInput as the object that is found by your selector
+
+fileInput.sendKeys(filePath) //Send the fileInput object your filepath, which is a directory. It will begin the upload at this point.
+
 'Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour'
 /********************************************************************************************************/
 
