@@ -40,6 +40,6 @@ if (WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Informatio
 
 WebUI.setText(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/Input_AdresseUsager'), AdresseUsager)
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/select_AdresseUsager'))
+//WebUI.click(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/select_AdresseUsager'))
 WebUI.setText(findTestObject('Object Repository/Page_InformationPersonnelles_Usager/Input_NumeroDeTelephone'), NumeroTelephoneUsager)
 WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
