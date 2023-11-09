@@ -55,10 +55,15 @@ RemoteWebDriver wrappedDriver = driver.getWrappedDriver() // get the driver insi
 
 wrappedDriver.setFileDetector(new LocalFileDetector()) //points your remote,chrome,firefox,etc driver to the local files in the run.
 
-WebElement fileInput  = findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
+//TestObjet fileInput  = findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
 //WebElement fileInput = wrappedDriver. Upload // specify your selector (I'm using CSS) and create fileInput as the object that is found by your selector
+WebElement fileInput = wrappedDriver.findElement(By.xpath("//app-justificatifs-visiteur//app-justificatif-titre-sejour//app-pieces-jointes//span[1]/input|//app-justificatifs-ptsq//app-justificatif-titre-sejour//app-pieces-jointes//span[1]/input|//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input|//div/div/div/app-justificatif-titre-sejour/div/app-pieces-jointes/div/span[1]/input"))
 
-fileInput.sendKeys(filePath) //Send the fileInput object your filepath, which is a directory. It will begin the upload at this point.
+
+
+
+
+fileInput.sendKeys(SpecificDownloadDirectory) //Send the fileInput object your filepath, which is a directory. It will begin the upload at this point.
 
 'Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour'
 /********************************************************************************************************/
