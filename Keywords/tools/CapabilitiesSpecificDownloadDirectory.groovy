@@ -246,8 +246,8 @@ public class CapabilitiesSpecificDownloadDirectory {
 				java.net.InetAddress i = java.net.InetAddress.getLocalHost();
 				System.out.println(i.getHostAddress());
 				ChromeOptions options = new ChromeOptions()
-					System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-					System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+				System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 
 			//options.addArguments(args)
 

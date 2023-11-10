@@ -20,6 +20,12 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
+import javax.nio.file.Files
+import javax.nio.file.Path
+import javax.nio.file.Paths
+import java.nio.file.Path
+import java.nio.file.Paths
+import java.nio.file.Files
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
@@ -37,6 +43,11 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 String DriverName = GlobalVariable.DriverName
 //RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
+
+	String projectDir = RunConfiguration.getProjectDir()
+		//+ "/Data Files/").replace(/\//, '\\\\')
+	Path projectPath = Paths.get(projectDir)
+	Path downloadPath = projectPath.resolve("/Data Files/EtatCivil.pdf")
 String  SpecificDownloadDirectory =""
 'Upload file attachment'
 if (DriverName =='FIREFOX_DRIVER') {
@@ -68,8 +79,8 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 
 	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
 	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
-	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory +'EtatCivil.pdf')
+	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
+	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, downloadPath)
 	
 	WebUI.delay(02)
 	
