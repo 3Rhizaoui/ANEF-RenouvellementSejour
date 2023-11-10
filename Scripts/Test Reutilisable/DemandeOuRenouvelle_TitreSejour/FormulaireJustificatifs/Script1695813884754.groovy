@@ -65,11 +65,12 @@ println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 /********************************************************************************************************/
 
 if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
-	WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest'))
+
 	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
 	WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
 	WebUI.delay(02)
-
+	WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest'))
+	
 	'Joindre un  justificatif Passeport'
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
 	WebUI.delay(02)
