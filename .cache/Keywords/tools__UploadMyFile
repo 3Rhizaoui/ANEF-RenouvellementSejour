@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "B42A0E1B4F2EE9D2DB0F79B4FCF92867",
+  "keywordFileContentHash": "74BC582E3B716C5EFE75B498876E5792",
   "keywordClasses": [
     {
       "name": "tools.UploadMyFile",
@@ -22,6 +22,25 @@
             },
             {
               "name": "file",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Upload file using robot.\r\n\t *\r\n\t * @param object The object from which we can click to choose files.\r\n\t * @param file The full path of the file that needs to upload.\r\n\t */"
+        },
+        {
+          "name": "setClipboardData",
+          "parameters": [
+            {
+              "name": "string",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
