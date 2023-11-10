@@ -36,6 +36,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.awt.*;
 
 public class 	UploadMyFile {
 	
@@ -56,20 +59,21 @@ public class 	UploadMyFile {
 		String browserName = caps.getBrowserName().capitalize()
 
 		//if (browserName.toLowerCase().equals("firefox")){
-			clickJS(object, driver);
+		//	clickJS(object, driver);
 		//}
 //		else {
 //			try {
-//				WebUiBuiltInKeywords.click(object)
+				WebUiBuiltInKeywords.click(object)
 //			}
 //			catch (Exception e) {
 //				clickJS(object, driver);
 //			}
 //		}
 		Robot robot = new Robot()
-		StringSelection path = new StringSelection(file)
-		println path
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
+		//StringSelection path = new StringSelection(file)
+		//println path
+		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
+		setClipboardData(file);
 		robot.setAutoDelay(timeoutMilisecond)
 		robot.keyPress(KeyEvent.VK_CONTROL)
 		robot.keyPress(KeyEvent.VK_V)
@@ -79,6 +83,20 @@ public class 	UploadMyFile {
 		robot.keyPress(KeyEvent.VK_ENTER)
 		robot.keyRelease(KeyEvent.VK_ENTER)
 	}
+	
+	/**
+	 * Upload file using robot.
+	 *
+	 * @param object The object from which we can click to choose files.
+	 * @param file The full path of the file that needs to upload.
+	 */
+	@CompileStatic
+	@Keyword
+	//First of all declare the method setClipboardData as below:
+	public void setClipboardData(String string) {
+			StringSelection stringSelection = new StringSelection(string);
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+		}
 
 	/**
 	 * Upload file.
