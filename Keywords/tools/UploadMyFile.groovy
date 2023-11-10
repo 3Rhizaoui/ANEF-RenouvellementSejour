@@ -86,19 +86,30 @@ public class 	UploadMyFile {
 		//println path
 		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
 		//setClipboardData(file);
-		//StringSelection stringSelection = new StringSelection(file);
-		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
-		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
-		El.sendKeys("C:\\")
-		robot.setAutoDelay(timeoutMilisecond)
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		robot.keyRelease(KeyEvent.VK_V)
+		StringSelection stringSelection = new StringSelection("C:\\");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+//		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
+//		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
+//		El.sendKeys("C:\\")
 		robot.setAutoDelay(timeoutMilisecond)
 		robot.keyPress(KeyEvent.VK_ENTER)
 		robot.keyRelease(KeyEvent.VK_ENTER)
+		robot.keyPress(KeyEvent.VK_CONTROL)
+		robot.keyPress(KeyEvent.VK_V)
+		robot.keyRelease(KeyEvent.VK_V)
+		robot.keyRelease(KeyEvent.VK_CONTROL)
+		robot .keyPress(KeyEvent.VK_ENTER)
+		robot.keyRelease(KeyEvent.VK_ENTER)
+		
+		
+		
+//		robot.keyPress(KeyEvent.VK_CONTROL)
+//		robot.keyPress(KeyEvent.VK_V)
+//		robot.keyRelease(KeyEvent.VK_CONTROL)
+//		robot.keyRelease(KeyEvent.VK_V)
+//		robot.setAutoDelay(timeoutMilisecond)
+//		robot.keyPress(KeyEvent.VK_ENTER)
+//		robot.keyRelease(KeyEvent.VK_ENTER)
 	}
 
 	/**
