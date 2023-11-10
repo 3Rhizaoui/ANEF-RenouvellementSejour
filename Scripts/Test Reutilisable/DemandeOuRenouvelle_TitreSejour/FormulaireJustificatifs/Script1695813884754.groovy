@@ -44,17 +44,17 @@ Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 String DriverName = GlobalVariable.DriverName
 //RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 
-	String projectDir = RunConfiguration.getProjectDir()
-		//+ "/Data Files/").replace(/\//, '\\\\')
-	Path projectPath = Paths.get(projectDir)
-	Path downloadPath = (projectPath.resolve("/Data Files/EtatCivil.pdf")).toString()
+//	String projectDir = RunConfiguration.getProjectDir()
+//		//+ "/Data Files/").replace(/\//, '\\\\')
+//	Path projectPath = Paths.get(projectDir)
+//	Path downloadPath = (projectPath.resolve("/Data Files/EtatCivil.pdf")).toString()
 String  SpecificDownloadDirectory =""
 'Upload file attachment'
 if (DriverName =='FIREFOX_DRIVER') {
-	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
+	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
 	}
 else {
-	 SpecificDownloadDirectory = RunConfiguration.getProjectDir() + "/Data Files/"
+	 SpecificDownloadDirectory = RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf"
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 
@@ -80,7 +80,7 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
 	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
 	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
-	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, downloadPath)
+	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory)
 	
 	WebUI.delay(02)
 	
