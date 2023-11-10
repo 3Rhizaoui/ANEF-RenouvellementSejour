@@ -116,7 +116,7 @@ public class 	UploadMyFile {
 		
 /** Change 'Blank.png' to any test image file being used **/
 'Sets path to the test Blank.png Uploadfile'
-String projectDir = "C:\\"
+String projectDir = "C:\\EtatCivil.pdf"
 //(RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
 Path uploadFilePath = Paths.get(projectDir)
 String upLoadFile = uploadFilePath
