@@ -76,13 +76,16 @@ println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 /********************************************************************************************************/
 
 if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
-
-	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
-	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
+	
+	String UploadPath = "C:\\EtatCivil.pdf"
 	String JsonTxt = "testets"
 	CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, "EtatCivil.pdf")
-	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory)
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),UploadPath)
+	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
+	//TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
+
+	
+	//CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory)
 	
 	WebUI.delay(02)
 	
