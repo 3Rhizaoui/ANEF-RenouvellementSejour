@@ -55,19 +55,20 @@ public class 	UploadMyFile {
 		Capabilities caps = ((SmartWaitWebDriver) driver).getCapabilities()
 		String browserName = caps.getBrowserName().capitalize()
 
-		if (browserName.toLowerCase().equals("firefox")){
+		//if (browserName.toLowerCase().equals("firefox")){
 			clickJS(object, driver);
-		}
-		else {
-			try {
-				WebUiBuiltInKeywords.click(object)
-			}
-			catch (Exception e) {
-				clickJS(object, driver);
-			}
-		}
+		//}
+//		else {
+//			try {
+//				WebUiBuiltInKeywords.click(object)
+//			}
+//			catch (Exception e) {
+//				clickJS(object, driver);
+//			}
+//		}
 		Robot robot = new Robot()
 		StringSelection path = new StringSelection(file)
+		println path
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
 		robot.setAutoDelay(timeoutMilisecond)
 		robot.keyPress(KeyEvent.VK_CONTROL)
