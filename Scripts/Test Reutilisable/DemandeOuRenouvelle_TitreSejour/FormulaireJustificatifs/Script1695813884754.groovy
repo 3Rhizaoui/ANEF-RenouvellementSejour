@@ -32,6 +32,12 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.remote.LocalFileDetector as LocalFileDetector
 import org.openqa.selenium.remote.RemoteWebDriver
 import org.openqa.selenium.support.events.EventFiringWebDriver
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.remote.LocalFileDetector as LocalFileDetector
+import org.openqa.selenium.remote.RemoteWebDriver
+import org.openqa.selenium.support.events.EventFiringWebDriver
 
 /** modify WebUI.* keywords which take TestObject as arg0
  * @author hhizaoui
@@ -80,12 +86,28 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	String UploadPath = "C:\\EtatCivil.pdf"
 	String JsonTxt = "testets"
 	CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, "EtatCivil.pdf")
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),UploadPath)
+	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),UploadPath)
 	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
 	//TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
-
 	
 	//CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory)
+	
+	
+	
+
+	
+	filePath = "C:\\EtatCivil.pdf"
+	//System.getProperty("user.dir") + File.separator + "myfile.txt" // finds the directory that katalon is running in and grabs myfile.txt
+	EventFiringWebDriver driver = DriverFactory.getWebDriver()  // get the event driver (aka the katalon smartwait driver)
+	RemoteWebDriver wrappedDriver = driver.getWrappedDriver() // get the driver inside the smart wait driver (remote,chrome, firefox,etc)
+	wrappedDriver.setFileDetector(new LocalFileDetector()) //points your remote,chrome,firefox,etc driver to the local files in the run.
+	def selectImagesLinkXpath = "//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"
+	WebElement fileInput = wrappedDriver.findElement(By.xpath(selectImagesLinkXpath)) // specify your selector (I'm using CSS) and create fileInput as the object that is found by your selector
+	fileInput.sendKeys(filePath) //Send the fileInput object your filepath, which is a directory. It will begin the upload at this point.
+	
+	
+	
+	
 	
 	WebUI.delay(02)
 	
