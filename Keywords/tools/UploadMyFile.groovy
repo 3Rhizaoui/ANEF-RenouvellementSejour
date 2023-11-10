@@ -80,7 +80,7 @@ public class 	UploadMyFile {
 		//}
 		//		else {
 		//			try {
-		WebUiBuiltInKeywords.click(object)
+		//WebUiBuiltInKeywords.click(object)
 		//			}
 		//			catch (Exception e) {
 		//				clickJS(object, driver);
@@ -116,7 +116,8 @@ public class 	UploadMyFile {
 		
 /** Change 'Blank.png' to any test image file being used **/
 'Sets path to the test Blank.png Uploadfile'
-String projectDir = RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf"
+String projectDir = "C:\\"
+//(RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
 Path uploadFilePath = Paths.get(projectDir)
 String upLoadFile = uploadFilePath
 println('upLoadFile: ' + upLoadFile)
