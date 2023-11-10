@@ -39,6 +39,12 @@ import internal.GlobalVariable
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.awt.*;
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.remote.RemoteWebElement
+import org.openqa.selenium.support.events.EventFiringWebDriver
+import org.openqa.selenium.remote.LocalFileDetector as LocalFileDetector
+import org.openqa.selenium.By
 
 public class 	UploadMyFile {
 
@@ -69,13 +75,22 @@ public class 	UploadMyFile {
 		//				clickJS(object, driver);
 		//			}
 		//		}
+		
+		
+//		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
+//		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
+//		El.sendKeys("C:\\")
+		
 		Robot robot = new Robot()
 		//StringSelection path = new StringSelection(file)
 		//println path
 		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
 		//setClipboardData(file);
-		StringSelection stringSelection = new StringSelection(file);
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+		//StringSelection stringSelection = new StringSelection(file);
+		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
+		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
+		El.sendKeys("C:\\")
 		robot.setAutoDelay(timeoutMilisecond)
 		robot.keyPress(KeyEvent.VK_CONTROL)
 		robot.keyPress(KeyEvent.VK_V)
