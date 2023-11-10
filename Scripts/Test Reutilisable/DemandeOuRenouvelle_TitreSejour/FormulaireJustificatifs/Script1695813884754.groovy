@@ -79,7 +79,7 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 
 	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
 	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
+	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
 	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, downloadPath)
 	
 	WebUI.delay(02)
