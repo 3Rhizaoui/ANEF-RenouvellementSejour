@@ -37,6 +37,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 import org.slf4j.Logger;
+import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.driver.DriverFactory
 import org.slf4j.LoggerFactory;
 import java.awt.*;
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
@@ -45,6 +48,14 @@ import org.openqa.selenium.remote.RemoteWebElement
 import org.openqa.selenium.support.events.EventFiringWebDriver
 import org.openqa.selenium.remote.LocalFileDetector as LocalFileDetector
 import org.openqa.selenium.By
+import java.nio.file.Paths as Paths
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.nio.file.Path as Path
+import java.nio.file.Paths as Paths
 
 public class 	UploadMyFile {
 
@@ -81,35 +92,47 @@ public class 	UploadMyFile {
 //		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
 //		El.sendKeys("C:\\")
 		
-		Robot robot = new Robot()
+//		Robot robot = new Robot()
 		//StringSelection path = new StringSelection(file)
 		//println path
 		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
 		//setClipboardData(file);
-		StringSelection stringSelection = new StringSelection("C:\\");
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+//		StringSelection stringSelection = new StringSelection("C:\\");
+//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 //		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
 //		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
 //		El.sendKeys("C:\\")
-		robot.setAutoDelay(timeoutMilisecond)
-		robot.keyPress(KeyEvent.VK_ENTER)
-		robot.keyRelease(KeyEvent.VK_ENTER)
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_V)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		robot .keyPress(KeyEvent.VK_ENTER)
-		robot.keyRelease(KeyEvent.VK_ENTER)
-		
-		
-		
-//		robot.keyPress(KeyEvent.VK_CONTROL)
-//		robot.keyPress(KeyEvent.VK_V)
-//		robot.keyRelease(KeyEvent.VK_CONTROL)
-//		robot.keyRelease(KeyEvent.VK_V)
 //		robot.setAutoDelay(timeoutMilisecond)
 //		robot.keyPress(KeyEvent.VK_ENTER)
 //		robot.keyRelease(KeyEvent.VK_ENTER)
+//		robot.keyPress(KeyEvent.VK_CONTROL)
+//		robot.keyPress(KeyEvent.VK_V)
+//		robot.keyRelease(KeyEvent.VK_V)
+//		robot.keyRelease(KeyEvent.VK_CONTROL)
+//		robot .keyPress(KeyEvent.VK_ENTER)
+//		robot.keyRelease(KeyEvent.VK_ENTER)
+		
+		
+		
+/** Change 'Blank.png' to any test image file being used **/
+'Sets path to the test Blank.png Uploadfile'
+String projectDir = RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf"
+Path uploadFilePath = Paths.get(projectDir)
+String upLoadFile = uploadFilePath
+println('upLoadFile: ' + upLoadFile)
+
+'Finds "Select Images" Link using by.xpath & creates object'
+def selectImagesLinkXpath = "//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"
+TestObject selectImagesLink = WebUI.convertWebElementToTestObject(driver.findElement(By.xpath(selectImagesLinkXpath)))
+WebUI.sendKeys(selectImagesLink, upLoadFile)
+
+'Waits for file to load'
+WebUI.delay(3)
+
+'Finds "Upload" button using by.xpath & creates object'
+//def uploadBtnXpath = "//button[@type='submit'][contains(.,'Upload...')]"
+//TestObject uploadBtn = WebUI.convertWebElementToTestObject(driver.findElement(By.xpath(uploadBtnXpath)))
+//WebUI.click(uploadBtn)
 	}
 
 	/**
