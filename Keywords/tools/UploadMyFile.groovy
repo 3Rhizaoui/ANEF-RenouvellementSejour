@@ -73,7 +73,9 @@ public class 	UploadMyFile {
 		//StringSelection path = new StringSelection(file)
 		//println path
 		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
-		setClipboardData(file);
+		//setClipboardData(file);
+		StringSelection stringSelection = new StringSelection(file);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 		robot.setAutoDelay(timeoutMilisecond)
 		robot.keyPress(KeyEvent.VK_CONTROL)
 		robot.keyPress(KeyEvent.VK_V)
