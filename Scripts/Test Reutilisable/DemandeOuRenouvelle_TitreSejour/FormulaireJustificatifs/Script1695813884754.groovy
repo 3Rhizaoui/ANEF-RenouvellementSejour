@@ -43,7 +43,7 @@ if (DriverName =='FIREFOX_DRIVER') {
 	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
 	}
 else {
-	 SpecificDownloadDirectory = RunConfiguration.getProjectDir()
+	 SpecificDownloadDirectory = RunConfiguration.getProjectDir() + "/Data Files/"
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 
