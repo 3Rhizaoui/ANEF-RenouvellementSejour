@@ -41,7 +41,7 @@ import org.slf4j.LoggerFactory;
 import java.awt.*;
 
 public class 	UploadMyFile {
-	
+
 	static int timeoutSecond = 60
 	static int timeoutMilisecond = 1000
 
@@ -61,14 +61,14 @@ public class 	UploadMyFile {
 		//if (browserName.toLowerCase().equals("firefox")){
 		//	clickJS(object, driver);
 		//}
-//		else {
-//			try {
-				WebUiBuiltInKeywords.click(object)
-//			}
-//			catch (Exception e) {
-//				clickJS(object, driver);
-//			}
-//		}
+		//		else {
+		//			try {
+		WebUiBuiltInKeywords.click(object)
+		//			}
+		//			catch (Exception e) {
+		//				clickJS(object, driver);
+		//			}
+		//		}
 		Robot robot = new Robot()
 		//StringSelection path = new StringSelection(file)
 		//println path
@@ -83,7 +83,7 @@ public class 	UploadMyFile {
 		robot.keyPress(KeyEvent.VK_ENTER)
 		robot.keyRelease(KeyEvent.VK_ENTER)
 	}
-	
+
 	/**
 	 * Upload file using robot.
 	 *
@@ -94,9 +94,9 @@ public class 	UploadMyFile {
 	@Keyword
 	//First of all declare the method setClipboardData as below:
 	public void setClipboardData(String string) {
-			StringSelection stringSelection = new StringSelection(string);
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-		}
+		StringSelection stringSelection = new StringSelection(string);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+	}
 
 	/**
 	 * Upload file.

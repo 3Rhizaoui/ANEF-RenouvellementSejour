@@ -47,7 +47,7 @@ String DriverName = GlobalVariable.DriverName
 	String projectDir = RunConfiguration.getProjectDir()
 		//+ "/Data Files/").replace(/\//, '\\\\')
 	Path projectPath = Paths.get(projectDir)
-	Path downloadPath = projectPath.resolve("/Data Files/EtatCivil.pdf")
+	Path downloadPath = (projectPath.resolve("/Data Files/EtatCivil.pdf")).toString()
 String  SpecificDownloadDirectory =""
 'Upload file attachment'
 if (DriverName =='FIREFOX_DRIVER') {

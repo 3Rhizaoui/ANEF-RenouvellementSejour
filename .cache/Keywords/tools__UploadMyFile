@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "74BC582E3B716C5EFE75B498876E5792",
+  "keywordFileContentHash": "46119FAB9AA671E846EBA7964A84A578",
   "keywordClasses": [
     {
       "name": "tools.UploadMyFile",
@@ -33,8 +33,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * Upload file using robot.\r\n\t *\r\n\t * @param object The object from which we can click to choose files.\r\n\t * @param file The full path of the file that needs to upload.\r\n\t */"
+          ]
         },
         {
           "name": "setClipboardData",
@@ -52,8 +51,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * Upload file using robot.\r\n\t *\r\n\t * @param object The object from which we can click to choose files.\r\n\t * @param file The full path of the file that needs to upload.\r\n\t */"
+          ]
         },
         {
           "name": "uploadMyFile",
@@ -84,11 +82,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * Upload file.\r\n\t *\r\n\t * @param object The object from which we can click to choose files.\r\n\t * @param file The full path of the file that needs to upload.\r\n\t */"
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
