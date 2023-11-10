@@ -269,15 +269,18 @@ String projDir = RunConfiguration.getProjectDir()
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
+//String REMOTE_WEB_DRIVER = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 
  if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
+
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
 else {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 	println "DriverName :" + DriverName
-	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
+	}
 GlobalVariable.DriverName = DriverName
  
  

@@ -54,7 +54,7 @@ if (DriverName =='FIREFOX_DRIVER') {
 	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
 	}
 else {
-	 SpecificDownloadDirectory = RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf"
+	 SpecificDownloadDirectory = RunConfiguration.getProjectDir() + "/Data Files/"
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 
