@@ -63,7 +63,7 @@ public class JsonWriter {
 	@Keyword
 	public  String WriterFile (String JsonTxt, String fileName) {
 
-		String PathFile = "C:\\" + fileName
+		String PathFile = "C://" + fileName
 		//String data = "This is the data in the output file";
 
 		try {
