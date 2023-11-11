@@ -88,14 +88,14 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, "EtatCivil.pdf")
 	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),UploadPath)
 	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-	//TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
+	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
 	
-	//CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory)
+	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'(Btn_ChoisirFichier, SpecificDownloadDirectory)
 	
 	
 	
 
-	
+	/**
 	filePath = "C:\\EtatCivil.pdf"
 	//System.getProperty("user.dir") + File.separator + "myfile.txt" // finds the directory that katalon is running in and grabs myfile.txt
 	EventFiringWebDriver driver = DriverFactory.getWebDriver()  // get the event driver (aka the katalon smartwait driver)
@@ -105,7 +105,7 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	WebElement fileInput = wrappedDriver.findElement(By.xpath(selectImagesLinkXpath)) // specify your selector (I'm using CSS) and create fileInput as the object that is found by your selector
 	fileInput.sendKeys(filePath) //Send the fileInput object your filepath, which is a directory. It will begin the upload at this point.
 	
-	
+	*/
 	
 	
 	

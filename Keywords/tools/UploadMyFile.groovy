@@ -80,7 +80,7 @@ public class 	UploadMyFile {
 		//}
 		//		else {
 		//			try {
-		//WebUiBuiltInKeywords.click(object)
+		WebUiBuiltInKeywords.click(object)
 		//			}
 		//			catch (Exception e) {
 		//				clickJS(object, driver);
@@ -92,7 +92,7 @@ public class 	UploadMyFile {
 //		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
 //		El.sendKeys("C:\\")
 		
-//		Robot robot = new Robot()
+		Robot robot = new Robot()
 		//StringSelection path = new StringSelection(file)
 		//println path
 		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
@@ -102,6 +102,18 @@ public class 	UploadMyFile {
 //		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
 //		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
 //		El.sendKeys("C:\\")
+		
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_C);        // C
+		r.keyRelease(KeyEvent.VK_C);
+		r.keyPress(KeyEvent.VK_COLON);    // : (colon)
+		r.keyRelease(KeyEvent.VK_COLON);
+		r.keyPress(KeyEvent.VK_SLASH);    // / (slash)
+		r.keyRelease(KeyEvent.VK_SLASH);
+		// etc. for the whole file path
+		
+		r.keyPress(KeyEvent.VK_ENTER);    // confirm by pressing Enter in the end
+		r.keyRelease(KeyEvent.VK_ENTER);
 //		robot.setAutoDelay(timeoutMilisecond)
 //		robot.keyPress(KeyEvent.VK_ENTER)
 //		robot.keyRelease(KeyEvent.VK_ENTER)
@@ -111,8 +123,6 @@ public class 	UploadMyFile {
 //		robot.keyRelease(KeyEvent.VK_CONTROL)
 //		robot .keyPress(KeyEvent.VK_ENTER)
 //		robot.keyRelease(KeyEvent.VK_ENTER)
-		
-		
 		
 /** Change 'Blank.png' to any test image file being used **/
 'Sets path to the test Blank.png Uploadfile'
