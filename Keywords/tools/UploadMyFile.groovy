@@ -138,10 +138,14 @@ public class 	UploadMyFile {
 		
 		
 		//Robot robot = new Robot();
-		robot.keyPress(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_C);
+		robot.keyRelease(KeyEvent.VK_C);
+		robot.keyPress(KeyEvent.VK_A);
+		robot.keyRelease(KeyEvent.VK_A);
+//		robot.keyPress(KeyEvent.VK_CONTROL);
+//		robot.keyPress(KeyEvent.VK_V);
+//		robot.keyRelease(KeyEvent.VK_V);
+//		robot.keyRelease(KeyEvent.VK_CONTROL);
 		
 		
 		
