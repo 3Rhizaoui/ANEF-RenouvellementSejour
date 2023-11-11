@@ -123,7 +123,7 @@ public class 	UploadMyFile {
 		String text = "C:\\";
 		StringSelection stringSelection = new StringSelection(text);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-		clipboard.setContents(stringSelection, stringSelection);
+		clipboard.setContents(stringSelection, null);
 		
 		//Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
