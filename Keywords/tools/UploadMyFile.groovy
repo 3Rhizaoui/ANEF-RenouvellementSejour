@@ -59,6 +59,12 @@ import java.nio.file.Paths as Paths
 import java.awt.datatransfer.StringSelection
 import java.awt.Toolkit
 import java.awt.datatransfer.*
+import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.*;
+import java.awt.Toolkit;
+
 
 public class 	UploadMyFile {
 
@@ -121,9 +127,15 @@ public class 	UploadMyFile {
 		
 		
 		String text = "C:\\";
+//		StringSelection stringSelection = new StringSelection(text);
+//		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+//		clipboard.setContents(stringSelection, null);
+		
+		 text = text.toString();
 		StringSelection stringSelection = new StringSelection(text);
-		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-		clipboard.setContents(stringSelection, null);
+		Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+		clpbrd.setContents(stringSelection, null);
+		
 		
 		//Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
