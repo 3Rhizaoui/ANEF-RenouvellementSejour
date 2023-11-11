@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@ng-reflect-label='Je continue']</value>
+         <value>//*[@ng-reflect-label='Je continue']|/html/body/app-root/div/app-portal/main/app-triage-demandeur/div/div/div/form/div[2]/button/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
