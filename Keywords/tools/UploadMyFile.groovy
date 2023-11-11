@@ -56,6 +56,9 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+import java.awt.datatransfer.StringSelection
+import java.awt.Toolkit
+import java.awt.datatransfer.*
 
 public class 	UploadMyFile {
 
@@ -103,17 +106,34 @@ public class 	UploadMyFile {
 //		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
 //		El.sendKeys("C:\\")
 		
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_C);        // C
-		r.keyRelease(KeyEvent.VK_C);
-		r.keyPress(KeyEvent.VK_COLON);    // : (colon)
-		r.keyRelease(KeyEvent.VK_COLON);
-		r.keyPress(KeyEvent.VK_SLASH);    // / (slash)
-		r.keyRelease(KeyEvent.VK_SLASH);
-		// etc. for the whole file path
+//		Robot r = new Robot();
+//		r.keyPress(KeyEvent.VK_C);        // C
+//		r.keyRelease(KeyEvent.VK_C);
+//		r.keyPress(KeyEvent.VK_COLON);    // : (colon)
+//		r.keyRelease(KeyEvent.VK_COLON);
+//		r.keyPress(KeyEvent.VK_SLASH);    // / (slash)
+//		r.keyRelease(KeyEvent.VK_SLASH);
+//		// etc. for the whole file path
+//		
+//		r.keyPress(KeyEvent.VK_ENTER);    // confirm by pressing Enter in the end
+//		r.keyRelease(KeyEvent.VK_ENTER);
 		
-		r.keyPress(KeyEvent.VK_ENTER);    // confirm by pressing Enter in the end
-		r.keyRelease(KeyEvent.VK_ENTER);
+		
+		
+		String text = "C:\\";
+		StringSelection stringSelection = new StringSelection(text);
+		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+		clipboard.setContents(stringSelection, stringSelection);
+		
+		//Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		
+		
+		
+		
 //		robot.setAutoDelay(timeoutMilisecond)
 //		robot.keyPress(KeyEvent.VK_ENTER)
 //		robot.keyRelease(KeyEvent.VK_ENTER)
