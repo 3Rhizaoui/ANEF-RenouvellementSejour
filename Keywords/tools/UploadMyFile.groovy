@@ -79,107 +79,66 @@ public class 	UploadMyFile {
 	 */
 	@CompileStatic
 	@Keyword
-	public void uploadFileUsingRobot(TestObject object, String file) {
-		WebDriver driver = DriverFactory.getWebDriver()
-		Capabilities caps = ((SmartWaitWebDriver) driver).getCapabilities()
-		String browserName = caps.getBrowserName().capitalize()
+	public void uploadFileUsingRobot( String file) {
+//		WebDriver driver = DriverFactory.getWebDriver()
+//		Capabilities caps = ((SmartWaitWebDriver) driver).getCapabilities()
+//		String browserName = caps.getBrowserName().capitalize()
 
 		//if (browserName.toLowerCase().equals("firefox")){
 		//	clickJS(object, driver);
 		//}
 		//		else {
 		//			try {
-		WebUiBuiltInKeywords.click(object)
+		//WebUiBuiltInKeywords.click(object)
 		//			}
 		//			catch (Exception e) {
 		//				clickJS(object, driver);
 		//			}
 		//		}
-		
-		
-//		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
-//		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
-//		El.sendKeys("C:\\")
-		
-		Robot robot = new Robot()
-		//StringSelection path = new StringSelection(file)
-		//println path
-		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
-		//setClipboardData(file);
-//		StringSelection stringSelection = new StringSelection("C:\\");
-//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-//		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
-//		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
-//		El.sendKeys("C:\\")
-		
-//		Robot r = new Robot();
-//		r.keyPress(KeyEvent.VK_C);        // C
-//		r.keyRelease(KeyEvent.VK_C);
-//		r.keyPress(KeyEvent.VK_COLON);    // : (colon)
-//		r.keyRelease(KeyEvent.VK_COLON);
-//		r.keyPress(KeyEvent.VK_SLASH);    // / (slash)
-//		r.keyRelease(KeyEvent.VK_SLASH);
-//		// etc. for the whole file path
-//		
-//		r.keyPress(KeyEvent.VK_ENTER);    // confirm by pressing Enter in the end
-//		r.keyRelease(KeyEvent.VK_ENTER);
-		
-		
-		
-		String text = "C:\\";
-//		StringSelection stringSelection = new StringSelection(text);
-//		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-//		clipboard.setContents(stringSelection, null);
-		
-		 text = text.toString();
-		StringSelection stringSelection = new StringSelection(text);
-		Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
-		clpbrd.setContents(stringSelection, null);
-		
-		
-		//Robot robot = new Robot();
-		robot.keyPress(KeyEvent.VK_C);
-		robot.keyRelease(KeyEvent.VK_C);
-		robot.keyPress(KeyEvent.VK_A);
-		robot.keyRelease(KeyEvent.VK_A);
-//		robot.keyPress(KeyEvent.VK_CONTROL);
-//		robot.keyPress(KeyEvent.VK_V);
-//		robot.keyRelease(KeyEvent.VK_V);
-//		robot.keyRelease(KeyEvent.VK_CONTROL);
-		
-		
-		
-		
-//		robot.setAutoDelay(timeoutMilisecond)
-//		robot.keyPress(KeyEvent.VK_ENTER)
-//		robot.keyRelease(KeyEvent.VK_ENTER)
-//		robot.keyPress(KeyEvent.VK_CONTROL)
-//		robot.keyPress(KeyEvent.VK_V)
-//		robot.keyRelease(KeyEvent.VK_V)
-//		robot.keyRelease(KeyEvent.VK_CONTROL)
-//		robot .keyPress(KeyEvent.VK_ENTER)
-//		robot.keyRelease(KeyEvent.VK_ENTER)
-		
-/** Change 'Blank.png' to any test image file being used **/
-'Sets path to the test Blank.png Uploadfile'
-String projectDir = "C://EtatCivil.pdf"
-//(RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
-Path uploadFilePath = Paths.get(projectDir)
-String upLoadFile = uploadFilePath
-println('upLoadFile: ' + upLoadFile)
 
-'Finds "Select Images" Link using by.xpath & creates object'
-def selectImagesLinkXpath = "//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"
-TestObject selectImagesLink = WebUI.convertWebElementToTestObject(driver.findElement(By.xpath(selectImagesLinkXpath)))
-WebUI.sendKeys(selectImagesLink, upLoadFile)
 
-'Waits for file to load'
-WebUI.delay(3)
+		//		WebElement El = driver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
+		//		((RemoteWebElement) El ).setFileDetector(new LocalFileDetector())
+		//		El.sendKeys("C:\\")
 
-'Finds "Upload" button using by.xpath & creates object'
-//def uploadBtnXpath = "//button[@type='submit'][contains(.,'Upload...')]"
-//TestObject uploadBtn = WebUI.convertWebElementToTestObject(driver.findElement(By.xpath(uploadBtnXpath)))
-//WebUI.click(uploadBtn)
+		WebUI.delay(3)
+		StringSelection ss = new StringSelection(file);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		sleep(10)
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		sleep(10)
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		sleep(10)
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+
+		WebUI.delay(10)
+
+//		/** Change 'Blank.png' to any test image file being used **/
+//		'Sets path to the test Blank.png Uploadfile'
+//		String projectDir = "C://EtatCivil.pdf"
+//		//(RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
+//		Path uploadFilePath = Paths.get(projectDir)
+//		String upLoadFile = uploadFilePath
+//		println('upLoadFile: ' + upLoadFile)
+//
+//		'Finds "Select Images" Link using by.xpath & creates object'
+//		def selectImagesLinkXpath = "//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"
+//		//TestObject selectImagesLink = WebUI.convertWebElementToTestObject(driver.findElement(By.xpath(selectImagesLinkXpath)))
+//		WebUI.sendKeys(selectImagesLink, upLoadFile)
+//
+//		'Waits for file to load'
+//		WebUI.delay(3)
+//
+//		'Finds "Upload" button using by.xpath & creates object'
+//		//def uploadBtnXpath = "//button[@type='submit'][contains(.,'Upload...')]"
+//		//TestObject uploadBtn = WebUI.convertWebElementToTestObject(driver.findElement(By.xpath(uploadBtnXpath)))
+//		//WebUI.click(uploadBtn)
 	}
 
 	/**
