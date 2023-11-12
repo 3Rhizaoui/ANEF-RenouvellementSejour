@@ -102,20 +102,31 @@ public class 	UploadMyFile {
 		//		El.sendKeys("C:\\")
 
 		WebUI.delay(3)
-		StringSelection ss = new StringSelection(file);
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		Robot robot = new Robot();
-		robot.keyPress(KeyEvent.VK_ENTER);
-		sleep(10)
-		robot.keyRelease(KeyEvent.VK_ENTER);
-		sleep(10)
-		robot.keyPress(KeyEvent.VK_CONTROL);
-		sleep(10)
-		robot.keyPress(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_ENTER);
-		robot.keyRelease(KeyEvent.VK_ENTER);
+		//StringSelection ss = new StringSelection(file);
+		//Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		
+				Robot robot = new Robot();
+				robot.keyPress(KeyEvent.VK_C);
+				sleep(10)
+				robot.keyRelease(KeyEvent.VK_C);
+				sleep(10)
+				robot.keyPress(KeyEvent.VK_A);
+				sleep(10)
+				robot.keyRelease(KeyEvent.VK_A);
+				sleep(10)
+		
+		
+//		robot.keyPress(KeyEvent.VK_ENTER);
+//		sleep(10)
+//		robot.keyRelease(KeyEvent.VK_ENTER);
+//		sleep(10)
+//		robot.keyPress(KeyEvent.VK_CONTROL);
+//		sleep(10)
+//		robot.keyPress(KeyEvent.VK_V);
+//		robot.keyRelease(KeyEvent.VK_V);
+//		robot.keyRelease(KeyEvent.VK_CONTROL);
+//		robot.keyPress(KeyEvent.VK_ENTER);
+//		robot.keyRelease(KeyEvent.VK_ENTER);
 
 		WebUI.delay(10)
 
