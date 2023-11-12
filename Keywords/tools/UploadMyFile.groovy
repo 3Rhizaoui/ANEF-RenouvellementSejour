@@ -108,12 +108,9 @@ public class 	UploadMyFile {
 				Robot robot = new Robot();
 				robot.keyPress(KeyEvent.VK_C);
 				sleep(10)
-				robot.keyRelease(KeyEvent.VK_C);
-				sleep(10)
 				robot.keyPress(KeyEvent.VK_A);
 				sleep(10)
-				robot.keyRelease(KeyEvent.VK_A);
-				sleep(10)
+
 		
 		
 //		robot.keyPress(KeyEvent.VK_ENTER);
