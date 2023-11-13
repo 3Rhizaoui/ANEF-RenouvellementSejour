@@ -63,7 +63,7 @@ else {
 	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
  }
 println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
-
+WebUI.navigateToUrl(SpecificDownloadDirectory)
 //filePath = System.getProperty("user.dir") + File.separator + "myfile.txt" // finds the directory that katalon is running in and grabs myfile.txt
 //println "filePath : " + filePath
 //EventFiringWebDriver driver = DriverFactory.getWebDriver()  // get the event driver (aka the katalon smartwait driver)
