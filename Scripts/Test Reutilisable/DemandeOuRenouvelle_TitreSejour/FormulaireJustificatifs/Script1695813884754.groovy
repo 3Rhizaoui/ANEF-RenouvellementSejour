@@ -123,7 +123,7 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	WebUI.delay(02)
 	
 	'Joindre un  justificatif Passeport'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'/Passeport.pdf')
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif Photographie d'identité récente"
@@ -132,42 +132,42 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif DOMICILIATION"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'/Domiciliation.pdf')
 	WebUI.delay(02)
 	/**Joindre un  justificatif MOTIF DE SÉJOUR
 	 * Certificat d'inscription ou justificatif de préinscription auprès de votre établissement d'enseignement supérieur
 	*/
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_CertificatDInscription'), SpecificDownloadDirectory +'CertificatDInscription.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_CertificatDInscription'), SpecificDownloadDirectory +'/CertificatDInscription.pdf')
 	WebUI.delay(02)
 	
 	"Relevé de notes"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ReleveDeNotes'), SpecificDownloadDirectory +'ReleveDeNotes.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ReleveDeNotes'), SpecificDownloadDirectory +'/ReleveDeNotes.pdf')
 	WebUI.delay(02)
 	
 	"Diplôme obtenu en France"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DiplomeObtenuEnFrance'), SpecificDownloadDirectory +'DiplomeObtenuEnFrance.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DiplomeObtenuEnFrance'), SpecificDownloadDirectory +'/DiplomeObtenuEnFrance.pdf')
 	WebUI.delay(02)
 	
 	"Attestation de réussite"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDeReussite'), SpecificDownloadDirectory +'AttestationDeReussite.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDeReussite'), SpecificDownloadDirectory +'/AttestationDeReussite.pdf')
 	WebUI.delay(02)
 	/****RESSOURCES*****
 	*En cas de ressources multiples, veuillez joindre le justificatif de chacune des ressources.
 	*pris en charge par un tiers
 	*/
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_PrisEnChargeParUnTiers'), SpecificDownloadDirectory +'PrisEnChargeParUnTiers.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_PrisEnChargeParUnTiers'), SpecificDownloadDirectory +'/PrisEnChargeParUnTiers.pdf')
 	WebUI.delay(02)
 	
 	'Vous êtes boursier'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_boursier'), SpecificDownloadDirectory +'Boursier.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_boursier'), SpecificDownloadDirectory +'/Boursier.pdf')
 	WebUI.delay(02)
 	
 	'Vous êtes salarié'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_3DernieresFichesDePaie'), SpecificDownloadDirectory +'Salarie.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_3DernieresFichesDePaie'), SpecificDownloadDirectory +'/Salarie.pdf')
 	WebUI.delay(02)
 	
 	'Vous disposez de ressources suffisantes'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_RessourcesSuffisantes'), SpecificDownloadDirectory +'RessourcesSuffisantes.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_RessourcesSuffisantes'), SpecificDownloadDirectory +'/RessourcesSuffisantes.pdf')
 	WebUI.delay(02)
 	
 	'Validation'
