@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "BDEA8BB4769CAD2EBA09EC21F4138358",
+  "keywordFileContentHash": "3EC3E0420B0B29095EA0813BEEFA465E",
   "keywordClasses": [
     {
       "name": "tools.UploadMyFile",
@@ -7,19 +7,6 @@
         {
           "name": "uploadFileUsingRobot",
           "parameters": [
-            {
-              "name": "object",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
-                "unresolvedClassName": "TestObject",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            },
             {
               "name": "file",
               "initialExpression": "",

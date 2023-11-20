@@ -1,6 +1,6 @@
-[1699331459.779][INFO]: Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 9255
-[1699331459.779][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1699331459.956][INFO]: [44e8d87fde2434905c98ff1be75e404f] COMMAND InitSession {
+[1700471421.353][INFO]: Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 24236
+[1700471421.353][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1700471421.693][INFO]: [5e67792c3aa9e4a87dff371f025adc7e] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -31,7 +31,7 @@
       "version": ""
    }
 }
-[1699331459.967][INFO]: Populating Preferences file: {
+[1700471421.704][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -89,7 +89,7 @@
       "enabled": false
    }
 }
-[1699331459.969][INFO]: Populating Local State file: {
+[1700471421.705][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -99,20 +99,22 @@
       }
    }
 }
-[1699331459.980][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --load-extension="C:\Users\hhizaoui\.katalon\packages\Katalon_Studio_Windows_64-8.6.6\Katalon_Studio_Windows_64-8.6.6\configuration\resources\extensions\Chrome\Smart Wait" --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir47972_511354284" data:,
-[1699331461.187][INFO]: resolved localhost to ["127.0.0.1","::1"]
-[1699331462.052][INFO]: [44e8d87fde2434905c98ff1be75e404f] RESPONSE InitSession {
+[1700471421.707][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1700471421.708][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1700471421.710][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --load-extension="C:\Users\hhizaoui\.katalon\packages\Katalon_Studio_Windows_64-8.6.6\Katalon_Studio_Windows_64-8.6.6\configuration\resources\extensions\Chrome\Smart Wait" --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir10068_165420048" data:,
+[1700471422.615][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1700471422.988][INFO]: [5e67792c3aa9e4a87dff371f025adc7e] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
-      "browserVersion": "118.0.5993.89",
+      "browserVersion": "119.0.6045.160",
       "chrome": {
-         "chromedriverVersion": "118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216})",
-         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir47972_511354284"
+         "chromedriverVersion": "119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})",
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir10068_165420048"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:50170"
+         "debuggerAddress": "localhost:54220"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -133,5 +135,5 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "44e8d87fde2434905c98ff1be75e404f"
+   "sessionId": "5e67792c3aa9e4a87dff371f025adc7e"
 }

@@ -26,6 +26,14 @@ import javax.nio.file.Paths
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.nio.file.Files
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.remote.LocalFileDetector
+import org.openqa.selenium.support.events.EventFiringWebDriver
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.selenium.driver.CRemoteWebDriver
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
@@ -54,15 +62,28 @@ String DriverName = GlobalVariable.DriverName
 //		//+ "/Data Files/").replace(/\//, '\\\\')
 //	Path projectPath = Paths.get(projectDir)
 //	Path downloadPath = (projectPath.resolve("/Data Files/EtatCivil.pdf")).toString()
-String  SpecificDownloadDirectory =""
+
+
+EventFiringWebDriver driver = DriverFactory.getWebDriver()
+WebDriver wrappedDriver = driver.getWrappedDriver()
+System.out.println(wrappedDriver.getClass())
+if (wrappedDriver.class == CRemoteWebDriver) {
+	wrappedDriver.setFileDetector(new LocalFileDetector())
+}
+String SpecificDownloadDirectory = ""
+  
 'Upload file attachment'
 if (DriverName =='FIREFOX_DRIVER') {
-	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/EtatCivil.pdf").replace(/\//, '\\')
+	  SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
 	}
+else if (wrappedDriver.class == CRemoteWebDriver){
+	 SpecificDownloadDirectory = new File(RunConfiguration.getProjectDir() + "/Data Files/").getCanonicalPath()}
 else {
-	 SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
+	  SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/")
+	  println "SpecificDownloadDirectory : " + SpecificDownloadDirectory
  }
-println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
+ 
+
 //WebUI.navigateToUrl(SpecificDownloadDirectory+'EtatCivil.pdf')
 
 //WebUI.navigateToUrl("C:\\EtatCivil.pdf")
@@ -86,14 +107,14 @@ println "SpecificDownloadDirectory : " +SpecificDownloadDirectory
 if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
 	
 	//String SpecificUploadDirectory = "C:\\EtatCivil.pdf"
-	String JsonTxt = "testets"
-	CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, "EtatCivil.pdf")
-	//WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),UploadPath)
+	//String JsonTxt = "testets"
+	//CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, "EtatCivil.pdf")
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'EtatCivil.pdf')
 	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-	TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
-	WebUI.click(Btn_ChoisirFichier)
+	//TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
+	//WebUI.click(Btn_ChoisirFichier)
 	WebUI.delay(5)
-	CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'( SpecificUploadDirectory)
+	//CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'( SpecificUploadDirectory)
 	
 	
 	

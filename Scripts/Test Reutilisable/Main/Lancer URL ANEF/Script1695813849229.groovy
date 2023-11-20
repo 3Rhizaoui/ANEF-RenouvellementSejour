@@ -17,6 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.remote.LocalFileDetector
+import org.openqa.selenium.support.events.EventFiringWebDriver
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.selenium.driver.CRemoteWebDriver
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.github.kklisura.cdt.protocol.commands.Fetch as Fetch
 import com.github.kklisura.cdt.protocol.commands.Page as Page
 import com.github.kklisura.cdt.services.ChromeDevToolsService as ChromeDevToolsService
@@ -255,8 +263,6 @@ import java.util.concurrent.TimeUnit;
  *so that they call Highlight.on() automatically
  */
 
-'Call Highlight.on() automatically'
-//CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 /**
 	Runtime.getRuntime().exec('taskkill /f /im chrome.exe')
@@ -271,35 +277,35 @@ println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
 //String REMOTE_WEB_DRIVER = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 
- if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
-
-	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
-	println "DriverName :" + DriverName
-	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
-else {
+// if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
+//
+//	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
+//	println "DriverName :" + DriverName
+//	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+//else {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
-	}
+	//}
 GlobalVariable.DriverName = DriverName
  
  
  /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
  */
 WebUI.delay(GlobalVariable.medium_wait)
-//WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
+WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
 
 if (Profiles == 'Usager') {
 	switch (DriverName) {
 		//case ('CHROME_DRIVER'||'REMOTE_WEB_DRIVER'):
-		case 'REMOTE_WEB_DRIVER':
+		case 'CHROME_DRIVER':
 			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
 			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
-			//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-			//System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 			'Appel de l\'action Réutilisable pour contourner l\'erreur lié à la confidentialité'
-			//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
 			'Vérification de l\'étape :'
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
