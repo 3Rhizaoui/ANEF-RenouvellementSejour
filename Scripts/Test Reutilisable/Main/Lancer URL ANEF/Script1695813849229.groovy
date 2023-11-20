@@ -300,7 +300,7 @@ if (Profiles == 'Usager') {
 		case 'REMOTE_WEB_DRIVER':
 		//case 'CHROME_DRIVER':
 			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)
+			WebUI.openBrowser (GlobalVariable.URL_ANEFQualif)
 			WebUI.maximizeWindow()
 			//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 			//System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
