@@ -270,23 +270,23 @@ import java.util.concurrent.TimeUnit;
 	Runtime.getRuntime().exec('taskkill /f /im geckodriver.exe')
 */
 'RunConfiguration: getProjectDir for LogDriver '
-String projDir = RunConfiguration.getProjectDir()
+//String projDir = RunConfiguration.getProjectDir()
 'RunConfiguration: getExecutionProperties Driver '
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
-println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
+//println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
-//String REMOTE_WEB_DRIVER = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
+String REMOTE_WEB_DRIVER = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 
-// if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
-//
-//	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
-//	println "DriverName :" + DriverName
-//	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
-//else {
+ if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
+
+	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
+	println "DriverName :" + DriverName
+	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
+else {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
-	//}
+	}
 GlobalVariable.DriverName = DriverName
  
  
