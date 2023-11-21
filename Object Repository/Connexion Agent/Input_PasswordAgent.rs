@@ -6,12 +6,11 @@
    <elementGuidId>6c4dc0e0-0028-43ee-985e-a4ca4a540cd9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;password&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@aria-labelledby=&quot;password-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

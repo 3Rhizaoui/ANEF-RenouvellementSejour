@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;PHOTO_NUMBER&quot;]|//*[@ng-reflect-name=&quot;PHOTO_IDENTITE&quot;]</value>
+         <value>//*[@aria-labelledby=&quot;PHOTO_NUMBER-label&quot;]|//*[@aria-labelledby=&quot;PHOTO_IDENTITE-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;SITE_INTERNET&quot;]</value>
+         <value>//*[@aria-labelledby=&quot;SITE_INTERNET-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

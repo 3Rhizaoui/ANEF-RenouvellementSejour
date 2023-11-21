@@ -201,15 +201,26 @@ switch (TypeTitreDeSejour) {
 	
 	//'Cas d'un Passeport Talent
 	/********************************************************************************/
-		case 'Artiste' :
+		case 'ArtisteNonSalarie' :
 		if (Titre== "Visiteur" || Titre == "Etudiant") {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_Artiste'))
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(2)
 		    '3 éme Validation de mon choix'
 		    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
+		case 'ArtisteSalarie' :
+			if (Titre== "Visiteur" || Titre == "Etudiant") {
+				WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))
+			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_Artiste'))
+			'2 éme Validation de mon choix'
+			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(2)
+			'3 éme Validation de mon choix'
+			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
+		break
 	case 'MembreDeFamillePasseportTalent_Conjoint' :
 		if (Titre== "Visiteur" || Titre == "Etudiant") {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent'))

@@ -6,12 +6,11 @@
    <elementGuidId>0577da74-b910-4817-a906-2bb29432f1e9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;TELEPHONE_PORTABLE&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@aria-labelledby=&quot;TELEPHONE_PORTABLE-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

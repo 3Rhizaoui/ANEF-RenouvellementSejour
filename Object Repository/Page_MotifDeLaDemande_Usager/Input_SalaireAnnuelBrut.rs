@@ -6,12 +6,11 @@
    <elementGuidId>94864d42-a51c-4690-8a61-1f7126881d1f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;SALAIRE&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@aria-labelledby=&quot;SALAIRE-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

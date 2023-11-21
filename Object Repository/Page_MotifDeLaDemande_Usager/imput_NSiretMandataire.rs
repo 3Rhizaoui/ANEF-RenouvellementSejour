@@ -6,12 +6,11 @@
    <elementGuidId>f14ba69f-6794-429e-b543-0068aa45be9f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div/div[2]/div/div/div[4]/div/div/app-indent-wrapper/app-informations-relatives-employeur-ptinv/div/div[2]/div[1]/anef-input-text/div/div/div[1]/div//input[@ng-reflect-name=&quot;NUMERO_SIRET&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div/div[2]/div/div/div[4]/div/div/app-indent-wrapper/app-informations-relatives-employeur-ptinv/div/div[2]/div[1]/anef-input-text/div/div/div[1]/div//input[@aria-labelledby=&quot;NUMERO_SIRET-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

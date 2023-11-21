@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NomDuGroupe</name>
+   <name>select_Value_Mois_TypeDeContratCDI</name>
    <tag></tag>
-   <elementGuidId>689aafa4-2287-49e0-9f2b-46d87fe668ea</elementGuidId>
+   <elementGuidId>45621e0c-3826-4ae6-b5d2-90ebd509458f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;NOM_GROUPE-label&quot;]</value>
+         <value>//*[@id=&quot;MOIS&quot;]/div/div[5]/div/ul/p-dropdownitem[4]/li/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

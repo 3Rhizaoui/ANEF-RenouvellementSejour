@@ -6,12 +6,11 @@
    <elementGuidId>d2cb4d70-e5d1-486a-8d1a-906bb3fc334f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;NUMERO_SIRET&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@aria-labelledby=&quot;NUMERO_SIRET-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

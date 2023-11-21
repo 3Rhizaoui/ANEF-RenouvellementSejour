@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NomDuGroupe</name>
+   <name>CheckBox_Artiste_Salarie</name>
    <tag></tag>
-   <elementGuidId>689aafa4-2287-49e0-9f2b-46d87fe668ea</elementGuidId>
+   <elementGuidId>3fae3493-7f0f-4250-9be4-93815d4646fe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;NOM_GROUPE-label&quot;]</value>
+         <value>//div/div/div[1]/p-radiobutton/div/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

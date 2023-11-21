@@ -463,9 +463,9 @@ if (((TypeTitreDeSejour == 'MandataireSocial') && (Titre == 'Etudiant')) || ((Ty
 	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}
 
 /********************************************************************/
-'Option Correspondant à votre situation :Passeport Talent  (Visiteur)'
+'Option Correspondant à votre situation :Passeport Talent/ArtisteNonSalarie'
 
-if (((TypeTitreDeSejour == 'Artiste') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'Artiste') && (Titre == 'Visiteur'))) {
+if (((TypeTitreDeSejour == 'ArtisteNonSalarie') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'ArtisteNonSalarie') && (Titre == 'Visiteur'))) {
 	
 	"Veuillez sélectionner l'option correspondant à votre situation: Artiste non salarié"
 	"Artiste non salarié"
@@ -484,6 +484,36 @@ if (((TypeTitreDeSejour == 'Artiste') && (Titre == 'Etudiant')) || ((TypeTitreDe
 	
 	'Validation'
 	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}
+
+/********************************************************************/
+'Option Correspondant à votre situation :Passeport Talent/ArtisteSalarie'
+
+if (((TypeTitreDeSejour == 'ArtisteSalarie') && (Titre == 'Etudiant')) || ((TypeTitreDeSejour == 'ArtisteSalarie') && (Titre == 'Visiteur'))) {
+	
+	"Veuillez sélectionner l'option correspondant à votre situation: Artiste salarié"
+	"Artiste salarié"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_Artiste_Salarie'))
+		
+	"INFORMATIONS RELATIVES À L'ACTIVITÉ PROFESSIONNELLE"
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_IntituleDeLEmploi'), 'IntituleDeLEmploi')
+	//WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_InformationsComplementaires'), 'Informations complémentaires')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_TypeDeContrat'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_TypeDeContrat'))
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_Jour_TypeDeContratCDI'),'22')
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Mois_TypeDeContratCDI'))
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_Mois_TypeDeContratCDI'))
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_Annee_TypeDeContratCDI'),'2020')
+	"RESSOURCES"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_RESSOURCES'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_RESSOURCES'))
+	
+	"Montant €/mois "
+	WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/input_MontantParMois'), '1196.50')
+	
+	'Validation'
+	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}
+
 
 /********************************************************************/
 'Option Correspondant à votre situation :Passeport Talent  (MembreDeFamillePasseportTalent_Conjoint)'

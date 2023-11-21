@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;DUREE_ANCIENNETE&quot;]</value>
+         <value>//*[@aria-labelledby=&quot;DUREE_ANCIENNETE-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

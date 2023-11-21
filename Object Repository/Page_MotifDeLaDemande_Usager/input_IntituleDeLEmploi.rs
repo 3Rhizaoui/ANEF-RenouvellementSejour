@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NomDuGroupe</name>
+   <name>input_IntituleDeLEmploi</name>
    <tag></tag>
-   <elementGuidId>689aafa4-2287-49e0-9f2b-46d87fe668ea</elementGuidId>
+   <elementGuidId>29d91c2a-9961-4dc9-af52-021cfeacd475</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;NOM_GROUPE-label&quot;]</value>
+         <value>//*[@aria-labelledby=&quot;INTITULE_EMPLOI-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

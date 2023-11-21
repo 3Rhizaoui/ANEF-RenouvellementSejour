@@ -6,11 +6,11 @@
    <elementGuidId>7e82e940-43d7-4498-84a8-b5d0e4ab9d9d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[3]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[12]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[3]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div/div[1]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[3]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[12]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

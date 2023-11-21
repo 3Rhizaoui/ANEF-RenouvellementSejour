@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NomDuGroupe</name>
+   <name>input_Annee_TypeDeContratCDI</name>
    <tag></tag>
-   <elementGuidId>689aafa4-2287-49e0-9f2b-46d87fe668ea</elementGuidId>
+   <elementGuidId>a45d9909-48cb-42e9-b464-7e5080239122</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;NOM_GROUPE-label&quot;]</value>
+         <value>//*[@id=&quot;ANNEE&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

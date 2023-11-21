@@ -6,12 +6,11 @@
    <elementGuidId>d78c25e8-2a12-460b-bc22-a20e8f149578</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-reflect-name=&quot;NATURE_EMPLOI_ET_LIEN&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@aria-labelledby=&quot;NATURE_EMPLOI_ET_LIEN-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

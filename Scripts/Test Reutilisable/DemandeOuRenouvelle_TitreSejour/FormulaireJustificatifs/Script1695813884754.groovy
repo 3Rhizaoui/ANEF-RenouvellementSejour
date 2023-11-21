@@ -378,15 +378,15 @@ if (TypeTitreDeSejour == 'MandataireSocial') {
 
 /*********************************************************************************************************************************************/
 'Option Correspondant à votre situation :Tout document pouvant justifier de la qualité d’artiste ou d’auteur'
-if (TypeTitreDeSejour == 'Artiste') {
+if ((TypeTitreDeSejour == 'ArtisteNonSalarie') || (TypeTitreDeSejour == 'ArtisteSalarie')) {
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), 
-        SpecificDownloadDirectory + '/EtatCivil.pdf')
+        SpecificDownloadDirectory + 'EtatCivil.pdf')
 
     WebUI.delay(2)
 
     'Joindre un  justificatif Passeport'
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory + 
-        '/Passeport.pdf')
+        'Passeport.pdf')
 
     WebUI.delay(2)
 
@@ -399,7 +399,7 @@ if (TypeTitreDeSejour == 'Artiste') {
 
     'Joindre un  justificatif DOMICILIATION'
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory + 
-        '/Domiciliation.pdf')
+        'Domiciliation.pdf')
 
     WebUI.delay(2)
 
@@ -408,20 +408,19 @@ if (TypeTitreDeSejour == 'Artiste') {
 				*/
     'Tout document pouvant justifier de la qualité d’artiste ou d’auteur'
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), 
-        SpecificDownloadDirectory + '/ToutDocumentJustifiantLaRealisationDuProjet.pdf')
+        SpecificDownloadDirectory + 'ToutDocumentJustifiantLaRealisationDuProjet.pdf')
 
     WebUI.delay(2)
 
     'Justificatif de ressources'
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), 
-        SpecificDownloadDirectory + '/DernierAvisDImposition.pdf')
+        SpecificDownloadDirectory + 'DernierAvisDImposition.pdf')
 
     WebUI.delay(2)
 
     'Validation'
     WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 }
-
 /*********************************************************************************************************************************************/
 'Option Correspondant à votre situation :Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint'
 if (TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') {
