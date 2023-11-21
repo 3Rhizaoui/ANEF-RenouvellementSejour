@@ -87,6 +87,12 @@
          <value>Titre</value>
          <variableId>008d7d85-8a40-45ee-add1-6b7823e45d41</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>EnvExec</value>
+         <variableId>0ceb9e2d-82b5-4ceb-bb8e-c4e30a2075d5</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>371cd486-26e3-4b3f-9d0c-38565979b8ff</guid>

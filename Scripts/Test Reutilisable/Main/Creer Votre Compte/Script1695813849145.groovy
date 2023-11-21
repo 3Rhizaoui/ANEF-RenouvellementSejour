@@ -72,10 +72,10 @@ WebUI.waitForPageLoad(5)
 
 'Cliquer sur le lien Se Connecter :'
  WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'))
-
+ if (EnvExec == 'URL_ANEFQualif') {
 "Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
-
+ }
 "Première visiteq? Créez votre compte :"
 WebUI.click(findTestObject('Object Repository/Connexion Usager/Link_Creer Votre Compte'))
 
@@ -137,9 +137,15 @@ WebUI.delay(2)
 'Get all cookies after Event NetWork in Page'
 CustomKeywords.'tools.GetWebCookieByNamedCollected.GetWebCookie'()
 
-'Navigation à URL Création MDP'
-String URL_CreationMDP = GlobalVariable.URLpw + GlobalVariable.Token
-WebUI.navigateToUrl(URL_CreationMDP)
+'Navigation à URL  Qualification et Création MDP'
+if (EnvExec == 'URL_ANEFQualif') {
+String URL_CreationMDP = GlobalVariable.URLpwQualif + GlobalVariable.Token
+WebUI.navigateToUrl(URL_CreationMDP)}
+
+'Navigation à URL Préprode  et Création MDP'
+if (EnvExec == 'URL_ANEFPreProd') {
+String URL_CreationMDP = GlobalVariable.URLpwPreProd + GlobalVariable.Token
+WebUI.navigateToUrl(URL_CreationMDP)}
 
 'Vérification de la conformité du nouveau MDP'
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Verif_FormatNewPW'), [:], FailureHandling.STOP_ON_FAILURE)

@@ -7,7 +7,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://qualif.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/espace-personnel/inscription/mot-de-passe?token='</initValue>
-      <name>URLpw</name>
+      <name>URLpwQualif</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -113,5 +113,15 @@
       <description></description>
       <initValue>''</initValue>
       <name>DriverName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://preprod.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/'</initValue>
+      <name>URL_ANEFPreProd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://preprod.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/espace-personnel/inscription/mot-de-passe?token='</initValue>
+      <name>URLpwPreProd</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -23,14 +23,14 @@ import org.openqa.selenium.Keys as Keys
  *so that they call Highlight.on() automatically
  */
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
-
+WebUI.delay(05)
 /**Je vérifie les informations que j'ai saisies en validant les 4 parties afin d'envoyer ma demande. Une fois la demande envoyée, je ne peux plus la modifier.
  *INFORMATIONS PERSONNELLES (1/4)
  *MOTIF DE LA DEMANDE (2/4)
  *RESSOURCES (3/4)
  *JUSTIFICATIFS (4/4)
  */
-if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour)== "Visiteur"))  && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if(((TypeTitreDeSejour == "RenouvellementDeTitreSejour") || (TypeTitreDeSejour == "Visiteur"))  && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
 	WebUI.delay(02)
@@ -50,10 +50,11 @@ if((((TypeTitreDeSejour)== "RenouvellementDeTitreSejour") || ((TypeTitreDeSejour
 	/**Validation
 	*/
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-	WebUI.delay(10)
+	WebUI.delay(15)
 }
 
-if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie"||"TS-PT-SalarieEntrepriseInnovante" ||"TS-PT-CarteBleueEuropeenne" || "TS-PT-SalarieEnMission") && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+else { 
+//(((TypeTitreDeSejour== ("TS-PT-SalarieQualifie"||"TS-PT-SalarieEntrepriseInnovante" ||"TS-PT-CarteBleueEuropeenne" || "TS-PT-SalarieEnMission")) && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
@@ -70,5 +71,5 @@ if (((TypeTitreDeSejour)== "TS-PT-SalarieQualifie"||"TS-PT-SalarieEntrepriseInno
 	/**Validation
 	 */
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-	WebUI.delay(10)
+	WebUI.delay(15)
 }

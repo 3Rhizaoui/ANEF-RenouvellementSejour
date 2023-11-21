@@ -56,14 +56,6 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 'RunConfiguration for get Execution Properties Driver'
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 String DriverName = GlobalVariable.DriverName
-//RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
-
-//	String projectDir = RunConfiguration.getProjectDir()
-//		//+ "/Data Files/").replace(/\//, '\\\\')
-//	Path projectPath = Paths.get(projectDir)
-//	Path downloadPath = (projectPath.resolve("/Data Files/EtatCivil.pdf")).toString()
-
-
 EventFiringWebDriver driver = DriverFactory.getWebDriver()
 WebDriver wrappedDriver = driver.getWrappedDriver()
 System.out.println(wrappedDriver.getClass())
@@ -76,50 +68,19 @@ String SpecificDownloadDirectory = ""
 if (DriverName =='FIREFOX_DRIVER') {
 	  SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/").replace(/\//, '\\')
 	}
-else if (wrappedDriver.class == CRemoteWebDriver){
+else if (wrappedDriver.class == 'CRemoteWebDriver'){
 	 SpecificDownloadDirectory = new File(RunConfiguration.getProjectDir() + "/Data Files/").getCanonicalPath()}
 else {
-	  SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files/")
+	  SpecificDownloadDirectory = (RunConfiguration.getProjectDir() + "/Data Files")
 	  println "SpecificDownloadDirectory : " + SpecificDownloadDirectory
  }
  
-
-//WebUI.navigateToUrl(SpecificDownloadDirectory+'EtatCivil.pdf')
-
-//WebUI.navigateToUrl("C:\\EtatCivil.pdf")
-//filePath = System.getProperty("user.dir") + File.separator + "myfile.txt" // finds the directory that katalon is running in and grabs myfile.txt
-//println "filePath : " + filePath
-//EventFiringWebDriver driver = DriverFactory.getWebDriver()  // get the event driver (aka the katalon smartwait driver)
-//
-//RemoteWebDriver wrappedDriver = driver.getWrappedDriver() // get the driver inside the smart wait driver (remote,chrome, firefox,etc)
-//
-//wrappedDriver.setFileDetector(new LocalFileDetector()) //points your remote,chrome,firefox,etc driver to the local files in the run.
-//
-////TestObjet fileInput  = findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide')
-////WebElement fileInput = wrappedDriver. Upload // specify your selector (I'm using CSS) and create fileInput as the object that is found by your selector
-//WebElement fileInput = wrappedDriver.findElement(By.xpath("//app-justificatifs/div[2]/div/p-accordion/div/p-accordiontab[1]/div[2]/div/div[1]/div/app-pieces-jointes[1]/div/span[1]/input"))
-
-//fileInput.sendKeys(SpecificDownloadDirectory) //Send the fileInput object your filepath, which is a directory. It will begin the upload at this point.
-
 'Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour'
 /********************************************************************************************************/
 
 if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
 	
-	//String SpecificUploadDirectory = "C:\\EtatCivil.pdf"
-	//String JsonTxt = "testets"
-	//CustomKeywords.'tools.JsonWriter.WriterFile'(JsonTxt, "EtatCivil.pdf")
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'/EtatCivil.pdf')
-	//WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-	//TestObject Btn_ChoisirFichier =findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichierTest')
-	//WebUI.click(Btn_ChoisirFichier)
-	WebUI.delay(5)
-	//CustomKeywords.'tools.UploadMyFile.uploadFileUsingRobot'( SpecificUploadDirectory)
-	
-	
-	
-
-
 	WebUI.delay(02)
 	
 	'Joindre un  justificatif Passeport'
@@ -178,11 +139,11 @@ if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant')
 /********************************************************************************************************/
 
 if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur')) || ((TypeTitreDeSejour == 'Visiteur') && (Titre == 'Etudiant'))) {
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'/EtatCivil.pdf')
 	WebUI.delay(02)
 	
 	'Joindre un  justificatif Passeport'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'/Passeport.pdf')
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif Photographie d'identité récente"
@@ -191,13 +152,13 @@ if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur'
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif DOMICILIATION"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'/Domiciliation.pdf')
 	WebUI.delay(02)
 	
 	/**Joindre un  justificatif MOTIF DE SÉJOUR
 	 * Le document justifiant que le demandeur ait souscrit à une assurance maladie pendant toute la durée de son séjour
 	*/
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_SouscriptionAssurance'), SpecificDownloadDirectory +'SouscriptionAssurance.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_SouscriptionAssurance'), SpecificDownloadDirectory +'/SouscriptionAssurance.pdf')
 	WebUI.delay(02)
 
 	/****RESSOURCES*****
@@ -209,7 +170,7 @@ if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur'
     *- Une attestation de prise en charge financière
     *- La copie intégrale de votre acte de naissance avec filiation
 	*/
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_PrisEnChargeParUnTiers'), SpecificDownloadDirectory +'PrisEnChargeParUnTiers.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_PrisEnChargeParUnTiers'), SpecificDownloadDirectory +'/PrisEnChargeParUnTiers.pdf')
 	WebUI.delay(02)
 	
 	'Validation'
@@ -224,11 +185,11 @@ println "TypeTitreDeSejour :" + TypeTitreDeSejour
 "'Option Correspondant à votre situation :'Carte Bleue Européenne', 'Salarié En Mission'"
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour =="TS-PT-SalarieEnMission")) {
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'/EtatCivil.pdf')
 	WebUI.delay(02)
 	
 	'Joindre un  justificatif Passeport'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'/Passeport.pdf')
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif Photographie d'identité récente"
@@ -237,13 +198,13 @@ if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour ==
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif DOMICILIATION"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'/Domiciliation.pdf')
 	WebUI.delay(02)
 	
 	/**Joindre un  justificatif MOTIF DE SÉJOUR
 	 * Attestation de l'employeur  et Diplôme obtenu en France
 	*/
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDEmployeur'), SpecificDownloadDirectory +'AttestationEmployeur.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDEmployeur'), SpecificDownloadDirectory +'/AttestationEmployeur.pdf')
 	WebUI.delay(02)
 	
 	
@@ -255,11 +216,11 @@ if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour ==
 "'Option Correspondant à votre situation :Salarié Qualifié', 'Salarié Entreprise Innovante', 'ChercheurEtChercheurEnMobilite'"
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == "TS-PT-SalarieQualifie") || (TypeTitreDeSejour == "TS-PT-SalarieEntrepriseInnovante") || (TypeTitreDeSejour == "ChercheurEtChercheurEnMobilite")) {
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'/EtatCivil.pdf')
 	WebUI.delay(02)
 	
 	'Joindre un  justificatif Passeport'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'/Passeport.pdf')
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif Photographie d'identité récente"
@@ -268,7 +229,7 @@ if ((TypeTitreDeSejour == "TS-PT-SalarieQualifie") || (TypeTitreDeSejour == "TS-
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif DOMICILIATION"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'/Domiciliation.pdf')
 	WebUI.delay(02)
 	
 	/**Joindre un  justificatif MOTIF DE SÉJOUR
@@ -276,10 +237,10 @@ if ((TypeTitreDeSejour == "TS-PT-SalarieQualifie") || (TypeTitreDeSejour == "TS-
 	*/
 	
 	"Diplôme obtenu en France"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DiplomeObtenuEnFrance'), SpecificDownloadDirectory +'DiplomeObtenuEnFrance.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DiplomeObtenuEnFrance'), SpecificDownloadDirectory +'/DiplomeObtenuEnFrance.pdf')
 	WebUI.delay(02)
 	
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDEmployeur'), SpecificDownloadDirectory +'AttestationEmployeur.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDEmployeur'), SpecificDownloadDirectory +'/AttestationEmployeur.pdf')
 	WebUI.delay(02)
 	
 	'Validation'
@@ -290,11 +251,11 @@ if ((TypeTitreDeSejour == "TS-PT-SalarieQualifie") || (TypeTitreDeSejour == "TS-
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') || (TypeTitreDeSejour == 'CreateurDEntreprise')) {
 		
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'/EtatCivil.pdf')
 	WebUI.delay(02)
 		
 	'Joindre un  justificatif Passeport'
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'/Passeport.pdf')
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif Photographie d'identité récente"
@@ -303,7 +264,7 @@ if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') || (TypeTitreDeSejour ==
 	WebUI.delay(02)
 	
 	"Joindre un  justificatif DOMICILIATION"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'/Domiciliation.pdf')
 	WebUI.delay(02)
 	
 	/**Joindre un  justificatif MOTIF DE SÉJOUR
@@ -311,7 +272,7 @@ if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') || (TypeTitreDeSejour ==
 	*/
 	
 	"Justificatifs d’un investissement direct en France d’au moins 300 000 €"
-	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_JustificatifsInvestissement'), SpecificDownloadDirectory +'JustificatifsInvestissement.pdf')
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_JustificatifsInvestissement'), SpecificDownloadDirectory +'/JustificatifsInvestissement.pdf')
 	WebUI.delay(02)
 	
 	'Validation'
@@ -320,145 +281,183 @@ if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') || (TypeTitreDeSejour ==
 
 'Option Correspondant à votre situation :Investisseur (French tech Visa for Investors) or Investisseur (French Tech Visa For Founders)'
 /*********************************************************************************************************************************************/
-	if ((TypeTitreDeSejour == 'CreateurDEntreprise') || (TypeTitreDeSejour == 'FrenchTechVisaForFounders')) {
-		
-		WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-		WebUI.delay(02)
-			
-		'Joindre un  justificatif Passeport'
-		WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
-		WebUI.delay(02)
-		
-		"Joindre un  justificatif Photographie d'identité récente"
-		WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
-		WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
-		WebUI.delay(02)
-		
-		"Joindre un  justificatif DOMICILIATION"
-		WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
-		WebUI.delay(02)
-		
-		/**Joindre un  justificatif MOTIF DE SÉJOUR
+if ((TypeTitreDeSejour == 'CreateurDEntreprise') || (TypeTitreDeSejour == 'FrenchTechVisaForFounders')) {
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), 
+        SpecificDownloadDirectory + '/EtatCivil.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Passeport'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory + 
+        '/Passeport.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Photographie d\'identité récente'
+    WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
+
+    WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif DOMICILIATION'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory + 
+        '/Domiciliation.pdf')
+
+    WebUI.delay(2)
+
+    /**Joindre un  justificatif MOTIF DE SÉJOUR
 		 * Justificatifs d’un investissement direct en France
 		*/
-		
-		"Tout document justifiant la réalisation du projet"
-		WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), SpecificDownloadDirectory +'ToutDocumentJustifiantLaRealisationDuProjet.pdf')
-		WebUI.delay(02)
-		
-		"Si le demandeur a le statut de salarié : fiche de salaire pour les trois derniers mois ou en l'absence, le dernier avis d'imposition"
-		WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), SpecificDownloadDirectory +'DernierAvisDImposition.pdf')
-		WebUI.delay(02)
-		
-		'Validation'
-		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
-	}
-	
-	'Option Correspondant à votre situation :Investisseur (MandataireSocial)'
-	/*********************************************************************************************************************************************/
-		if ((TypeTitreDeSejour == 'MandataireSocial')) {
-			
-			WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-			WebUI.delay(02)
-				
-			'Joindre un  justificatif Passeport'
-			WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
-			WebUI.delay(02)
-			
-			"Joindre un  justificatif Photographie d'identité récente"
-			WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
-			WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
-			WebUI.delay(02)
-			
-			"Joindre un  justificatif DOMICILIATION"
-			WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
-			WebUI.delay(02)
-			
-			/**Joindre un  justificatif MOTIF DE SÉJOUR
+    'Tout document justifiant la réalisation du projet'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), 
+        SpecificDownloadDirectory + '/ToutDocumentJustifiantLaRealisationDuProjet.pdf')
+
+    WebUI.delay(2)
+
+    'Si le demandeur a le statut de salarié : fiche de salaire pour les trois derniers mois ou en l\'absence, le dernier avis d\'imposition'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), 
+        SpecificDownloadDirectory + '/DernierAvisDImposition.pdf')
+
+    WebUI.delay(2)
+
+    'Validation'
+    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+}
+
+/*********************************************************************************************************************************************/
+'Option Correspondant à votre situation :Investisseur (MandataireSocial)'
+if (TypeTitreDeSejour == 'MandataireSocial') {
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), 
+        SpecificDownloadDirectory + '/EtatCivil.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Passeport'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory + 
+        '/Passeport.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Photographie d\'identité récente'
+    WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
+
+    WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif DOMICILIATION'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory + 
+        '/Domiciliation.pdf')
+
+    WebUI.delay(2)
+
+    /**Joindre un  justificatif MOTIF DE SÉJOUR
 			 * Justificatifs d’un investissement direct en France
 			*/
-			
-			"Justificatif établissant que l'usager occupe une fonction de mandataire social dans un établissement ou une société établie en France"
-			WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), SpecificDownloadDirectory +'ToutDocumentJustifiantLaRealisationDuProjet.pdf')
-			WebUI.delay(02)
-			
-			"Justificatif d'une rémunération brute au moins égale à 3 fois le salaire minimum de croissance annuel"
-			WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), SpecificDownloadDirectory +'DernierAvisDImposition.pdf')
-			WebUI.delay(02)
-			
-			WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDEmployeur'), SpecificDownloadDirectory +'AttestationEmployeur.pdf')
-			WebUI.delay(02)
-			
-			'Validation'
-			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
-		}
-		
-		'Option Correspondant à votre situation :Tout document pouvant justifier de la qualité d’artiste ou d’auteur'
-		/*********************************************************************************************************************************************/
-			if (TypeTitreDeSejour == 'Artiste')  {
-				
-				WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-				WebUI.delay(02)
-					
-				'Joindre un  justificatif Passeport'
-				WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
-				WebUI.delay(02)
-				
-				"Joindre un  justificatif Photographie d'identité récente"
-				WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
-				WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
-				WebUI.delay(02)
-				
-				"Joindre un  justificatif DOMICILIATION"
-				WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
-				WebUI.delay(02)
-				
-				/**Joindre un  justificatif MOTIF DE SÉJOUR
+    'Justificatif établissant que l\'usager occupe une fonction de mandataire social dans un établissement ou une société établie en France'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), 
+        SpecificDownloadDirectory + '/ToutDocumentJustifiantLaRealisationDuProjet.pdf')
+
+    WebUI.delay(2)
+
+    'Justificatif d\'une rémunération brute au moins égale à 3 fois le salaire minimum de croissance annuel'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), 
+        SpecificDownloadDirectory + '/DernierAvisDImposition.pdf')
+
+    WebUI.delay(2)
+
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_AttestationDEmployeur'), 
+        SpecificDownloadDirectory + '/AttestationEmployeur.pdf')
+
+    WebUI.delay(2)
+
+    'Validation'
+    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+}
+
+/*********************************************************************************************************************************************/
+'Option Correspondant à votre situation :Tout document pouvant justifier de la qualité d’artiste ou d’auteur'
+if (TypeTitreDeSejour == 'Artiste') {
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), 
+        SpecificDownloadDirectory + '/EtatCivil.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Passeport'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory + 
+        '/Passeport.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Photographie d\'identité récente'
+    WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
+
+    WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif DOMICILIATION'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory + 
+        '/Domiciliation.pdf')
+
+    WebUI.delay(2)
+
+    /**Joindre un  justificatif MOTIF DE SÉJOUR
 				 * Justificatifs d’un Artiste  en France
 				*/
-				
-				"Tout document pouvant justifier de la qualité d’artiste ou d’auteur"
-				WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), SpecificDownloadDirectory +'ToutDocumentJustifiantLaRealisationDuProjet.pdf')
-				WebUI.delay(02)
-				
-				"Justificatif de ressources"
-				WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), SpecificDownloadDirectory +'DernierAvisDImposition.pdf')
-				WebUI.delay(02)
-				
-				'Validation'
-				WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
-			}
+    'Tout document pouvant justifier de la qualité d’artiste ou d’auteur'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ToutDocumentJustifiantLaRealisationDuProjet'), 
+        SpecificDownloadDirectory + '/ToutDocumentJustifiantLaRealisationDuProjet.pdf')
 
-			'Option Correspondant à votre situation :Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint'
-			/*********************************************************************************************************************************************/
-				if (TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint')  {
-					
-					WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'EtatCivil.pdf')
-					WebUI.delay(02)
-						
-					'Joindre un  justificatif Passeport'
-					WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory +'Passeport.pdf')
-					WebUI.delay(02)
-					
-					"Joindre un  justificatif Photographie d'identité récente"
-					WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
-					WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
-					WebUI.delay(02)
-					
-					"Joindre un  justificatif DOMICILIATION"
-					WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory +'Domiciliation.pdf')
-					WebUI.delay(02)
-					
-					/**Joindre un  justificatif MOTIF DE SÉJOUR
+    WebUI.delay(2)
+
+    'Justificatif de ressources'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), 
+        SpecificDownloadDirectory + '/DernierAvisDImposition.pdf')
+
+    WebUI.delay(2)
+
+    'Validation'
+    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+}
+
+/*********************************************************************************************************************************************/
+'Option Correspondant à votre situation :Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint'
+if (TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') {
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), 
+        SpecificDownloadDirectory + '/EtatCivil.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Passeport'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Passeport'), SpecificDownloadDirectory + 
+        '/Passeport.pdf')
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif Photographie d\'identité récente'
+    WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
+
+    WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
+
+    WebUI.delay(2)
+
+    'Joindre un  justificatif DOMICILIATION'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_Domiciliation'), SpecificDownloadDirectory + 
+        '/Domiciliation.pdf')
+
+    WebUI.delay(2)
+
+    /**Joindre un  justificatif MOTIF DE SÉJOUR
 					 * Justificatifs d’un Artiste  en France
 					*/
-					
-					"Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint Acte de mariage"
-					WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ActeDeMariage'), SpecificDownloadDirectory +'ActeDeMariage.pdf')
-					WebUI.delay(02)
-					'Validation'
-					WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
-				}
+    'Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint Acte de mariage'
+    WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ActeDeMariage'), SpecificDownloadDirectory + 
+        '/ActeDeMariage.pdf')
 
+    WebUI.delay(2)
 
-
+    'Validation'
+    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+}

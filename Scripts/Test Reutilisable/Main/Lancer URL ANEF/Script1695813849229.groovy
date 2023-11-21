@@ -275,10 +275,15 @@ import java.util.concurrent.TimeUnit;
 Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
 //println "Map RunBrowserConfiguration :" + RunBrowserConfiguration
 String DriverName = ""
-String REMOTE_WEB_DRIVER = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
+WebUI.openBrowser("")
+EventFiringWebDriver driver = DriverFactory.getWebDriver()
+WebDriver wrappedDriver = driver.getWrappedDriver()
+System.out.println(wrappedDriver.getClass())
+if (wrappedDriver.class == CRemoteWebDriver) {
+	wrappedDriver.setFileDetector(new LocalFileDetector())
+}
 
- if (RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType") == "REMOTE_WEB_DRIVER") {
-
+ if (wrappedDriver.class == 'CRemoteWebDriver') {
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
@@ -298,12 +303,13 @@ WebUIDriverType executedBrowser = DriverFactory.getExecutedBrowser()
 if (Profiles == 'Usager') {
 	switch (DriverName) {
 		case 'REMOTE_WEB_DRIVER':
-		//case 'CHROME_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser (GlobalVariable.URL_ANEFQualif)
+	
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			WebUI.maximizeWindow()
-			//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-			//System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 			'Appel de l\'action Réutilisable pour contourner l\'erreur lié à la confidentialité'
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
@@ -311,13 +317,29 @@ if (Profiles == 'Usager') {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 			
 		break
-			
-		case 'HEADLESS_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+		case 'CHROME_DRIVER':
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			WebUI.maximizeWindow()
-			//System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
-			//System.setProperty("webdriver.chrome.verboseLogging", "true");
+			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
+			'Appel de l\'action Réutilisable pour contourner l\'erreur lié à la confidentialité'
+			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.delay(5)
+			'Vérification de l\'étape :'
+			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
+			
+		break
+		case 'HEADLESS_DRIVER':
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
+			WebUI.maximizeWindow()
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.OPTIONAL)
 			WebUI.delay(5)
@@ -326,9 +348,11 @@ if (Profiles == 'Usager') {
 			break;
 			
 		case 'FIREFOX_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
-			//WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			WebUI.maximizeWindow()
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -339,9 +363,11 @@ if (Profiles == 'Usager') {
 
 			
 		case 'FIREFOX_HEADLESS_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
-			//WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			WebUI.maximizeWindow()
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -351,11 +377,12 @@ if (Profiles == 'Usager') {
 			break;
 						
 		case 'EDGE_CHROMIUM_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			WebUI.maximizeWindow()
-			//System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-			//System.setProperty('webdriver.chrome.logfile', RunConfiguration.getProjectDir()+ "/Dump/chromedriver.log")
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
 			WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 			WebUI.delay(5)
@@ -364,8 +391,11 @@ if (Profiles == 'Usager') {
 			break;
 			
 		case  'EDGE_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			System.setProperty("webdriver.chrome.verboseLogging", "true");
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
@@ -375,8 +405,11 @@ if (Profiles == 'Usager') {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Connexion Usager/Link_Se Connecter'), FailureHandling.STOP_ON_FAILURE)
 			break;
 		case  'IE_DRIVER':
-			//CustomKeywords.'tools.CapabilitiesSpecificDownloadDirectory.SetSpecificDownloadDirectoryIfNeeded'()
-			WebUI.openBrowser(GlobalVariable.URL_ANEFQualif)
+			'Navigation à URL  Qualification et Création MDP'
+			if (EnvExec == 'URL_ANEFQualif') { WebUI.navigateToUrl (GlobalVariable.URL_ANEFQualif)}
+			'Navigation à URL Préprode  et Création MDP'
+			if (EnvExec == 'URL_ANEFPreProd') {WebUI.navigateToUrl (GlobalVariable.URL_ANEFPreProd)}
+				
 			System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 			System.setProperty("webdriver.chrome.verboseLogging", "true");
 			"Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité"
@@ -396,7 +429,11 @@ if (Profiles == 'Usager') {
 /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Agent:
  */
 if (Profiles == 'Agent') {
-	WebUI.openBrowser(GlobalVariable.URLPortailAgentQualif)
+	'Navigation à URL  Qualification et Création MDP'
+	if (EnvExec == 'URL_ANEFQualif') { WebUI.openBrowser (GlobalVariable.URL_ANEFQualif)}
+	'Navigation à URL Préprode  et Création MDP'
+	if (EnvExec == 'URL_ANEFPreProd') {WebUI.openBrowser (GlobalVariable.URL_ANEFPreProd)}
+				
 	WebUI.maximizeWindow()
 	System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
 	System.setProperty("webdriver.chrome.verboseLogging", "true");
