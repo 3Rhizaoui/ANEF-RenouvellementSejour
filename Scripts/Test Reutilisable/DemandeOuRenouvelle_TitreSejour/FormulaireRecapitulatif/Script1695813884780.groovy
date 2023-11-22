@@ -50,7 +50,7 @@ if(((TypeTitreDeSejour == "RenouvellementDeTitreSejour") || (TypeTitreDeSejour =
 	/**Validation
 	*/
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-	WebUI.delay(15)
+	WebUI.delay(30)
 }
 
 else { 
@@ -71,5 +71,5 @@ else {
 	/**Validation
 	 */
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande'))
-	WebUI.delay(15)
+	WebUI.delay(30)
 }

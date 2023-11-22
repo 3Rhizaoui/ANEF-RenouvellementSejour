@@ -1,16 +1,15 @@
 {
-  "keywordFileContentHash": "71E2DE2E19FCB6E62BA8D6BDE93AF684",
+  "keywordFileContentHash": "4D54A6D966A2E69174B4CB4AC5192D0D",
   "keywordClasses": [
     {
       "name": "tools.WaitForLoadedPage",
       "keywordMethods": [
         {
           "name": "waitForElementRendering",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

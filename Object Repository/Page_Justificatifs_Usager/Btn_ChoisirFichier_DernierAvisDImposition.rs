@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div/div[10]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[4]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[13]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[4]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input</value>
+         <value>//div/div[10]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[4]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[13]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[4]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input|//div/div[2]/app-justificatifs-motif-sejour/div/app-pieces-jointes/div/span[1]/input</value>
       </entry>
       <entry>
          <key>BASIC</key>
