@@ -279,11 +279,10 @@ WebUI.openBrowser("")
 EventFiringWebDriver driver = DriverFactory.getWebDriver()
 WebDriver wrappedDriver = driver.getWrappedDriver()
 System.out.println(wrappedDriver.getClass())
-if (wrappedDriver.class == CRemoteWebDriver) {
-	wrappedDriver.setFileDetector(new LocalFileDetector())
-}
 
- if (wrappedDriver.class == 'CRemoteWebDriver') {
+
+ if (wrappedDriver.class == CRemoteWebDriver) {
+	wrappedDriver.setFileDetector(new LocalFileDetector())
 	DriverName = RunBrowserConfiguration.get("drivers").get("system").get("Remote").get("browserType")
 	println "DriverName :" + DriverName
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")}
