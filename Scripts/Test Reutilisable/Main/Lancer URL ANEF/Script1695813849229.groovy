@@ -263,7 +263,6 @@ import java.util.concurrent.TimeUnit;
  *so that they call Highlight.on() automatically
  */
 
-
 /**
 	Runtime.getRuntime().exec('taskkill /f /im chrome.exe')
 	Runtime.getRuntime().exec('taskkill /f /im chromedriver.exe')
