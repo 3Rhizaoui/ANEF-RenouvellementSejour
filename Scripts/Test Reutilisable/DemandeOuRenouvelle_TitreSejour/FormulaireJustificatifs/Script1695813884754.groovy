@@ -289,7 +289,7 @@ if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') || (TypeTitreDeSejour ==
 
 'Option Correspondant à votre situation :Investisseur (French tech Visa for Investors) or Investisseur (French Tech Visa For Founders)'
 /*********************************************************************************************************************************************/
-if ((TypeTitreDeSejour == 'CreateurDEntreprise') || (TypeTitreDeSejour == 'FrenchTechVisaForFounders')) {
+if ((TypeTitreDeSejour == 'FrenchTechVisaForFounders')) {
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), 
         SpecificDownloadDirectory + '/EtatCivil.pdf')
     WebUI.delay(5)
