@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_TNR_R.TSPT_Suppo90,Chrome 119.0.0.0,,,2023-11-24 14:53:29,2023-11-24 15:04:35,"11m - 6,621s",FAILED
+,,,,,,,
+Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Etudiant,Chrome 119.0.0.0,,,2023-11-24 14:53:30,2023-11-24 14:59:08,"5m - 38,717s",PASSED
+com.kazurayam.ksbackyard.HighlightElement.pandemic(),Chrome 119.0.0.0,,,2023-11-24 14:53:32,2023-11-24 14:53:33,"0,652s",PASSED
+"callTestCase(findTestCase(""Test Reutilisable/Main/Lancer URL ANEF""), [""Profiles"":""Usager"", ""EnvExec"":EnvExec], STOP_ON_FAILURE)",Chrome 119.0.0.0,Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent,,2023-11-24 14:53:33,2023-11-24 14:54:22,"49,240s",PASSED
+if (StopTestCase == false),Chrome 119.0.0.0,,,2023-11-24 14:54:22,2023-11-24 14:59:06,"4m - 44,095s",PASSED
+Video,Chrome 119.0.0.0,,,2023-11-24 14:59:08,2023-11-24 14:59:08,"0,000s",PASSED
+,,,,,,,
+Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Etudiant,Chrome 119.0.0.0,,,2023-11-24 14:59:09,2023-11-24 15:04:35,"5m - 26,842s",FAILED
+com.kazurayam.ksbackyard.HighlightElement.pandemic(),Chrome 119.0.0.0,,,2023-11-24 14:59:09,2023-11-24 14:59:09,"0,006s",PASSED
+"callTestCase(findTestCase(""Test Reutilisable/Main/Lancer URL ANEF""), [""Profiles"":""Usager"", ""EnvExec"":EnvExec], STOP_ON_FAILURE)",Chrome 119.0.0.0,Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent,,2023-11-24 14:59:09,2023-11-24 14:59:50,"41,710s",PASSED
+if (StopTestCase == false),Chrome 119.0.0.0,,,2023-11-24 14:59:50,2023-11-24 15:04:31,"4m - 40,262s",FAILED
+Video,Chrome 119.0.0.0,,,2023-11-24 15:04:35,2023-11-24 15:04:35,"0,001s",PASSED

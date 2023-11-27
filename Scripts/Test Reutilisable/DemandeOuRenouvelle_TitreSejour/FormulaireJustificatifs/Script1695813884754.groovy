@@ -175,9 +175,10 @@ if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur'
 	
 	'Validation'
 	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
-	WebUI.waitForAngularLoad(10)
-	WebUI.waitForPageLoad(15)
-	WebUI.waitForJQueryLoad(15)
+//	WebUI.waitForAngularLoad(10)
+//	WebUI.waitForPageLoad(15)
+//	WebUI.waitForJQueryLoad(15)
+	WebUI.delay(05)
 }
 
 println "TypeTitreDeSejour :" + TypeTitreDeSejour
@@ -274,6 +275,13 @@ if ((TypeTitreDeSejour == 'FrenchTechVisaForInvestors') || (TypeTitreDeSejour ==
 	"Justificatifs d’un investissement direct en France d’au moins 300 000 €"
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_JustificatifsInvestissement'), SpecificDownloadDirectory +'/JustificatifsInvestissement.pdf')
 	WebUI.delay(05)
+	
+	if ((TypeTitreDeSejour == 'CreateurDEntreprise')) {
+		'Si le demandeur a le statut de salarié : fiche de salaire pour les trois derniers mois ou en l\'absence, le dernier avis d\'imposition'
+		WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DernierAvisDImposition'), 
+        SpecificDownloadDirectory + '/DernierAvisDImposition.pdf')
+		WebUI.delay(5)
+	}
 	
 	'Validation'
 	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))

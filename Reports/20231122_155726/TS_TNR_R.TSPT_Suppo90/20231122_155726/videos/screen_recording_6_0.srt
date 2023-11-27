@@ -1,0 +1,1080 @@
+1
+00:00:00,002 --> 00:00:00,004
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+2
+00:00:00,009 --> 00:00:00,102
+7. Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent
+
+3
+00:00:00,103 --> 00:00:00,104
+5. RunConfiguration: getExecutionProperties Driver 
+
+4
+00:00:00,105 --> 00:00:00,106
+9. DriverName = ""
+
+5
+00:00:00,107 --> 00:00:03,383
+13. openBrowser("")
+
+6
+00:00:03,384 --> 00:00:03,385
+17. driver = getWebDriver()
+
+7
+00:00:03,386 --> 00:00:03,386
+21. wrappedDriver = driver.getWrappedDriver()
+
+8
+00:00:03,388 --> 00:00:03,389
+25. out.println(wrappedDriver.getClass())
+
+9
+00:00:03,390 --> 00:00:03,391
+29. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+10
+00:00:03,392 --> 00:00:03,392
+2. DriverName = get("WebUI").get("browserType")
+
+11
+00:00:03,393 --> 00:00:03,394
+6. println("DriverName :" + DriverName)
+
+12
+00:00:03,395 --> 00:00:03,396
+10. println("Driverpath :" + RunBrowserConfiguration.get("drivers"))
+
+13
+00:00:03,397 --> 00:00:03,397
+33. DriverName = DriverName
+
+14
+00:00:03,399 --> 00:00:06,407
+37. delay(medium_wait)
+
+15
+00:00:06,409 --> 00:00:06,409
+41. executedBrowser = getExecutedBrowser()
+
+16
+00:00:06,410 --> 00:00:06,410
+45. if (Profiles == "Usager")
+
+17
+00:00:06,411 --> 00:00:06,411
+1. switch (DriverName)
+
+18
+00:00:06,412 --> 00:00:06,412
+4. Navigation à URL  Qualification et Création MDP
+
+19
+00:00:06,412 --> 00:00:06,412
+10. Navigation à URL Préprode  et Création MDP
+
+20
+00:00:06,413 --> 00:00:08,898
+1. navigateToUrl(URL_ANEFPreProd)
+
+21
+00:00:08,900 --> 00:00:08,911
+14. maximizeWindow()
+
+22
+00:00:08,913 --> 00:00:08,914
+18. System.setProperty("webdriver.chrome.driver", getChromeDriverPath())
+
+23
+00:00:08,915 --> 00:00:08,915
+22. System.setProperty("webdriver.chrome.logfile", getProjectDir() + "/Dump/chromedriver.log")
+
+24
+00:00:08,917 --> 00:00:09,006
+28. Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
+
+25
+00:00:09,008 --> 00:00:09,009
+3. waiting for the number of elements in the DOM to stop changing
+
+26
+00:00:09,010 --> 00:00:09,010
+11. RunConfiguration: getExecutionProperties Driver 
+
+27
+00:00:09,011 --> 00:00:09,012
+17. contournement du message d'erreur lié à la confidentialité :
+
+28
+00:00:09,013 --> 00:00:09,193
+1. if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL))
+
+29
+00:00:09,194 --> 00:00:11,488
+1. click(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), OPTIONAL)
+
+30
+00:00:11,489 --> 00:00:14,157
+5. click(findTestObject("Object Repository/Connexion Usager/Link_Proceed-Link"), OPTIONAL)
+
+31
+00:00:14,159 --> 00:00:14,160
+23. contournement du message d'erreur lié à la confidentialité :
+
+32
+00:00:14,162 --> 00:00:17,172
+27. delay(3)
+
+33
+00:00:17,174 --> 00:00:22,181
+32. delay(5)
+
+34
+00:00:22,183 --> 00:00:22,321
+38. Vérification de l'étape :
+
+35
+00:00:22,322 --> 00:00:22,322
+42. break
+
+36
+00:00:22,324 --> 00:00:22,324
+49. if (Profiles == "Agent")
+
+37
+00:00:22,326 --> 00:00:22,327
+2. println("Vérifier le Portail de votre connexion Usager ou Agent")
+
+38
+00:00:22,328 --> 00:00:22,398
+13. Appel Brique Réutilisable pour Créer un Compte Usager
+
+39
+00:00:22,399 --> 00:00:22,400
+5. Call Highlight.on() automatically
+
+40
+00:00:22,401 --> 00:00:22,424
+9. waitForPageLoad(5)
+
+41
+00:00:22,425 --> 00:00:25,296
+15. Cliquer sur le lien Se Connecter :
+
+42
+00:00:25,297 --> 00:00:25,298
+19. if (EnvExec == "URL_ANEFQualif")
+
+43
+00:00:25,300 --> 00:00:28,454
+25. Première visiteq? Créez votre compte :
+
+44
+00:00:28,456 --> 00:00:28,480
+29. waitForPageLoad(5)
+
+45
+00:00:28,482 --> 00:00:28,482
+33. println("NumEtrangerVisa = " + NumEtrangerVisa)
+
+46
+00:00:28,483 --> 00:00:33,196
+39. Fournir Le Numéro de votre visa ou votre numéro étranger :
+
+47
+00:00:33,198 --> 00:00:33,198
+45.  Fournir La Date de début de validité :
+
+48
+00:00:33,200 --> 00:00:33,200
+49. DateDebut = tools.MyStringTools.ParsedDateDebut()
+
+49
+00:00:33,204 --> 00:00:33,204
+53. ParsedDateDebut = tools.MyStringTools.ParsedDateDebut()
+
+50
+00:00:33,206 --> 00:00:37,560
+57. setText(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Input_Jour"), ParsedDateDebut[0])
+
+51
+00:00:37,561 --> 00:00:40,088
+61. selectOptionByIndex(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Select_Mois"), ParsedDateDebut[1])
+
+52
+00:00:40,090 --> 00:00:44,404
+65. setText(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Input_Annee"), ParsedDateDebut[2])
+
+53
+00:00:44,406 --> 00:00:44,406
+71.  Fournir La Date de fin de validité :
+
+54
+00:00:44,407 --> 00:00:44,407
+75. DateFin = tools.MyStringTools.ParsedDateFin()
+
+55
+00:00:44,408 --> 00:00:44,408
+79. ParsedDateFin = tools.MyStringTools.ParsedDateFin()
+
+56
+00:00:44,409 --> 00:00:48,711
+83. setText(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Input_Jour"), ParsedDateFin[0])
+
+57
+00:00:48,712 --> 00:00:51,216
+87. selectOptionByIndex(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Select_Mois"), ParsedDateFin[1])
+
+58
+00:00:51,218 --> 00:00:55,563
+91. setText(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Input_Annee"), ParsedDateFin[2])
+
+59
+00:00:55,564 --> 00:00:57,776
+97. Validation de la page pour la création du compte :
+
+60
+00:00:57,778 --> 00:00:57,849
+105. Appel Brique Réutilisable VerificationCertainesInformationsSontIncorrectes
+
+61
+00:00:57,850 --> 00:01:00,866
+5.  Exit Action ou on passe à la création
+
+62
+00:01:00,868 --> 00:01:00,869
+9. StopTestCase = false
+
+63
+00:01:00,870 --> 00:01:07,206
+13. MsgAlertPresent = verifyElementVisible(findTestObject("Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes"), OPTIONAL)
+
+64
+00:01:07,208 --> 00:01:07,208
+17. if (MsgAlertPresent)
+
+65
+00:01:07,210 --> 00:01:07,211
+2. markPassed("Vos informations ne sont pas associées à un compte ==>> Création d'un nouveau Compte avec ces Informations.")
+
+66
+00:01:07,213 --> 00:01:07,239
+21. waitForPageLoad(2)
+
+67
+00:01:07,241 --> 00:01:07,242
+111. Exit TestCase
+
+68
+00:01:07,244 --> 00:01:07,329
+119. Appel Brique Réutilisable VerificationSiCompteExisteDeja
+
+69
+00:01:07,331 --> 00:01:10,345
+5.  Exit Action ou on passe à la création
+
+70
+00:01:10,348 --> 00:01:10,348
+9. StopTestCase = false
+
+71
+00:01:10,350 --> 00:01:13,662
+13. MsgAlertPresent = verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Verif_PopUpCompteExisteDeja"), 2, OPTIONAL)
+
+72
+00:01:13,664 --> 00:01:13,664
+17. if (MsgAlertPresent)
+
+73
+00:01:13,666 --> 00:01:13,666
+2. markPassed("Vos informations ne sont pas associées à un compte ==>> Création d'un nouveau Compte avec ces Informations.")
+
+74
+00:01:13,668 --> 00:01:13,689
+21. waitForPageLoad(2)
+
+75
+00:01:13,691 --> 00:01:13,691
+125. Exit TestCase
+
+76
+00:01:13,692 --> 00:01:13,693
+131.  Création de Email utilisateur
+
+77
+00:01:13,694 --> 00:01:15,708
+135. delay(2)
+
+78
+00:01:15,710 --> 00:01:20,279
+139. setText(findTestObject("Object Repository/Connexion Usager/Input_Email"), MonEmail)
+
+79
+00:01:20,283 --> 00:01:24,938
+143. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmeEmail"), MonEmail)
+
+80
+00:01:24,940 --> 00:01:27,311
+147. click(findTestObject("Object Repository/Connexion Usager/span_btn_ValiderEmail"))
+
+81
+00:01:27,313 --> 00:01:29,322
+151. delay(2)
+
+82
+00:01:29,324 --> 00:01:31,734
+155. click(findTestObject("Object Repository/Connexion Usager/btn_span_RetourAccueil"))
+
+83
+00:01:31,737 --> 00:01:33,742
+159. delay(2)
+
+84
+00:01:33,744 --> 00:01:33,795
+165. Get all cookies after Event NetWork in Page
+
+85
+00:01:33,797 --> 00:01:33,798
+171. Navigation à URL  Qualification et Création MDP
+
+86
+00:01:33,800 --> 00:01:33,800
+177. Navigation à URL Préprode  et Création MDP
+
+87
+00:01:33,802 --> 00:01:33,803
+1. URL_CreationMDP = URLpwPreProd + Token
+
+88
+00:01:33,805 --> 00:01:35,912
+5. navigateToUrl(URL_CreationMDP)
+
+89
+00:01:35,915 --> 00:01:36,002
+183. Vérification de la conformité du nouveau MDP
+
+90
+00:01:36,005 --> 00:01:36,006
+3. waiting for the number of elements in the DOM to stop changing
+
+91
+00:01:36,009 --> 00:01:36,010
+7. println("Créer un mot de passe sans majuscule")
+
+92
+00:01:36,012 --> 00:01:40,519
+11. setText(findTestObject("Object Repository/Connexion Usager/Input_Password"), "hhizaoui001!")
+
+93
+00:01:40,522 --> 00:01:45,082
+15. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), "hhizaoui001!")
+
+94
+00:01:45,085 --> 00:01:47,446
+19. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+95
+00:01:47,448 --> 00:01:47,603
+23. verifyElementPresent(findTestObject("Object Repository/Connexion Usager/div_MSG_FormatNonRespecte"), 1)
+
+96
+00:01:47,605 --> 00:01:47,606
+27. println("Créer un mot de passe sans minuscule")
+
+97
+00:01:47,610 --> 00:01:52,124
+31. setText(findTestObject("Object Repository/Connexion Usager/Input_Password"), "HHIZAOUI001!")
+
+98
+00:01:52,126 --> 00:01:56,536
+35. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), "HHIZAOUI001!")
+
+99
+00:01:56,538 --> 00:01:58,749
+39. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+100
+00:01:58,750 --> 00:01:58,855
+43. verifyElementPresent(findTestObject("Object Repository/Connexion Usager/div_MSG_FormatNonRespecte"), 1)
+
+101
+00:01:58,856 --> 00:01:58,856
+47. println("Créer un mot de passe sans caractère spécial")
+
+102
+00:01:58,858 --> 00:02:03,265
+51. setText(findTestObject("Object Repository/Connexion Usager/Input_Password"), "HHizaoui0010")
+
+103
+00:02:03,267 --> 00:02:07,725
+55. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), "HHizaoui0010")
+
+104
+00:02:07,726 --> 00:02:09,996
+59. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+105
+00:02:09,999 --> 00:02:10,145
+63. verifyElementPresent(findTestObject("Object Repository/Connexion Usager/div_MSG_FormatNonRespecte"), 1)
+
+106
+00:02:10,147 --> 00:02:10,148
+67. println("Créer un mot de passe sans chiffre")
+
+107
+00:02:10,149 --> 00:02:14,539
+71. setText(findTestObject("Object Repository/Connexion Usager/Input_Password"), "HHizaouihiza!")
+
+108
+00:02:14,541 --> 00:02:18,947
+75. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), "HHizaouihiza!")
+
+109
+00:02:18,948 --> 00:02:21,159
+79. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+110
+00:02:21,161 --> 00:02:21,284
+83. verifyElementPresent(findTestObject("Object Repository/Connexion Usager/div_MSG_FormatNonRespecte"), 1)
+
+111
+00:02:21,285 --> 00:02:21,286
+87. println("Saisir 2 mots de passe différents")
+
+112
+00:02:21,287 --> 00:02:25,693
+91. setText(findTestObject("Object Repository/Connexion Usager/Input_Password"), "HHizaoui001!")
+
+113
+00:02:25,694 --> 00:02:30,121
+95. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), "HHizaoui001!def")
+
+114
+00:02:30,123 --> 00:02:32,363
+99. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+115
+00:02:32,365 --> 00:02:32,503
+103. verifyElementPresent(findTestObject("Object Repository/Connexion Usager/div_ MSG_ChampsDoiventEtreIdentiques"), 1)
+
+116
+00:02:32,505 --> 00:02:32,506
+107. println("Créer un mot de passe moins de 12 caractères")
+
+117
+00:02:32,508 --> 00:02:36,933
+111. setText(findTestObject("Object Repository/Connexion Usager/Input_Password"), "HHiza001!")
+
+118
+00:02:36,934 --> 00:02:41,320
+115. setText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), "HHiza001!")
+
+119
+00:02:41,323 --> 00:02:43,557
+119. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+120
+00:02:43,559 --> 00:02:43,692
+123. verifyElementPresent(findTestObject("Object Repository/Connexion Usager/div_MSG_FormatNonRespecte"), 1)
+
+121
+00:02:43,694 --> 00:02:48,053
+189. Renseigner PDM Valide
+
+122
+00:02:48,054 --> 00:02:52,376
+193. setEncryptedText(findTestObject("Object Repository/Connexion Usager/Input_ConfirmePassword"), Password)
+
+123
+00:02:52,378 --> 00:02:54,599
+197. click(findTestObject("Object Repository/Connexion Usager/btn_CreerMDP"))
+
+124
+00:02:54,601 --> 00:02:58,410
+203. Retour à l'accueil
+
+125
+00:02:58,413 --> 00:02:58,443
+207. waitForPageLoad(5)
+
+126
+00:02:58,445 --> 00:02:58,446
+17. if (StopTestCase == false)
+
+127
+00:02:58,450 --> 00:02:58,543
+3. Appel Brique Réutilisable pour Identification Usager ou Agent
+
+128
+00:02:58,545 --> 00:02:58,546
+1. if (Profiles == "Usager")
+
+129
+00:02:58,548 --> 00:03:03,562
+1. delay(5)
+
+130
+00:03:03,563 --> 00:03:06,170
+7.  Cliquer sur le lien Se Connecter :
+
+131
+00:03:06,172 --> 00:03:06,253
+13. Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
+
+132
+00:03:06,254 --> 00:03:06,255
+3. waiting for the number of elements in the DOM to stop changing
+
+133
+00:03:06,256 --> 00:03:06,256
+11. RunConfiguration: getExecutionProperties Driver 
+
+134
+00:03:06,258 --> 00:03:06,258
+17. contournement du message d'erreur lié à la confidentialité :
+
+135
+00:03:06,260 --> 00:03:09,612
+1. if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL))
+
+136
+00:03:09,615 --> 00:03:09,616
+23. contournement du message d'erreur lié à la confidentialité :
+
+137
+00:03:09,619 --> 00:03:12,638
+27. delay(3)
+
+138
+00:03:12,641 --> 00:03:17,645
+17. delay(5)
+
+139
+00:03:17,647 --> 00:03:22,008
+23. Renseigner l'Identifiant et le mot de passe :
+
+140
+00:03:22,010 --> 00:03:22,010
+27. NumEtrangerVisa = NumEtrangerVisa
+
+141
+00:03:22,012 --> 00:03:26,287
+31. setEncryptedText(findTestObject("Object Repository/Connexion Usager/Input_MDP"), Password)
+
+142
+00:03:26,288 --> 00:03:29,997
+35. click(findTestObject("Object Repository/Connexion Usager/btn_Sidentifier"))
+
+143
+00:03:29,999 --> 00:03:45,011
+39. delay(15)
+
+144
+00:03:45,013 --> 00:03:45,125
+45. Vérification position sur la page d'accueil
+
+145
+00:03:45,127 --> 00:03:45,127
+7. Identification : Portail Agent
+
+146
+00:03:45,128 --> 00:03:45,129
+2. println("Vérifier le Portail de votre connexion Usager ou Agent")
+
+147
+00:03:45,132 --> 00:03:45,203
+9. Appel Brique Réutilisable pour une Demande Ou Renouvelle Titre De Sejour Usager
+
+148
+00:03:45,205 --> 00:03:45,206
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+149
+00:03:45,207 --> 00:03:48,221
+5. delay(3)
+
+150
+00:03:48,224 --> 00:03:48,565
+11. Choisir le branchement demandé par mes JDD réutilisables  
+
+151
+00:03:48,567 --> 00:03:51,578
+15. delay(3)
+
+152
+00:03:51,580 --> 00:03:51,581
+19. switch (PourQui)
+
+153
+00:03:51,582 --> 00:03:53,787
+2. check(findTestObject("Object Repository/Page_Accueil_Usager/CheckBox_Moi-meme"))
+
+154
+00:03:53,790 --> 00:03:53,790
+6. break
+
+155
+00:03:53,792 --> 00:03:56,096
+25. Je valide Mon choix
+
+156
+00:03:56,099 --> 00:03:56,176
+15. Appel Brique Réutilisable pour Remplir Le Formulaire Type De Titre De Séjour Usager
+
+157
+00:03:56,178 --> 00:03:56,180
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+158
+00:03:56,182 --> 00:04:06,192
+5. delay(10)
+
+159
+00:04:06,194 --> 00:04:06,195
+9. switch (TypeTitreDeSejour)
+
+160
+00:04:06,196 --> 00:04:06,196
+2. if (Titre == "Visiteur" || Titre == "Etudiant")
+
+161
+00:04:06,198 --> 00:04:08,411
+1. check(findTestObject("Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_PasseportTalent"))
+
+162
+00:04:08,413 --> 00:04:10,633
+5. check(findTestObject("Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_Artiste"))
+
+163
+00:04:10,635 --> 00:04:12,902
+11. 2 éme Validation de mon choix
+
+164
+00:04:12,903 --> 00:04:14,917
+15. delay(2)
+
+165
+00:04:14,919 --> 00:04:17,119
+21. 3 éme Validation de mon choix
+
+166
+00:04:17,121 --> 00:04:17,122
+6. break
+
+167
+00:04:17,124 --> 00:04:19,512
+17. Verify text alert is correct or not
+
+168
+00:04:19,515 --> 00:04:19,516
+21. if (MsgAlertPresent)
+
+169
+00:04:19,519 --> 00:04:19,520
+2. markPassed(" C'est le bon Moment pour demander le renouvellement de votre titre.")
+
+170
+00:04:19,524 --> 00:04:19,773
+21. Appel Brique Réutilisable pour Remplir Le Formulaire Informations Personnelles Usager
+
+171
+00:04:19,776 --> 00:04:19,778
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+172
+00:04:19,781 --> 00:04:22,222
+5. if (verifyElementPresent(findTestObject("Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_1_Non"), 1, OPTIONAL))
+
+173
+00:04:22,225 --> 00:04:24,238
+9. delay(2)
+
+174
+00:04:24,240 --> 00:04:26,586
+13. if (verifyElementPresent(findTestObject("Object Repository/Page_InformationPersonnelles_Usager/CheckBox_liensPersonnelsFamiliaux_2_Non"), 1, OPTIONAL))
+
+175
+00:04:26,588 --> 00:04:28,606
+17. delay(2)
+
+176
+00:04:28,610 --> 00:04:28,813
+21. if (verifyElementPresent(findTestObject("Object Repository/Page_InformationPersonnelles_Usager/CheckBox_DesEnfantsACharge_Non"), 1, OPTIONAL))
+
+177
+00:04:28,816 --> 00:04:31,182
+1. check(findTestObject("Object Repository/Page_InformationPersonnelles_Usager/CheckBox_DesEnfantsACharge_Non"), OPTIONAL)
+
+178
+00:04:31,185 --> 00:04:33,201
+25. delay(2)
+
+179
+00:04:33,203 --> 00:04:38,087
+29. setText(findTestObject("Object Repository/Page_InformationPersonnelles_Usager/Input_AdresseUsager"), AdresseUsager)
+
+180
+00:04:38,091 --> 00:04:40,099
+33. delay(2)
+
+181
+00:04:40,102 --> 00:04:44,677
+37. setText(findTestObject("Object Repository/Page_InformationPersonnelles_Usager/Input_NumeroDeTelephone"), NumeroTelephoneUsager)
+
+182
+00:04:44,681 --> 00:04:47,087
+41. click(findTestObject("Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre"))
+
+183
+00:04:47,090 --> 00:04:47,191
+27. Appel Brique Réutilisable pour Remplir Le Formulaire Motif De La Demande Usager
+
+184
+00:04:47,194 --> 00:04:47,196
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+185
+00:04:47,199 --> 00:04:47,200
+7. Option Correspondant à votre situation :Renouvellement DeTitre Séjour  Ou Visiteur
+
+186
+00:04:47,202 --> 00:04:47,203
+13. Option Correspondant à votre situation : Visiteur
+
+187
+00:04:47,207 --> 00:04:47,208
+19. Option Correspondant à votre situation :Salarié Qualifié
+
+188
+00:04:47,212 --> 00:04:47,213
+25. Option Correspondant à votre situation :Salarié Entreprise Innovante
+
+189
+00:04:47,217 --> 00:04:47,218
+31. Option Correspondant à votre situation :Carte Bleue Européenne
+
+190
+00:04:47,222 --> 00:04:47,223
+37. Option Correspondant à votre situation :Salarié En Mission
+
+191
+00:04:47,226 --> 00:04:47,227
+43. Option Correspondant à votre situation :ChercheurEtChercheurEnMobilite
+
+192
+00:04:47,231 --> 00:04:47,232
+49. Option Correspondant à votre situation :Investisseur (French tech Visa for Investors)
+
+193
+00:04:47,237 --> 00:04:47,238
+55. Option Correspondant à votre situation :Investisseur (French tech Visa for Investors)
+
+194
+00:04:47,241 --> 00:04:47,242
+61. Option Correspondant à votre situation :Investisseur (French Tech Visa For Founders)
+
+195
+00:04:47,246 --> 00:04:47,246
+67. Option Correspondant à votre situation :Investisseur (MandataireSocial)
+
+196
+00:04:47,250 --> 00:04:47,250
+73. Option Correspondant à votre situation :Passeport Talent/ArtisteNonSalarie
+
+197
+00:04:47,253 --> 00:04:49,803
+5. Artiste non salarié
+
+198
+00:04:49,806 --> 00:04:54,385
+11. INFORMATIONS RELATIVES À L'ACTIVITÉ ARTISTIQUE
+
+199
+00:04:54,388 --> 00:04:59,331
+15. setText(findTestObject("Object Repository/Page_MotifDeLaDemande_Usager/input_InformationsComplementaires"), "Informations complémentaires")
+
+200
+00:04:59,336 --> 00:05:01,629
+21. RESSOURCES
+
+201
+00:05:01,631 --> 00:05:03,912
+25. click(findTestObject("Object Repository/Page_MotifDeLaDemande_Usager/select_Value_RESSOURCES"))
+
+202
+00:05:03,914 --> 00:05:08,293
+31. Montant €/mois 
+
+203
+00:05:08,296 --> 00:05:10,571
+37. Validation
+
+204
+00:05:10,573 --> 00:05:10,573
+79. Option Correspondant à votre situation :Passeport Talent/ArtisteSalarie
+
+205
+00:05:10,575 --> 00:05:10,577
+85. Option Correspondant à votre situation :Passeport Talent  (MembreDeFamillePasseportTalent_Conjoint)
+
+206
+00:05:10,579 --> 00:05:10,580
+31. if (TypeTitreDeSejour == "RenouvellementDeTitreSejour" || TypeTitreDeSejour == "Visiteur" && Titre == "Etudiant" || Titre == "Visiteur")
+
+207
+00:05:10,581 --> 00:05:10,665
+37. AppelBrique Réutilisable pour Remplir Le Formulaire Justificatifs Usager
+
+208
+00:05:10,667 --> 00:05:10,668
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+209
+00:05:10,672 --> 00:05:10,673
+7. RunConfiguration for get Execution Properties Driver
+
+210
+00:05:10,675 --> 00:05:10,676
+11. DriverName = DriverName
+
+211
+00:05:10,678 --> 00:05:10,678
+15. driver = getWebDriver()
+
+212
+00:05:10,680 --> 00:05:10,680
+19. wrappedDriver = driver.getWrappedDriver()
+
+213
+00:05:10,682 --> 00:05:10,682
+23. out.println(wrappedDriver.getClass())
+
+214
+00:05:10,683 --> 00:05:10,684
+27. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+215
+00:05:10,686 --> 00:05:10,686
+31. SpecificDownloadDirectory = ""
+
+216
+00:05:10,688 --> 00:05:10,690
+37. Upload file attachment
+
+217
+00:05:10,693 --> 00:05:10,693
+3. SpecificDownloadDirectory = getProjectDir() + "/Data Files"
+
+218
+00:05:10,695 --> 00:05:10,696
+7. println("SpecificDownloadDirectory : " + SpecificDownloadDirectory)
+
+219
+00:05:10,698 --> 00:05:10,698
+43. Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour
+
+220
+00:05:10,700 --> 00:05:10,700
+49. Documents Justificatifs Correspondant à votre situation : Visiteur
+
+221
+00:05:10,702 --> 00:05:10,702
+53. println("TypeTitreDeSejour :" + TypeTitreDeSejour)
+
+222
+00:05:10,705 --> 00:05:10,705
+59. 'Option Correspondant à votre situation :'Carte Bleue Européenne', 'Salarié En Mission'
+
+223
+00:05:10,708 --> 00:05:10,708
+65. 'Option Correspondant à votre situation :Salarié Qualifié', 'Salarié Entreprise Innovante', 'ChercheurEtChercheurEnMobilite'
+
+224
+00:05:10,710 --> 00:05:10,711
+71. 'Option Correspondant à votre situation :Salarié Qualifié', 'Salarié Entreprise Innovante', 'ChercheurEtChercheurEnMobilite'
+
+225
+00:05:10,713 --> 00:05:10,713
+77. Option Correspondant à votre situation :Investisseur (French tech Visa for Investors) or Investisseur (French Tech Visa For Founders)
+
+226
+00:05:10,715 --> 00:05:10,716
+83. Option Correspondant à votre situation :Investisseur (MandataireSocial)
+
+227
+00:05:10,718 --> 00:05:10,718
+89. Option Correspondant à votre situation :Tout document pouvant justifier de la qualité d’artiste ou d’auteur
+
+228
+00:05:10,721 --> 00:05:12,953
+1. uploadFile(findTestObject("Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide"), SpecificDownloadDirectory + "/EtatCivil.pdf")
+
+229
+00:05:12,957 --> 00:05:17,969
+5. delay(5)
+
+230
+00:05:17,971 --> 00:05:20,196
+11. Joindre un  justificatif Passeport
+
+231
+00:05:20,198 --> 00:05:25,204
+15. delay(5)
+
+232
+00:05:25,206 --> 00:05:29,766
+21. Joindre un  justificatif Photographie d'identité récente
+
+233
+00:05:29,769 --> 00:05:32,042
+25. click(findTestObject("Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto"))
+
+234
+00:05:32,045 --> 00:05:37,052
+29. delay(5)
+
+235
+00:05:37,054 --> 00:05:39,215
+35. Joindre un  justificatif DOMICILIATION
+
+236
+00:05:39,217 --> 00:05:44,228
+39. delay(5)
+
+237
+00:05:44,230 --> 00:05:46,392
+45. Tout document pouvant justifier de la qualité d’artiste ou d’auteur
+
+238
+00:05:46,394 --> 00:05:51,407
+49. delay(5)
+
+239
+00:05:51,409 --> 00:05:53,578
+55. Justificatif de ressources
+
+240
+00:05:53,580 --> 00:05:58,587
+59. delay(5)
+
+241
+00:05:58,589 --> 00:06:00,833
+65. Validation
+
+242
+00:06:00,835 --> 00:06:00,837
+95. Option Correspondant à votre situation :Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint
+
+243
+00:06:00,839 --> 00:06:00,912
+43. Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager
+
+244
+00:06:00,914 --> 00:06:00,916
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+245
+00:06:00,916 --> 00:06:05,924
+5. delay(5)
+
+246
+00:06:05,926 --> 00:06:05,927
+9. if (TypeTitreDeSejour == "RenouvellementDeTitreSejour" || TypeTitreDeSejour == "Visiteur" && Titre == "Visiteur" || Titre == "Etudiant")
+
+247
+00:06:05,929 --> 00:06:08,224
+2. click(findTestObject("Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4"))
+
+248
+00:06:08,226 --> 00:06:10,230
+6. delay(2)
+
+249
+00:06:10,232 --> 00:06:12,482
+10. click(findTestObject("Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_2sur4"))
+
+250
+00:06:12,487 --> 00:06:14,504
+14. delay(2)
+
+251
+00:06:14,506 --> 00:06:16,740
+18. click(findTestObject("Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_3sur4"))
+
+252
+00:06:16,743 --> 00:06:18,750
+22. delay(2)
+
+253
+00:06:18,752 --> 00:06:21,002
+26. click(findTestObject("Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtTransmettreMaDemande"))
+
+254
+00:06:21,004 --> 00:06:51,016
+30. delay(30)
+
+255
+00:06:51,019 --> 00:06:51,095
+49. Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager
+
+256
+00:06:51,097 --> 00:06:51,098
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+257
+00:06:51,100 --> 00:06:51,100
+7. RunConfiguration: getExecutionProperties Driver 
+
+258
+00:06:51,102 --> 00:06:51,102
+11. DriverName = get("WebUI").get("browserType")
+
+259
+00:06:51,104 --> 00:06:51,186
+17. Vérifier La Confirmation De Dépôt De La Demande et voir Document 
+
+260
+00:06:51,188 --> 00:06:53,380
+21. click(OuvrirMaConfirmationDeDépôtDeDemandePDF)
+
+261
+00:06:53,382 --> 00:06:53,382
+25. NumEtrangerVisa = NumEtrangerVisa.toString()
+
+262
+00:06:53,384 --> 00:06:53,385
+29. if (DriverName == "FIREFOX_DRIVER")
+
+263
+00:06:53,387 --> 00:06:55,645
+33. click(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/link_EspacePerso"))
+
+264
+00:06:55,649 --> 00:06:58,036
+37. click(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/link_MonCompte"))
+
+265
+00:06:58,040 --> 00:06:58,255
+41. SuividemandeNumEtranger = getText(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/td_SuiviDemandeNumEtranger"))
+
+266
+00:06:58,258 --> 00:06:58,440
+45. SuiviTypeDeSejour = getText(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/td_TypeDeSejour"))
+
+267
+00:06:58,443 --> 00:06:58,443
+49. if (SuividemandeNumEtranger == NumEtrangerVisa)
+
+268
+00:06:58,446 --> 00:06:58,446
+1. markPassed("Le Numéro Etrangr est :" + NumEtrangerVisa + "=" + SuividemandeNumEtranger)
+
+269
+00:06:58,449 --> 00:06:58,450
+5. markPassed("Le Type Titre De Sejour est :" + SuiviTypeDeSejour + "=" + TypeTitreDeSejour)
+
+270
+00:06:58,453 --> 00:07:03,460
+53. delay(5)
+

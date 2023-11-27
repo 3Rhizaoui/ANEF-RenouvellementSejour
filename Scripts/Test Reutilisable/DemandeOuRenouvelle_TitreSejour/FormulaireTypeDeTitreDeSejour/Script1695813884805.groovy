@@ -64,6 +64,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteEtudiant'))
 			'Valider mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -94,6 +95,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieQualifie'))
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'3 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -106,6 +108,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieEntrepriseInnovante'))
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'3 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -118,6 +121,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CarteBleueEuropeenne'))
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'3 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -130,6 +134,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-SalarieEnMission'))
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'3 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -142,6 +147,7 @@ switch (TypeTitreDeSejour) {
 			'Valider mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
 			'3 éme Validation de mon choix'
+			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
 
@@ -156,8 +162,10 @@ switch (TypeTitreDeSejour) {
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-FrenchTechVisaForInvestors'))
 			'2 éme Validation de mon choix'
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'3 éme Validation de mon choix'
-			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
+			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
+			WebUI.delay(5)}
 	break
 
 	case 'CreateurDEntreprise' :
@@ -169,8 +177,10 @@ switch (TypeTitreDeSejour) {
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-CreateurDEntreprise'))
 		'2 éme Validation de mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.delay(3)
 		'3 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
+		WebUI.delay(5)}
 	break
 
 	case 'FrenchTechVisaForFounders' :
@@ -182,8 +192,10 @@ switch (TypeTitreDeSejour) {
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-FrenchTechVisaForFounders'))
 		'2 éme Validation de mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.delay(3)
 		'3 éme Validation de mon choix'
-		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
+		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
+		WebUI.delay(5)}
 	break
 	
 	case 'MandataireSocial' :
@@ -195,6 +207,7 @@ switch (TypeTitreDeSejour) {
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_TS-PT-MandataireSocial'))
 		'2 éme Validation de mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.delay(3)
 		'3 éme Validation de mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -228,6 +241,7 @@ switch (TypeTitreDeSejour) {
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 			WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamillePasseportTalent_Conjoint'))
 			WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+			WebUI.delay(3)
 			'3 éme Validation de mon choix'
 		    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break
@@ -239,6 +253,7 @@ switch (TypeTitreDeSejour) {
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))
 		WebUI.check(findTestObject('Object Repository/Page_DemarcheRenouvellement/CheckBox_SolliciteTS_MembreDeFamillePasseportTalent_EnfantEtJeuneMajeur'))
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_JeCommence'))
+		WebUI.delay(3)
 		'3 éme Validation de mon choix'
 		WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/Btn_JeContinue'))}
 	break

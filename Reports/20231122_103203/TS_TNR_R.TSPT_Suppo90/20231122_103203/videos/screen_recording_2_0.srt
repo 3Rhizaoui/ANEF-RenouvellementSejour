@@ -1,0 +1,124 @@
+1
+00:00:00,468 --> 00:00:00,470
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+2
+00:00:00,474 --> 00:00:00,643
+7. Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent
+
+3
+00:00:00,644 --> 00:00:00,646
+5. RunConfiguration: getExecutionProperties Driver 
+
+4
+00:00:00,646 --> 00:00:00,647
+9. DriverName = ""
+
+5
+00:00:00,648 --> 00:00:03,549
+13. openBrowser("")
+
+6
+00:00:03,550 --> 00:00:03,551
+17. driver = getWebDriver()
+
+7
+00:00:03,552 --> 00:00:03,552
+21. wrappedDriver = driver.getWrappedDriver()
+
+8
+00:00:03,553 --> 00:00:03,554
+25. out.println(wrappedDriver.getClass())
+
+9
+00:00:03,555 --> 00:00:03,555
+29. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+10
+00:00:03,556 --> 00:00:03,557
+33. if (class == "CRemoteWebDriver")
+
+11
+00:00:03,559 --> 00:00:03,560
+2. DriverName = get("WebUI").get("browserType")
+
+12
+00:00:03,561 --> 00:00:03,563
+6. println("DriverName :" + DriverName)
+
+13
+00:00:03,563 --> 00:00:03,563
+10. println("Driverpath :" + RunBrowserConfiguration.get("drivers"))
+
+14
+00:00:03,567 --> 00:00:03,568
+37. DriverName = DriverName
+
+15
+00:00:03,569 --> 00:00:06,575
+41. delay(medium_wait)
+
+16
+00:00:06,575 --> 00:00:06,577
+45. executedBrowser = getExecutedBrowser()
+
+17
+00:00:06,577 --> 00:00:06,578
+49. if (Profiles == "Usager")
+
+18
+00:00:06,578 --> 00:00:06,578
+1. switch (DriverName)
+
+19
+00:00:06,578 --> 00:00:06,594
+4. Navigation à URL  Qualification et Création MDP
+
+20
+00:00:06,594 --> 00:00:06,594
+10. Navigation à URL Préprode  et Création MDP
+
+21
+00:00:06,594 --> 00:00:06,610
+14. maximizeWindow()
+
+22
+00:00:06,610 --> 00:00:06,610
+18. System.setProperty("webdriver.chrome.driver", getChromeDriverPath())
+
+23
+00:00:06,610 --> 00:00:06,610
+22. System.setProperty("webdriver.chrome.logfile", getProjectDir() + "/Dump/chromedriver.log")
+
+24
+00:00:06,610 --> 00:00:06,679
+28. Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
+
+25
+00:00:06,679 --> 00:00:06,679
+3. waiting for the number of elements in the DOM to stop changing
+
+26
+00:00:06,679 --> 00:00:06,679
+11. RunConfiguration: getExecutionProperties Driver 
+
+27
+00:00:06,679 --> 00:00:06,679
+17. contournement du message d'erreur lié à la confidentialité :
+
+28
+00:00:06,694 --> 00:00:09,907
+1. if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL))
+
+29
+00:00:09,907 --> 00:00:09,907
+23. contournement du message d'erreur lié à la confidentialité :
+
+30
+00:00:09,907 --> 00:00:12,916
+27. delay(3)
+
+31
+00:00:12,916 --> 00:00:17,924
+32. delay(5)
+

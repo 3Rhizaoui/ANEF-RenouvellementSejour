@@ -248,23 +248,6 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 /**** Vérification de la présence de Message de Confirmation :
  * Votre demande a bien été enregistrée et vous allez recevoir un accusé de réception. 
  */
-'RunConfiguration: getExecutionProperties Driver '
-Map RunBrowserConfiguration = RunConfiguration.getExecutionProperties()
-String DriverName = RunBrowserConfiguration.get("drivers").get("system").get("WebUI").get("browserType")
-//CustomKeywords.'tools.deleteFileDirectory.cleanDirectory'()
-//WebUI.delay(15)
-'Vérifier La Confirmation De Dépôt De La Demande et voir Document '
-TestObject OuvrirMaConfirmationDeDépôtDeDemandePDF=findTestObject('Object Repository/Page_Confirmation_Usager/Btn_OuvrirMaConfirmationDeDepotDeDemande(PDF)')
-WebUI.click(OuvrirMaConfirmationDeDépôtDeDemandePDF)
-//CustomKeywords.'tools.OpenPopupInTab.OpenBrowserTab'(OuvrirMaConfirmationDeDépôtDeDemandePDF)
-String NumEtrangerVisa = NumEtrangerVisa.toString()
-if ((DriverName =='FIREFOX_DRIVER')){
-'Switch to  window Index 1'
-WebUI.delay(3)
-WebUI.closeWindowIndex(1)
-WebUI.delay(1)
-WebUI.switchToWindowIndex(0)
-WebUI.delay(1)}
 
 WebUI.click(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/link_EspacePerso"))
 WebUI.click(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/link_MonCompte"))

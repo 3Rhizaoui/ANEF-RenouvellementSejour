@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;PHOTO_NUMBER-label&quot;]|//*[@aria-labelledby=&quot;PHOTO_IDENTITE-label&quot;]</value>
+         <value>//*[@aria-labelledby=&quot;PHOTO_NUMBER-label&quot; and @type =&quot;text&quot;]|//*[@aria-labelledby=&quot;PHOTO_IDENTITE-label&quot; and @type =&quot;text&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

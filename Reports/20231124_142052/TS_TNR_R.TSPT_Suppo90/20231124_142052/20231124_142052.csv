@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_TNR_R.TSPT_Suppo90,Chrome 119.0.0.0,,,2023-11-24 14:20:57,2023-11-24 14:24:58,"4m - 1,402s",FAILED
+,,,,,,,
+Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Etudiant,Chrome 119.0.0.0,,,2023-11-24 14:20:58,2023-11-24 14:24:58,"4m - 0,468s",FAILED
+com.kazurayam.ksbackyard.HighlightElement.pandemic(),Chrome 119.0.0.0,,,2023-11-24 14:21:00,2023-11-24 14:21:00,"0,457s",PASSED
+"callTestCase(findTestCase(""Test Reutilisable/Main/Lancer URL ANEF""), [""Profiles"":""Usager"", ""EnvExec"":EnvExec], STOP_ON_FAILURE)",Chrome 119.0.0.0,Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent,,2023-11-24 14:21:00,2023-11-24 14:21:51,"50,603s",PASSED
+if (StopTestCase == false),Chrome 119.0.0.0,,,2023-11-24 14:21:51,2023-11-24 14:24:54,"3m - 3,242s",FAILED
+Video,Chrome 119.0.0.0,,,2023-11-24 14:24:58,2023-11-24 14:24:58,"0,000s",PASSED

@@ -1,0 +1,284 @@
+1
+00:00:01,769 --> 00:00:02,238
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+2
+00:00:02,264 --> 00:00:08,914
+7. Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent
+
+3
+00:00:08,916 --> 00:00:08,919
+5. RunConfiguration: getExecutionProperties Driver 
+
+4
+00:00:08,921 --> 00:00:08,924
+9. DriverName = ""
+
+5
+00:00:08,926 --> 00:00:13,078
+13. openBrowser("")
+
+6
+00:00:13,080 --> 00:00:13,109
+17. driver = getWebDriver()
+
+7
+00:00:13,111 --> 00:00:13,162
+21. wrappedDriver = driver.getWrappedDriver()
+
+8
+00:00:13,165 --> 00:00:13,267
+25. out.println(wrappedDriver.getClass())
+
+9
+00:00:13,269 --> 00:00:13,273
+29. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+10
+00:00:13,275 --> 00:00:13,296
+2. DriverName = get("WebUI").get("browserType")
+
+11
+00:00:13,298 --> 00:00:13,305
+6. println("DriverName :" + DriverName)
+
+12
+00:00:13,307 --> 00:00:13,309
+10. println("Driverpath :" + RunBrowserConfiguration.get("drivers"))
+
+13
+00:00:13,311 --> 00:00:14,721
+33. DriverName = DriverName
+
+14
+00:00:14,722 --> 00:00:17,751
+37. delay(medium_wait)
+
+15
+00:00:17,752 --> 00:00:17,753
+41. executedBrowser = getExecutedBrowser()
+
+16
+00:00:17,754 --> 00:00:17,755
+45. if (Profiles == "Usager")
+
+17
+00:00:17,756 --> 00:00:17,757
+1. switch (DriverName)
+
+18
+00:00:17,758 --> 00:00:17,758
+4. Navigation à URL  Qualification et Création MDP
+
+19
+00:00:17,759 --> 00:00:17,759
+10. Navigation à URL Préprode  et Création MDP
+
+20
+00:00:17,761 --> 00:00:34,006
+1. navigateToUrl(URL_ANEFPreProd)
+
+21
+00:00:34,008 --> 00:00:34,085
+14. maximizeWindow()
+
+22
+00:00:34,086 --> 00:00:34,089
+18. System.setProperty("webdriver.chrome.driver", getChromeDriverPath())
+
+23
+00:00:34,092 --> 00:00:34,094
+22. System.setProperty("webdriver.chrome.logfile", getProjectDir() + "/Dump/chromedriver.log")
+
+24
+00:00:34,096 --> 00:00:35,728
+28. Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
+
+25
+00:00:35,729 --> 00:00:35,755
+3. waiting for the number of elements in the DOM to stop changing
+
+26
+00:00:35,757 --> 00:00:35,758
+11. RunConfiguration: getExecutionProperties Driver 
+
+27
+00:00:35,760 --> 00:00:35,762
+17. contournement du message d'erreur lié à la confidentialité :
+
+28
+00:00:35,764 --> 00:00:36,143
+1. if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL))
+
+29
+00:00:36,146 --> 00:00:38,559
+1. click(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), OPTIONAL)
+
+30
+00:00:38,561 --> 00:00:41,264
+5. click(findTestObject("Object Repository/Connexion Usager/Link_Proceed-Link"), OPTIONAL)
+
+31
+00:00:41,267 --> 00:00:41,269
+23. contournement du message d'erreur lié à la confidentialité :
+
+32
+00:00:41,272 --> 00:00:44,297
+27. delay(3)
+
+33
+00:00:44,298 --> 00:00:49,309
+32. delay(5)
+
+34
+00:00:49,311 --> 00:00:49,579
+38. Vérification de l'étape :
+
+35
+00:00:49,581 --> 00:00:49,582
+42. break
+
+36
+00:00:49,583 --> 00:00:49,585
+49. if (Profiles == "Agent")
+
+37
+00:00:49,587 --> 00:00:49,589
+2. println("Vérifier le Portail de votre connexion Usager ou Agent")
+
+38
+00:00:49,591 --> 00:00:51,506
+13. Appel Brique Réutilisable pour Créer un Compte Usager
+
+39
+00:00:51,508 --> 00:00:51,513
+5. Call Highlight.on() automatically
+
+40
+00:00:51,516 --> 00:00:51,734
+9. waitForPageLoad(5)
+
+41
+00:00:51,736 --> 00:00:54,916
+15. Cliquer sur le lien Se Connecter :
+
+42
+00:00:54,917 --> 00:00:54,919
+19. if (EnvExec == "URL_ANEFQualif")
+
+43
+00:00:54,920 --> 00:00:57,927
+25. Première visiteq? Créez votre compte :
+
+44
+00:00:57,930 --> 00:00:57,965
+29. waitForPageLoad(5)
+
+45
+00:00:57,967 --> 00:00:57,969
+33. println("NumEtrangerVisa = " + NumEtrangerVisa)
+
+46
+00:00:57,970 --> 00:01:02,653
+39. Fournir Le Numéro de votre visa ou votre numéro étranger :
+
+47
+00:01:02,656 --> 00:01:02,657
+45.  Fournir La Date de début de validité :
+
+48
+00:01:02,659 --> 00:01:02,680
+49. DateDebut = tools.MyStringTools.ParsedDateDebut()
+
+49
+00:01:02,682 --> 00:01:02,683
+53. ParsedDateDebut = tools.MyStringTools.ParsedDateDebut()
+
+50
+00:01:02,684 --> 00:01:07,024
+57. setText(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Input_Jour"), ParsedDateDebut[0])
+
+51
+00:01:07,026 --> 00:01:09,598
+61. selectOptionByIndex(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Select_Mois"), ParsedDateDebut[1])
+
+52
+00:01:09,599 --> 00:01:13,923
+65. setText(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Input_Annee"), ParsedDateDebut[2])
+
+53
+00:01:13,925 --> 00:01:13,926
+71.  Fournir La Date de fin de validité :
+
+54
+00:01:13,927 --> 00:01:13,928
+75. DateFin = tools.MyStringTools.ParsedDateFin()
+
+55
+00:01:13,930 --> 00:01:13,930
+79. ParsedDateFin = tools.MyStringTools.ParsedDateFin()
+
+56
+00:01:13,932 --> 00:01:18,262
+83. setText(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Input_Jour"), ParsedDateFin[0])
+
+57
+00:01:18,264 --> 00:01:20,780
+87. selectOptionByIndex(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Select_Mois"), ParsedDateFin[1])
+
+58
+00:01:20,782 --> 00:01:25,102
+91. setText(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Input_Annee"), ParsedDateFin[2])
+
+59
+00:01:25,104 --> 00:01:27,363
+97. Validation de la page pour la création du compte :
+
+60
+00:01:27,364 --> 00:01:28,739
+105. Appel Brique Réutilisable VerificationCertainesInformationsSontIncorrectes
+
+61
+00:01:28,741 --> 00:01:31,760
+5.  Exit Action ou on passe à la création
+
+62
+00:01:31,761 --> 00:01:31,762
+9. StopTestCase = false
+
+63
+00:01:31,764 --> 00:01:31,893
+13. MsgAlertPresent = verifyElementVisible(findTestObject("Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes"), OPTIONAL)
+
+64
+00:01:31,895 --> 00:01:31,895
+17. if (MsgAlertPresent)
+
+65
+00:01:31,897 --> 00:01:32,063
+1. TextAlert = getText(findTestObject("Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes"), OPTIONAL)
+
+66
+00:01:32,064 --> 00:01:32,092
+5. tools.markWarningAndStop.markWarningAndStopTest(TextAlert)
+
+67
+00:01:32,095 --> 00:01:32,095
+9. MsgStopTestCase = TextAlert
+
+68
+00:01:32,097 --> 00:01:32,098
+13. return null
+
+69
+00:01:32,099 --> 00:01:32,099
+111. Exit TestCase
+
+70
+00:01:32,101 --> 00:01:32,103
+1. return null
+
+71
+00:01:32,104 --> 00:01:32,106
+17. if (StopTestCase == false)
+
