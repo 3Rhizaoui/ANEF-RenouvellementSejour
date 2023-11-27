@@ -213,7 +213,6 @@ if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour ==
 	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
 	}
 
-
 "'Option Correspondant à votre situation :Salarié Qualifié', 'Salarié Entreprise Innovante', 'ChercheurEtChercheurEnMobilite'"
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == "TS-PT-SalarieQualifie") || (TypeTitreDeSejour == "TS-PT-SalarieEntrepriseInnovante") || (TypeTitreDeSejour == "ChercheurEtChercheurEnMobilite")) {
