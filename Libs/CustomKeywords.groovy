@@ -9,13 +9,13 @@ import com.kms.katalon.core.testobject.TestObject
 
 import org.apache.poi.ss.usermodel.Sheet
 
-import java.util.Map
+import java.util.List
 
 import java.lang.Object
 
-import org.apache.poi.ss.usermodel.Workbook
+import java.util.Map
 
-import java.util.List
+import org.apache.poi.ss.usermodel.Workbook
 
 import org.apache.poi.ss.usermodel.Cell
 
@@ -214,12 +214,34 @@ def static "tools.WaitForLoadedPage.waitForElementRendering"() {
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddresses"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getMapOfKeyValueRows"(
     	Sheet sheet	
-     , 	Map content	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddresses(
+     , 	int keyRowIdx	
+     , 	int valueRowIdx	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getMapOfKeyValueRows(
         	sheet
-         , 	content)
+         , 	keyRowIdx
+         , 	valueRowIdx)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getRowIndexByCellContent"(
+    	Sheet sheet	
+     , 	String cellContent	
+     , 	int columnIdxForCell	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getRowIndexByCellContent(
+        	sheet
+         , 	cellContent
+         , 	columnIdxForCell)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByAddress(
+        	sheet
+         , 	cellAddress)
 }
 
 
@@ -238,47 +260,12 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValuesByRangeInde
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheetByName"(
-    	String filePath	
-     , 	String sheetName	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheetByName(
-        	filePath
-         , 	sheetName)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getRowIndexByCellContent"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
     	Sheet sheet	
-     , 	String cellContent	
-     , 	int columnIdxForCell	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getRowIndexByCellContent(
+     , 	java.util.List<java.lang.Integer> columnIndexes	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getColumnsByIndex(
         	sheet
-         , 	cellContent
-         , 	columnIdxForCell)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getMapOfKeyValueRows"(
-    	Sheet sheet	
-     , 	int keyRowIdx	
-     , 	int valueRowIdx	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getMapOfKeyValueRows(
-        	sheet
-         , 	keyRowIdx
-         , 	valueRowIdx)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByIndex"(
-    	Sheet sheet	
-     , 	int rowIndex	
-     , 	int colIndex	
-     , 	Object value	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByIndex(
-        	sheet
-         , 	rowIndex
-         , 	colIndex
-         , 	value)
+         , 	columnIndexes)
 }
 
 
@@ -293,12 +280,12 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByIndex"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheets"(
-    	Workbook workbook	
-     , 	java.util.List<String> sheetNames	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheets(
-        	workbook
-         , 	sheetNames)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellIndexByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellIndexByAddress(
+        	sheet
+         , 	cellAddress)
 }
 
 
@@ -324,37 +311,43 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddress"
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddresses"(
     	Sheet sheet	
-     , 	java.util.List<java.lang.Integer> columnIndexes	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getColumnsByIndex(
+     , 	Map content	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddresses(
         	sheet
-         , 	columnIndexes)
+         , 	content)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellIndexByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellIndexByAddress(
-        	sheet
-         , 	cellAddress)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheetByName"(
+    	String filePath	
+     , 	String sheetName	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheetByName(
+        	filePath
+         , 	sheetName)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByAddress(
-        	sheet
-         , 	cellAddress)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheets"(
+    	Workbook workbook	
+     , 	java.util.List<String> sheetNames	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheets(
+        	workbook
+         , 	sheetNames)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelFile(
-        	filePath)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByIndex"(
+    	Sheet sheet	
+     , 	int rowIndex	
+     , 	int colIndex	
+     , 	Object value	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByIndex(
+        	sheet
+         , 	rowIndex
+         , 	colIndex
+         , 	value)
 }
 
 
@@ -374,6 +367,31 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
 }
 
 
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
+    	String filePath	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelFile(
+        	filePath)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.locateCell"(
+    	Sheet sheet	
+     , 	Object cellContent	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).locateCell(
+        	sheet
+         , 	cellContent)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellByAddress(
+        	sheet
+         , 	cellAddress)
+}
+
+
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
     	Workbook workbook	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
@@ -385,33 +403,6 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getWorkbook"(
     	String filePath	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getWorkbook(
         	filePath)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getDataRows"(
-    	Sheet sheet	
-     , 	java.util.List<java.lang.Integer> rowIndexs	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getDataRows(
-        	sheet
-         , 	rowIndexs)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	String filePath	
-     , 	int sheetIndex	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	filePath
-         , 	sheetIndex)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	Workbook wbs	
-     , 	String sheetName	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	wbs
-         , 	sheetName)
 }
 
 
@@ -429,23 +420,21 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
-    	Workbook workbook1	
-     , 	Workbook workbook2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
-        	workbook1
-         , 	workbook2)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
+    	Workbook wbs	
+     , 	String sheetName	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
+        	wbs
+         , 	sheetName)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
-    	Workbook workbook1	
-     , 	Workbook workbook2	
-     , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
-        	workbook1
-         , 	workbook2
-         , 	isValueOnly)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
+    	String filePath	
+     , 	int sheetIndex	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
+        	filePath
+         , 	sheetIndex)
 }
 
 
@@ -469,28 +458,39 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByIndex"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellByAddress(
-        	sheet
-         , 	cellAddress)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
+    	String filePath	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
+        	filePath)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.locateCell"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getDataRows"(
     	Sheet sheet	
-     , 	Object cellContent	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).locateCell(
+     , 	java.util.List<java.lang.Integer> rowIndexs	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getDataRows(
         	sheet
-         , 	cellContent)
+         , 	rowIndexs)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValue"(
-    	Cell cell	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValue(
-        	cell)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
+    	Cell cell1	
+     , 	Cell cell2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
+        	cell1
+         , 	cell2)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
+    	Cell cell1	
+     , 	Cell cell2	
+     , 	boolean isValueOnly	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
+        	cell1
+         , 	cell2
+         , 	isValueOnly)
 }
 
 
@@ -514,30 +514,10 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoSheets"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
-        	filePath)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getTableContent"(
-    	Sheet sheet	
-     , 	int startRow	
-     , 	int endRow	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getTableContent(
-        	sheet
-         , 	startRow
-         , 	endRow)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
-    	Row row1	
-     , 	Row row2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
-        	row1
-         , 	row2)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValue"(
+    	Cell cell	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValue(
+        	cell)
 }
 
 
@@ -552,34 +532,43 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
-    	Cell cell1	
-     , 	Cell cell2	
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
+    	Row row1	
+     , 	Row row2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
+        	row1
+         , 	row2)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
+    	Workbook workbook1	
+     , 	Workbook workbook2	
      , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
-        	cell1
-         , 	cell2
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
+        	workbook1
+         , 	workbook2
          , 	isValueOnly)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
-    	Cell cell1	
-     , 	Cell cell2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
-        	cell1
-         , 	cell2)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
+    	Workbook workbook1	
+     , 	Workbook workbook2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
+        	workbook1
+         , 	workbook2)
 }
 
 
-def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.selectRangeOfText"(
-    	TestObject toContainer	
-     , 	int startPos	
-     , 	int charCount	) {
-    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).selectRangeOfText(
-        	toContainer
-         , 	startPos
-         , 	charCount)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getTableContent"(
+    	Sheet sheet	
+     , 	int startRow	
+     , 	int endRow	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getTableContent(
+        	sheet
+         , 	startRow
+         , 	endRow)
 }
 
 
@@ -594,19 +583,21 @@ def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.deleteRan
 }
 
 
+def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.selectRangeOfText"(
+    	TestObject toContainer	
+     , 	int startPos	
+     , 	int charCount	) {
+    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).selectRangeOfText(
+        	toContainer
+         , 	startPos
+         , 	charCount)
+}
+
+
 def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.getContentText"(
     	TestObject toContainer	) {
     (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).getContentText(
         	toContainer)
-}
-
-
-def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.setCaretPosition"(
-    	TestObject toContainer	
-     , 	int position	) {
-    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).setCaretPosition(
-        	toContainer
-         , 	position)
 }
 
 
@@ -618,4 +609,13 @@ def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.selectTex
         	toMenuBar
          , 	format
          , 	isActive)
+}
+
+
+def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.setCaretPosition"(
+    	TestObject toContainer	
+     , 	int position	) {
+    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).setCaretPosition(
+        	toContainer
+         , 	position)
 }
