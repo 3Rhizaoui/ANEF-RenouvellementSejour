@@ -291,8 +291,7 @@ else {
 	println "Driverpath :" + RunBrowserConfiguration.get("drivers")
 	}
 GlobalVariable.DriverName = DriverName
- 
- 
+  
 
  /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
  */
