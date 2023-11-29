@@ -293,6 +293,7 @@ else {
 GlobalVariable.DriverName = DriverName
   
 
+
  /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Usager:
  */
 WebUI.delay(GlobalVariable.medium_wait)
