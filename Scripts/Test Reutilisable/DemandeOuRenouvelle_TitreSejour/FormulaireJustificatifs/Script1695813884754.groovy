@@ -339,6 +339,7 @@ if (TypeTitreDeSejour == 'MandataireSocial') {
         '/Passeport.pdf')
     WebUI.delay(5)
 
+	
     'Joindre un  justificatif Photographie d\'identité récente'
     WebUI.setText(findTestObject('Object Repository/Page_Justificatifs_Usager/Input_Numero_Ephoto'), GlobalVariable.NumEphoto)
     WebUI.click(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ConfirmerNumeroEphoto'))
