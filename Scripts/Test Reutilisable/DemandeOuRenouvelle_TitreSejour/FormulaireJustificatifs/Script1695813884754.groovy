@@ -51,6 +51,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver
  * @author hhizaoui
  *so that they call Highlight.on() automatically
  */
+WebUI.delay(05)
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 'RunConfiguration for get Execution Properties Driver'
@@ -216,6 +217,7 @@ if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour ==
 "'Option Correspondant à votre situation :Salarié Qualifié', 'Salarié Entreprise Innovante', 'ChercheurEtChercheurEnMobilite'"
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == "TS-PT-SalarieQualifie") || (TypeTitreDeSejour == "TS-PT-SalarieEntrepriseInnovante") || (TypeTitreDeSejour == "ChercheurEtChercheurEnMobilite")) {
+	
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'), SpecificDownloadDirectory +'/EtatCivil.pdf')
 	WebUI.delay(05)
 	
