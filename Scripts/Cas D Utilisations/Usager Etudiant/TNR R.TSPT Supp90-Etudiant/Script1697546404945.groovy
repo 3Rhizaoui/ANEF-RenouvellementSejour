@@ -27,8 +27,8 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [('Profiles') : 'Usager', ('EnvExec') : EnvExec ], FailureHandling.STOP_ON_FAILURE)
 
 'Appel Brique Réutilisable pour Créer un Compte Usager'
-//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [('NumEtrangerVisa') : NumEtrangerVisa, ('DateDebut') : DateDebut
-//        , ('DateFin') : DateFin, ('EnvExec') :EnvExec], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [('NumEtrangerVisa') : NumEtrangerVisa, ('DateDebut') : DateDebut
+        , ('DateFin') : DateFin, ('EnvExec') :EnvExec], FailureHandling.STOP_ON_FAILURE)
 
 if (GlobalVariable.StopTestCase == false) {
     'Appel Brique Réutilisable pour Identification Usager ou Agent'
