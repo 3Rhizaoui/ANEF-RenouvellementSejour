@@ -119,7 +119,7 @@
       <variableLink>
          <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value></value>
+         <value>Profiles</value>
          <variableId>4bb27d6f-571c-4d9b-b42c-86d754318a3c</variableId>
       </variableLink>
       <variableLink>
