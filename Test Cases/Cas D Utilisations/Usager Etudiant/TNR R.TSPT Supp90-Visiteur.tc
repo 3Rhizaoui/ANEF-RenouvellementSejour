@@ -59,6 +59,12 @@
       <value></value>
       <variableId>405da32d-6b67-4464-bd9d-e230aa156e51</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e142fc13-d7de-4293-b60d-f75262397b85</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
       <description></description>
@@ -121,5 +127,12 @@
       <id>405da32d-6b67-4464-bd9d-e230aa156e51</id>
       <masked>false</masked>
       <name>Titre</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>e142fc13-d7de-4293-b60d-f75262397b85</id>
+      <masked>false</masked>
+      <name>EnvExec</name>
    </variable>
 </TestCaseEntity>
