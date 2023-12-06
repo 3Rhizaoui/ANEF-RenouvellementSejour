@@ -12,7 +12,7 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>6d67ff3f-f928-471e-94c6-5bbaa9d84f0b</testSuiteGuid>
    <testCaseLink>
-      <guid>170475b4-455d-4c2d-8244-91f11649afce</guid>
+      <guid>34fb6639-9827-4376-8a41-3f4ac2f7c9b0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
@@ -25,156 +25,168 @@
       <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Etudiant</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</id>
+         <id>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-30</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Profiles</value>
          <variableId>be2be34a-0b77-416e-9d0b-0666c77cc719</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>TypeTitreDeSejour</value>
          <variableId>86e8a7b7-8d1f-47a6-abaa-73ddcc2d6d2b</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>NumEtrangerVisa</value>
          <variableId>5ec3bce4-0bf8-4ea8-b314-0965807b183e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DateDebut</value>
          <variableId>866f7ab8-e121-49b2-9342-40eea38a7766</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>DateFin</value>
          <variableId>a57eaadb-6de7-41d0-a74c-0c63384e6f11</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>AdresseUsager</value>
          <variableId>e43c7031-c4ae-4688-94aa-e6ae05f2afb9</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>NumeroTelephoneUsager</value>
          <variableId>10da6acb-cfce-4c8b-95f7-8304df2f0caf</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>NumEphoto</value>
          <variableId>bb5b94fc-e0b3-4503-9869-caa02c8bdacf</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Titre</value>
          <variableId>008d7d85-8a40-45ee-add1-6b7823e45d41</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>33c61231-70ca-4c8e-8c2b-0d23a9e03eb5</testDataLinkId>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>EnvExec</value>
          <variableId>0ceb9e2d-82b5-4ceb-bb8e-c4e30a2075d5</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ChangementSituation</value>
+         <variableId>17f9b440-a3b3-435d-a72c-ba440e52d2c4</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>509143c7-ae90-4365-b620-4f4ff5ace60a</guid>
+      <guid>5c3da51f-55fa-4208-abb4-7d78034c43ea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
          <description></description>
-         <id>ceb66e2b-8dfe-4e39-b171-01687fa35636</id>
+         <id>86e8a7b7-8d1f-47a6-abaa-73ddcc2d6d2b</id>
          <masked>false</masked>
          <name>TypeTitreDeSejour</name>
       </iterationNameVariable>
       <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</id>
+         <id>93655f41-59cc-4096-baf6-84ac170dbed6</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>31-57</value>
+            <value>2-2</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Profiles</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>4bb27d6f-571c-4d9b-b42c-86d754318a3c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>TypeTitreDeSejour</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>ceb66e2b-8dfe-4e39-b171-01687fa35636</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>NumEtrangerVisa</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>217e9a3a-c5bf-4c1a-8dea-75865efa5663</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>DateDebut</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>3cd234e7-86ec-4436-a027-7b7c3feaec16</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>DateFin</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>e32f6047-154b-4afd-b8ad-be1f7697a068</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>AdresseUsager</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>270c2593-8cde-45e0-b844-a6ea9d8f3e86</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>NumeroTelephoneUsager</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>82cab487-17e3-468b-abc1-cd57fba1ed88</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>NumEphoto</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>f944e30a-f55e-4b91-8f68-3dc5adccad95</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Titre</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>405da32d-6b67-4464-bd9d-e230aa156e51</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ddf10eb-e8cb-43ec-b883-8cb68eb6d014</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>EnvExec</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>e142fc13-d7de-4293-b60d-f75262397b85</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fc460bbd-cd8f-4398-aa12-4ec27b65be6c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

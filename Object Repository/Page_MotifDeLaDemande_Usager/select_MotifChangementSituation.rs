@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NumeroDeTelephone</name>
+   <name>select_MotifChangementSituation</name>
    <tag></tag>
-   <elementGuidId>0577da74-b910-4817-a906-2bb29432f1e9</elementGuidId>
+   <elementGuidId>51feace3-551d-457e-b5c7-4fa81f3c8a32</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;TELEPHONE_PORTABLE-label&quot; and @type='text']</value>
+         <value>//*[@id=&quot;SITUATION_PVD&quot;]/div/div[4]/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

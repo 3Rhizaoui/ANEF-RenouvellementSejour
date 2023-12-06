@@ -38,36 +38,36 @@ if (GlobalVariable.StopTestCase == false) {
     'Appel Brique Réutilisable pour une Demande Ou Renouvelle Titre De Sejour Usager'
     WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/DemandeOuRenouvelleTitreSejour'), 
         [:], FailureHandling.STOP_ON_FAILURE)
+	if (GlobalVariable.StopTestCase == false) {
+		'Appel Brique Réutilisable pour Remplir Le Formulaire Type De Titre De Séjour Usager'
+		    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireTypeDeTitreDeSejour'), 
+		        [('TypeTitreDeSejour') : TypeTitreDeSejour, ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
 
-    'Appel Brique Réutilisable pour Remplir Le Formulaire Type De Titre De Séjour Usager'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireTypeDeTitreDeSejour'), 
-        [('TypeTitreDeSejour') : TypeTitreDeSejour, ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
-
-    'Appel Brique Réutilisable pour Remplir Le Formulaire Informations Personnelles Usager'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireInformationsPersonnelles'), 
-        [('AdresseUsager') : AdresseUsager, ('NumeroTelephoneUsager') : NumeroTelephoneUsager], FailureHandling.STOP_ON_FAILURE)
-
-    'Appel Brique Réutilisable pour Remplir Le Formulaire Motif De La Demande Usager'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireMotifDeLaDemande'), [('TypeTitreDeSejour') : TypeTitreDeSejour
-            , ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
-
-    if (((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') || (TypeTitreDeSejour == 'Visiteur')) && ((Titre == 'Etudiant') || 
-    (Titre == 'Visiteur'))) {
-        'Appel Brique Réutilisable pour Remplir Le Formulaire Ressources Usager'
-        WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRessources'), [:], 
-            FailureHandling.STOP_ON_FAILURE)
-    }
-    
-    'AppelBrique Réutilisable pour Remplir Le Formulaire Justificatifs Usager'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireJustificatifs'), [('TypeTitreDeSejour') : TypeTitreDeSejour
-            , ('Titre') : Titre, ('NumEphoto') : NumEphoto], FailureHandling.STOP_ON_FAILURE)
-
-    'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif'), [('Titre') : Titre
-            , ('TypeTitreDeSejour') : TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
-
-    'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [('NumEtrangerVisa') : NumEtrangerVisa
-            , ('TypeTitreDeSejour') : TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
-}
+	    'Appel Brique Réutilisable pour Remplir Le Formulaire Informations Personnelles Usager'
+	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireInformationsPersonnelles'), 
+	        [('AdresseUsager') : AdresseUsager, ('NumeroTelephoneUsager') : NumeroTelephoneUsager], FailureHandling.STOP_ON_FAILURE)
+	
+	    'Appel Brique Réutilisable pour Remplir Le Formulaire Motif De La Demande Usager'
+	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireMotifDeLaDemande'), [('TypeTitreDeSejour') : TypeTitreDeSejour
+	            , ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
+	
+	    if (((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') || (TypeTitreDeSejour == 'Visiteur')) && ((Titre == 'Etudiant') || 
+	    (Titre == 'Visiteur'))) {
+	        'Appel Brique Réutilisable pour Remplir Le Formulaire Ressources Usager'
+	        WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRessources'), [:], 
+	            FailureHandling.STOP_ON_FAILURE)
+	    }
+	    
+	    'AppelBrique Réutilisable pour Remplir Le Formulaire Justificatifs Usager'
+	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireJustificatifs'), [('TypeTitreDeSejour') : TypeTitreDeSejour
+	            , ('Titre') : Titre, ('NumEphoto') : NumEphoto], FailureHandling.STOP_ON_FAILURE)
+	
+	    'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
+	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif'), [('Titre') : Titre
+	            , ('TypeTitreDeSejour') : TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+	
+	    'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
+	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [('NumEtrangerVisa') : NumEtrangerVisa
+	            , ('TypeTitreDeSejour') : TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+}}
 

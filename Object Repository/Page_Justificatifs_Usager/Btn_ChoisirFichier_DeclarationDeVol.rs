@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NumeroDeTelephone</name>
+   <name>Btn_ChoisirFichier_DeclarationDeVol</name>
    <tag></tag>
-   <elementGuidId>0577da74-b910-4817-a906-2bb29432f1e9</elementGuidId>
+   <elementGuidId>95a47a7d-b1fd-423f-a0d4-377e7d56aad6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;TELEPHONE_PORTABLE-label&quot; and @type='text']</value>
+         <value>//div/app-justificatifs-motif-declaration/div/app-pieces-jointes/div/span[1]/input</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

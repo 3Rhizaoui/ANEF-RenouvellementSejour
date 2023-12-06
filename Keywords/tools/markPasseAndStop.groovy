@@ -34,5 +34,6 @@ public class markPasseAndStop {
 	def markPasseAndStopTest(String message) {
 		KeywordUtil.markPassed(message)
 		GlobalVariable.StopTestCase=true
+		println GlobalVariable.StopTestCase
 	}
 }

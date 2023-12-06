@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Input_NumeroDeTelephone</name>
+   <name>CheckBox_PertVolDeterioration</name>
    <tag></tag>
-   <elementGuidId>0577da74-b910-4817-a906-2bb29432f1e9</elementGuidId>
+   <elementGuidId>0b2b5d4b-a61f-4dc7-a217-e322ccf5c7de</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;TELEPHONE_PORTABLE-label&quot; and @type='text']</value>
+         <value>//app-declaration-changement//anef-input-radio//div[2]/p-radiobutton/div/div[2]/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

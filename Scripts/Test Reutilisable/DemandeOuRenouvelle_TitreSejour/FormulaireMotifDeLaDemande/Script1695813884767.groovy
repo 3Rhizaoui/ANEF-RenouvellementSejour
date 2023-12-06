@@ -45,7 +45,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
  *so that they call Highlight.on() automatically
  */
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
-
+if (ChangementSituation == 'Non') {
 /********************************************************************/
 'Option Correspondant à votre situation :Renouvellement DeTitre Séjour  Ou Visiteur'
 if ((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Etudiant')) {
@@ -557,7 +557,11 @@ if (((TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') && (Titre 
 	
 	"ENFANTS"
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAVotreCharge'))
-	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAChargeDeVotreConjoint'))
-	
-	'Validation'
-	WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAChargeDeVotreConjoint'))}}
+else {
+	"ChangementSituation"
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifChangementSituation'))
+	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifChangementSituation'))
+}
+'Validation'
+WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))

@@ -312,15 +312,6 @@ switch (TypeTitreDeSejour) {
 }
 
 'Vérification s il y a un message Erreur : Il est trop tôt pour demander le renouvellement de votre titre.'
-'Verify text alert is correct or not'
-MsgAlertPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Accueil_Usager/Verif_PopUpTropTotPourDemanderLeRenouvellementDeVotreTitre'), 1, FailureHandling.OPTIONAL)
-if(MsgAlertPresent){ 
-	'Get text Alert on the alert when it\'s shown'
-	alertText = WebUI.getText(findTestObject('Object Repository/Page_Accueil_Usager/Verif_PopUpTropTotPourDemanderLeRenouvellementDeVotreTitre'),FailureHandling.OPTIONAL)
-	KeywordUtil.markFailedAndStop(alertText)
-	}
-else {
-	KeywordUtil.markPassed(" C'est le bon Moment pour demander le renouvellement de votre titre.")
-}
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/Main/Verif_PopUpTropTotPourDemanderLeRenouvellementDeVotreTitre'), [:], FailureHandling.STOP_ON_FAILURE)
 
 

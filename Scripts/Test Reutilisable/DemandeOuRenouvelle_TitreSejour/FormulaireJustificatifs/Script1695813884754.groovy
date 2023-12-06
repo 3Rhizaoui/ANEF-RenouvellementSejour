@@ -78,7 +78,7 @@ else {
  
 'Documents Justificatifs Correspondant à votre situation :Renouvellement DeTitre Séjour'
 /********************************************************************************************************/
-
+if (ChangementSituation == 'Non') {
 if((TypeTitreDeSejour == "RenouvellementDeTitreSejour") && (Titre == 'Etudiant'))  {
 	
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_TitreSejourValide'),SpecificDownloadDirectory +'/EtatCivil.pdf')
@@ -439,8 +439,11 @@ if (TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') {
     'Tout document pouvant justifier de la qualité MembreDeFamillePasseportTalent_Conjoint Acte de mariage'
     WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_ActeDeMariage'), SpecificDownloadDirectory + 
         '/ActeDeMariage.pdf')
-    WebUI.delay(5)
-
-    'Validation'
-    WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
-}
+    WebUI.delay(5)}}
+else {
+	'Joindre un  justificatif DeclarationDeVol'
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DeclarationDeVol'), SpecificDownloadDirectory +
+		'/DeclarationDeVol.pdf')
+	WebUI.delay(5)}
+'Validation'
+WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
