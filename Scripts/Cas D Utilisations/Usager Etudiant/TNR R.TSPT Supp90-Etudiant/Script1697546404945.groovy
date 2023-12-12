@@ -26,13 +26,13 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent'
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [('Profiles') : 'Usager', ('EnvExec') : EnvExec ], FailureHandling.STOP_ON_FAILURE)
 
-//'Appel Brique Réutilisable pour Créer un Compte Usager'
-//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [('NumEtrangerVisa') : NumEtrangerVisa, ('DateDebut') : DateDebut
-//        , ('DateFin') : DateFin, ('EnvExec') :EnvExec], FailureHandling.STOP_ON_FAILURE)
+'Appel Brique Réutilisable pour Créer un Compte Usager'
+WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Creer Votre Compte'), [('NumEtrangerVisa') : NumEtrangerVisa, ('DateDebut') : DateDebut
+        , ('DateFin') : DateFin, ('EnvExec') :EnvExec], FailureHandling.STOP_ON_FAILURE)
 
 if (GlobalVariable.StopTestCase == false) {
     'Appel Brique Réutilisable pour Identification Usager ou Agent'
-    WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [('Profiles') : 'Usager', ('NumEtrangerVisa') : NumEtrangerVisa], 
+    WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [('Profiles') : 'Usager', ('NumEtrangerVisa') : NumEtrangerVisa, ('EnvExec'): 'EnvExec'], 
         FailureHandling.STOP_ON_FAILURE)
 
     'Appel Brique Réutilisable pour une Demande Ou Renouvelle Titre De Sejour Usager'
@@ -61,7 +61,7 @@ if (GlobalVariable.StopTestCase == false) {
 	    
 	    'AppelBrique Réutilisable pour Remplir Le Formulaire Justificatifs Usager'
 	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireJustificatifs'), [('TypeTitreDeSejour') : TypeTitreDeSejour
-	            , ('Titre') : Titre, ('NumEphoto') : NumEphoto], FailureHandling.STOP_ON_FAILURE)
+	            , ('Titre') : Titre, ('NumEphoto') : NumEphoto , ('ChangementSituation'):ChangementSituation], FailureHandling.STOP_ON_FAILURE)
 	
 	    'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
 	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif'), [('Titre') : Titre

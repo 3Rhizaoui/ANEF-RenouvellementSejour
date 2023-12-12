@@ -6,11 +6,11 @@
    <elementGuidId>561fc4ea-7357-4cec-a963-83aa4661b557</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;portail-anef&quot;]/div/main/div[2]/a</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;portail-anef&quot;]/div/main/div[2]/a|/html/body/div/main/div[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
