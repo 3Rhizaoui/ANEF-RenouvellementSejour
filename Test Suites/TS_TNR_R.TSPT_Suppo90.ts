@@ -28,7 +28,7 @@
          <id>4a5893b6-3346-4d5a-9173-98c1e6d0a42b</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <value>1-16</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
@@ -98,6 +98,88 @@
          <type>DATA_COLUMN</type>
          <value>ChangementSituation</value>
          <variableId>17f9b440-a3b3-435d-a72c-ba440e52d2c4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>433187e7-75ae-4aed-9b43-0557abd91c42</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>684ef12d-baaa-423b-a877-c976ab36ada5</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>17-31</value>
+         </iterationEntity>
+         <testDataId>Data Files/DataFor3TestCase</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Profiles</value>
+         <variableId>4bb27d6f-571c-4d9b-b42c-86d754318a3c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>TypeTitreDeSejour</value>
+         <variableId>ceb66e2b-8dfe-4e39-b171-01687fa35636</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumEtrangerVisa</value>
+         <variableId>217e9a3a-c5bf-4c1a-8dea-75865efa5663</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DateDebut</value>
+         <variableId>3cd234e7-86ec-4436-a027-7b7c3feaec16</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DateFin</value>
+         <variableId>e32f6047-154b-4afd-b8ad-be1f7697a068</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>AdresseUsager</value>
+         <variableId>270c2593-8cde-45e0-b844-a6ea9d8f3e86</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumeroTelephoneUsager</value>
+         <variableId>82cab487-17e3-468b-abc1-cd57fba1ed88</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumEphoto</value>
+         <variableId>f944e30a-f55e-4b91-8f68-3dc5adccad95</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Titre</value>
+         <variableId>405da32d-6b67-4464-bd9d-e230aa156e51</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>EnvExec</value>
+         <variableId>e142fc13-d7de-4293-b60d-f75262397b85</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>684ef12d-baaa-423b-a877-c976ab36ada5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ChangementSituation</value>
+         <variableId>fc460bbd-cd8f-4398-aa12-4ec27b65be6c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
