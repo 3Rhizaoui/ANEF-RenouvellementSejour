@@ -20,9 +20,6 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.webui.driver.DriverFactory
-import javax.nio.file.Files
-import javax.nio.file.Path
-import javax.nio.file.Paths
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.nio.file.Files
