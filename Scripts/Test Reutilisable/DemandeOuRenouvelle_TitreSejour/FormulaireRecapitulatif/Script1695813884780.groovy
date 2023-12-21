@@ -30,7 +30,7 @@ WebUI.delay(05)
  *RESSOURCES (3/4)
  *JUSTIFICATIFS (4/4)
  */
-if(((TypeTitreDeSejour == "RenouvellementDeTitreSejour") || (TypeTitreDeSejour == "Visiteur"))  && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
+if(((TypeTitreDeSejour == "RenouvellementDeTitreSejour") || (TypeTitreDeSejour == "Visiteur")) && (ChangementSituation == 'Non') && ((Titre == 'Visiteur') || (Titre == 'Etudiant'))) {
 	//INFORMATIONS PERSONNELLES (1/4)
 	WebUI.click(findTestObject('Object Repository/Page_Recapitulatif_Usager/Btn_ValiderEtVerifierLaSuiteDeMaSaisie_1sur4'))
 	WebUI.delay(02)

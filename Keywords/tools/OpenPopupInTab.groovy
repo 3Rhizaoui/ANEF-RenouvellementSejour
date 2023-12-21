@@ -65,14 +65,14 @@ public class OpenPopupInTab {
 		while(I1.hasNext()){
 			String child_window=I1.next();
 			if(!parent.equals(child_window)){
-				driver.switchTo().window(child_window);
+				 driver.switchTo().window(child_window);
 				WebUI.delay(2)
 				System.out.println(driver.switchTo().window(child_window).getTitle());
 				driver.close();}
 		}
 		//switch to the parent window
-		driver.switchTo().window(parent);
-		driver.close()
+		WebUI.switchToWindowIndex(0)
+		//driver.close()
 	}
 
 

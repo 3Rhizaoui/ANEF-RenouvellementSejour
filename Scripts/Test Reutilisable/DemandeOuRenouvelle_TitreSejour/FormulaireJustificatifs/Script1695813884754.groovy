@@ -179,8 +179,6 @@ if(((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (Titre == 'Visiteur'
 	WebUI.delay(05)
 }
 
-println "TypeTitreDeSejour :" + TypeTitreDeSejour
-
 "'Option Correspondant à votre situation :'Carte Bleue Européenne', 'Salarié En Mission'"
 /*********************************************************************************************************************************************/
 if ((TypeTitreDeSejour == "TS-PT-CarteBleueEuropeenne") || (TypeTitreDeSejour =="TS-PT-SalarieEnMission")) {
@@ -441,6 +439,6 @@ else {
 	'Joindre un  justificatif DeclarationDeVol'
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Justificatifs_Usager/Btn_ChoisirFichier_DeclarationDeVol'), SpecificDownloadDirectory +
 		'/DeclarationDeVol.pdf')
-	WebUI.delay(5)}
+	WebUI.delay(5)
 'Validation'
-WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))
+WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))}

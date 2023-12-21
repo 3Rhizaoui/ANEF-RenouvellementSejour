@@ -50,7 +50,7 @@ public class GlobalVariable {
     public static Object IdentifiantAgentQualif
      
     /**
-     * <p></p>
+     * <p>Profile default : KhR9&#47;yEsf&#47;XdgV6Q0i40mA==</p>
      */
     public static Object PwAgentQualif
      

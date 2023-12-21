@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>37a56ce0-8b15-4bc6-9c1a-37daadfa81ed</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0c950b16-d181-4d71-b97f-cc6464c9b34d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>0c950b16-d181-4d71-b97f-cc6464c9b34d</id>
+      <masked>false</masked>
+      <name>NumEtrangerVisa</name>
+   </variable>
 </TestCaseEntity>

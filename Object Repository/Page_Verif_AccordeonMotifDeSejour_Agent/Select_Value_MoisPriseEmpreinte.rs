@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_MotifChangementSituation</name>
+   <name>Select_Value_MoisPriseEmpreinte</name>
    <tag></tag>
-   <elementGuidId>51feace3-551d-457e-b5c7-4fa81f3c8a32</elementGuidId>
+   <elementGuidId>b2d6e98d-ca9f-4850-b0f0-334a0afc6acb</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;SITUATION_PVD&quot;]/div/div[4]/span</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;mois_prise_empreinte&quot;]/div/div[5]/div/ul/p-dropdownitem[3]/li/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

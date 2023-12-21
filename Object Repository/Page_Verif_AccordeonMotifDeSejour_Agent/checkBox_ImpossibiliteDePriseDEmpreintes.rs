@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>checkBox_ImpossibiliteDePriseDEmpreintes</name>
+   <tag></tag>
+   <elementGuidId>0fd233d6-3f2b-404d-b9b8-195d8636ff28</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/app-root/app-layout/div/div/div/app-navigation-layout/div[2]/app-demande-instruction/div/div[1]/form/p-accordion/div/p-accordiontab[9]/div[2]/div/div/div[2]/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

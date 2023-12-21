@@ -62,7 +62,29 @@ else {
 		case 'ChangementSituation':
 			WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_ChangementSituation'), FailureHandling.OPTIONAL)
 		break
-		case 'PertVolDeterioration' :
+		case 'Perte' :
+			WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_PertVolDeterioration'), FailureHandling.OPTIONAL)
+			WebUI.delay(5)
+			'Je valide Mon choix'
+			WebUI.click(findTestObject('Object Repository/Page_Accueil_Usager/btn_JeContinue'), FailureHandling.OPTIONAL)
+			WebUI.delay(5)
+			WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_ProlongerRenouvellementMonTitre'), FailureHandling.OPTIONAL)
+			'Je valide Mon choix'
+			WebUI.doubleClick(findTestObject('Object Repository/Page_Accueil_Usager/btn_JeContinue'), FailureHandling.OPTIONAL)
+			WebUI.delay(5)
+		break
+		case 'Vol' :
+			WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_PertVolDeterioration'), FailureHandling.OPTIONAL)
+			WebUI.delay(5)
+			'Je valide Mon choix'
+			WebUI.click(findTestObject('Object Repository/Page_Accueil_Usager/btn_JeContinue'), FailureHandling.OPTIONAL)
+			WebUI.delay(5)
+			WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_ProlongerRenouvellementMonTitre'), FailureHandling.OPTIONAL)
+			'Je valide Mon choix'
+			WebUI.doubleClick(findTestObject('Object Repository/Page_Accueil_Usager/btn_JeContinue'), FailureHandling.OPTIONAL)
+			WebUI.delay(5)
+		break
+		case 'Deterioration' :
 			WebUI.check(findTestObject('Object Repository/Page_Accueil_Usager/CheckBox_PertVolDeterioration'), FailureHandling.OPTIONAL)
 			WebUI.delay(5)
 			'Je valide Mon choix'

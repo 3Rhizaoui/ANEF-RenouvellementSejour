@@ -559,9 +559,27 @@ if (((TypeTitreDeSejour == 'MembreDeFamillePasseportTalent_Conjoint') && (Titre 
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAVotreCharge'))
 	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/CheckBox_EnfantsAChargeDeVotreConjoint'))}}
 else {
-	"ChangementSituation"
-	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifChangementSituation'))
-	WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifChangementSituation'))
+	"ChangementSituation == Détérioration"
+	if (ChangementSituation == 'Deterioration') {
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifDeterioration'))
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifDeterioration'))}
+	"ChangementSituation == Perte"
+	if (ChangementSituation == 'Perte') {
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifDeterioration'))
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifPerte'))
+		WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/imput_MotifPerteJJ'),'16')
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifPerteMM'))
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifPerteMM'))
+		WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/imput_MotifPerteAA'),'2023')
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/Check_MotifPerteAttestationHonneur'))}
+	"ChangementSituation == Vol"
+	if (ChangementSituation == 'Vol') {
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifDeterioration'))
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifVol'))
+		WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/imput_MotifPerteJJ'),'16')
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_MotifPerteMM'))
+		WebUI.click(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/select_Value_MotifPerteMM'))
+		WebUI.setText(findTestObject('Object Repository/Page_MotifDeLaDemande_Usager/imput_MotifPerteAA'),'2023')}
 }
 'Validation'
 WebUI.click(findTestObject('Object Repository/Page_DemarcheRenouvellement/btn_EnregistrerEtPoursuivre'))

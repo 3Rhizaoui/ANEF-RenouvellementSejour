@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ui-accordiontab-4-content&quot;]/div/div/div[1]/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]/span</value>
+         <value>//*[@id=&quot;ui-accordiontab-4-content&quot;]/div/div/div[1]/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]/span|//app-motif-scolaire/div[2]/div/p-accordion/div/form/p-accordiontab[1]/div[2]/div/div/div[1]/div/anef-input-radio/div/div/fieldset/div/div[2]/p-radiobutton/div/div[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

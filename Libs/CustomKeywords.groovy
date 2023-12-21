@@ -9,15 +9,15 @@ import com.kms.katalon.core.testobject.TestObject
 
 import java.lang.Object
 
-import org.apache.poi.ss.usermodel.Workbook
+import org.apache.poi.ss.usermodel.Sheet
 
 import java.util.List
 
-import org.apache.poi.ss.usermodel.Sheet
-
-import java.util.Map
+import org.apache.poi.ss.usermodel.Workbook
 
 import org.apache.poi.ss.usermodel.Cell
+
+import java.util.Map
 
 import org.apache.poi.ss.usermodel.Row
 
@@ -214,35 +214,6 @@ def static "tools.WaitForLoadedPage.waitForElementRendering"() {
 }
 
 
-def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByIndex"(
-    	TestObject dropdownObject	
-     , 	Object range	
-     , 	boolean isSelect	) {
-    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByIndex(
-        	dropdownObject
-         , 	range
-         , 	isSelect)
-}
-
-
-def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByIndex"(
-    	TestObject dropdownObject	
-     , 	Object range	) {
-    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByIndex(
-        	dropdownObject
-         , 	range)
-}
-
-
-def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.verifyOptionSelectedByName"(
-    	TestObject dropdownObject	
-     , 	String expectedName	) {
-    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).verifyOptionSelectedByName(
-        	dropdownObject
-         , 	expectedName)
-}
-
-
 def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.verifyOptionItemsStatus"(
     	TestObject dropdownObject	
      , 	String listItemNames	) {
@@ -265,6 +236,15 @@ def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.verifyOptionIt
 
 def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByName"(
     	TestObject dropdownObject	
+     , 	String listItemNames	) {
+    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByName(
+        	dropdownObject
+         , 	listItemNames)
+}
+
+
+def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByName"(
+    	TestObject dropdownObject	
      , 	String listItemNames	
      , 	boolean isSelect	) {
     (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByName(
@@ -274,12 +254,12 @@ def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionBy
 }
 
 
-def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByName"(
+def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.verifyOptionSelectedByName"(
     	TestObject dropdownObject	
-     , 	String listItemNames	) {
-    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByName(
+     , 	String expectedName	) {
+    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).verifyOptionSelectedByName(
         	dropdownObject
-         , 	listItemNames)
+         , 	expectedName)
 }
 
 
@@ -310,6 +290,17 @@ def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectSubOptio
 def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectSubOptionByName"(
     	TestObject dropdownObject	
      , 	String optionGroupName	
+     , 	String listItemNames	) {
+    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectSubOptionByName(
+        	dropdownObject
+         , 	optionGroupName
+         , 	listItemNames)
+}
+
+
+def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectSubOptionByName"(
+    	TestObject dropdownObject	
+     , 	String optionGroupName	
      , 	String listItemNames	
      , 	boolean isSelect	) {
     (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectSubOptionByName(
@@ -320,14 +311,23 @@ def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectSubOptio
 }
 
 
-def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectSubOptionByName"(
+def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByIndex"(
     	TestObject dropdownObject	
-     , 	String optionGroupName	
-     , 	String listItemNames	) {
-    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectSubOptionByName(
+     , 	Object range	) {
+    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByIndex(
         	dropdownObject
-         , 	optionGroupName
-         , 	listItemNames)
+         , 	range)
+}
+
+
+def static "com.katalon.plugin.keyword.angularjs.DropdownKeywords.selectOptionByIndex"(
+    	TestObject dropdownObject	
+     , 	Object range	
+     , 	boolean isSelect	) {
+    (new com.katalon.plugin.keyword.angularjs.DropdownKeywords()).selectOptionByIndex(
+        	dropdownObject
+         , 	range
+         , 	isSelect)
 }
 
 
@@ -358,85 +358,14 @@ def static "com.kms.katalon.keyword.testlink.TestlinkKeywords.updateResults"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheets"(
-    	Workbook workbook	
-     , 	java.util.List<String> sheetNames	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheets(
-        	workbook
-         , 	sheetNames)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellIndexByAddress"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByRangeAddress"(
     	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellIndexByAddress(
+     , 	String topLeftAddress	
+     , 	String rightBottomAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByRangeAddress(
         	sheet
-         , 	cellAddress)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByIndex"(
-    	Sheet sheet	
-     , 	int rowIdx	
-     , 	int colIdx	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByIndex(
-        	sheet
-         , 	rowIdx
-         , 	colIdx)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByAddress(
-        	sheet
-         , 	cellAddress)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
-    	Sheet sheet	
-     , 	java.util.List<java.lang.Integer> columnIndexes	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getColumnsByIndex(
-        	sheet
-         , 	columnIndexes)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByIndex"(
-    	Sheet sheet	
-     , 	int rowIndex	
-     , 	int colIndex	
-     , 	Object value	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByIndex(
-        	sheet
-         , 	rowIndex
-         , 	colIndex
-         , 	value)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getRowIndexByCellContent"(
-    	Sheet sheet	
-     , 	String cellContent	
-     , 	int columnIdxForCell	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getRowIndexByCellContent(
-        	sheet
-         , 	cellContent
-         , 	columnIdxForCell)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getMapOfKeyValueRows"(
-    	Sheet sheet	
-     , 	int keyRowIdx	
-     , 	int valueRowIdx	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getMapOfKeyValueRows(
-        	sheet
-         , 	keyRowIdx
-         , 	valueRowIdx)
+         , 	topLeftAddress
+         , 	rightBottomAddress)
 }
 
 
@@ -455,84 +384,77 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValuesByRangeInde
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByRangeAddress"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getMapOfKeyValueRows"(
     	Sheet sheet	
-     , 	String topLeftAddress	
-     , 	String rightBottomAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByRangeAddress(
+     , 	int keyRowIdx	
+     , 	int valueRowIdx	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getMapOfKeyValueRows(
         	sheet
-         , 	topLeftAddress
-         , 	rightBottomAddress)
+         , 	keyRowIdx
+         , 	valueRowIdx)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheetByName"(
-    	String filePath	
-     , 	String sheetName	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheetByName(
-        	filePath
-         , 	sheetName)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddresses"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellIndexByAddress"(
     	Sheet sheet	
-     , 	Map content	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddresses(
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellIndexByAddress(
         	sheet
-         , 	content)
+         , 	cellAddress)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddress"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByAddress"(
     	Sheet sheet	
-     , 	String cellAddress	
-     , 	Object value	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddress(
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByAddress(
         	sheet
-         , 	cellAddress
-         , 	value)
+         , 	cellAddress)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getWorkbook"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getWorkbook(
-        	filePath)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getRowIndexByCellContent"(
+    	Sheet sheet	
+     , 	String cellContent	
+     , 	int columnIdxForCell	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getRowIndexByCellContent(
+        	sheet
+         , 	cellContent
+         , 	columnIdxForCell)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
-    	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
-        	workbook)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByIndex"(
+    	Sheet sheet	
+     , 	int rowIdx	
+     , 	int colIdx	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByIndex(
+        	sheet
+         , 	rowIdx
+         , 	colIdx)
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
-    	Workbook workbook	
-     , 	String sheetName	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
-        	workbook
-         , 	sheetName)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.saveWorkbook"(
-    	String filePath	
-     , 	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).saveWorkbook(
-        	filePath
-         , 	workbook)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
+    	Sheet sheet	
+     , 	java.util.List<java.lang.Integer> columnIndexes	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getColumnsByIndex(
+        	sheet
+         , 	columnIndexes)
 }
 
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	Workbook wbs	
-     , 	String sheetName	) {
+    	String filePath	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	wbs
-         , 	sheetName)
+        	filePath)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
+    	Workbook wbs	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
+        	wbs)
 }
 
 
@@ -546,39 +468,11 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
 
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	Workbook wbs	) {
+    	Workbook wbs	
+     , 	String sheetName	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	wbs)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheet(
-        	filePath)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelFile(
-        	filePath)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.locateCell"(
-    	Sheet sheet	
-     , 	Object cellContent	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).locateCell(
-        	sheet
-         , 	cellContent)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
-    	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
-        	workbook)
+        	wbs
+         , 	sheetName)
 }
 
 
@@ -593,13 +487,6 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByIndex"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
-        	filePath)
-}
-
-
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByAddress"(
     	Sheet sheet	
      , 	String cellAddress	) {
@@ -609,70 +496,10 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByAddress"(
 }
 
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
-    	Cell cell1	
-     , 	Cell cell2	
-     , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
-        	cell1
-         , 	cell2
-         , 	isValueOnly)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
-    	Cell cell1	
-     , 	Cell cell2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
-        	cell1
-         , 	cell2)
-}
-
-
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValue"(
     	Cell cell	) {
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValue(
         	cell)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
-    	Row row1	
-     , 	Row row2	
-     , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
-        	row1
-         , 	row2
-         , 	isValueOnly)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
-    	Row row1	
-     , 	Row row2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
-        	row1
-         , 	row2)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
-    	Workbook workbook1	
-     , 	Workbook workbook2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
-        	workbook1
-         , 	workbook2)
-}
-
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
-    	Workbook workbook1	
-     , 	Workbook workbook2	
-     , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
-        	workbook1
-         , 	workbook2
-         , 	isValueOnly)
 }
 
 
@@ -696,6 +523,139 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getTableContent"(
 }
 
 
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.locateCell"(
+    	Sheet sheet	
+     , 	Object cellContent	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).locateCell(
+        	sheet
+         , 	cellContent)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
+    	String filePath	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelFile(
+        	filePath)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
+    	Workbook workbook	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
+        	workbook)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
+    	Workbook workbook	
+     , 	String sheetName	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
+        	workbook
+         , 	sheetName)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
+    	Workbook workbook	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
+        	workbook)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getWorkbook"(
+    	String filePath	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getWorkbook(
+        	filePath)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
+    	String filePath	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
+        	filePath)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.saveWorkbook"(
+    	String filePath	
+     , 	Workbook workbook	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).saveWorkbook(
+        	filePath
+         , 	workbook)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheets"(
+    	Workbook workbook	
+     , 	java.util.List<String> sheetNames	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheets(
+        	workbook
+         , 	sheetNames)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByIndex"(
+    	Sheet sheet	
+     , 	int rowIndex	
+     , 	int colIndex	
+     , 	Object value	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByIndex(
+        	sheet
+         , 	rowIndex
+         , 	colIndex
+         , 	value)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	
+     , 	Object value	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddress(
+        	sheet
+         , 	cellAddress
+         , 	value)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddresses"(
+    	Sheet sheet	
+     , 	Map content	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddresses(
+        	sheet
+         , 	content)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheetByName"(
+    	String filePath	
+     , 	String sheetName	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheetByName(
+        	filePath
+         , 	sheetName)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
+    	Workbook workbook1	
+     , 	Workbook workbook2	
+     , 	boolean isValueOnly	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
+        	workbook1
+         , 	workbook2
+         , 	isValueOnly)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
+    	Workbook workbook1	
+     , 	Workbook workbook2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
+        	workbook1
+         , 	workbook2)
+}
+
+
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoSheets"(
     	Sheet sheet1	
      , 	Sheet sheet2	) {
@@ -716,14 +676,43 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoSheets"(
 }
 
 
-def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.deleteRangeOfText"(
-    	TestObject toContainer	
-     , 	int startPos	
-     , 	int charCount	) {
-    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).deleteRangeOfText(
-        	toContainer
-         , 	startPos
-         , 	charCount)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
+    	Row row1	
+     , 	Row row2	
+     , 	boolean isValueOnly	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
+        	row1
+         , 	row2
+         , 	isValueOnly)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
+    	Row row1	
+     , 	Row row2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
+        	row1
+         , 	row2)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
+    	Cell cell1	
+     , 	Cell cell2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
+        	cell1
+         , 	cell2)
+}
+
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
+    	Cell cell1	
+     , 	Cell cell2	
+     , 	boolean isValueOnly	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
+        	cell1
+         , 	cell2
+         , 	isValueOnly)
 }
 
 
@@ -738,12 +727,14 @@ def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.selectRan
 }
 
 
-def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.setCaretPosition"(
+def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.deleteRangeOfText"(
     	TestObject toContainer	
-     , 	int position	) {
-    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).setCaretPosition(
+     , 	int startPos	
+     , 	int charCount	) {
+    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).deleteRangeOfText(
         	toContainer
-         , 	position)
+         , 	startPos
+         , 	charCount)
 }
 
 
@@ -762,4 +753,13 @@ def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.selectTex
         	toMenuBar
          , 	format
          , 	isActive)
+}
+
+
+def static "com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords.setCaretPosition"(
+    	TestObject toContainer	
+     , 	int position	) {
+    (new com.kms.katalon.webui.keyword.vuejs.RichTextEditorKeywords()).setCaretPosition(
+        	toContainer
+         , 	position)
 }

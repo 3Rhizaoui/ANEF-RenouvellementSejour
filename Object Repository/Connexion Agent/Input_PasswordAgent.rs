@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-labelledby=&quot;password-label&quot;]</value>
+         <value>//*[@ng-reflect-name=&quot;password&quot; and @type =&quot;password&quot; or @id=&quot;password&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

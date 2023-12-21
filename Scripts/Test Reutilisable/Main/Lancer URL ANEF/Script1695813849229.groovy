@@ -428,14 +428,14 @@ if (Profiles == 'Usager') {
 /**Lancer un navigateur avec l'URL de l'application ANEF pour Portail Agent:
  */
 if (Profiles == 'Agent') {
-	'Navigation à URL  Qualification et Création MDP'
-	if (EnvExec == 'URL_ANEFQualif') { WebUI.openBrowser (GlobalVariable.URL_ANEFQualif)}
+	'Navigation à URL  Qualification Agent'
+	if (EnvExec == 'URL_ANEFQualif') { WebUI.openBrowser (GlobalVariable.URLPortailAgentQualif)}
 	'Navigation à URL Préprode  et Création MDP'
 	if (EnvExec == 'URL_ANEFPreProd') {WebUI.openBrowser (GlobalVariable.URL_ANEFPreProd)}
 				
 	WebUI.maximizeWindow()
-	System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
-	System.setProperty("webdriver.chrome.verboseLogging", "true");
+//	System.setProperty("webdriver.chrome.logfile", "'" +  projDir + "'" + "./chromedriver.log");
+//	System.setProperty("webdriver.chrome.verboseLogging", "true");
 	// Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
 	//WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Erreur lie a la confidentialite'), [:], FailureHandling.STOP_ON_FAILURE)
 	

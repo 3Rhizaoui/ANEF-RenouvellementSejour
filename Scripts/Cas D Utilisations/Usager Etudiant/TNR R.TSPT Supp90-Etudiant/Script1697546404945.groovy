@@ -22,7 +22,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
  * @author hhizaoui
  */
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
-
+/**
 'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent'
 WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [('Profiles') : 'Usager', ('EnvExec') : EnvExec ], FailureHandling.STOP_ON_FAILURE)
 
@@ -52,7 +52,7 @@ if (GlobalVariable.StopTestCase == false) {
 	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireMotifDeLaDemande'), [('TypeTitreDeSejour') : TypeTitreDeSejour
 	            , ('ChangementSituation'):ChangementSituation, ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
 	
-	    if (((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') || (TypeTitreDeSejour == 'Visiteur')) && ((Titre == 'Etudiant') || 
+	    if ((((TypeTitreDeSejour == 'RenouvellementDeTitreSejour') && (ChangementSituation == 'Non')) || (TypeTitreDeSejour == 'Visiteur')) && ((Titre == 'Etudiant') || 
 	    (Titre == 'Visiteur'))) {
 	        'Appel Brique Réutilisable pour Remplir Le Formulaire Ressources Usager'
 	        WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRessources'), [:], 
@@ -65,10 +65,54 @@ if (GlobalVariable.StopTestCase == false) {
 	
 	    'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
 	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif'), [('Titre') : Titre
-	            , ('TypeTitreDeSejour') : TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+	            , ('TypeTitreDeSejour') : TypeTitreDeSejour, ('ChangementSituation'):ChangementSituation], FailureHandling.STOP_ON_FAILURE)
 	
 	    'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
 	    WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation'), [('NumEtrangerVisa') : NumEtrangerVisa
-	            , ('TypeTitreDeSejour') : TypeTitreDeSejour], FailureHandling.STOP_ON_FAILURE)
+	            , ('TypeTitreDeSejour') : TypeTitreDeSejour , ('ChangementSituation'):ChangementSituation], FailureHandling.STOP_ON_FAILURE)
+		
+		if ((ChangementSituation == 'Perte') || (ChangementSituation == 'Vol') ||(ChangementSituation == 'Deterioration')) {
+			'Appel Brique Réutilisable pour Remplir Le Formulaire Type De Titre De Séjour Usager'
+				WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireTypeDeTitreDeSejour'),
+					[('TypeTitreDeSejour') : TypeTitreDeSejour, ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
+				'Appel Brique Réutilisable pour Remplir Le Formulaire Informations Personnelles Usager'
+				WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireInformationsPersonnelles'),
+					[('AdresseUsager') : AdresseUsager, ('NumeroTelephoneUsager') : NumeroTelephoneUsager], FailureHandling.STOP_ON_FAILURE)
+			
+				'Appel Brique Réutilisable pour Remplir Le Formulaire Motif De La Demande Usager'
+				WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireMotifDeLaDemande_2'), [('TypeTitreDeSejour') : TypeTitreDeSejour
+						, ('ChangementSituation'):ChangementSituation, ('Titre') : Titre], FailureHandling.STOP_ON_FAILURE)
+				if ((((TypeTitreDeSejour == 'RenouvellementDeTitreSejour')) || (TypeTitreDeSejour == 'Visiteur')) && ((Titre == 'Etudiant') ||
+					(Titre == 'Visiteur'))) {
+						'Appel Brique Réutilisable pour Remplir Le Formulaire Ressources Usager'
+						WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRessources'), [:],
+							FailureHandling.STOP_ON_FAILURE)
+					}
+					
+					'AppelBrique Réutilisable pour Remplir Le Formulaire Justificatifs Usager'
+					WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireJustificatifs_2'), [('TypeTitreDeSejour') : TypeTitreDeSejour
+							, ('Titre') : Titre, ('NumEphoto') : NumEphoto , ('ChangementSituation'):ChangementSituation], FailureHandling.STOP_ON_FAILURE)
+				
+					'Appel Brique Réutilisable pour Remplir Le Formulaire Récapitulatif Usager'
+					WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireRecapitulatif_2'), [('Titre') : Titre
+							, ('TypeTitreDeSejour') : TypeTitreDeSejour, ('ChangementSituation'):ChangementSituation], FailureHandling.STOP_ON_FAILURE)
+				
+					'Appel Brique Réutilisable pour Remplir Le Formulaire Confirmation Usager'
+					WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireConfirmation_2'), [('NumEtrangerVisa') : NumEtrangerVisa
+							, ('TypeTitreDeSejour') : TypeTitreDeSejour , ('ChangementSituation'):ChangementSituation], FailureHandling.STOP_ON_FAILURE)
+			}
 }}
-
+*/
+if (TraitemantAgent=='Oui') {
+	
+	'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent'
+	WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [('Profiles') : 'Agent', ('EnvExec') : EnvExec ], FailureHandling.STOP_ON_FAILURE)
+	
+	'Appel Brique Réutilisable pour Identification Usager ou Agent'
+	WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [('Profiles') : 'Agent', ('NumEtrangerVisa') : NumEtrangerVisa, ('EnvExec'): 'EnvExec'],
+		FailureHandling.STOP_ON_FAILURE)
+	
+	
+	
+	
+}

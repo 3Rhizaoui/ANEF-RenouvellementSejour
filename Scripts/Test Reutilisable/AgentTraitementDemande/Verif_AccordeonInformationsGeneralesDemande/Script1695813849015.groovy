@@ -61,7 +61,7 @@ WebUI.click(PopUpCommentairesBtnFermer)
 TestObject StatutDemandeurAvecNumEtranger = findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/h3_StatutDemandeurAvecNumEtranger')
 WebUI.verifyElementPresent(StatutDemandeurAvecNumEtranger, 1)
 String NumEtranger = WebUI.getText(StatutDemandeurAvecNumEtranger)
-if(!NumEtranger.contains(GlobalVariable.NumEtrangerVisa)) {	
+if(!NumEtranger.contains(NumEtrangerVisa)) {	
 	KeywordUtil.markFailed("Vérifier le Numéro Etranger de la demande ouverte.")}
 else {KeywordUtil.markPassed("Le Numéro Etranger de la demande est bien Affiché.")}
 

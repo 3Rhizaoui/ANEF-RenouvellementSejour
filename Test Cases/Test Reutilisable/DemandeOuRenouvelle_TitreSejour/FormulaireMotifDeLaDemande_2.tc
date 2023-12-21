@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FormulaireMotifDeLaDemande_2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f3f0fa2-ecf3-45f6-8926-e8d94f599c00</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f41cdd55-6d7d-4452-889c-b8d81b001a9f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e05e4f15-b15f-411f-b4d8-8d3f7ff1a5c7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bc84ea1b-b798-4632-b7f5-fcfe8475c7c2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>f41cdd55-6d7d-4452-889c-b8d81b001a9f</id>
+      <masked>true</masked>
+      <name>TypeTitreDeSejour</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>e05e4f15-b15f-411f-b4d8-8d3f7ff1a5c7</id>
+      <masked>true</masked>
+      <name>Titre</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('DataFor3TestCase')</defaultValue>
+      <description></description>
+      <id>bc84ea1b-b798-4632-b7f5-fcfe8475c7c2</id>
+      <masked>true</masked>
+      <name>ChangementSituation</name>
+   </variable>
+</TestCaseEntity>

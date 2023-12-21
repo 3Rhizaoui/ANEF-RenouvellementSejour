@@ -6,12 +6,11 @@
    <elementGuidId>95a47a7d-b1fd-423f-a0d4-377e7d56aad6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div/app-justificatifs-motif-declaration/div/app-pieces-jointes/div/span[1]/input</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div/app-justificatifs-motif-declaration/div/app-pieces-jointes/div/span[1]/input|//div/app-justificatif-declaration-perte/div/app-pieces-jointes/div/span[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>objVoirDocCopieRESSOURCES</name>
+   <tag></tag>
+   <elementGuidId>f0b1aaa9-6453-422a-9329-53143287bc73</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div/app-ressources-visiteur/div/div[2]/app-justificatifs/div/div[2]/div/div[1]/div[2]/app-visionneuse/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

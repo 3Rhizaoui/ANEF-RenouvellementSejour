@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>objVoirDocCopieADRESSE</name>
+   <tag></tag>
+   <elementGuidId>ac2a8b85-1b4f-4cac-9f7f-2149511a9ea2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div/div/div[2]/app-justificatifs/div/div[2]/div/div[1]/div[2]/app-visionneuse/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

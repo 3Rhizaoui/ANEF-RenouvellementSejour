@@ -249,7 +249,7 @@ CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
  * Votre demande a bien été enregistrée et vous allez recevoir un accusé de réception. 
  */
 
-
+if (ChangementSituation == 'Non') {
 WebUI.click(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/link_EspacePerso"))
 WebUI.click(findTestObject("Object Repository/Page_Accueil_Agent/EspacePerso/link_MonCompte"))
 
@@ -262,5 +262,10 @@ if (SuividemandeNumEtranger == NumEtrangerVisa) {
 }  else {
 	KeywordUtil.markFailed("Le Numéro Etrangr est :"+ NumEtrangerVisa + "<>" + SuividemandeNumEtranger )
 	KeywordUtil.markPassed("Le Type Titre De Sejour est :"+ SuiviTypeDeSejour + "<>" + TypeTitreDeSejour )
+}}
+else {
+
+	WebUI.click(findTestObject("Object Repository/Page_Confirmation_Usager/Btn_JeSolliciteRenouvellementDeMonTitre"))
+	
 }
 WebUI.delay(5)

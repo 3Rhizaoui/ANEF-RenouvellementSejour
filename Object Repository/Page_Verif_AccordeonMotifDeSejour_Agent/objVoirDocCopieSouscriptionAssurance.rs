@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>objVoirDocCopieSouscriptionAssurance</name>
+   <tag></tag>
+   <elementGuidId>9243b640-c076-427d-bf9c-623f74a4db40</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div/app-motif-sejour-visiteur/div/div[2]/div/app-justificatifs/div/div[2]/div/div[1]/div[2]/app-visionneuse/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

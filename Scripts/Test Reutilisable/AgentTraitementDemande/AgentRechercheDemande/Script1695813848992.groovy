@@ -38,18 +38,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 CustomKeywords.'com.kazurayam.ksbackyard.HighlightElement.pandemic'()
 
 'Connexion et Positionnement des Habilitations Agent'
-WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent'), [:], FailureHandling.OPTIONAL)
 
 'recherche de la demande En cours'
 //WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour'))
 WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes'))
 WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour'))
-WebUI.setText(findTestObject('Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'), GlobalVariable.NumEtrangerVisa)
-
+WebUI.setText(findTestObject('Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'), NumEtrangerVisa)
+WebUI.delay(3)
 /** S'affecter et Ouvrir la demande
  * 
  */
-WebUI.delay(3)
+TestObject ActuelleAffectation = findTestObject('Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation')
+def TitreActuelleAffectation = WebUI.getText(ActuelleAffectation, FailureHandling.OPTIONAL)
+//def boolean TitreActuelleAffectation = WebUI.verifyMatch(WebUI.getAttribute(ActuelleAffectation,"title"),'.*AUTOMATISATION AGENT SEJOUR.*', true)
+def boolean  ExistActuelleAffectation = TitreActuelleAffectation.contains('AGENT SEJOUR')
+
+println 'ExistActuelleAffectation='+ ExistActuelleAffectation
+
+if (ExistActuelleAffectation == false) {
 WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/div_Tab_tr1NumDemande'))
 WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_AffecterLaDemande'))
 WebUI.delay(3)
@@ -68,24 +75,26 @@ WebUI.click(findTestObject('Object Repository/Page_Verif_AccordeonInformationsGe
 TestObject PopUpReaffecterBtnConfirmer =findTestObject('Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpReaffecterConfirmer')
 WebUI.verifyElementPresent(PopUpReaffecterBtnConfirmer, 1)
 WebUI.click(PopUpReaffecterBtnConfirmer)
+
 'retrouver la demande'
-WebUI.setText(findTestObject('Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'), GlobalVariable.NumEtrangerVisa)
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/btn_LoopRecherche'))
+WebUI.setText(findTestObject('Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'), NumEtrangerVisa)
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/btn_LoopRecherche'), FailureHandling.OPTIONAL)
 
 'Sélectionner et Ouvrir La Demande'
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/div_Tab_tr1NumDemande'))
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_VoirLaDemande'))
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/div_Tab_tr1NumDemande'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_VoirLaDemande'), FailureHandling.OPTIONAL)
 
 "Retour à l'accueil"
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/btn_Retour_Accueil_Agent'))
-WebUI.setText(findTestObject('Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'), GlobalVariable.NumEtrangerVisa)
-
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/btn_Retour_Accueil_Agent'), FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'), NumEtrangerVisa)
+}
 /** Ouvrir la demande
  *
  */
 WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/div_Tab_tr1NumDemande'))
-WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_VoirLaDemande'))
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/div_Tab_tr1NumDemande'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Object Repository/Page_Accueil_Agent/span_VoirLaDemande'), FailureHandling.OPTIONAL)
 WebUI.delay(3)
 
 

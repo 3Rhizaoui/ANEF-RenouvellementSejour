@@ -45,8 +45,8 @@
       <name>IdentifiantAgentQualif</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'KhR9/yEsf/XdgV6Q0i40mA=='</initValue>
+      <description>KhR9/yEsf/XdgV6Q0i40mA==</description>
+      <initValue>'AcQsBjsRIB1Ol3uH50bCyw=='</initValue>
       <name>PwAgentQualif</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

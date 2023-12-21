@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Btn_ConfirmerEtNotifierAuDemandeur</name>
+   <tag></tag>
+   <elementGuidId>eb225506-a14d-4427-a350-9f2fe9235a70</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;content&quot;]/app-demande-instruction/div/app-cloture-confirmation-modals-demande/app-cloture-confirmation-demande/lib-generic-modal/p-dialog/div/div[3]/p-footer/button[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

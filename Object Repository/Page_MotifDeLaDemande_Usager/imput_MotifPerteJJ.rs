@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Value_MotifChangementSituation</name>
+   <name>imput_MotifPerteJJ</name>
    <tag></tag>
-   <elementGuidId>706e8f7c-895d-4df9-b2ae-51604708fb68</elementGuidId>
+   <elementGuidId>865b3c06-abd7-4ea9-8446-5142e59d7b0c</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;SITUATION_PVD&quot;]/div/div[5]/div/ul/p-dropdownitem[4]/li/span</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;JOUR&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
