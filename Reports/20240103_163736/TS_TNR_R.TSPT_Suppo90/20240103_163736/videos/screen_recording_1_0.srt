@@ -1,0 +1,968 @@
+1
+00:00:00,751 --> 00:00:01,340
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+2
+00:00:01,355 --> 00:00:03,370
+7. Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent
+
+3
+00:00:03,373 --> 00:00:03,378
+5. RunConfiguration: getExecutionProperties Driver 
+
+4
+00:00:03,380 --> 00:00:03,384
+9. DriverName = ""
+
+5
+00:00:03,387 --> 00:00:07,888
+13. openBrowser("")
+
+6
+00:00:07,892 --> 00:00:07,938
+17. driver = getWebDriver()
+
+7
+00:00:07,941 --> 00:00:08,006
+21. wrappedDriver = driver.getWrappedDriver()
+
+8
+00:00:08,008 --> 00:00:08,152
+25. out.println(wrappedDriver.getClass())
+
+9
+00:00:08,154 --> 00:00:08,162
+29. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+10
+00:00:08,164 --> 00:00:08,202
+2. DriverName = get("WebUI").get("browserType")
+
+11
+00:00:08,204 --> 00:00:08,219
+6. println("DriverName :" + DriverName)
+
+12
+00:00:08,221 --> 00:00:08,226
+10. println("Driverpath :" + RunBrowserConfiguration.get("drivers"))
+
+13
+00:00:08,229 --> 00:00:10,038
+33. DriverName = DriverName
+
+14
+00:00:10,040 --> 00:00:13,082
+37. delay(medium_wait)
+
+15
+00:00:13,084 --> 00:00:13,086
+41. executedBrowser = getExecutedBrowser()
+
+16
+00:00:13,088 --> 00:00:13,090
+45. if (Profiles == "Usager")
+
+17
+00:00:13,091 --> 00:00:13,093
+1. switch (DriverName)
+
+18
+00:00:13,094 --> 00:00:13,096
+4. Navigation à URL  Qualification et Création MDP
+
+19
+00:00:13,098 --> 00:00:29,101
+1. navigateToUrl(URL_ANEFQualif)
+
+20
+00:00:29,104 --> 00:00:29,107
+10. Navigation à URL Préprode  et Création MDP
+
+21
+00:00:29,110 --> 00:00:29,179
+14. maximizeWindow()
+
+22
+00:00:29,182 --> 00:00:29,189
+18. System.setProperty("webdriver.chrome.driver", getChromeDriverPath())
+
+23
+00:00:29,191 --> 00:00:29,197
+22. System.setProperty("webdriver.chrome.logfile", getProjectDir() + "/Dump/chromedriver.log")
+
+24
+00:00:29,202 --> 00:00:29,947
+28. Appel de l'action Réutilisable pour contourner l'erreur lié à la confidentialité
+
+25
+00:00:29,949 --> 00:00:29,985
+3. waiting for the number of elements in the DOM to stop changing
+
+26
+00:00:29,989 --> 00:00:29,994
+11. RunConfiguration: getExecutionProperties Driver 
+
+27
+00:00:29,997 --> 00:00:30,000
+17. contournement du message d'erreur lié à la confidentialité :
+
+28
+00:00:30,003 --> 00:00:30,380
+1. if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL))
+
+29
+00:00:30,383 --> 00:00:32,754
+1. click(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), OPTIONAL)
+
+30
+00:00:32,756 --> 00:00:36,231
+5. click(findTestObject("Object Repository/Connexion Usager/Link_Proceed-Link"), OPTIONAL)
+
+31
+00:00:36,233 --> 00:00:36,236
+23. contournement du message d'erreur lié à la confidentialité :
+
+32
+00:00:36,237 --> 00:00:39,253
+27. delay(3)
+
+33
+00:00:39,256 --> 00:00:44,253
+32. delay(5)
+
+34
+00:00:44,255 --> 00:00:44,388
+38. Vérification de l'étape :
+
+35
+00:00:44,389 --> 00:00:44,391
+42. break
+
+36
+00:00:44,393 --> 00:00:44,396
+49. if (Profiles == "Agent")
+
+37
+00:00:44,398 --> 00:00:44,402
+2. println("Vérifier le Portail de votre connexion Usager ou Agent")
+
+38
+00:00:44,404 --> 00:00:44,406
+11. if (TraitemantAgent == "Oui")
+
+39
+00:00:44,408 --> 00:00:44,596
+3. Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent
+
+40
+00:00:44,598 --> 00:00:44,600
+5. RunConfiguration: getExecutionProperties Driver 
+
+41
+00:00:44,604 --> 00:00:44,607
+9. DriverName = ""
+
+42
+00:00:44,609 --> 00:00:46,710
+13. openBrowser("")
+
+43
+00:00:46,713 --> 00:00:46,716
+17. driver = getWebDriver()
+
+44
+00:00:46,719 --> 00:00:46,721
+21. wrappedDriver = driver.getWrappedDriver()
+
+45
+00:00:46,723 --> 00:00:46,725
+25. out.println(wrappedDriver.getClass())
+
+46
+00:00:46,727 --> 00:00:46,732
+29. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+47
+00:00:46,735 --> 00:00:46,738
+2. DriverName = get("WebUI").get("browserType")
+
+48
+00:00:46,740 --> 00:00:46,743
+6. println("DriverName :" + DriverName)
+
+49
+00:00:46,748 --> 00:00:46,751
+10. println("Driverpath :" + RunBrowserConfiguration.get("drivers"))
+
+50
+00:00:46,753 --> 00:00:46,759
+33. DriverName = DriverName
+
+51
+00:00:46,761 --> 00:00:49,765
+37. delay(medium_wait)
+
+52
+00:00:49,767 --> 00:00:49,768
+41. executedBrowser = getExecutedBrowser()
+
+53
+00:00:49,770 --> 00:00:49,772
+45. if (Profiles == "Usager")
+
+54
+00:00:49,773 --> 00:00:49,775
+49. if (Profiles == "Agent")
+
+55
+00:00:49,776 --> 00:00:49,778
+3. Navigation à URL  Qualification Agent
+
+56
+00:00:49,781 --> 00:01:13,756
+1. openBrowser(URLPortailAgentQualif)
+
+57
+00:01:13,760 --> 00:01:13,762
+9. Navigation à URL Préprode  et Création MDP
+
+58
+00:01:13,764 --> 00:01:13,785
+13. maximizeWindow()
+
+59
+00:01:13,787 --> 00:01:14,514
+9. Appel Brique Réutilisable pour Identification Usager ou Agent
+
+60
+00:01:14,516 --> 00:01:14,518
+1. if (Profiles == "Usager")
+
+61
+00:01:14,520 --> 00:01:14,522
+7. Identification : Portail Agent
+
+62
+00:01:14,525 --> 00:01:18,954
+1. setText(findTestObject("Object Repository/Connexion Agent/Input_UserNameAgent"), IdentifiantAgentQualif)
+
+63
+00:01:18,956 --> 00:01:23,228
+5. setEncryptedText(findTestObject("Object Repository/Connexion Agent/Input_PasswordAgent"), PwAgentQualif)
+
+64
+00:01:23,232 --> 00:01:25,415
+9. click(findTestObject("Object Repository/Connexion Agent/btn_Valider_Conx_Agent"))
+
+65
+00:01:25,418 --> 00:01:26,086
+13. callTestCase(findTestCase("Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande"), ["NumEtrangerVisa":NumEtrangerVisa], STOP_ON_FAILURE)
+
+66
+00:01:26,088 --> 00:01:26,099
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+67
+00:01:26,101 --> 00:01:26,784
+7. Connexion et Positionnement des Habilitations Agent
+
+68
+00:01:26,786 --> 00:01:26,792
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+69
+00:01:26,794 --> 00:01:28,997
+7. Ouvrir App-Header Account-Menu pour positionner la bonne Habilitation
+
+70
+00:01:29,000 --> 00:01:31,176
+11. click(findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation"))
+
+71
+00:01:31,178 --> 00:01:31,235
+15. PopUpHabilitations = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations")
+
+72
+00:01:31,237 --> 00:01:31,305
+19. verifyElementPresent(PopUpHabilitations, 1)
+
+73
+00:01:31,306 --> 00:01:31,375
+23. TitrePopUpAfficherCommentaires = getText(PopUpHabilitations)
+
+74
+00:01:31,378 --> 00:01:31,381
+27. if (!(TitrePopUpAfficherCommentaires.contains("HABILITATIONS")))
+
+75
+00:01:31,383 --> 00:01:31,401
+2. markPassed("Le Titre de PopUp est bien Affiché : HABILITATIONS.")
+
+76
+00:01:31,403 --> 00:01:31,405
+33. Choisir le site de traitement pour les renouvellement pour Etudiants et Visiteurs
+
+77
+00:01:31,406 --> 00:01:31,465
+1. RoleEncadreurSite7701 = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701")
+
+78
+00:01:31,467 --> 00:01:31,507
+5. verifyElementPresent(RoleEncadreurSite7701, 1)
+
+79
+00:01:31,509 --> 00:01:31,579
+9. ValiderHabilitations = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider")
+
+80
+00:01:31,581 --> 00:01:31,622
+13. verifyElementPresent(ValiderHabilitations, 1)
+
+81
+00:01:31,625 --> 00:01:33,729
+17. click(RoleEncadreurSite7701)
+
+82
+00:01:33,731 --> 00:01:36,739
+21. delay(3)
+
+83
+00:01:36,741 --> 00:01:36,803
+25. Disabled = getAttribute(ValiderHabilitations, "disabled")
+
+84
+00:01:36,805 --> 00:01:39,802
+29. delay(3)
+
+85
+00:01:39,803 --> 00:01:39,805
+33. if (Disabled == false)
+
+86
+00:01:39,807 --> 00:01:39,852
+2. AnnulerHabilitations = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler")
+
+87
+00:01:39,855 --> 00:01:39,892
+6. verifyElementPresent(AnnulerHabilitations, 1)
+
+88
+00:01:39,894 --> 00:01:41,988
+10. click(AnnulerHabilitations)
+
+89
+00:01:41,990 --> 00:01:44,154
+14. click(findTestObject("Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour"))
+
+90
+00:01:44,157 --> 00:01:47,167
+18. delay(3)
+
+91
+00:01:47,169 --> 00:01:47,171
+39. Choisr le site de traitement pour les Passeports Talents
+
+92
+00:01:47,173 --> 00:01:52,181
+43. delay(5)
+
+93
+00:01:52,183 --> 00:01:54,329
+13. recherche de la demande En cours
+
+94
+00:01:54,331 --> 00:01:56,532
+17. click(findTestObject("Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour"))
+
+95
+00:01:56,536 --> 00:02:00,815
+21. setText(findTestObject("Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande"), NumEtrangerVisa)
+
+96
+00:02:00,818 --> 00:02:03,832
+25. delay(3)
+
+97
+00:02:03,834 --> 00:02:03,881
+29. ActuelleAffectation = findTestObject("Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation")
+
+98
+00:02:03,883 --> 00:02:03,924
+33. TitreActuelleAffectation = getText(ActuelleAffectation, OPTIONAL)
+
+99
+00:02:03,926 --> 00:02:03,928
+37. ExistActuelleAffectation = TitreActuelleAffectation.contains("AGENT SEJOUR")
+
+100
+00:02:03,930 --> 00:02:03,932
+41. println("ExistActuelleAffectation=" + ExistActuelleAffectation)
+
+101
+00:02:03,934 --> 00:02:03,935
+45. if (ExistActuelleAffectation == false)
+
+102
+00:02:03,937 --> 00:02:06,936
+49. delay(3)
+
+103
+00:02:06,938 --> 00:02:09,102
+53. click(findTestObject("Object Repository/Page_Accueil_Agent/div_Tab_tr1NumDemande"), OPTIONAL)
+
+104
+00:02:09,104 --> 00:02:11,286
+57. click(findTestObject("Object Repository/Page_Accueil_Agent/span_VoirLaDemande"), OPTIONAL)
+
+105
+00:02:11,288 --> 00:02:14,299
+61. delay(3)
+
+106
+00:02:14,301 --> 00:02:14,768
+17. callTestCase(findTestCase("Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonInformationsGeneralesDemande"), ["NumEtrangerVisa":NumEtrangerVisa], STOP_ON_FAILURE)
+
+107
+00:02:14,770 --> 00:02:14,774
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+108
+00:02:14,776 --> 00:02:14,832
+5. LinkLesCommentaires = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/LinkLesCommentaires")
+
+109
+00:02:14,834 --> 00:02:14,870
+9. verifyElementPresent(LinkLesCommentaires, 1)
+
+110
+00:02:14,873 --> 00:02:17,009
+13. click(LinkLesCommentaires)
+
+111
+00:02:17,011 --> 00:02:17,072
+17. PopUpAfficherCommentaires = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUp_AfficherCommentaires")
+
+112
+00:02:17,074 --> 00:02:17,114
+21. verifyElementPresent(PopUpAfficherCommentaires, 1)
+
+113
+00:02:17,116 --> 00:02:17,160
+25. TitrePopUpAfficherCommentaires = getText(PopUpAfficherCommentaires)
+
+114
+00:02:17,162 --> 00:02:17,164
+29. if (!(TitrePopUpAfficherCommentaires.contains("AFFICHER LES COMMENTAIRES")))
+
+115
+00:02:17,166 --> 00:02:17,167
+2. markPassed("Le Titre de PopUp est bien Affiché : AFFICHER LES COMMENTAIRES.")
+
+116
+00:02:17,170 --> 00:02:17,232
+33. PopUpCommentairesBtnFermer = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpCommentaireFermer")
+
+117
+00:02:17,234 --> 00:02:17,274
+37. verifyElementPresent(PopUpCommentairesBtnFermer, 1)
+
+118
+00:02:17,276 --> 00:02:19,389
+41. click(PopUpCommentairesBtnFermer)
+
+119
+00:02:19,391 --> 00:02:19,441
+45. StatutDemandeurAvecNumEtranger = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/h3_StatutDemandeurAvecNumEtranger")
+
+120
+00:02:19,443 --> 00:02:19,479
+49. verifyElementPresent(StatutDemandeurAvecNumEtranger, 1)
+
+121
+00:02:19,481 --> 00:02:19,527
+53. NumEtranger = getText(StatutDemandeurAvecNumEtranger)
+
+122
+00:02:19,529 --> 00:02:19,533
+57. if (!(NumEtranger.contains(NumEtrangerVisa)))
+
+123
+00:02:19,536 --> 00:02:19,538
+2. markPassed("Le Numéro Etranger de la demande est bien Affiché.")
+
+124
+00:02:19,540 --> 00:02:19,609
+61. AfficherHistorique = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/Link_AfficherHistorique")
+
+125
+00:02:19,612 --> 00:02:19,644
+65. verifyElementPresent(AfficherHistorique, 1)
+
+126
+00:02:19,647 --> 00:02:21,755
+69. click(AfficherHistorique)
+
+127
+00:02:21,757 --> 00:02:21,811
+73. PopUpHistoriqueDeLaDemande = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUp_HistoriqueDeLaDemande")
+
+128
+00:02:21,814 --> 00:02:22,144
+77. verifyElementPresent(PopUpHistoriqueDeLaDemande, 1)
+
+129
+00:02:22,146 --> 00:02:22,194
+81. TitreHistoriqueDeLaDemande = getText(PopUpHistoriqueDeLaDemande)
+
+130
+00:02:22,196 --> 00:02:22,198
+85. if (!(TitreHistoriqueDeLaDemande.contains("HISTORIQUE DE LA DEMANDE")))
+
+131
+00:02:22,201 --> 00:02:22,203
+2. markPassed("Le Titre de PopUp est bien Affiché : Historique de la demande.")
+
+132
+00:02:22,206 --> 00:02:22,283
+89. ListeAction = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/List_TypeAction")
+
+133
+00:02:22,285 --> 00:02:22,323
+93. verifyElementPresent(ListeAction, 1)
+
+134
+00:02:22,326 --> 00:02:24,463
+97. click(ListeAction)
+
+135
+00:02:24,465 --> 00:02:24,526
+101. PopUpHistoBtnFermer = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpHistoFermer")
+
+136
+00:02:24,529 --> 00:02:24,573
+105. verifyElementPresent(PopUpHistoBtnFermer, 1)
+
+137
+00:02:24,576 --> 00:02:26,703
+109. click(PopUpHistoBtnFermer)
+
+138
+00:02:26,706 --> 00:02:26,770
+113. AfficherDocumentsAdditionnels = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/Link_AfficherDocsAdditionnels")
+
+139
+00:02:26,773 --> 00:02:26,811
+117. verifyElementPresent(AfficherDocumentsAdditionnels, 1)
+
+140
+00:02:26,814 --> 00:02:28,932
+121. click(AfficherDocumentsAdditionnels)
+
+141
+00:02:28,934 --> 00:02:28,986
+125. PopUpDocsAdditionnels = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUpDocsAdditionnels")
+
+142
+00:02:28,989 --> 00:02:29,031
+129. verifyElementPresent(PopUpDocsAdditionnels, 1)
+
+143
+00:02:29,033 --> 00:02:29,079
+133. TitrePopUpDocsAdditionnels = getText(PopUpDocsAdditionnels)
+
+144
+00:02:29,082 --> 00:02:29,084
+137. if (!(TitrePopUpDocsAdditionnels.contains("DOCUMENTS ADDITIONNELS")))
+
+145
+00:02:29,087 --> 00:02:29,089
+2. markPassed("Le Titre de PopUp est bien Affiché : DOCUMENTS ADDITIONNELS.")
+
+146
+00:02:29,092 --> 00:02:29,166
+141. PopUpDocumentAddBtnFermer = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpDocumentsAddFermer")
+
+147
+00:02:29,169 --> 00:02:29,209
+145. verifyElementPresent(PopUpDocumentAddBtnFermer, 1)
+
+148
+00:02:29,213 --> 00:02:31,370
+149. click(PopUpDocumentAddBtnFermer)
+
+149
+00:02:31,372 --> 00:02:31,424
+153. LinkTransferer = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/Link_Transferer")
+
+150
+00:02:31,427 --> 00:02:31,470
+157. verifyElementPresent(LinkTransferer, 1)
+
+151
+00:02:31,472 --> 00:02:33,602
+161. click(LinkTransferer)
+
+152
+00:02:33,605 --> 00:02:33,663
+165. PopUpTransferer = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUp_TransfererLaDemande")
+
+153
+00:02:33,666 --> 00:02:33,749
+169. verifyElementPresent(PopUpTransferer, 1)
+
+154
+00:02:33,752 --> 00:02:33,788
+173. TitrePopUpTransferer = getText(PopUpTransferer)
+
+155
+00:02:33,791 --> 00:02:33,794
+177. if (!(TitrePopUpTransferer.contains("TRANSFÉRER LA DEMANDE")))
+
+156
+00:02:33,796 --> 00:02:33,799
+2. markPassed("Le Titre de PopUp est bien Affiché : TRANSFÉRER LA DEMANDE.")
+
+157
+00:02:33,802 --> 00:02:33,863
+181. TransfererA = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/List_TransfererA")
+
+158
+00:02:33,865 --> 00:02:33,901
+185. verifyElementPresent(TransfererA, 1)
+
+159
+00:02:33,903 --> 00:02:34,216
+189. doubleClick(TransfererA)
+
+160
+00:02:34,219 --> 00:02:36,220
+193. delay(2)
+
+161
+00:02:36,222 --> 00:02:36,266
+197. PopUpTransfererBtnAnnuler = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpTransfererAnnuler")
+
+162
+00:02:36,269 --> 00:02:36,300
+201. verifyElementPresent(PopUpTransfererBtnAnnuler, 2)
+
+163
+00:02:36,303 --> 00:02:38,431
+205. click(PopUpTransfererBtnAnnuler)
+
+164
+00:02:38,434 --> 00:02:38,488
+209. LinkReaffecter = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/Link_Reaffecter")
+
+165
+00:02:38,490 --> 00:02:38,526
+213. verifyElementPresent(LinkReaffecter, 1)
+
+166
+00:02:38,528 --> 00:02:40,644
+217. click(LinkReaffecter)
+
+167
+00:02:40,647 --> 00:02:40,695
+221. PopUpReaffecter = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUp_ReaffecterLaDemande")
+
+168
+00:02:40,697 --> 00:02:41,046
+225. verifyElementPresent(PopUpReaffecter, 1)
+
+169
+00:02:41,050 --> 00:02:41,095
+229. TitrePopUpReaffecter = getText(PopUpReaffecter)
+
+170
+00:02:41,099 --> 00:02:41,101
+233. if (!(TitrePopUpReaffecter.contains("RÉAFFECTER LA DEMANDE")))
+
+171
+00:02:41,106 --> 00:02:41,109
+2. markPassed("Le Titre de PopUp est bien Affiché : RÉAFFECTER LA DEMANDE.")
+
+172
+00:02:41,114 --> 00:02:41,209
+237. ReaffecterA = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/List_ReaffecterA")
+
+173
+00:02:41,212 --> 00:02:41,251
+241. verifyElementPresent(ReaffecterA, 1)
+
+174
+00:02:41,257 --> 00:02:41,555
+245. doubleClick(ReaffecterA)
+
+175
+00:02:41,558 --> 00:02:41,632
+249. PopUpReaffecterBtnConfirmer = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpReaffecterAnnuler")
+
+176
+00:02:41,636 --> 00:02:41,681
+253. verifyElementPresent(PopUpReaffecterBtnConfirmer, 1)
+
+177
+00:02:41,684 --> 00:02:43,811
+257. click(PopUpReaffecterBtnConfirmer)
+
+178
+00:02:43,814 --> 00:02:43,869
+261. LinkAttestationProlongation = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/Link_AttestationProlongation")
+
+179
+00:02:43,872 --> 00:02:43,910
+265. verifyElementPresent(LinkAttestationProlongation, 1)
+
+180
+00:02:43,913 --> 00:02:46,047
+269. click(LinkAttestationProlongation)
+
+181
+00:02:46,051 --> 00:02:46,117
+273. PopUpAttestationProlongation = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/PopUp_AttestationProlongation")
+
+182
+00:02:46,120 --> 00:02:46,156
+277. verifyElementPresent(PopUpAttestationProlongation, 1)
+
+183
+00:02:46,159 --> 00:02:46,200
+281. TitrePopUpAttestationProlongation = getText(PopUpAttestationProlongation)
+
+184
+00:02:46,203 --> 00:02:46,205
+285. if (!(TitrePopUpAttestationProlongation.contains("PRODUIRE UNE ATTESTATION DE PROLONGATION")))
+
+185
+00:02:46,207 --> 00:02:46,210
+2. markPassed("Le Titre de PopUp est bien Affiché : PRODUIRE UNE ATTESTATION DE PROLONGATION.")
+
+186
+00:02:46,214 --> 00:02:46,277
+289. MotifProlongation = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/List_MotifProlongation")
+
+187
+00:02:46,280 --> 00:02:46,316
+293. verifyElementPresent(MotifProlongation, 1)
+
+188
+00:02:46,319 --> 00:02:46,611
+297. doubleClick(MotifProlongation)
+
+189
+00:02:46,614 --> 00:02:46,684
+301. PopUpAttestationProlongationBtnAnnuler = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_PopUpAttestationProlongationAnnuler")
+
+190
+00:02:46,687 --> 00:02:46,734
+305. verifyElementPresent(PopUpAttestationProlongationBtnAnnuler, 1)
+
+191
+00:02:46,737 --> 00:02:48,869
+309. click(PopUpAttestationProlongationBtnAnnuler)
+
+192
+00:02:48,872 --> 00:02:48,925
+313. Btn_EnregistrerQuitter = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_EnregistrerQuitter")
+
+193
+00:02:48,928 --> 00:02:48,963
+317. verifyElementPresent(Btn_EnregistrerQuitter, 1)
+
+194
+00:02:48,965 --> 00:02:49,034
+321. verifyElementClickable(Btn_EnregistrerQuitter)
+
+195
+00:02:49,037 --> 00:02:49,092
+325. Btn_SuspendreInstruction = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_SuspendreInstruction")
+
+196
+00:02:49,095 --> 00:02:49,126
+329. verifyElementPresent(Btn_SuspendreInstruction, 1)
+
+197
+00:02:49,129 --> 00:02:49,163
+333. verifyElementClickable(Btn_SuspendreInstruction)
+
+198
+00:02:49,166 --> 00:02:49,236
+337. Btn_ClôturerLaDemande = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_CloturerLaDemande")
+
+199
+00:02:49,239 --> 00:02:49,274
+341. verifyElementPresent(Btn_ClôturerLaDemande, 1)
+
+200
+00:02:49,279 --> 00:02:49,317
+345. verifyElementClickable(Btn_ClôturerLaDemande)
+
+201
+00:02:49,320 --> 00:02:49,379
+349. Btn_ValiderAdresseRapatrierLeDossier = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_ValiderAdresseRapatrierLeDossier")
+
+202
+00:02:49,383 --> 00:02:49,418
+353. verifyElementPresent(Btn_ValiderAdresseRapatrierLeDossier, 1)
+
+203
+00:02:49,421 --> 00:02:49,458
+357. verifyElementClickable(Btn_ValiderAdresseRapatrierLeDossier)
+
+204
+00:02:49,461 --> 00:02:49,523
+361. link_RetourAToutesLesDemandes = findTestObject("Object Repository/Page_Verif_AccordeonInformationsGeneralesDemande_Agent/btn_RetourAToutesLesDemandes")
+
+205
+00:02:49,526 --> 00:02:49,558
+365. verifyElementPresent(link_RetourAToutesLesDemandes, 1)
+
+206
+00:02:49,561 --> 00:02:49,598
+369. verifyElementClickable(link_RetourAToutesLesDemandes)
+
+207
+00:02:49,601 --> 00:02:49,974
+21. callTestCase(findTestCase("Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur"), [:], STOP_ON_FAILURE)
+
+208
+00:02:49,978 --> 00:02:49,981
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+209
+00:02:49,986 --> 00:02:50,055
+5. AccordeonObservatuionDuDemandeur = findTestObject("Object Repository/Page_Verif_AccordeonObservatuionDuDemandeur_Agent/span_AccordeonObservatuionDuDemandeur")
+
+210
+00:02:50,058 --> 00:02:50,094
+9. verifyElementPresent(AccordeonObservatuionDuDemandeur, 1)
+
+211
+00:02:50,098 --> 00:02:50,138
+13. TitreAccordeonObservatuionDuDemandeur = getText(AccordeonObservatuionDuDemandeur)
+
+212
+00:02:50,141 --> 00:02:50,143
+17. if (!(TitreAccordeonObservatuionDuDemandeur.contains("OBSERVATIONS DU DEMANDEUR")))
+
+213
+00:02:50,147 --> 00:02:50,150
+2. markPassed("Le Titre de L'accordéon est bien Affiché : OBSERVATIONS DU DEMANDEUR.")
+
+214
+00:02:50,153 --> 00:02:50,840
+25. callTestCase(findTestCase("Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonEtatCivilDuDemandeur"), ["NumEtrangerVisa":NumEtrangerVisa], STOP_ON_FAILURE)
+
+215
+00:02:50,846 --> 00:02:50,850
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+216
+00:02:50,855 --> 00:02:51,028
+7. Vérifier Existance  Du Accordeon Etat Civil
+
+217
+00:02:51,034 --> 00:02:51,137
+1. AccordeonEtatCivil = findTestObject("Object Repository/Page_Verif_AccordeonEtatCivilDuDemandeur_Agent/span_AccordeonEtatCivil")
+
+218
+00:02:51,141 --> 00:02:51,181
+5. verifyElementPresent(AccordeonEtatCivil, 1)
+
+219
+00:02:51,186 --> 00:02:51,233
+11. Vérifier le Texte Du Accordeon Etat Civil
+
+220
+00:02:51,237 --> 00:02:51,240
+15. if (!(TitreAccordeonEtatCivil.contains("ÉTAT CIVIL")))
+
+221
+00:02:51,245 --> 00:02:51,247
+2. markPassed("Le Titre de L'accordéon est bien Affiché : ÉTAT CIVIL.")
+
+222
+00:02:51,251 --> 00:02:51,377
+11. if (verifyElementPresent(findTestObject("Object Repository/Page_Verif_AccordeonEtatCivilDuDemandeur_Agent/span_Check_DocManquantPhotographie"), 3, OPTIONAL))
+
+223
+00:02:51,382 --> 00:02:51,456
+3. Vérifier la case à cocher du Document manquant de la Photographie 
+
+224
+00:02:51,460 --> 00:02:51,496
+7. verifyElementPresent(DocManquantPhotographie, 1)
+
+225
+00:02:51,499 --> 00:02:53,665
+11. check(DocManquantPhotographie)
+
+226
+00:02:53,668 --> 00:02:53,733
+17. Vérifier le Titre du Texte Document manquant de la Photographie 
+
+227
+00:02:53,735 --> 00:02:53,783
+21. verifyElementPresent(MsgDocumentManquant, 1)
+
+228
+00:02:53,786 --> 00:02:53,833
+25. TitreMsgDocumentManquantPhotographie = getText(MsgDocumentManquant)
+
+229
+00:02:53,837 --> 00:02:53,840
+29. if (!(TitreMsgDocumentManquantPhotographie.contains("Préciser le document manquant au demandeur * :")))
+
+230
+00:02:53,844 --> 00:02:53,845
+2. markPassed("Le Titre  de Message est bien Affiché : Préciser le document manquant Photographie au demandeur.")
+
+231
+00:02:53,848 --> 00:02:53,928
+35. Vérifier le champ Texte Document manquant de la Photographie 
+
+232
+00:02:53,931 --> 00:02:53,975
+39. verifyElementPresent(TxtDocManquantPhotographie, 1)
+
+233
+00:02:53,978 --> 00:02:58,637
+43. setText(TxtDocManquantPhotographie, "Préciser le document manquant Photographie au demandeur")
+
+234
+00:02:58,641 --> 00:03:00,742
+49. Annulation Du Document Manquant
+
+235
+00:03:00,746 --> 00:03:00,803
+55. Vérifier Photographie et voir Document 
+
+236
+00:03:00,806 --> 00:03:01,135
+59. tools.OpenPopupInTab.OpenBrowserTab(objVoirDocPhotographie)
+
+237
+00:03:01,140 --> 00:03:03,704
+63. tools.OpenPopupInTab.CloseBrowserTab()
+
+238
+00:03:03,707 --> 00:03:05,707
+67. delay(2)
+
+239
+00:03:05,710 --> 00:03:07,909
+73. Rejeter le document
+
+240
+00:03:07,912 --> 00:03:08,258
+77. doubleClick(findTestObject("Object Repository/Page_Verif_AccordeonEtatCivilDuDemandeur_Agent/List_MotifDuRejetPhotographie"))
+
+241
+00:03:08,261 --> 00:03:12,893
+81. setText(findTestObject("Object Repository/Page_Verif_AccordeonEtatCivilDuDemandeur_Agent/Txt_ObservationPourDemandeurPhotographie"), "Observations Photographie pour le demandeur")
+
+242
+00:03:12,899 --> 00:03:25,758
+85. click(findTestObject("Object Repository/Page_Verif_AccordeonEtatCivilDuDemandeur_Agent/div_AccepterLeDocumentPhotographie"))
+

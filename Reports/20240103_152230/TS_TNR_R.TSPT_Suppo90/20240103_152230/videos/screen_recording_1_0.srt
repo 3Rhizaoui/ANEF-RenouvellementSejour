@@ -1,0 +1,84 @@
+1
+00:00:02,830 --> 00:00:03,724
+1. com.kazurayam.ksbackyard.HighlightElement.pandemic()
+
+2
+00:00:03,747 --> 00:00:08,967
+7. Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent
+
+3
+00:00:08,971 --> 00:00:08,984
+5. RunConfiguration: getExecutionProperties Driver 
+
+4
+00:00:08,993 --> 00:00:09,021
+9. DriverName = ""
+
+5
+00:00:09,026 --> 00:00:16,024
+13. openBrowser("")
+
+6
+00:00:16,030 --> 00:00:16,117
+17. driver = getWebDriver()
+
+7
+00:00:16,123 --> 00:00:16,230
+21. wrappedDriver = driver.getWrappedDriver()
+
+8
+00:00:16,233 --> 00:00:16,518
+25. out.println(wrappedDriver.getClass())
+
+9
+00:00:16,522 --> 00:00:16,540
+29. if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver)
+
+10
+00:00:16,544 --> 00:00:16,667
+2. DriverName = get("WebUI").get("browserType")
+
+11
+00:00:16,673 --> 00:00:16,703
+6. println("DriverName :" + DriverName)
+
+12
+00:00:16,710 --> 00:00:16,717
+10. println("Driverpath :" + RunBrowserConfiguration.get("drivers"))
+
+13
+00:00:16,720 --> 00:00:19,514
+33. DriverName = DriverName
+
+14
+00:00:19,517 --> 00:00:22,592
+37. delay(medium_wait)
+
+15
+00:00:22,594 --> 00:00:22,596
+41. executedBrowser = getExecutedBrowser()
+
+16
+00:00:22,599 --> 00:00:22,601
+45. if (Profiles == "Usager")
+
+17
+00:00:22,603 --> 00:00:22,606
+1. switch (DriverName)
+
+18
+00:00:22,609 --> 00:00:22,611
+4. Navigation à URL  Qualification et Création MDP
+
+19
+00:00:22,613 --> 00:00:36,947
+1. navigateToUrl(URL_ANEFQualif)
+
+20
+00:00:36,951 --> 00:00:36,957
+10. Navigation à URL Préprode  et Création MDP
+
+21
+00:00:36,960 --> 00:00:39,672
+14. maximizeWindow()
+

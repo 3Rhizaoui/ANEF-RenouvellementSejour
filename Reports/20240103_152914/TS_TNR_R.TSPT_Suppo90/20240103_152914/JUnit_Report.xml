@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_TNR_R.TSPT_Suppo90" time="186.718" tests="1" failures="0" errors="1">
+   <testsuite name="TS_TNR_R.TSPT_Suppo90" tests="1" failures="0" errors="1" time="186.718" skipped="0" timestamp="03-01-2024T15:29:24" hostname="issam.rharbaoui - FR-L5448059.groupinfra.com" id="Test Suites/TS_TNR_R.TSPT_Suppo90">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ISSAM.RHARBAOUI\\git\\ANEF-RenouvellementSejour\\Reports\\20240103_152914\\TS_TNR_R.TSPT_Suppo90\\20240103_152914"/>
+         <property name="logFiles" value="C:\\Users\\ISSAM.RHARBAOUI\\git\\ANEF-RenouvellementSejour\\Reports\\20240103_152914\\TS_TNR_R.TSPT_Suppo90\\20240103_152914\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ISSAM.RHARBAOUI\\git\\ANEF-RenouvellementSejour\\Reports\\20240103_152914\\TS_TNR_R.TSPT_Suppo90\\20240103_152914\\1704292346880.png"/>
+         <property name="hostName" value="issam.rharbaoui - FR-L5448059.groupinfra.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.1.0.212"/>
+         <property name="browser" value="Chrome 120.0.0.0"/>
+         <property name="hostAddress" value="192.168.1.134"/>
+         <property name="sessionId" value="66f3683b52647500054c5254ae1c9071"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur" time="185.831" classname="Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur" status="ERROR">
+         <error type="ERROR" message="Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)&#xa;	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)&#xa;	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)&#xa;	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)&#xa;	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)&#xa;	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object&#xa;	at AgentRechercheDemande.run(AgentRechercheDemande:55)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)&#xa;	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)&#xa;	... 28 more&#xa;"/>
+         <system-out><![CDATA[03-01-2024T15:29:25 - [TEST_CASE][ERROR] - Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur: Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more
+
+
+03-01-2024T15:29:27 - [TEST_STEP][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic(): com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:29:28 - [MESSAGE][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:29:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Reutilisable/Main/Lancer URL ANEF"), ["Profiles":"Usager", "EnvExec":EnvExec], STOP_ON_FAILURE): Call Test Case 'Test Cases/Test Reutilisable/Main/Lancer URL ANEF' successfully
+
+03-01-2024T15:29:28 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:29:28 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/Lancer URL ANEF'
+
+03-01-2024T15:29:28 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/Lancer URL ANEF: Test Cases/Test Reutilisable/Main/Lancer URL ANEF
+
+03-01-2024T15:29:30 - [TEST_STEP][PASSED] - "RunConfiguration: getProjectDir for LogDriver ": null
+
+03-01-2024T15:29:30 - [TEST_STEP][PASSED] - RunBrowserConfiguration = getExecutionProperties(): null
+
+03-01-2024T15:29:30 - [TEST_STEP][PASSED] - DriverName = "": null
+
+03-01-2024T15:29:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+03-01-2024T15:29:30 - [MESSAGE][INFO] - Opening browser
+
+03-01-2024T15:29:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+03-01-2024T15:29:30 - [MESSAGE][INFO] - User set preference: ['args', '[--incognito, --start-maximized, --remote-allow-origins=*]']
+
+03-01-2024T15:29:30 - [MESSAGE][INFO] - User set preference: ['prefs', '{download.default_directory=${GlobalVariable.downloadPath}, download_dir=${GlobalVariable.downloadPath}, download.prompt_for_download=false}']
+
+03-01-2024T15:29:30 - [MESSAGE][INFO] - User set preference: ['loggingPrefs', '{browser=ALL}']
+
+03-01-2024T15:29:31 - [MESSAGE][INFO] - Action delay is set to 2 000 milliseconds
+
+03-01-2024T15:29:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - wrappedDriver = driver.getWrappedDriver(): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - out.println(wrappedDriver.getClass()): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - else: null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - DriverName = get("WebUI").get("browserType"): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - println("DriverName :" + DriverName): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - println("Driverpath :" + RunBrowserConfiguration.get("drivers")): null
+
+03-01-2024T15:29:34 - [TEST_STEP][PASSED] - DriverName = DriverName: null
+
+03-01-2024T15:29:36 - [TEST_STEP][PASSED] - delay(medium_wait): Delayed 3 second(s)
+
+03-01-2024T15:29:37 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:29:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:29:40 - [TEST_STEP][PASSED] - executedBrowser = getExecutedBrowser(): null
+
+03-01-2024T15:29:40 - [TEST_STEP][PASSED] - if (Profiles == "Usager"): null
+
+03-01-2024T15:29:40 - [TEST_STEP][PASSED] - switch (DriverName): null
+
+03-01-2024T15:29:40 - [TEST_STEP][PASSED] - case "CHROME_DRIVER":: null
+
+03-01-2024T15:29:40 - [TEST_STEP][PASSED] - if (EnvExec == "URL_ANEFQualif"): Navigate to 'https://qualif.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/' successfully
+
+03-01-2024T15:29:40 - [TEST_STEP][PASSED] - navigateToUrl(URL_ANEFQualif): Navigate to 'https://qualif.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/' successfully
+
+03-01-2024T15:29:40 - [MESSAGE][INFO] - Checking url
+
+03-01-2024T15:29:40 - [MESSAGE][INFO] - Navigating to 'https://qualif.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/'
+
+03-01-2024T15:29:55 - [MESSAGE][PASSED] - Navigate to 'https://qualif.administration-etrangers-en-france.interieur.gouv.fr/particuliers/#/' successfully
+
+03-01-2024T15:29:55 - [TEST_STEP][PASSED] - if (EnvExec == "URL_ANEFPreProd"): null
+
+03-01-2024T15:29:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+03-01-2024T15:29:55 - [MESSAGE][INFO] - Maximizing current window
+
+03-01-2024T15:29:55 - [MESSAGE][PASSED] - Current window maximized
+
+03-01-2024T15:29:55 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", getChromeDriverPath()): null
+
+03-01-2024T15:29:55 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.logfile", getProjectDir() + "/Dump/chromedriver.log"): null
+
+03-01-2024T15:29:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Reutilisable/Main/Erreur lie a la confidentialite"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite' successfully
+
+03-01-2024T15:29:55 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:29:55 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite'
+
+03-01-2024T15:29:55 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite: Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite
+
+03-01-2024T15:29:56 - [TEST_STEP][PASSED] - tools.WaitForLoadedPage.waitForElementRendering(): tools.WaitForLoadedPage.waitForElementRendering is PASSED
+
+03-01-2024T15:29:56 - [MESSAGE][PASSED] - tools.WaitForLoadedPage.waitForElementRendering is PASSED
+
+03-01-2024T15:29:56 - [TEST_STEP][PASSED] - "Call Highlight.on() automatically": null
+
+03-01-2024T15:29:56 - [TEST_STEP][PASSED] - DriverName = DriverName: null
+
+03-01-2024T15:29:56 - [TEST_STEP][PASSED] - if (DriverName == "CHROME_DRIVER" || "EDGE_CHROMIUM_DRIVER" || "HEADLESS_DRIVER"): null
+
+03-01-2024T15:29:56 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL)): null
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Btn_Parametres Avances'
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '2' second(s)
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '2' second(s)
+
+03-01-2024T15:29:56 - [MESSAGE][PASSED] - Object 'Object Repository/Connexion Usager/Btn_Parametres Avances' is present
+
+03-01-2024T15:29:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), OPTIONAL): Object: 'Object Repository/Connexion Usager/Btn_Parametres Avances' is clicked on
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Btn_Parametres Avances'
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '20' second(s)
+
+03-01-2024T15:29:56 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '20' second(s)
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '5' second(s)
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '5' second(s)
+
+03-01-2024T15:29:57 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Btn_Parametres Avances'
+
+03-01-2024T15:29:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Btn_Parametres Avances' is clicked on
+
+03-01-2024T15:29:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Link_Proceed-Link"), OPTIONAL): Object: 'Object Repository/Connexion Usager/Link_Proceed-Link' is clicked on
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Link_Proceed-Link'
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '20' second(s)
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '20' second(s)
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '5' second(s)
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '5' second(s)
+
+03-01-2024T15:29:59 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Link_Proceed-Link'
+
+03-01-2024T15:30:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Link_Proceed-Link' is clicked on
+
+03-01-2024T15:30:02 - [TEST_STEP][PASSED] - if (DriverName == "IE_DRIVER"): null
+
+03-01-2024T15:30:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:30:02 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:30:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:30:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite' successfully
+
+03-01-2024T15:30:05 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+03-01-2024T15:30:05 - [MESSAGE][INFO] - Delaying browser in 5 second(s)
+
+03-01-2024T15:30:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+03-01-2024T15:30:10 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Connexion Usager/Link_Se Connecter"), STOP_ON_FAILURE): Object 'Object Repository/Connexion Usager/Link_Se Connecter' is visible
+
+03-01-2024T15:30:10 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Link_Se Connecter'
+
+03-01-2024T15:30:10 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:10 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:10 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:10 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Se Connecter' located by 'By.xpath: //*[@id="connexion_link"]' in '5' second(s)
+
+03-01-2024T15:30:10 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:11 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Se Connecter' located by 'By.xpath: //*[@id="connexion_link"]' in '5' second(s)
+
+03-01-2024T15:30:11 - [MESSAGE][PASSED] - Object 'Object Repository/Connexion Usager/Link_Se Connecter' is visible
+
+03-01-2024T15:30:11 - [TEST_STEP][PASSED] - break: null
+
+03-01-2024T15:30:11 - [TEST_STEP][PASSED] - if (Profiles == "Agent"): null
+
+03-01-2024T15:30:11 - [TEST_STEP][PASSED] - else: null
+
+03-01-2024T15:30:11 - [TEST_STEP][PASSED] - println("Vérifier le Portail de votre connexion Usager ou Agent"): null
+
+03-01-2024T15:30:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/Lancer URL ANEF' successfully
+
+03-01-2024T15:30:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Reutilisable/Main/Creer Votre Compte"), ["NumEtrangerVisa":NumEtrangerVisa, "DateDebut":DateDebut, "DateFin":DateFin, "EnvExec":EnvExec], STOP_ON_FAILURE): Call Test Case 'Test Cases/Test Reutilisable/Main/Creer Votre Compte' successfully
+
+03-01-2024T15:30:11 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:30:11 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/Creer Votre Compte'
+
+03-01-2024T15:30:11 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/Creer Votre Compte: Test Cases/Test Reutilisable/Main/Creer Votre Compte
+
+03-01-2024T15:30:12 - [TEST_STEP][PASSED] - "waiting for the number of elements in the DOM to stop changing": null
+
+03-01-2024T15:30:12 - [TEST_STEP][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic(): com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:30:12 - [MESSAGE][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:30:12 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+03-01-2024T15:30:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Link_Se Connecter")): Object: 'Object Repository/Connexion Usager/Link_Se Connecter' is clicked on
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Link_Se Connecter'
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Se Connecter' located by 'By.xpath: //*[@id="connexion_link"]' in '20' second(s)
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Se Connecter' located by 'By.xpath: //*[@id="connexion_link"]' in '20' second(s)
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Se Connecter' located by 'By.xpath: //*[@id="connexion_link"]' in '5' second(s)
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Se Connecter' located by 'By.xpath: //*[@id="connexion_link"]' in '5' second(s)
+
+03-01-2024T15:30:12 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Link_Se Connecter'
+
+03-01-2024T15:30:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Link_Se Connecter' is clicked on
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - if (EnvExec == "URL_ANEFQualif"): Call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite' successfully
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Reutilisable/Main/Erreur lie a la confidentialite"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite' successfully
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite'
+
+03-01-2024T15:30:15 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite: Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - tools.WaitForLoadedPage.waitForElementRendering(): tools.WaitForLoadedPage.waitForElementRendering is PASSED
+
+03-01-2024T15:30:15 - [MESSAGE][PASSED] - tools.WaitForLoadedPage.waitForElementRendering is PASSED
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - "Call Highlight.on() automatically": null
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - DriverName = DriverName: null
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - if (DriverName == "CHROME_DRIVER" || "EDGE_CHROMIUM_DRIVER" || "HEADLESS_DRIVER"): null
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), 2, OPTIONAL)): null
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Btn_Parametres Avances'
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '2' second(s)
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '2' second(s)
+
+03-01-2024T15:30:15 - [MESSAGE][PASSED] - Object 'Object Repository/Connexion Usager/Btn_Parametres Avances' is present
+
+03-01-2024T15:30:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Btn_Parametres Avances"), OPTIONAL): Object: 'Object Repository/Connexion Usager/Btn_Parametres Avances' is clicked on
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Btn_Parametres Avances'
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '20' second(s)
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '20' second(s)
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '5' second(s)
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Parametres Avances' located by 'By.xpath: //*[@id="details-button"]' in '5' second(s)
+
+03-01-2024T15:30:15 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Btn_Parametres Avances'
+
+03-01-2024T15:30:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Btn_Parametres Avances' is clicked on
+
+03-01-2024T15:30:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Link_Proceed-Link"), OPTIONAL): Object: 'Object Repository/Connexion Usager/Link_Proceed-Link' is clicked on
+
+03-01-2024T15:30:17 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Link_Proceed-Link'
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '20' second(s)
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '20' second(s)
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '5' second(s)
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Proceed-Link' located by 'By.xpath: //*[@id="proceed-link"]' in '5' second(s)
+
+03-01-2024T15:30:18 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Link_Proceed-Link'
+
+03-01-2024T15:30:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Link_Proceed-Link' is clicked on
+
+03-01-2024T15:30:21 - [TEST_STEP][PASSED] - if (DriverName == "IE_DRIVER"): null
+
+03-01-2024T15:30:21 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:30:21 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:30:24 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:30:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/Erreur lie a la confidentialite' successfully
+
+03-01-2024T15:30:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Link_Creer Votre Compte")): Object: 'Object Repository/Connexion Usager/Link_Creer Votre Compte' is clicked on
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Link_Creer Votre Compte'
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Creer Votre Compte' located by 'By.xpath: //*[@id="portail-anef"]/div/main/div[2]/a|/html/body/div/main/div[2]/a' in '20' second(s)
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Creer Votre Compte' located by 'By.xpath: //*[@id="portail-anef"]/div/main/div[2]/a|/html/body/div/main/div[2]/a' in '20' second(s)
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Link_Creer Votre Compte' located by 'By.xpath: //*[@id="portail-anef"]/div/main/div[2]/a|/html/body/div/main/div[2]/a' in '5' second(s)
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Link_Creer Votre Compte' located by 'By.xpath: //*[@id="portail-anef"]/div/main/div[2]/a|/html/body/div/main/div[2]/a' in '5' second(s)
+
+03-01-2024T15:30:24 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Link_Creer Votre Compte'
+
+03-01-2024T15:30:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Link_Creer Votre Compte' is clicked on
+
+03-01-2024T15:30:27 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+03-01-2024T15:30:27 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+03-01-2024T15:30:27 - [TEST_STEP][PASSED] - println("NumEtrangerVisa = " + NumEtrangerVisa): null
+
+03-01-2024T15:30:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Connexion Usager/Input_Numero etranger_Visa"), NumEtrangerVisa): Text '7703043499' is set on object 'Object Repository/Connexion Usager/Input_Numero etranger_Visa'
+
+03-01-2024T15:30:27 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Input_Numero etranger_Visa'
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' located by 'By.xpath: //*[@placeholder="Exemple : 9999999999" and @type = 'text']' in '20' second(s)
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' located by 'By.xpath: //*[@placeholder="Exemple : 9999999999" and @type = 'text']' in '20' second(s)
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' located by 'By.xpath: //*[@placeholder="Exemple : 9999999999" and @type = 'text']' in '5' second(s)
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' located by 'By.xpath: //*[@placeholder="Exemple : 9999999999" and @type = 'text']' in '5' second(s)
+
+03-01-2024T15:30:28 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Usager/Input_Numero etranger_Visa'
+
+03-01-2024T15:30:30 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:30 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:30 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' located by 'By.xpath: //*[@placeholder="Exemple : 9999999999" and @type = 'text']' in '5' second(s)
+
+03-01-2024T15:30:30 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:30 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' located by 'By.xpath: //*[@placeholder="Exemple : 9999999999" and @type = 'text']' in '5' second(s)
+
+03-01-2024T15:30:30 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Connexion Usager/Input_Numero etranger_Visa' to value '7703043499'
+
+03-01-2024T15:30:32 - [MESSAGE][PASSED] - Text '7703043499' is set on object 'Object Repository/Connexion Usager/Input_Numero etranger_Visa'
+
+03-01-2024T15:30:32 - [TEST_STEP][PASSED] - DateDebut = DateDebut: null
+
+03-01-2024T15:30:32 - [TEST_STEP][PASSED] - DateDebut = tools.MyStringTools.ParsedDateDebut(): tools.MyStringTools.ParsedDateDebut is PASSED
+
+03-01-2024T15:30:32 - [MESSAGE][PASSED] - tools.MyStringTools.ParsedDateDebut is PASSED
+
+03-01-2024T15:30:32 - [TEST_STEP][PASSED] - ParsedDateDebut = tools.MyStringTools.ParsedDateDebut(): tools.MyStringTools.ParsedDateDebut is PASSED
+
+03-01-2024T15:30:32 - [MESSAGE][PASSED] - tools.MyStringTools.ParsedDateDebut is PASSED
+
+03-01-2024T15:30:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Input_Jour"), ParsedDateDebut[0]): Text '16' is set on object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour'
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour'
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[1]/input' in '20' second(s)
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[1]/input' in '20' second(s)
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:32 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour'
+
+03-01-2024T15:30:34 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:34 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:34 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:34 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:34 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:34 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour' to value '16'
+
+03-01-2024T15:30:37 - [MESSAGE][PASSED] - Text '16' is set on object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Jour'
+
+03-01-2024T15:30:37 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Select_Mois"), ParsedDateDebut[1]): All options with index in [1] are selected on object 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois'
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois'
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[2]/select' in '20' second(s)
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[2]/select' in '20' second(s)
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Checking index range
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Converting range parameter '01' to index array
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Range parameter '01' is converted to index array [1]
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[2]/select' in '5' second(s)
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[2]/select' in '5' second(s)
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Checking index parameters
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Selecting options on object 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois' with index in [1]
+
+03-01-2024T15:30:37 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Option with index 1 is selected
+
+03-01-2024T15:30:39 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/Connexion Usager/Date Debut Validite/Select_Mois'
+
+03-01-2024T15:30:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Connexion Usager/Date Debut Validite/Input_Annee"), ParsedDateDebut[2]): Text '2023' is set on object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee'
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee'
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[3]/input' in '20' second(s)
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[3]/input' in '20' second(s)
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:39 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee'
+
+03-01-2024T15:30:41 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:41 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:41 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:41 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:41 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[1]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:41 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee' to value '2023'
+
+03-01-2024T15:30:43 - [MESSAGE][PASSED] - Text '2023' is set on object 'Object Repository/Connexion Usager/Date Debut Validite/Input_Annee'
+
+03-01-2024T15:30:43 - [TEST_STEP][PASSED] - DateFin = DateFin: null
+
+03-01-2024T15:30:43 - [TEST_STEP][PASSED] - DateFin = tools.MyStringTools.ParsedDateFin(): tools.MyStringTools.ParsedDateFin is PASSED
+
+03-01-2024T15:30:43 - [MESSAGE][PASSED] - tools.MyStringTools.ParsedDateFin is PASSED
+
+03-01-2024T15:30:43 - [TEST_STEP][PASSED] - ParsedDateFin = tools.MyStringTools.ParsedDateFin(): tools.MyStringTools.ParsedDateFin is PASSED
+
+03-01-2024T15:30:43 - [MESSAGE][PASSED] - tools.MyStringTools.ParsedDateFin is PASSED
+
+03-01-2024T15:30:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Input_Jour"), ParsedDateFin[0]): Text '15' is set on object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour'
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour'
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[1]/input' in '20' second(s)
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[1]/input' in '20' second(s)
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:43 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour'
+
+03-01-2024T15:30:45 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:45 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:45 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:45 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:45 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[1]/input' in '5' second(s)
+
+03-01-2024T15:30:45 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour' to value '15'
+
+03-01-2024T15:30:47 - [MESSAGE][PASSED] - Text '15' is set on object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Jour'
+
+03-01-2024T15:30:47 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Select_Mois"), ParsedDateFin[1]): All options with index in [1] are selected on object 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois'
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois'
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[2]/select' in '20' second(s)
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[2]/select' in '20' second(s)
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Checking index range
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Converting range parameter '01' to index array
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Range parameter '01' is converted to index array [1]
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[2]/select' in '5' second(s)
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[2]/select' in '5' second(s)
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Checking index parameters
+
+03-01-2024T15:30:47 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:48 - [MESSAGE][INFO] - Selecting options on object 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois' with index in [1]
+
+03-01-2024T15:30:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Option with index 1 is selected
+
+03-01-2024T15:30:50 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/Connexion Usager/Date Fin Validite/Select_Mois'
+
+03-01-2024T15:30:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Connexion Usager/Date Fin Validite/Input_Annee"), ParsedDateFin[2]): Text '2024' is set on object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee'
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee'
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[3]/input' in '20' second(s)
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[3]/input' in '20' second(s)
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:50 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee'
+
+03-01-2024T15:30:52 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:52 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:52 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:52 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:52 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/div[2]/app-date[2]/fieldset/div[2]/div[3]/input' in '5' second(s)
+
+03-01-2024T15:30:52 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee' to value '2024'
+
+03-01-2024T15:30:54 - [MESSAGE][PASSED] - Text '2024' is set on object 'Object Repository/Connexion Usager/Date Fin Validite/Input_Annee'
+
+03-01-2024T15:30:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Usager/Btn_Creer Un Compte")): Object: 'Object Repository/Connexion Usager/Btn_Creer Un Compte' is clicked on
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/Btn_Creer Un Compte'
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Creer Un Compte' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/p-button/button' in '20' second(s)
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Creer Un Compte' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/p-button/button' in '20' second(s)
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/Btn_Creer Un Compte' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/p-button/button' in '5' second(s)
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/Btn_Creer Un Compte' located by 'By.xpath: /html/body/app-root/div/app-root/main/app-registration/div/div[3]/app-identification/form/p-button/button' in '5' second(s)
+
+03-01-2024T15:30:54 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Usager/Btn_Creer Un Compte'
+
+03-01-2024T15:30:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Usager/Btn_Creer Un Compte' is clicked on
+
+03-01-2024T15:30:56 - [TEST_STEP][PASSED] - "Vérification si Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie. pb serveur AGERDF": null
+
+03-01-2024T15:30:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes"), [:], OPTIONAL): Call Test Case 'Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes' successfully
+
+03-01-2024T15:30:56 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:30:56 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes'
+
+03-01-2024T15:30:56 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes: Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes
+
+03-01-2024T15:30:57 - [TEST_STEP][PASSED] - "Vérification si Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie. pb serveur AGERDF": null
+
+03-01-2024T15:30:57 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:30:57 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:31:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - StopTestCase = false: null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - MsgAlertPresent = verifyElementVisible(findTestObject("Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes"), OPTIONAL): Object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' is visible
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes'
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' located by 'By.xpath: //p' in '5' second(s)
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' located by 'By.xpath: //p' in '5' second(s)
+
+03-01-2024T15:31:00 - [MESSAGE][PASSED] - Object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' is visible
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - if (MsgAlertPresent): null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - TextAlert = getText(findTestObject("Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes"), OPTIONAL): Text of object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' is: 'Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie.'
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes'
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' located by 'By.xpath: //p' in '5' second(s)
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' located by 'By.xpath: //p' in '5' second(s)
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Getting text of object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes'
+
+03-01-2024T15:31:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/Connexion Usager/lbl_CertainesInformationsSaisiesSontIncorrectes' is: 'Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie.'
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - tools.markWarningAndStop.markWarningAndStopTest(TextAlert): tools.markWarningAndStop.markWarningAndStopTest is PASSED
+
+03-01-2024T15:31:00 - [MESSAGE][WARNING] - Certaines informations que vous avez saisies sont incorrectes. Veuillez vérifier votre saisie.
+
+03-01-2024T15:31:00 - [MESSAGE][PASSED] - tools.markWarningAndStop.markWarningAndStopTest is PASSED
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - MsgStopTestCase = TextAlert: null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - return null: null
+
+03-01-2024T15:31:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/VerificationCertainesInformationsSontIncorrectes' successfully
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - if (StopTestCase == true): null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - return null: null
+
+03-01-2024T15:31:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/Creer Votre Compte' successfully
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - if (StopTestCase == false): null
+
+03-01-2024T15:31:00 - [TEST_STEP][ERROR] - if (TraitemantAgent == "Oui"): Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more
+
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Reutilisable/Main/Lancer URL ANEF"), ["Profiles":"Agent", "EnvExec":EnvExec], STOP_ON_FAILURE): Call Test Case 'Test Cases/Test Reutilisable/Main/Lancer URL ANEF' successfully
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/Lancer URL ANEF'
+
+03-01-2024T15:31:00 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/Lancer URL ANEF: Test Cases/Test Reutilisable/Main/Lancer URL ANEF
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - "RunConfiguration: getProjectDir for LogDriver ": null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - RunBrowserConfiguration = getExecutionProperties(): null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - DriverName = "": null
+
+03-01-2024T15:31:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+03-01-2024T15:31:00 - [MESSAGE][INFO] - Opening browser
+
+03-01-2024T15:31:00 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+03-01-2024T15:31:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+03-01-2024T15:31:01 - [MESSAGE][INFO] - User set preference: ['args', '[--incognito, --start-maximized, --remote-allow-origins=*]']
+
+03-01-2024T15:31:01 - [MESSAGE][INFO] - User set preference: ['prefs', '{download.default_directory=${GlobalVariable.downloadPath}, download_dir=${GlobalVariable.downloadPath}, download.prompt_for_download=false}']
+
+03-01-2024T15:31:01 - [MESSAGE][INFO] - User set preference: ['loggingPrefs', '{browser=ALL}']
+
+03-01-2024T15:31:01 - [MESSAGE][INFO] - Action delay is set to 2 000 milliseconds
+
+03-01-2024T15:31:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - wrappedDriver = driver.getWrappedDriver(): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - out.println(wrappedDriver.getClass()): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - if (class == com.kms.katalon.selenium.driver.CRemoteWebDriver): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - else: null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - DriverName = get("WebUI").get("browserType"): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - println("DriverName :" + DriverName): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - println("Driverpath :" + RunBrowserConfiguration.get("drivers")): null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - DriverName = DriverName: null
+
+03-01-2024T15:31:03 - [TEST_STEP][PASSED] - delay(medium_wait): Delayed 3 second(s)
+
+03-01-2024T15:31:03 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:31:06 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:31:06 - [TEST_STEP][PASSED] - executedBrowser = getExecutedBrowser(): null
+
+03-01-2024T15:31:06 - [TEST_STEP][PASSED] - if (Profiles == "Usager"): null
+
+03-01-2024T15:31:06 - [TEST_STEP][PASSED] - if (Profiles == "Agent"): Current window maximized
+
+03-01-2024T15:31:06 - [TEST_STEP][PASSED] - if (EnvExec == "URL_ANEFQualif"): Browser is opened with url: 'https://qualification.siaef.dgef.interieur.gouv.fr/sejour/#/accueil'
+
+03-01-2024T15:31:06 - [TEST_STEP][PASSED] - openBrowser(URLPortailAgentQualif): Browser is opened with url: 'https://qualification.siaef.dgef.interieur.gouv.fr/sejour/#/accueil'
+
+03-01-2024T15:31:06 - [MESSAGE][INFO] - Opening browser
+
+03-01-2024T15:31:06 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+03-01-2024T15:31:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+03-01-2024T15:31:06 - [MESSAGE][INFO] - User set preference: ['args', '[--incognito, --start-maximized, --remote-allow-origins=*]']
+
+03-01-2024T15:31:06 - [MESSAGE][INFO] - User set preference: ['prefs', '{download.default_directory=${GlobalVariable.downloadPath}, download_dir=${GlobalVariable.downloadPath}, download.prompt_for_download=false}']
+
+03-01-2024T15:31:06 - [MESSAGE][INFO] - User set preference: ['loggingPrefs', '{browser=ALL}']
+
+03-01-2024T15:31:06 - [MESSAGE][INFO] - Action delay is set to 2 000 milliseconds
+
+03-01-2024T15:31:08 - [MESSAGE][INFO] - Navigating browser to: 'https://qualification.siaef.dgef.interieur.gouv.fr/sejour/#/accueil'
+
+03-01-2024T15:31:30 - [MESSAGE][PASSED] - Browser is opened with url: 'https://qualification.siaef.dgef.interieur.gouv.fr/sejour/#/accueil'
+
+03-01-2024T15:31:30 - [TEST_STEP][PASSED] - if (EnvExec == "URL_ANEFPreProd"): null
+
+03-01-2024T15:31:30 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+03-01-2024T15:31:30 - [MESSAGE][INFO] - Maximizing current window
+
+03-01-2024T15:31:30 - [MESSAGE][PASSED] - Current window maximized
+
+03-01-2024T15:31:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/Lancer URL ANEF' successfully
+
+03-01-2024T15:31:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Reutilisable/Main/Identification"), ["Profiles":"Agent", "NumEtrangerVisa":NumEtrangerVisa, "EnvExec":"EnvExec"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Test Reutilisable/Main/Identification' successfully
+
+03-01-2024T15:31:30 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:31:30 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/Main/Identification'
+
+03-01-2024T15:31:30 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/Main/Identification: Test Cases/Test Reutilisable/Main/Identification
+
+03-01-2024T15:31:31 - [TEST_STEP][PASSED] - if (Profiles == "Usager"): null
+
+03-01-2024T15:31:31 - [TEST_STEP][PASSED] - if (Profiles == "Agent"): Object: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' is clicked on
+
+03-01-2024T15:31:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Connexion Agent/Input_UserNameAgent"), IdentifiantAgentQualif): Text 'anef.cng+qualif.agent.sejour.automatisation@gmail.com' is set on object 'Object Repository/Connexion Agent/Input_UserNameAgent'
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Agent/Input_UserNameAgent'
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/Input_UserNameAgent' located by 'By.xpath: //*[@aria-labelledby="username-label"]' in '20' second(s)
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/Input_UserNameAgent' located by 'By.xpath: //*[@aria-labelledby="username-label"]' in '20' second(s)
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/Input_UserNameAgent' located by 'By.xpath: //*[@aria-labelledby="username-label"]' in '5' second(s)
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/Input_UserNameAgent' located by 'By.xpath: //*[@aria-labelledby="username-label"]' in '5' second(s)
+
+03-01-2024T15:31:31 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Agent/Input_UserNameAgent'
+
+03-01-2024T15:31:33 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:33 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:33 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/Input_UserNameAgent' located by 'By.xpath: //*[@aria-labelledby="username-label"]' in '5' second(s)
+
+03-01-2024T15:31:33 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:33 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/Input_UserNameAgent' located by 'By.xpath: //*[@aria-labelledby="username-label"]' in '5' second(s)
+
+03-01-2024T15:31:33 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Connexion Agent/Input_UserNameAgent' to value 'anef.cng+qualif.agent.sejour.automatisation@gmail.com'
+
+03-01-2024T15:31:35 - [MESSAGE][PASSED] - Text 'anef.cng+qualif.agent.sejour.automatisation@gmail.com' is set on object 'Object Repository/Connexion Agent/Input_UserNameAgent'
+
+03-01-2024T15:31:35 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Connexion Agent/Input_PasswordAgent"), PwAgentQualif): Text ****** has been set on object 'Object Repository/Connexion Agent/Input_PasswordAgent'
+
+03-01-2024T15:31:35 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Agent/Input_PasswordAgent'
+
+03-01-2024T15:31:35 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/Input_PasswordAgent' located by 'By.xpath: //*[@ng-reflect-name="password" and @type ="password" or @id="password"]' in '20' second(s)
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/Input_PasswordAgent' located by 'By.xpath: //*[@ng-reflect-name="password" and @type ="password" or @id="password"]' in '20' second(s)
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/Input_PasswordAgent' located by 'By.xpath: //*[@ng-reflect-name="password" and @type ="password" or @id="password"]' in '5' second(s)
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/Input_PasswordAgent' located by 'By.xpath: //*[@ng-reflect-name="password" and @type ="password" or @id="password"]' in '5' second(s)
+
+03-01-2024T15:31:36 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Connexion Agent/Input_PasswordAgent'
+
+03-01-2024T15:31:38 - [MESSAGE][INFO] - Setting  text of object 'Object Repository/Connexion Agent/Input_PasswordAgent' to value ******
+
+03-01-2024T15:31:40 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Connexion Agent/Input_PasswordAgent'
+
+03-01-2024T15:31:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Connexion Agent/btn_Valider_Conx_Agent")): Object: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' is clicked on
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent'
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' located by 'By.xpath: //*[@label="Valider"]' in '20' second(s)
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' located by 'By.xpath: //*[@label="Valider"]' in '20' second(s)
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' located by 'By.xpath: //*[@label="Valider"]' in '5' second(s)
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' located by 'By.xpath: //*[@label="Valider"]' in '5' second(s)
+
+03-01-2024T15:31:40 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent'
+
+03-01-2024T15:31:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Connexion Agent/btn_Valider_Conx_Agent' is clicked on
+
+03-01-2024T15:31:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/Main/Identification' successfully
+
+03-01-2024T15:31:42 - [TEST_STEP][ERROR] - callTestCase(findTestCase("Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande"), ["NumEtrangerVisa":NumEtrangerVisa], STOP_ON_FAILURE): Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more
+
+
+03-01-2024T15:31:42 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:31:42 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande'
+
+03-01-2024T15:31:42 - [TEST_CASE][ERROR] - Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande: Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+03-01-2024T15:31:42 - [TEST_STEP][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic(): com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:31:42 - [MESSAGE][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:31:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent"), [:], OPTIONAL): Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent' successfully
+
+03-01-2024T15:31:42 - [MESSAGE][INFO] - Checking called Test Case
+
+03-01-2024T15:31:42 - [MESSAGE][INFO] - Starting to call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent'
+
+03-01-2024T15:31:42 - [TEST_CASE][PASSED] - Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent: Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent
+
+03-01-2024T15:31:43 - [TEST_STEP][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic(): com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:31:43 - [MESSAGE][PASSED] - com.kazurayam.ksbackyard.HighlightElement.pandemic is PASSED
+
+03-01-2024T15:31:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu")): Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu' is clicked on
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu'
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[1]' in '20' second(s)
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[1]' in '20' second(s)
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[1]' in '5' second(s)
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[1]' in '5' second(s)
+
+03-01-2024T15:31:43 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu'
+
+03-01-2024T15:31:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/div_App-HeaderAccount-Menu' is clicked on
+
+03-01-2024T15:31:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation")): Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation' is clicked on
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation'
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[2]/p-menu/div/ul/li[3]/a/span[2]' in '20' second(s)
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[2]/p-menu/div/ul/li[3]/a/span[2]' in '20' second(s)
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[2]/p-menu/div/ul/li[3]/a/span[2]' in '5' second(s)
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation' located by 'By.xpath: //*[@id="app-header"]/div/div[1]/app-account-menu/div/div[2]/p-menu/div/ul/li[3]/a/span[2]' in '5' second(s)
+
+03-01-2024T15:31:45 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation'
+
+03-01-2024T15:31:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_habilitation' is clicked on
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - PopUpHabilitations = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations"): Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations'
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations'
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - verifyElementPresent(PopUpHabilitations, 1): Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' is present
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' located by 'By.xpath: //*[@id="ui-dialog-9-label"]/p-header/div[1]' in '1' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' located by 'By.xpath: //*[@id="ui-dialog-9-label"]/p-header/div[1]' in '1' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][PASSED] - Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' is present
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - TitrePopUpAfficherCommentaires = getText(PopUpHabilitations): Text of object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' is: 'HABILITATIONS'
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' located by 'By.xpath: //*[@id="ui-dialog-9-label"]/p-header/div[1]' in '5' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' located by 'By.xpath: //*[@id="ui-dialog-9-label"]/p-header/div[1]' in '5' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Getting text of object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations'
+
+03-01-2024T15:31:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/span_PopupHabilitations' is: 'HABILITATIONS'
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - if (!(TitrePopUpAfficherCommentaires.contains("HABILITATIONS"))): null
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - else: Le Titre de PopUp est bien Affiché : HABILITATIONS.
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - markPassed("Le Titre de PopUp est bien Affiché : HABILITATIONS."): Le Titre de PopUp est bien Affiché : HABILITATIONS.
+
+03-01-2024T15:31:48 - [MESSAGE][PASSED] - Le Titre de PopUp est bien Affiché : HABILITATIONS.
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - if (TypeTitreDeSejour == "RenouvellementDeTitreSéjour" || TypeTitreDeSejour == "Visiteur"): Delayed 3 second(s)
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - RoleEncadreurSite7701 = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701"): Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701'
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701'
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - verifyElementPresent(RoleEncadreurSite7701, 1): Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' is present
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' located by 'By.xpath: /html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/p-radiobutton/div/div[2]/span' in '1' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' located by 'By.xpath: /html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/p-radiobutton/div/div[2]/span' in '1' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][PASSED] - Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' is present
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - ValiderHabilitations = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider"): Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider'
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider'
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - verifyElementPresent(ValiderHabilitations, 1): Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' is present
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[2]' in '1' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[2]' in '1' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][PASSED] - Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' is present
+
+03-01-2024T15:31:48 - [TEST_STEP][PASSED] - click(RoleEncadreurSite7701): Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' is clicked on
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' located by 'By.xpath: /html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/p-radiobutton/div/div[2]/span' in '20' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' located by 'By.xpath: /html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/p-radiobutton/div/div[2]/span' in '20' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' located by 'By.xpath: /html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/p-radiobutton/div/div[2]/span' in '5' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' located by 'By.xpath: /html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/p-radiobutton/div/div[2]/span' in '5' second(s)
+
+03-01-2024T15:31:48 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701'
+
+03-01-2024T15:31:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/CheckBox_RoleEncadreurSite7701' is clicked on
+
+03-01-2024T15:31:50 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:31:50 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:31:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:31:53 - [TEST_STEP][PASSED] - Disabled = getAttribute(ValiderHabilitations, "disabled"): Attribute 'disabled' of object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' is: 'true'
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Checking attribute
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[2]' in '5' second(s)
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[2]' in '5' second(s)
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Getting attribute 'disabled' of object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider'
+
+03-01-2024T15:31:53 - [MESSAGE][PASSED] - Attribute 'disabled' of object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Valider' is: 'true'
+
+03-01-2024T15:31:53 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:31:53 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:31:56 - [TEST_STEP][PASSED] - if (Disabled == false): null
+
+03-01-2024T15:31:56 - [TEST_STEP][PASSED] - else: Delayed 3 second(s)
+
+03-01-2024T15:31:56 - [TEST_STEP][PASSED] - AnnulerHabilitations = findTestObject("Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler"): Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler'
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler'
+
+03-01-2024T15:31:56 - [TEST_STEP][PASSED] - verifyElementPresent(AnnulerHabilitations, 1): Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' is present
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[1]/span' in '1' second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[1]/span' in '1' second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][PASSED] - Object 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' is present
+
+03-01-2024T15:31:56 - [TEST_STEP][PASSED] - click(AnnulerHabilitations): Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' is clicked on
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[1]/span' in '20' second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[1]/span' in '20' second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[1]/span' in '5' second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' located by 'By.xpath: /html/body/div[1]/div[3]/p-footer/button[1]/span' in '5' second(s)
+
+03-01-2024T15:31:56 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler'
+
+03-01-2024T15:31:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ConnexionPositionnementSiteDeTraitement_Agent/btn_Habilitations_Annuler' is clicked on
+
+03-01-2024T15:31:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour")): Object: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour' is clicked on
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour'
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour' located by 'By.xpath: //span[text()=' Demandes de titre de séjour ']' in '20' second(s)
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour' located by 'By.xpath: //span[text()=' Demandes de titre de séjour ']' in '20' second(s)
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour' located by 'By.xpath: //span[text()=' Demandes de titre de séjour ']' in '5' second(s)
+
+03-01-2024T15:31:58 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:31:59 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour' located by 'By.xpath: //span[text()=' Demandes de titre de séjour ']' in '5' second(s)
+
+03-01-2024T15:31:59 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour'
+
+03-01-2024T15:32:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Accueil_Agent/span_DemandeDeTitreDeSejour' is clicked on
+
+03-01-2024T15:32:01 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:32:01 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:32:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:32:04 - [TEST_STEP][PASSED] - if (TypeTitreDeSejour == "TS-PT-SalariéQualifié"): null
+
+03-01-2024T15:32:04 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+03-01-2024T15:32:04 - [MESSAGE][INFO] - Delaying browser in 5 second(s)
+
+03-01-2024T15:32:09 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+03-01-2024T15:32:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent' successfully
+
+03-01-2024T15:32:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes")): Object: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes' is clicked on
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes'
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[1]/a/p-header/div' in '20' second(s)
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[1]/a/p-header/div' in '20' second(s)
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[1]/a/p-header/div' in '5' second(s)
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[1]/a/p-header/div' in '5' second(s)
+
+03-01-2024T15:32:09 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes'
+
+03-01-2024T15:32:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Accueil_Agent/span_Liste_MesDemandes' is clicked on
+
+03-01-2024T15:32:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour")): Object: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour' is clicked on
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour'
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[2]/div/a[1]' in '20' second(s)
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[2]/div/a[1]' in '20' second(s)
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[2]/div/a[1]' in '5' second(s)
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour' located by 'By.xpath: //app-navigation-layout//app-demandes-sejour//div//p-accordiontab[3]/div[2]/div/a[1]' in '5' second(s)
+
+03-01-2024T15:32:11 - [MESSAGE][INFO] - Clicking on object: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour'
+
+03-01-2024T15:32:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Accueil_Agent/a_link_TitreDeSejour' is clicked on
+
+03-01-2024T15:32:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande"), NumEtrangerVisa): Text '7703043499' is set on object 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' located by 'By.xpath: //*[@placeholder="Rechercher une demande"]' in '20' second(s)
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' located by 'By.xpath: //*[@placeholder="Rechercher une demande"]' in '20' second(s)
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Checking text
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' located by 'By.xpath: //*[@placeholder="Rechercher une demande"]' in '5' second(s)
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' located by 'By.xpath: //*[@placeholder="Rechercher une demande"]' in '5' second(s)
+
+03-01-2024T15:32:13 - [MESSAGE][INFO] - Clearing text of object 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'
+
+03-01-2024T15:32:15 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:32:15 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:15 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' located by 'By.xpath: //*[@placeholder="Rechercher une demande"]' in '5' second(s)
+
+03-01-2024T15:32:15 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:15 - [MESSAGE][INFO] - Found 1 web elements with id: 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' located by 'By.xpath: //*[@placeholder="Rechercher une demande"]' in '5' second(s)
+
+03-01-2024T15:32:15 - [MESSAGE][INFO] - Setting text of object 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande' to value '7703043499'
+
+03-01-2024T15:32:17 - [MESSAGE][PASSED] - Text '7703043499' is set on object 'Object Repository/Page_Accueil_Agent/Input_RechercherUneDemande'
+
+03-01-2024T15:32:17 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+03-01-2024T15:32:17 - [MESSAGE][INFO] - Delaying browser in 3 second(s)
+
+03-01-2024T15:32:20 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+03-01-2024T15:32:20 - [TEST_STEP][PASSED] - ActuelleAffectation = findTestObject("Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation"): Finding Test Object 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation'
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Finding Test Object 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation'
+
+03-01-2024T15:32:20 - [TEST_STEP][PASSED] - TitreActuelleAffectation = getText(ActuelleAffectation, OPTIONAL): Unable to get text of object 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:943)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AgentRechercheDemande.run(AgentRechercheDemande:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation' located by '//*[@id="content"]/app-demandes-sejour/div/div[2]/app-demande-table/div[2]/p-table/div/div/table/tbody/tr/td[11]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1379)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:943)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Script1695813848992.run(Script1695813848992.groovy:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Script1695213876796.run(Script1695213876796.groovy:116)
+	... 15 more
+)
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Checking object
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Finding web element from Test Object's properties
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Checking timeout
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Finding web element with id: 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation' located by 'By.xpath: //*[@id="content"]/app-demandes-sejour/div/div[2]/app-demande-table/div[2]/p-table/div/div/table/tbody/tr/td[11]' in '5' second(s)
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:20 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:21 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:22 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:23 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:24 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:25 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Smart Wait Function is triggered
+
+03-01-2024T15:32:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="content"]/app-demandes-sejour/div/div[2]/app-demande-table/div[2]/p-table/div/div/table/tbody/tr/td[11]'. Please recheck the objects properties to make sure the desired element is located. 
+
+03-01-2024T15:32:27 - [MESSAGE][WARNING] - Unable to get text of object 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:943)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at AgentRechercheDemande.run(AgentRechercheDemande:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Accueil_Agent/Lib_ActuelleAffectation' located by '//*[@id="content"]/app-demandes-sejour/div/div[2]/app-demande-table/div[2]/p-table/div/div/table/tbody/tr/td[11]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1379)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:943)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Script1695813848992.run(Script1695813848992.groovy:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Script1695213876796.run(Script1695213876796.groovy:116)
+	... 15 more
+)
+[[ATTACHMENT|C:\\Users\\ISSAM.RHARBAOUI\\git\\ANEF-RenouvellementSejour\\Reports\\20240103_152914\\TS_TNR_R.TSPT_Suppo90\\20240103_152914\\1704292346880.png]]
+
+03-01-2024T15:32:27 - [TEST_STEP][ERROR] - ExistActuelleAffectation = TitreActuelleAffectation.contains("AGENT SEJOUR"): Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+03-01-2024T15:32:27 - [MESSAGE][ERROR] - Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+03-01-2024T15:32:27 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more
+)
+
+03-01-2024T15:32:27 - [MESSAGE][ERROR] - Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more
+
+
+03-01-2024T15:32:31 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur' .
+
+03-01-2024T15:32:31 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur' .]]></system-out>
+         <system-err><![CDATA[03-01-2024T15:29:25 - [TEST_CASE][ERROR] - Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur: Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[03-01-2024T15:29:24 - [TEST_SUITE][ERROR] - TS_TNR_R.TSPT_Suppo90: Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more]]></system-out>
+      <system-err><![CDATA[03-01-2024T15:29:24 - [TEST_SUITE][ERROR] - TS_TNR_R.TSPT_Suppo90: Test Cases/Cas D Utilisations/Usager Etudiant/TNR R.TSPT Supp90-Visiteur FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:75)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kazurayam.ksbackyard.HighlightElement$_pandemic_closure1.doCall(HighlightElement.groovy:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at TNR R.TSPT Supp90-Visiteur.run(TNR R.TSPT Supp90-Visiteur:116)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1704292154591.run(TempTestSuite1704292154591.groovy:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: java.lang.NullPointerException: Cannot invoke method contains() on null object
+	at AgentRechercheDemande.run(AgentRechercheDemande:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:137)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 28 more]]></system-err>
+   </testsuite>
+</testsuites>
