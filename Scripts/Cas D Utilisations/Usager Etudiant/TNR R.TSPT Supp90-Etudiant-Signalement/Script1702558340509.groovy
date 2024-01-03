@@ -103,3 +103,26 @@ if (GlobalVariable.StopTestCase == false) {
 			}
 }}
 
+if (TraitemantAgent=='Oui') {
+	
+	'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent'
+	WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [('Profiles') : 'Agent', ('EnvExec') : EnvExec ], FailureHandling.STOP_ON_FAILURE)
+	
+	'Appel Brique Réutilisable pour Identification Usager ou Agent'
+	WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [('Profiles') : 'Agent', ('NumEtrangerVisa') : NumEtrangerVisa, ('EnvExec'): 'EnvExec'],
+		FailureHandling.STOP_ON_FAILURE)
+	
+	//WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/ConnexionPositionnementSiteDeTraitementAgent'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/AgentRechercheDemande'), [('NumEtrangerVisa'):NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonInformationsGeneralesDemande'), [('NumEtrangerVisa'):NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonObservationDuDemandeur'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Test Cases/Test Reutilisable/AgentTraitementDemande/Verif_AccordeonEtatCivilDuDemandeur'), [('NumEtrangerVisa'):NumEtrangerVisa], FailureHandling.STOP_ON_FAILURE)
+	
+	'Appel Brique Réutilisable pour lancer URl ANEF pour Usager ou Agent'
+	WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Lancer URL ANEF'), [('Profiles') : 'Usager', ('EnvExec') : EnvExec ], FailureHandling.STOP_ON_FAILURE)
+	'Appel Brique Réutilisable pour Identification Usager ou Agent'
+	WebUI.callTestCase(findTestCase('Test Reutilisable/Main/Identification'), [('Profiles') : 'Usager', ('NumEtrangerVisa') : NumEtrangerVisa, ('EnvExec'): 'EnvExec'],
+		FailureHandling.STOP_ON_FAILURE)
+	"Appel Brique Réutilisable pour Vérification Formulaire De Notifications De l'Usager "
+	WebUI.callTestCase(findTestCase('Test Reutilisable/DemandeOuRenouvelle_TitreSejour/FormulaireNotificationsUsager'), [:],FailureHandling.STOP_ON_FAILURE)
+}
