@@ -27,8 +27,8 @@
          <combinationType>ONE</combinationType>
          <id>684ef12d-baaa-423b-a877-c976ab36ada5</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>17</value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/DataFor3TestCase</testDataId>
       </testDataLink>
